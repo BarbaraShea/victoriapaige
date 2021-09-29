@@ -10,7 +10,7 @@ const NavBar = () => {
     <StyledNav>
     <LogoContainer class="logo">
     <LogoImg  src={Logo}/>
-    <SnapImg class="hoverImg" src={Snap}/>
+    <SnapImg className="hover-image" src={Snap}/>
     </LogoContainer>
     <ul class="navbar">
     <li><Link 
@@ -69,6 +69,17 @@ const StyledNav = Styled.nav`
         }
     }
     `
+const SnapImg = Styled.img
+    `
+    position: relative;
+    top: 2px;
+    right: 19px;
+    width: 35px;
+    height: 45px;
+    display: none;
+   `
+
+
 const LogoImg = Styled.img 
     `
     margin: 0px;
@@ -78,15 +89,9 @@ const LogoImg = Styled.img
     right: 7px;
     width: 50px;
     height: 75px;
+    
     `
-const SnapImg = Styled.img
-    `
-    position: relative;
-    top: 2px;
-    right: 19px;
-    width: 35px;
-    height: 45px;
-   `
+
 
 const LogoContainer = Styled.div
     `
@@ -95,4 +100,7 @@ const LogoContainer = Styled.div
     position: absolute;
     top: 5px;
     right: 50px;
+     :hover .hover-image {
+        display: block;
+    }
     `   

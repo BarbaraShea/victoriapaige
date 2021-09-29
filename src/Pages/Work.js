@@ -16,7 +16,7 @@ const Work = () => {
         <BoxContainer>
         <TWContainer>
             <TW src={TimeWells} alt="Project1"/>
-            <Overlay class="overlay">Hello</Overlay>
+            <OverlayTW className="overlay-tw">Hello</OverlayTW>
         </TWContainer>  
         <FCContainer>
             <FC src={ForestryCamp} alt="Project1"/>
@@ -59,6 +59,26 @@ const BoxContainer = Styled.div
     align-items: center;
     justify-content: center;
 `
+const OverlayTW = Styled.div
+`
+  position: absolute;
+  bottom: 0;
+  top:0;
+  right: 0;
+  left: 0;
+  margin: 20%;
+  margin-left: 25%;
+  margin-top: 10%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+`
 
 const FCContainer = Styled.div
     `
@@ -69,12 +89,11 @@ const FCContainer = Styled.div
 const TWContainer = Styled.div
     `
     position: relative;
-   
-    display: block;
+    // display: block;
     float: left;
-    :hover .overlay {
-  opacity: 9;
-}
+    :hover .overlay-tw {
+        opacity: 9;
+    }
 `
 
 const FC = Styled.img
@@ -97,20 +116,3 @@ const TW = Styled.img
     float: left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     `
-const Overlay = Styled.div
-`
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 50%;
-  height: 50%;
-  margin: 25%;
-  transition: .5s ease;
-  opacity:6;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-`
