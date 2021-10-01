@@ -28,7 +28,8 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;;
     padding: 3em;
     line-height: 1.2;
-    margin: 25px;
+    margin-right: 18px;
+    margin-left: 8px;
 }
 
 h4 {

@@ -3,7 +3,8 @@ import React from 'react';
 import Styled from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { IoIosArrowUp, IoMdMail, IoLogoLinkedin } from "react-icons/io";
-import LetsTalk from '../images/LetsTalk.png'
+import LetsTalk from '../images/LetsTalk.png';
+import ArrowUp from '../images/ArrowUp.png';
 
 const Contact = () => {
     return (
@@ -11,12 +12,12 @@ const Contact = () => {
         <ImageContainer>
             <Image src={LetsTalk} alt='Contact'/>
         </ImageContainer>        <p> Interested in working together or just want to see adorable pictures of my dogs? You can find my contact information below.<strong> Let's get into it. </strong> </p>
-        <Links>
-        <ul>
-        <li><a href="mailto:v.paige.bryant@gmail.com"><IoMdMail/></a></li>
-        <li><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/"><IoLogoLinkedin/></a></li>
-        </ul>
-        </Links>
+        <Row>
+        <Col size={2}>
+        <a href="mailto:v.paige.bryant@gmail.com"><IoMdMail/></a>
+        <a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/"><IoLogoLinkedin/></a>
+        </Col>
+        </Row>
            <Link 
     activeClass="active"
     to="intro"
@@ -24,7 +25,7 @@ const Contact = () => {
     smooth={true}
     offset={-50}
     duration={1000}
-    ><IoIosArrowUp/></Link> 
+    ><ArrowImg src={ArrowUp}/></Link> 
         </StyledContact> 
     )
 };
@@ -39,19 +40,16 @@ const StyledContact = Styled.div
     align-items: left;
     justify-content: center;
     line-height: 1.2;
+    line-height: 1.4;
+    font-size: 20px;
  
 `
-
-const Links = Styled.div
+const Row = Styled.div `
+    display: flex; 
 `
-display: block;
-margin-left: 20px;
-margin-bottom: 20px;
-style: none;
-line-height: 2;
-ul {
-    list-style: none;
-};
+
+const Col = Styled.div `
+    flex: ${(props) => props.size};
 `
 
 const ImageContainer = Styled.div
@@ -63,7 +61,14 @@ const ImageContainer = Styled.div
 
 const Image = Styled.img
     `
-    width: auto;
-    height: auto;
-    margin-bottom: 20px;
+    width: 278px;
+    height: 92px;
+    margin-bottom: 35px;
+    `
+
+const ArrowImg = Styled.img 
+    `
+    width: 40px;
+    height; 40px;
+    margin-top: 10px;
     `

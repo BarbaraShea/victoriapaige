@@ -37,7 +37,7 @@ export default About;
 
 const StyledAbout = Styled.div
     `
-    min-height: 100vh;
+    min-height: 95vh;
     display: block;
     align-items: left;
     justify-content: center;
@@ -47,8 +47,8 @@ const StyledAbout = Styled.div
 `
 const List = Styled.div
 `
-margin-left: 20px;
-margin-bottom: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 `
 
 const ImageContainer = Styled.div
@@ -56,6 +56,7 @@ const ImageContainer = Styled.div
     display: flex;
     align-items: left;
     justify-content: left;
+    margin-bottom: 10px;
 `
 
 const PicContainer = Styled.div
@@ -70,9 +71,10 @@ const PicContainer = Styled.div
 
 const Image = Styled.img
     `
-    width: 17%;
-    height: 12%;
-    margin-bottom: 15px;
+    width: 172px;
+    height: 67px;
+    left: 53px;
+    margin-bottom: 20px;
     `
 const Picture = Styled.img
     `

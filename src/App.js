@@ -6,7 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 //import 
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Work from "./Pages/Work";
+import Work from "./Pages/WorkGrid";
 import LandingPage from "./Pages/LandingPage";
 import TimeWells from "./Pages/TimeWells";
 import ForestryCamp from "./Pages/ForestryCamp";
@@ -23,7 +23,7 @@ function App() {
    <GlobalStyle />
    <Navbar/>
    <LandingPage exact path="/" component={LandingPage}/>
-   <Work exact path="/Work" component={Work}/>
+   <Work exact path="/WorkGrid" component={Work}/>
    <About exact path="/About" component={About}/>  
    <Contact exact path="/Contact" component={Contact}/>
    {/* <TimeWells exact path="/TimeWells" component={TimeWells}/>
