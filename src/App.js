@@ -23,9 +23,9 @@ function App() {
    <GlobalStyle />
    <Navbar/>
    <LandingPage exact path="/" component={LandingPage}/>
-   <Work exact path="/WorkGrid" component={Work}/>
+   {/* <Work exact path="/WorkGrid" component={Work}/>
    <About exact path="/About" component={About}/>  
-   <Contact exact path="/Contact" component={Contact}/>
+   <Contact exact path="/Contact" component={Contact}/> */}
    {/* <TimeWells exact path="/TimeWells" component={TimeWells}/>
    <ForestryCamp exact path="/ForestryCamp" component={ForestryCamp}/> 
    <ProjectThree exact path="/ProjectThree" component={ProjectThree}/>
