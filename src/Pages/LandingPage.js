@@ -1,6 +1,7 @@
 import React from 'react';
 import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { NavLink } from 'react-router-dom';
 // import { IoIosArrowDown } from "react-icons/io";
 import Arrow from '../images/Shape.png'
 import Hello from '../images/HelloImVictoria.png';
@@ -19,11 +20,12 @@ import ProfilePic from '../images/ProfilePic.png';
 import { IoIosArrowUp, IoMdMail, IoLogoLinkedin } from "react-icons/io";
 import LetsTalk from '../images/LetsTalk.png';
 import ArrowUp from '../images/ArrowUp.png';
-
+import Navbar from "../Components/Navbar";
 
 const LandingPage = () => {
     return (
         <>
+        <Navbar/>
         <Landing id="intro" class="landing">
         <IntroHeaderContainer>
             <Intro src={Hello} alt='Hello'/>
@@ -66,22 +68,28 @@ const LandingPage = () => {
         </WorkHeaderContainer> 
         <Row>     
             <Col size={2}> 
-                <TW src={TimeWells} alt="Project1"/>
+                <NavLink to="/Timewells">
+                <TW src={TimeWells} alt="Project1" to="/Timewells" />
                 {/* <TWoverlay className="overlay-tw" src={TWO}/> */}
+                </NavLink>
              </Col>
             <Col size={2}> 
-                <ATcont>
-                    <AT src={AllTrails} alt="Project3"/>
-                    <AToverlay className="overlay-at" src={ATO}/>
-                </ATcont>
+                <NavLink to="ForestryCamp">
+                <FCcont>  
+                    <FC src={ForestryCamp} alt="Project2"/>
+                    <FCoverlay className="overlay-fc" src={FCO}/>
+                </FCcont>
+                </NavLink>
             </Col>
         </Row>
         <Row>
             <Col size={1}> 
-             <FCcont>  
-                    <FC src={ForestryCamp} alt="Project2"/>
-                    <FCoverlay className="overlay-fc" src={FCO}/>
-                </FCcont>
+            <NavLink to="AllTrails">
+                 <ATcont>
+                    <AT src={AllTrails} alt="Project3"/>
+                    <AToverlay className="overlay-at" src={ATO}/>
+                </ATcont>
+            </NavLink>
             </Col>
             <Col size={1}> 
             </Col>

@@ -10,10 +10,9 @@ import Work from "./Pages/WorkGrid";
 import LandingPage from "./Pages/LandingPage";
 import TimeWells from "./Pages/TimeWells";
 import ForestryCamp from "./Pages/ForestryCamp";
-import ProjectThree from "./Pages/ProjectThree";
+import AllTrails from "./Pages/AllTrails";
 import ProjectFour from "./Pages/ProjectFour";
 import GlobalStyle from "./Components/GlobalStyle";
-import Navbar from "./Components/Navbar";
 
 
 function App() {
@@ -21,15 +20,16 @@ function App() {
    <>
    <Router>
    <GlobalStyle />
-   <Navbar/>
+   <Switch>
    <LandingPage exact path="/" component={LandingPage}/>
    {/* <Work exact path="/WorkGrid" component={Work}/>
    <About exact path="/About" component={About}/>  
    <Contact exact path="/Contact" component={Contact}/> */}
-   {/* <TimeWells exact path="/TimeWells" component={TimeWells}/>
-   <ForestryCamp exact path="/ForestryCamp" component={ForestryCamp}/> 
-   <ProjectThree exact path="/ProjectThree" component={ProjectThree}/>
-   <ProjectFour exact path="/ProjectFour" component={ProjectFour}/> */}
+   <Route exact path="/TimeWells" component={TimeWells}/>
+   <Route exact path="/ForestryCamp" component={ForestryCamp}/> 
+   <Route exact path="/AllTrails" component={AllTrails}/>
+   <Route exact path="/ProjectFour" component={ProjectFour}/>
+   </Switch>
    </Router>
    </>
   );

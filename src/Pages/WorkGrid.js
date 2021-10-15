@@ -1,7 +1,8 @@
 import React from 'react';
 // import { Link } from "react-router-dom";
 import Styled, { keyframes } from 'styled-components';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
+import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import WorkImg from '../images/Work.png';
 import ForestryCamp from '../images/ForestryCampOpener.png';
@@ -20,8 +21,10 @@ const Work = () => {
         </ImageContainer> 
         <Row>     
             <Col size={2}> 
+                <Link to="/Timewells">
                 <TW src={TimeWells} alt="Project1"/>
                 {/* <TWoverlay className="overlay-tw" src={TWO}/> */}
+                </Link>
              </Col>
             <Col size={2}> 
                 <FCcont>  
