@@ -7,7 +7,7 @@ import LogoText from '../images/logotype.png';
 import { NavLink } from 'react-router-dom';
 
 
-const FCNav = () => {
+const TWNav = () => {
     return (
     <>
     <StyledNav>
@@ -81,18 +81,18 @@ const FCNav = () => {
     )
 };
 
-export default FCNav;
+export default TWNav;
 
 const StyledNav = Styled.nav`
     float: right;
-    padding: 270px 115px 10px 10px;
-    font-size: 15px;
+    padding: 270px 160px 10px 10px;
+    font-size: 18px;
      ul {
         display: block;
         list-style: none;
     };
     li {
-        line-height: 2.5;
+        line-height: 2.2;
         text-align: right;
         :hover {
           color: #FF7864;
@@ -135,7 +135,7 @@ const LogoContainer = Styled.div
     padding: 0px;
     position: absolute;
     display: flex;
-    top: 15px;
+    top: 5px;
     right: 50px;
      :hover .hover-image {
         display: block;
