@@ -18,7 +18,8 @@ a {
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: var(--text-color);
+  font-weight: bold;
   cursor: pointer;
 }
 

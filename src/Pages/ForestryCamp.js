@@ -39,6 +39,15 @@ import FC2 from '../images/FC2.png';
 import TestCircle from '../images/TestsCircle.png';
 import BrandBanner from '../images/BrandBanner.png';
 import Reservation from '../images/Reservation.png';
+import Outpost from '../images/Outpost.png';
+import Time from '../images/Time.png';
+import FollowUpStar from '../images/FollowUpStar.png';
+import FollowUpRect from '../images/FollowUpRect.png';
+import FollowUp from '../images/FollowUp.png';
+import ArrowRight from '../images/ArrowRight.png';
+import White1 from '../images/White1.png';
+import White2 from '../images/White2.png';
+import White3 from '../images/White3.png';
 
 const ForestryCamp = () => {
     return (
@@ -215,6 +224,36 @@ const ForestryCamp = () => {
         <ReservationText2>
         <p> I also reduced the spacing between dining areas, so users would see they could scroll down here.</p>
         </ReservationText2>
+        <OutpostImg src={Outpost}/>
+        <OutpostText>
+        <p> My usability test showed users were confused which page they were on. I pulled some imagery from the original logo to help users know where they were.</p>
+        </OutpostText>
+        <TimeImg src={Time}/>
+        <TimeText>
+        <p> Test showed that users were confused why their original time chose (6:30) wasn't available. A quick sentence above the available times will solve that problem!</p>
+        </TimeText>
+        <PrototypeBan src={BrandBanner}/>
+        <ProtoText>
+        <p> <strong> See Prototype </strong></p>
+        </ProtoText>
+        <ArrowRightImg src={ArrowRight}/>
+        <FollowUpHeader id="follow" src={FollowUp}/>
+        <FollowStar src={FollowUpStar}/>
+        <FollowUpText>
+        <p> It was a great eperience working with such a wonderful and established team.</p>
+        </FollowUpText>    
+        <FinalRect src={FollowUpRect}/>
+        <W1 src={White1}/>
+        <W2 src={White2}/>
+        <W3 src={White3}/>
+        <FinalText>
+        <p><strong> Final Thoughts </strong></p>
+        <ul>
+            <li> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp</li>
+            <li> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature</li>
+            <li> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good. </li>
+        </ul>
+        </FinalText>
         </>
     )
 };
@@ -974,7 +1013,159 @@ const ReservationText2 = Styled.div
     left: 196px;
     top: 8600px;
     text-align: right;
-    margin-right: 580px;
+    margin-right: 600px;
+`
+
+const OutpostImg = Styled.img
+`
+position: absolute;
+width: 603px;
+height: 353px;
+left: 99px;
+top: 8880px;
+
+`
+const OutpostText = Styled.div
+`
+position: absolute;
+margin-right: 90px;
+left: 630px;
+top: 8930px;
+font-size: 19px;
+`
+const TimeImg = Styled.img
+`
+position: absolute;
+width: 504px;
+height: 588px;
+left: 94px;
+top: 9270px;
+
+`
+const TimeText = Styled.div
+`
+position: absolute;
+margin-right: 90px;
+left: 630px;
+top: 9480px;
+font-size: 19px;
+`
+
+const PrototypeBan = Styled.img
+`
+position: absolute;
+width: 219px;
+height: 61px;
+left: 70px;
+top: 9950px;
+
+`
+
+const ProtoText = Styled.div
+`
+position: absolute;
+left: 110px;
+top: 9965px;
+font-size: 19px;
+text-decoration: underline
+`
+
+const ArrowRightImg = Styled.img
+`
+position: absolute;
+left: 240px;
+top: 9965px;
+width: 15px;
+height: 27px;
+
+`
+
+const FollowUpHeader = Styled.img
+`
+position: absolute;
+width: 284px;
+height: 50px;
+left: 70px;
+top: 10100px;
+
+`
+
+const FollowStar = Styled.img
+`
+position: absolute;
+width: 60px;
+height: 60px;
+left: 353px;
+top: 10090px;
+
+`
+const FollowUpText = Styled.div
+`
+position: absolute;
+top: 10200px;
+left: 70px;
+font-size: 19px;
+`
+const FinalRect = Styled.img
+`
+position: absolute;
+width: 838px;
+height: 388px;
+left: 0px;
+top: 10280px;
+
+`
+
+const W1 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 10400px;
+
+`
+
+const W2 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 10500px;
+
+`
+const W3 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 10600px;
+
+`
+
+const FinalText = Styled.div
+
+`
+position: absolute;
+top: 10300px;
+color: #FFF1EC;
+p{
+    font-size: 23px;
+    margin-bottom: 60px;
+}
+ ul {
+        display: block;
+        list-style: none;
+        font-size: 19px;
+    }
+ li {
+        margin-left: 80px;
+        margin-right: 350px;
+        margin-bottom: 60px;
+
+ }
 
 
 `
