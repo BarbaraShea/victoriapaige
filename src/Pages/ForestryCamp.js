@@ -48,6 +48,8 @@ import ArrowRight from '../images/ArrowRight.png';
 import White1 from '../images/White1.png';
 import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
+import ArrowUp from '../images/ArrowUp.png';
+
 
 const ForestryCamp = () => {
     return (
@@ -249,11 +251,19 @@ const ForestryCamp = () => {
         <FinalText>
         <p><strong> Final Thoughts </strong></p>
         <ul>
-            <li> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp</li>
-            <li> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature</li>
+            <li> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp.</li>
+            <li> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature.</li>
             <li> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good. </li>
         </ul>
         </FinalText>
+         <Link 
+    activeClass="active"
+    to="intro"
+    spy={true}
+    smooth={true}
+    offset={-50}
+    duration={1000}
+    ><ArrowImgUp src={ArrowUp}/></Link> 
         </>
     )
 };
@@ -1169,3 +1179,11 @@ p{
 
 
 `
+
+const ArrowImgUp = Styled.img 
+    `
+    position: absolute;
+    width: 40px;
+    height; 40px;
+    top: 10700px;
+    `
