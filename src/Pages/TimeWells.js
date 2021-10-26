@@ -13,7 +13,15 @@ import Two from '../images/2.png';
 import Three from '../images/3.png';
 import ResearchHeader from '../images/research.png';
 import LoopHeader from '../images/loop.png';
-// import Rect from '../images/FollowUpRect.png';
+import Rect from '../images/FollowUpRect.png';
+import PersPics from '../images/PersonapPics.png';
+import White1 from '../images/White1.png';
+import White2 from '../images/White2.png';
+import White3 from '../images/White3.png';
+import White4 from '../images/White4.png';
+import Gap from '../images/Gap.png';
+import Asterisk from '../images/Asterisk.png';
+import TWLogo from '../images/TWLogo.png';
 
 
 const Timewells = () => {
@@ -57,6 +65,31 @@ const Timewells = () => {
         <Problem>
         <p>Timewells is offering a unique and brand new product to consumers. The company needs to present a trustworthy and understandable website and booking experience.</p>
         </Problem>
+         <RLoop src={LoopHeader} id="research"/>
+        <RHeader src={ResearchHeader}/>
+        <ResearchText>
+        <p><strong>Assume nothing.</strong></p>
+        <p id="para">Talking to users about their motivations and frustrations helped me contextualize and use data-drive decisions for my eventual final product solution. Because as we know, <strong> the designer is not the user.</strong></p>
+        <p id="after"><strong>My interviewees were all well-traveled and adventurous.</strong> I do wish I had more range of age for my initial research.</p>
+        </ResearchText>
+        <PersonaImg src={PersonaImg}/>
+        <InsightsRect src={Rect}/>
+        <W1 src={White1}/>
+        <W2 src={White2}/>
+        <W3 src={White3}/>
+        <W4 src={White4}/>
+        <InsightsText>
+        <p><strong> Major Insights </strong></p>
+        <ul>
+            <li> Users travel to feel outside of their normal day-to-day-self.</li>
+            <li> Users want to be abe to search by style and vibe of trip, not just by location.</li>
+            <li> Real reviews and pictures are incredibly important to build trust. </li>
+            <li> Cheap-looking websites are a major turnoff and prohibit purchases. </li>
+        </ul>
+        </InsightsText>
+        <GapHeader src={Gap} id="gap"/>
+        <Star src={Asterisk}/>
+        <LogoImg src={TWLogo}/>
         </>
     )
 };
@@ -201,4 +234,154 @@ top: 1015px;
     #p2 {
         margin-right: 220px;
     }
+`
+
+const RLoop = Styled.img
+
+`
+position: absolute;
+width: 398px;
+height: 89px;
+left: 32px;
+top: 1378px;
+
+`
+
+const RHeader = Styled.img
+`
+position: absolute;
+width: 283px;
+height: 43px;
+left: 74px;
+top: 1398px;
+`
+
+const ResearchText = Styled.div
+`
+position: absolute;
+left: 77px;
+top: 1500px;
+font-size: 25px;
+#para{
+    font-size: 19px;
+    margin-right: 320px;
+}
+#after{
+   font-size: 19px;
+   margin-right: 560px; 
+   margin-top: 300px;
+}
+`
+
+const PersonaImg = Styled.img
+`
+position: absolute;
+width: 774px;
+height: 164px;
+left: 70px;
+top: 1700px;
+
+`
+
+const InsightsRect = Styled.img
+`
+position: absolute;
+width: 882px;
+height: 420px;
+left: 0px;
+top: 2050px;
+
+`
+
+const W1 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 2180px;
+
+`
+
+const W2 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 2250px;
+
+`
+const W3 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 2320px;
+
+`
+
+const W4 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 2390px;
+
+`
+
+const InsightsText = Styled.div
+
+`
+position: absolute;
+top: 2100px;
+color: #FFF1EC;
+p{
+    font-size: 23px;
+    margin-bottom: 55px;
+}
+ ul {
+        display: block;
+        list-style: none;
+        font-size: 19px;
+    }
+ li {
+        margin-left: 80px;
+        margin-right: 350px;
+        margin-bottom: 48px;
+
+ }
+
+
+`
+
+const GapHeader = Styled.img
+`
+position: absolute;
+width: 173px;
+height: 36px;
+left: 70px;
+top: 2560px;
+`
+
+const Star = Styled.img
+`
+position: absolute;
+width: 60px;
+height: 64px;
+left: 240px;
+top: 2550px;
+`
+
+const LogoImg = Styled.img
+`
+position: absolute;
+width: 190px;
+height: 177px;
+left: 174px;
+top: 2650px;
+
+
 `
