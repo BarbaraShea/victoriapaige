@@ -65,9 +65,9 @@ p {
   line-height: 1.5;
 };
 
-li > .active {
-  border-bottom: 1px solid var(--accent-color);
-}
+// li > .active {
+//   border-bottom: 1px solid var(--accent-color);
+// }
 
 .navbar {
   position: fixed;

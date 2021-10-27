@@ -189,8 +189,7 @@ const ForestryCamp = () => {
             <p id="wireframe-text"> Once I knew the direction I wanted to pursue, I made responsive wireframes in Figma. I played around with a chessboard layout, and <strong>heavy utilization of negative space</strong> to fulfill the elevated vibe the team was going for.</p>
             <p id="style-header"><strong>Style Guide</strong></p>
             <p id="style-text"> This was fun. Research showed that fancy restaurants use <strong>minimal color schemes, serif fonts,</strong> and super nice photos. </p>
-            <p id="style-text-2"> I wanted to chose fonts that speak to FC's <strong> focus on restoration and nature, </strong> and use colors that are regularly in the brand's photography.</p>
-            
+            <p id="style-text-2"> I wanted to chose fonts that speak to FC's <strong> focus on restoration and nature, </strong> and use colors that are regularly in the brand's photography.</p> 
         </MethodText>
         <UserFlowImg src={UserFlow}/>
         <SketchesImg src={Sketches}/>
