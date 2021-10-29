@@ -36,6 +36,17 @@ import UserFlow from '../images/UserflowTW.png';
 import Sketch from '../images/SketchTW.png';
 import Wireframe from '../images/WireframeTW.png';
 import BrandUI from '../images/BrandUITW.png';
+import TestCircle from '../images/TestsCircle.png';
+import TestPic1 from '../images/TestPic1.png';
+import TestPic2 from '../images/TestPic2.png';
+import TestPic3 from '../images/TestPic3.png';
+import FollowUpStar from '../images/FollowUpStar.png';
+import FollowUpRect from '../images/FollowUpRect.png';
+import FollowUp from '../images/FollowUp.png';
+import ArrowRight from '../images/ArrowRight.png';
+import ArrowUp from '../images/ArrowUp.png';
+import BrandBanner from '../images/BrandBanner.png';
+
 
 
 const Timewells = () => {
@@ -149,6 +160,70 @@ const Timewells = () => {
         <SketchImg src={Sketch}/>
         <WireframeImg src={Wireframe}/>
         <BrandUIImg src={BrandUI}/>
+        <TestBanner id="test" src={TestCircle}/>
+        <TestText>
+        <p> I had five new users in the target demographic test out the website via a Figma prototype.</p>
+        </TestText>
+         <TestTable>
+            <table>
+            <tr>
+                <td class="table-header"><strong>Wins:</strong></td>
+                <td>
+                    <ul>
+                    <li>5/5 were able to filter a trip based on need.</li>
+                    <li>4/5 were able to contact a real traveler for more info.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-header"><strong>Edits:</strong></td>
+                <td>Overall feedback was that links weren't clear, pictures should be clickable, and more descriptors were needed. Valid.</td>
+            </tr>
+          
+            </table>
+        </TestTable>
+        <Test1Img src={TestPic1}/>
+        <Test2Img src={TestPic2}/>
+        <Test3Img src={TestPic3}/>
+        <TestText1>
+        <p> Imagery and description changes</p>
+        </TestText1>
+         <TestText2>
+        <p> Hoverable link interactions</p>
+        </TestText2>
+         <TestText3>
+        <p> Informative pop-up overlays</p>
+        </TestText3>
+        <PrototypeBan src={BrandBanner}/>
+        <ProtoText>
+        <p> <strong> See Prototype </strong></p>
+        </ProtoText>
+        <ArrowRightImg src={ArrowRight}/>
+        <FollowUpHeader id="follow" src={FollowUp}/>
+        <FollowStar src={FollowUpStar}/>
+        <FollowUpText>
+        <p> This was my first experience designing a product from end to end. I learned so much about my own work flow and what makes sense to my brain as I moved through the process.</p>
+        </FollowUpText>    
+        <FinalRect src={FollowUpRect}/>
+        <WC1 src={White1}/>
+        <WC2 src={White2}/>
+        <WC3 src={White3}/>
+        <FinalText>
+        <p><strong> Final Thoughts </strong></p>
+        <ul>
+            <li> I has way too many assumptions in my initial interview research.</li>
+            <li> Most of my users wanted to click on pictures rather than text, which allowed fun revisions.</li>
+            <li> My debriefings from usability testing showed some key insights that would have helped with my original design - such as a chat feature! </li>
+        </ul>
+        </FinalText>
+         <Link 
+    activeClass="active"
+    to="intro"
+    spy={true}
+    smooth={true}
+    offset={-50}
+    duration={1000}
+    ><ArrowImgUp src={ArrowUp}/></Link> 
         </>
     )
 };
@@ -595,20 +670,20 @@ top: 4980px;
 const SketchImg = Styled.img
 `
 position: absolute;
-width: 504px;
-height: 654px;
+width: 503px;
+height: 296px;
 left: 67px;
-top: 5910px;
+top: 5580px;
 
 `
 
 const WireframeImg = Styled.img
 `
 position: absolute;
-width: 504px;
-height: 654px;
+width: 512px;
+height: 635px;
 left: 67px;
-top: 5910px;
+top: 6015px;
 
 `
 const BrandUIImg = Styled.img
@@ -617,7 +692,7 @@ position: absolute;
 width: 504px;
 height: 654px;
 left: 67px;
-top: 5910px;
+top: 6820px;
 
 `
 const MethodText = Styled.div
@@ -666,35 +741,278 @@ font-size: 19px;
 }
 #sketch-header {
    position: absolute;
-   top: 6620px;
+   top: 5500px;
    font-size: 25px;
    margin-left: 15px;
 }
 #sketch-text {
    position: absolute;
-   top: 6790px;
+   top: 5640px;
    font-size: 19px;
    margin-left: 550px;
    margin-right: 300px;
 }
 #wireframe-header {
    position: absolute;
-   top: 6620px;
+   top: 5930px;
    font-size: 25px;
    margin-left: 15px;
 }
 #wireframe-text {
    position: absolute;
-   top: 6790px;
+   top: 6190px;
    font-size: 19px;
    margin-left: 550px;
    margin-right: 300px;
 }
 #wireframe-text2 {
    position: absolute;
-   top: 6790px;
+   top: 6355px;
+   font-size: 19px;
+   margin-left: 550px;
+   margin-right: 300px;
+}
+#branding-header {
+   position: absolute;
+   top: 6720px;
+   font-size: 25px;
+   margin-left: 15px;
+}
+#branding-text {
+   position: absolute;
+   top: 7030px;
+   font-size: 19px;
+   margin-left: 550px;
+   margin-right: 300px;
+}
+#branding-text2 {
+   position: absolute;
+   top: 7230px;
    font-size: 19px;
    margin-left: 550px;
    margin-right: 300px;
 }
 `
+
+const TestBanner = Styled.img
+`
+position: absolute;
+width: 401px;
+height: 92px;
+left: 63px;
+top: 7550px;
+
+`
+
+const TestTable = Styled.div
+    `
+    position: absolute;
+    height: 46px;
+    left: 50px;
+    right: 290px;
+    top: 7750px;
+    
+     ul {
+        display: block;
+        list-style: none;
+    };
+    li {
+        text-align: left;
+    }
+    td {
+    vertical-align: center;
+    padding: 15px;
+    font-size: 18px;
+    }
+    .table-header {
+        font-size: 22px;
+    }
+    `
+const TestText = Styled.div
+`
+    position: absolute;
+    font-size: 19px;
+    top: 7690px;
+
+`
+
+const Test1Img =Styled.img
+`
+position: absolute;
+width: 769px;
+height: 565px;
+left: 66px;
+top: 7950px;
+
+`
+
+const Test2Img =Styled.img
+`
+position: absolute;
+width: 769px;
+height: 565px;
+left: 66px;
+top: 8580px;
+
+`
+const Test3Img =Styled.img
+`
+position: absolute;
+width: 769px;
+height: 565px;
+left: 66px;
+top: 9200px;
+
+`
+
+const TestText1 = Styled.div
+`
+position: absolute;
+top: 8200px;
+font-size: 16px;
+left: 550px;
+`
+
+const TestText2 = Styled.div
+`
+position: absolute;
+top: 8830px;
+font-size: 16px;
+left: 550px;
+`
+
+const TestText3 = Styled.div
+`
+position: absolute;
+top: 9440px;
+font-size: 16px;
+left: 550px;
+`
+
+const PrototypeBan = Styled.img
+`
+position: absolute;
+width: 219px;
+height: 61px;
+left: 70px;
+top: 9850px;
+
+`
+
+const ProtoText = Styled.div
+`
+position: absolute;
+left: 110px;
+top: 9865px;
+font-size: 19px;
+text-decoration: underline
+`
+
+const ArrowRightImg = Styled.img
+`
+position: absolute;
+left: 240px;
+top: 9865px;
+width: 15px;
+height: 27px;
+
+`
+
+const FollowUpHeader = Styled.img
+`
+position: absolute;
+width: 284px;
+height: 50px;
+left: 70px;
+top: 10000px;
+
+`
+
+const FollowStar = Styled.img
+`
+position: absolute;
+width: 60px;
+height: 60px;
+left: 353px;
+top: 9990px;
+
+`
+const FollowUpText = Styled.div
+`
+position: absolute;
+top: 10100px;
+left: 70px;
+font-size: 19px;
+margin-right: 160px;
+`
+const FinalRect = Styled.img
+`
+position: absolute;
+width: 838px;
+height: 388px;
+left: 0px;
+top: 10180px;
+
+`
+
+const WC1 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 10300px;
+
+`
+
+const WC2 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 10400px;
+
+`
+const WC3 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 10500px;
+
+`
+
+const FinalText = Styled.div
+
+`
+position: absolute;
+top: 10210px;
+color: #FFF1EC;
+p{
+    font-size: 23px;
+    margin-bottom: 60px;
+}
+ ul {
+        display: block;
+        list-style: none;
+        font-size: 19px;
+    }
+ li {
+        margin-left: 80px;
+        margin-right: 350px;
+        margin-bottom: 60px;
+
+ }
+
+
+`
+
+const ArrowImgUp = Styled.img 
+    `
+    position: absolute;
+    width: 40px;
+    height; 40px;
+    top: 10700px;
+    `
