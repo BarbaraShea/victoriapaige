@@ -22,9 +22,6 @@ function App() {
    <GlobalStyle />
    <Switch>
    <LandingPage exact path="/" component={LandingPage}/>
-   {/* <Work exact path="/WorkGrid" component={Work}/>
-   <About exact path="/About" component={About}/>  
-   <Contact exact path="/Contact" component={Contact}/> */}
    <Route exact path="/TimeWells" component={TimeWells}/>
    <Route exact path="/ForestryCamp" component={ForestryCamp}/> 
    <Route exact path="/AllTrails" component={AllTrails}/>

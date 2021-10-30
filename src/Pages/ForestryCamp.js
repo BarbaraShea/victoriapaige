@@ -3,7 +3,7 @@ import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
 import FCHeader from '../images/ForestryHeader.png';
-import FCNav from "../Components/FCNav";
+import FCNav from "../Components/FCNav.js";
 import FCDevice from '../images/FCdevice.png';
 import FCCircle from '../images/FCcircle.png';
 import FCVector from '../images/FCvector.png';

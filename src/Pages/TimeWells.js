@@ -11,22 +11,19 @@ import NumCir from '../images/numcircle.png';
 import One from '../images/1.png';
 import Two from '../images/2.png';
 import Three from '../images/3.png';
-import ResearchHeader from '../images/research.png';
-import LoopHeader from '../images/loop.png';
+import ResearchHeader from '../images/ResearchHeader.png';
 import Rect from '../images/FollowUpRect.png';
-// import PersPics from '../images/PersonapPics.png';
+import PersPics from '../images/PersonapPics.png';
 import White1 from '../images/White1.png';
 import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
 import White4 from '../images/White4.png';
-import Gap from '../images/Gap.png';
-import Asterisk from '../images/Asterisk.png';
+import Gap from '../images/GapHeader.png';
 import TWLogo from '../images/TWLogo.png';
 import Lady from '../images/LadyPic.png';
 import Man from '../images/ManPic.png';
 import GapBanner from '../images/BrandBanner.png';
-import Check from '../images/Check.png';
-import Solution from '../images/Solution.png';
+import Solution from '../images/SolutionHeader.png';
 import TWMockup from '../images/TWMockup.png';
 import Method from '../images/Method.png';
 import MethodBanner from '../images/MethodBanner.png';
@@ -90,14 +87,13 @@ const Timewells = () => {
         <Problem>
         <p>Timewells is offering a unique and brand new product to consumers. The company needs to present a trustworthy and understandable website and booking experience.</p>
         </Problem>
-         <RLoop src={LoopHeader} id="research"/>
-        <RHeader src={ResearchHeader}/>
+        <RHeader src={ResearchHeader} id="research"/>
         <ResearchText>
         <p><strong>Assume nothing.</strong></p>
         <p id="para">Talking to users about their motivations and frustrations helped me contextualize and use data-drive decisions for my eventual final product solution. Because as we know, <strong> the designer is not the user.</strong></p>
         <p id="after"><strong>My interviewees were all well-traveled and adventurous.</strong> I do wish I had more range of age for my initial research.</p>
         </ResearchText>
-        {/* <PersonaImg src={PersonaImg}/> */}
+        <PersonaImg src={PersPics}/>
         <InsightsRect src={Rect}/>
         <W1 src={White1}/>
         <W2 src={White2}/>
@@ -113,7 +109,6 @@ const Timewells = () => {
         </ul>
         </InsightsText>
         <GapHeader src={Gap} id="gap"/>
-        <Star src={Asterisk}/>
         <LogoImg src={TWLogo}/>
         <LadyImg src={Lady}/>
         <ManImg src={Man}/>
@@ -128,7 +123,6 @@ const Timewells = () => {
          <p> My users were very excited about time travel and had a lot of ideas for a good product experience. It would have been intersting to try and find solutions for everything, but results would be muddled.</p>
         </BannerText>
         <SolutionHeader src={Solution}/>
-        <CheckMark src={Check}/>
         <SolutionImg src={TWMockup}/>
         <SolutionText1>
         <p><strong> A multi-level filter feature </strong> so users can search for trips in myriad ways, depending on their personal inclination.</p>
@@ -384,8 +378,8 @@ top: 1378px;
 const RHeader = Styled.img
 `
 position: absolute;
-width: 283px;
-height: 43px;
+width: 303px;
+height: 70px;
 left: 74px;
 top: 1398px;
 `
@@ -494,19 +488,10 @@ p{
 const GapHeader = Styled.img
 `
 position: absolute;
-width: 173px;
-height: 36px;
+width: 220px;
+height: 64px;
 left: 70px;
 top: 2560px;
-`
-
-const Star = Styled.img
-`
-position: absolute;
-width: 60px;
-height: 64px;
-left: 240px;
-top: 2550px;
 `
 
 const LogoImg = Styled.img
@@ -573,20 +558,10 @@ top: 2920px;
 const SolutionHeader = Styled.img
 `
 position: absolute;
-width: 304px;
+width: 374px;
 height: 44px;
-left: 68px;
+left: 74px;
 top: 3100px;
-
-`
-
-const CheckMark = Styled.img
-`
-position: absolute;
-width: 65px;
-height: 60px;
-left: 378px;
-top: 3070px;
 
 `
 
