@@ -19,6 +19,13 @@ import Needs from '../images/needs.png';
 import Gap from '../images/GapHeader.png';
 import Solution from '../images/SolutionHeader.png';
 import Apps from '../images/AppScreens.png';
+import Method from '../images/MethodHeader.png';
+import Lora from '../images/LoraPersona.png';
+import Storyboard from '../images/Storyboard.png';
+import Wireframe from '../images/ATWireframe.png';
+import Safety from '../images/Safety.png';
+import Accessibility from '../images/Accessibility.png';
+import Inclusivity from '../images/Inclusivity.png';
 
 const AllTrails = () => {
     return (
@@ -100,6 +107,53 @@ const AllTrails = () => {
              <p id="p5">Optional disclosure to encourage comfort</p>
              <p id="p6">A “what’s this?” feature</p>
         </SolutionText1>
+        <MethodHeader id="method" src={Method}/>
+        <MethodText>
+            <p id="user-header"><strong>User Persona</strong></p>
+            <p id="user-text">My girl Lora was an amalgamation of all my user interviews and research. Lora knows what she wants and needs, and I designed for her. </p>
+            <p id="feature-header"><strong>Feature List</strong></p>
+            <p id="feature-text">This was an all-encompassing list of what each subcategory (safety, accessibility, and inclusivity) would require to help people feel comfortable on a trail.<strong> This helped me put the rubber (boot sole) to the road.</strong></p>
+            <ul id="safety">
+                <li> Signage </li>
+                <li> Clarity of trail markers </li>    
+                <li> Cell service </li>
+                <li>Distance to closest hospital</li>
+                <li>Presence of rangers</li>
+                <li>Downed trees</li>
+                <li>Presence of wildlife predation</li>
+                <li>Open carry allowed (firearms)</li>
+                <li>Emergency contact info</li>
+            </ul>
+            <ul id="inclusivity">
+                <li>Allow self-identification for aggregated rating scores of inclusivity </li>
+                <li>Non-English speakers</li>
+                <li>BIPOC</li>
+                <li>Non-neurotypical</li>
+                <li>Native land acknowledgement</li>
+                <li>Age (safe for little ones or for seniors)</li>
+                <li>Easy to social distance for immunocompromised folks</li>
+            </ul>
+            <ul id="accessibility">
+                <li>Easy for 2WD cars</li> 
+                <li>Accessible parking</li>
+                <li>Technicality rating (roots/rocks/etc)</li>
+                <li>Upper body strength/dexterity</li>
+                <li>Stable footing required</li>
+                <li>Ability to climb over something</li>
+                <li>Accessible by public transit</li> 
+                <li>Step-free trail (low grade, no rocks)</li>
+            </ul>
+            <p id="story-header"><strong>Storyboard</strong></p>
+            <p id="story-text"> This narative piece felt helpful for me as I know adding these type of features <strong>require a lot of buy-in from stakeholders.</strong> Here I’m able to show how an actual hiker would be looking for particular information.</p>
+            <p id="wireframe-header"><strong>Wireframe</strong></p>
+            <p id="wireframe-text">To add a feature, I needed to incorporate a wireframe into Alltrails’ existing UI and layout. <strong>The constraints made it easier than other projects,</strong> which I found refreshing. </p>
+        </MethodText>
+        <LoraImg src={Lora}/>
+        <SafetyList src={Safety}/>
+        <InclusivityList src={Inclusivity}/>
+        <AccessibilityList src={Accessibility}/>
+        <StoryImg src={Storyboard}/>
+        <WireframeImg src={Wireframe}/>
          </>
     )
 };
@@ -117,14 +171,9 @@ const ATHeaderContainer = Styled.div
 const AT = Styled.img
     `
     position: absolute;
-    left: 3.58%;
-    right: 61.08%;
-    top: 6.5%;
     width: 415px;
     height: 40px;
     `
-
-
 
 const Table = Styled.div
     `
@@ -427,4 +476,153 @@ text-align: center;
    margin-left: 590px;
    margin-right: 380px;
    text-align: center;}
+`
+
+const MethodHeader = Styled.img
+
+`
+position: absolute;
+width: 349px;
+height: 96px;
+left: 70px;
+top: 5200px;
+`
+
+const LoraImg = Styled.img
+`
+position: absolute;
+width: 511px;
+height: 336px;
+left: 70px;
+top: 5400px;
+
+`
+
+const StoryImg = Styled.img
+
+`
+position: absolute;
+width: 511px;
+height: 323px;
+left: 65px;
+top: 6360px;
+
+
+`
+
+const MethodText = Styled.div
+`
+font-size: 19px;
+#user-header {
+   position: absolute;
+   top: 5330px;
+   font-size: 25px;
+   margin-left: 15px;
+}
+#user-text {
+   position: absolute;
+   top: 5500px;
+   font-size: 19px;
+   margin-left: 550px;
+    margin-right: 300px;
+}
+#feature-header {
+   position: absolute;
+   top: 5785px;
+   font-size: 25px;
+   margin-left: 15px;
+}
+#feature-text {
+   position: absolute;
+   top: 5860px;
+   font-size: 19px;
+   margin-left: 15px;
+margin-right: 300px;
+
+}
+#safety{
+   position: absolute;
+   top: 6040px;
+   left: 90px;
+   font-size: 16px;
+}
+#inclusivity{
+   position: absolute;
+   top: 6040px;
+   left: 340px;
+   font-size: 16px;
+   margin-right: 600px;
+}
+#accessibility{
+   position: absolute;
+   top: 6040px;
+   left: 640px;
+   font-size: 16px;
+   margin-right: 280px;
+}
+}
+#story-header {
+   position: absolute;
+   top: 6300px;
+   font-size: 25px;
+   margin-left: 15px;
+}
+#story-text {
+   position: absolute;
+   top: 6450px;
+   font-size: 19px;
+   margin-left: 550px;
+    margin-right: 300px;
+
+}
+#wireframe-header {
+   position: absolute;
+   top: 6730px;
+   font-size: 25px;
+   margin-left: 15px;
+}
+#wireframe-text {
+   position: absolute;
+   top: 6900px;
+   font-size: 19px;
+   margin-left: 550px;
+    margin-right: 300px;
+
+}
+`
+const SafetyList = Styled.img
+`
+position: absolute;
+width: 99px;
+height: 31px;
+left: 70px;
+top: 5985px;
+`
+
+const InclusivityList = Styled.img
+`
+position: absolute;
+width: 138px;
+height: 28px;
+left: 320px;
+top: 5985px;
+`
+
+const AccessibilityList = Styled.img
+`
+position: absolute;
+width: 159px;
+height: 28px;
+left: 590px;
+top: 5985px;
+`
+
+const WireframeImg = Styled.img
+`
+position: absolute;
+width: 512px;
+height: 292px;
+left: 65px;
+top: 6800px;
+
 `

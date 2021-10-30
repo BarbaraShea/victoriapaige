@@ -25,8 +25,7 @@ import Man from '../images/ManPic.png';
 import GapBanner from '../images/BrandBanner.png';
 import Solution from '../images/SolutionHeader.png';
 import TWMockup from '../images/TWMockup.png';
-import Method from '../images/Method.png';
-import MethodBanner from '../images/MethodBanner.png';
+import Method from '../images/MethodHeader.png';
 import UserPersona from '../images/SamPersona.png';
 import TaskFlow from '../images/TaskFlowTW.png';
 import UserFlow from '../images/UserflowTW.png';
@@ -130,7 +129,6 @@ const Timewells = () => {
          <SolutionText2>
         <p><strong> An "ask a real traveler" feature </strong> to help simultaneously meet user needs of wanting in-deth information and Timewells' need to build trust in their product.</p>
         </SolutionText2>
-        <MBanner src={MethodBanner}/>
         <MethodHeader id="method" src={Method}/>
         <MethodText>
             <p id="user-header"><strong>User Persona</strong></p>
@@ -598,21 +596,11 @@ const MethodHeader = Styled.img
 
 `
 position: absolute;
-width: 306px;
-height: 40px;
+width: 349px;
+height: 96px;
 left: 70px;
 top: 3900px;
 `
-
-const MBanner = Styled.img
-`
-position: absolute;
-width: 349px;
-height: 95px;
-left: 55px;
-top: 3875px;
-`
-
 
 const UserPersonaImg = Styled.img
 `
