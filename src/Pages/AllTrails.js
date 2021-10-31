@@ -26,6 +26,22 @@ import Wireframe from '../images/ATWireframe.png';
 import Safety from '../images/Safety.png';
 import Accessibility from '../images/Accessibility.png';
 import Inclusivity from '../images/Inclusivity.png';
+import TestCircle from '../images/TestsCircle.png';
+import NumCir from '../images/numcircle.png';
+import One from '../images/1.png';
+import Two from '../images/2.png';
+import ArrowRight from '../images/ArrowRight.png';
+import Test1 from '../images/TestImg1.png'
+import Test2 from '../images/TestImg2.png'
+import Test3 from '../images/TestImg3.png'
+import BrandBanner from '../images/BrandBanner.png';
+import FollowUpRect from '../images/FollowUpRect.png';
+import White1 from '../images/White1.png';
+import White2 from '../images/White2.png';
+import White3 from '../images/White3.png';
+import FollowUp from '../images/FollowUp.png';
+import Return from '../images/Return.png'
+
 
 const AllTrails = () => {
     return (
@@ -154,6 +170,60 @@ const AllTrails = () => {
         <AccessibilityList src={Accessibility}/>
         <StoryImg src={Storyboard}/>
         <WireframeImg src={Wireframe}/>
+        <TestHeader id="test" src={TestCircle}/>
+         <Test>
+        <p>A usability test was conducted with four participants in the target audience. </p>
+        <p><strong>Research Goals</strong></p>
+        </Test>
+        <Number1 src={NumCir}/>
+        <NumberOne src={One}/>
+        <Number2 src={NumCir}/>
+        <NumberTwo src={Two}/>
+        <TestBullets>
+        <p>Notice safety/accessibility/inclusivity features</p>
+        <p>Use filters to find an accessible hike and leave a review.</p>
+        <p id="final"> All four particpants successfully completed each goal. </p>
+        </TestBullets>
+         <TestImg1 src={Test1}/>
+        <Test1Text>
+        <p>“I really like that it says the hike is rated by the community - it’s not just some nebulous statement.”</p>
+        </Test1Text>
+        <Test1Text2>
+        <p>I increased the contrast and added a background to the female hiker rating, since one user didn’t see it during testing.</p>
+        </Test1Text2>
+        <TestImg2 src={Test2}/>
+        <Test2Text>
+        <p> All of my users thought the blue pill buttons were colored differently because that was what they selected when filtering a hike. I added titles to ease clarity.</p>
+        </Test2Text>
+        <Test2Text2>
+        <p> “The 2WD indicator is amazing! I always wish I knew things like that ahead of time.”</p>
+        </Test2Text2>
+        <TestImg3 src={Test3}/>
+        <Test3Text>
+        <p> “I wish there was a place on the trail conditions to note that I had to turn around.”</p>
+        </Test3Text>
+        <Test3Text2>
+        <p>I added a “did you have to end your hike early?” question so people could indicate this on their trail report to help future hikers.</p>
+        </Test3Text2>
+        <PrototypeBan src={BrandBanner}/>
+        <ProtoText>
+        <p> <strong> See Prototype </strong></p>
+        </ProtoText>
+        <ArrowRightImg src={ArrowRight}/>
+        <FollowUpHeader id="follow" src={FollowUp}/> 
+        <FinalRect src={FollowUpRect}/>
+        <WC1 src={White1}/>
+        <WC2 src={White2}/>
+        <WC3 src={White3}/>
+        <FinalText>
+        <p><strong> Final Thoughts </strong></p>
+        <ul>
+            <li> The swath of people I’m desigining for in this case study was huge. It could have been more focused if I’d stuck with one subgroup.</li>
+            <li> I don’t feel like I did a great job finding a solution for women being scared of running into men with firearms on trails.  More research, please!</li>
+            <li> The features seemed to be integrated smoothly. Most of my test subjects thought it was a real feature at first!  </li>
+        </ul>
+        </FinalText>
+         <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
          </>
     )
 };
@@ -626,3 +696,278 @@ left: 65px;
 top: 6800px;
 
 `
+
+const TestHeader = Styled.img
+`
+position: absolute;
+width: 401px;
+height: 92px;
+left: 63px;
+top: 7150px;
+
+`
+
+
+const Number1 = Styled.img
+`
+position: absolute;
+width: 28px;
+height: 28px;
+left: 92px;
+top: 7395px;
+`
+
+const Number2 = Styled.img
+
+`
+position: absolute;
+width: 28px;
+height: 28px;
+left: 92px;
+top: 7450px;
+`
+
+
+const NumberOne = Styled.img
+
+`
+position: absolute;
+width: 7px;
+height: 17px;
+left: 101px;
+top: 7400px;
+`
+
+const NumberTwo = Styled.img
+`
+position: absolute;
+width: 11px;
+height: 18px;
+left: 100px;
+top: 7455px;
+
+`
+
+
+const TestBullets = Styled.div
+`
+position: absolute;
+width: 860px;
+height: 60px;
+left: 160px;
+top: 7400px;
+    p{
+        margin-bottom: 32px;
+        margin-right: 170px;
+        font-size: 19px;
+        line-height: 1.2;
+    }
+    #final{
+        margin-top: 40px;
+        margin-left: -100px;
+    }
+`
+
+const Test = Styled.div
+`
+position: absolute;
+line-height: 1.2;
+left: 64px;
+top: 7300px;
+right: 140px;
+ p {
+    font-size: 19px;
+    font-weight: 500;
+    }
+`
+
+const PrototypeBan = Styled.img
+`
+position: absolute;
+width: 219px;
+height: 61px;
+left: 70px;
+top: 9800px;
+
+`
+
+const ProtoText = Styled.div
+`
+position: absolute;
+left: 110px;
+top: 9815px;
+font-size: 19px;
+text-decoration: underline
+`
+
+const ArrowRightImg = Styled.img
+`
+position: absolute;
+left: 240px;
+top: 9815px;
+width: 15px;
+height: 27px;
+
+`
+
+const TestImg1 = Styled.img
+`
+position: absolute;
+width: 755px;
+height: 689px;
+left: 70px;
+top: 7580px;
+`
+
+const Test1Text = Styled.div
+`
+position: absolute;
+margin-right: 190px;
+left: 590px;
+top: 7680px;
+font-size: 19px;
+`
+const Test1Text2 = Styled.div
+`
+position: absolute;
+margin-right: 120px;
+left: 590px;
+top: 7950px;
+font-size: 19px;
+`
+
+const TestImg2 = Styled.img
+`
+position: absolute;
+width: 537px;
+height: 574px;
+left: 99px;
+top: 8330px;
+
+`
+const Test2Text = Styled.div
+`
+position: absolute;
+margin-right: 140px;
+left: 640px;
+top: 8590px;
+font-size: 19px;
+`
+const Test2Text2 = Styled.div
+`
+position: absolute;
+margin-right: 640px;
+left: 150px;
+top: 8700px;
+font-size: 19px;
+`
+
+const TestImg3 = Styled.img
+`
+position: absolute;
+width: 744px;
+height: 789px;
+left: 94px;
+top: 8950px;
+
+`
+const Test3Text = Styled.div
+`
+position: absolute;
+margin-right: 210px;
+left: 540px;
+top: 9100px;
+font-size: 19px;
+`
+
+const Test3Text2 = Styled.div
+`
+position: absolute;
+margin-right: 90px;
+left: 630px;
+top: 9400px;
+font-size: 19px;
+`
+
+const FollowUpHeader = Styled.img
+`
+position: absolute;
+width: 392px;
+height: 42px;
+left: 70px;
+top: 9950px;
+
+`
+
+const FinalRect = Styled.img
+`
+position: absolute;
+width: 838px;
+height: 388px;
+left: 0px;
+top: 10090px;
+
+`
+
+const WC1 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 10215px;
+
+`
+
+const WC2 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 10315px;
+
+`
+const WC3 = Styled.img
+`
+position: absolute;
+width: 26px;
+height: 26px;
+left: 94px;
+top: 10420px;
+
+`
+
+const FinalText = Styled.div
+
+`
+position: absolute;
+top: 10120px;
+color: #FFF1EC;
+p{
+    font-size: 23px;
+    margin-bottom: 60px;
+}
+ ul {
+        display: block;
+        list-style: none;
+        font-size: 19px;
+    }
+ li {
+        margin-left: 80px;
+        margin-right: 350px;
+        margin-bottom: 60px;
+
+ }
+
+
+`
+
+const ReturnImg = Styled.img 
+    `
+    position: absolute;
+    width: 239px;
+    height: 27px;
+    left: 63px;
+    top: 10550px;
+    `

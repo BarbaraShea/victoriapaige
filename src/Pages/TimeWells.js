@@ -36,11 +36,10 @@ import TestCircle from '../images/TestsCircle.png';
 import TestPic1 from '../images/TestPic1.png';
 import TestPic2 from '../images/TestPic2.png';
 import TestPic3 from '../images/TestPic3.png';
-import FollowUpStar from '../images/FollowUpStar.png';
 import FollowUpRect from '../images/FollowUpRect.png';
 import FollowUp from '../images/FollowUp.png';
 import ArrowRight from '../images/ArrowRight.png';
-import ArrowUp from '../images/ArrowUp.png';
+import Return from '../images/Return.png'
 import BrandBanner from '../images/BrandBanner.png';
 
 
@@ -152,7 +151,7 @@ const Timewells = () => {
         <SketchImg src={Sketch}/>
         <WireframeImg src={Wireframe}/>
         <BrandUIImg src={BrandUI}/>
-        <TestBanner id="test" src={TestCircle}/>
+        <TestHeader id="test" src={TestCircle}/>
         <TestText>
         <p> I had five new users in the target demographic test out the website via a Figma prototype.</p>
         </TestText>
@@ -192,7 +191,6 @@ const Timewells = () => {
         </ProtoText>
         <ArrowRightImg src={ArrowRight}/>
         <FollowUpHeader id="follow" src={FollowUp}/>
-        <FollowStar src={FollowUpStar}/>
         <FollowUpText>
         <p> This was my first experience designing a product from end to end. I learned so much about my own work flow and what makes sense to my brain as I moved through the process.</p>
         </FollowUpText>    
@@ -208,14 +206,7 @@ const Timewells = () => {
             <li> My debriefings from usability testing showed some key insights that would have helped with my original design - such as a chat feature! </li>
         </ul>
         </FinalText>
-         <Link 
-    activeClass="active"
-    to="intro"
-    spy={true}
-    smooth={true}
-    offset={-50}
-    duration={1000}
-    ><ArrowImgUp src={ArrowUp}/></Link> 
+        <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
         </>
     )
 };
@@ -757,7 +748,7 @@ font-size: 19px;
 }
 `
 
-const TestBanner = Styled.img
+const TestHeader = Styled.img
 `
 position: absolute;
 width: 401px;
@@ -891,15 +882,6 @@ top: 10000px;
 
 `
 
-const FollowStar = Styled.img
-`
-position: absolute;
-width: 60px;
-height: 60px;
-left: 353px;
-top: 9990px;
-
-`
 const FollowUpText = Styled.div
 `
 position: absolute;
@@ -972,10 +954,11 @@ p{
 
 `
 
-const ArrowImgUp = Styled.img 
+const ReturnImg = Styled.img 
     `
     position: absolute;
-    width: 40px;
-    height; 40px;
+    width: 239px;
+    height: 27px;
+    left: 63px;
     top: 10700px;
     `

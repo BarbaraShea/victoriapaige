@@ -41,14 +41,13 @@ import BrandBanner from '../images/BrandBanner.png';
 import Reservation from '../images/Reservation.png';
 import Outpost from '../images/Outpost.png';
 import Time from '../images/Time.png';
-import FollowUpStar from '../images/FollowUpStar.png';
 import FollowUpRect from '../images/FollowUpRect.png';
 import FollowUp from '../images/FollowUp.png';
 import ArrowRight from '../images/ArrowRight.png';
 import White1 from '../images/White1.png';
 import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
-import ArrowUp from '../images/ArrowUp.png';
+import Return from '../images/Return.png'
 
 
 const ForestryCamp = () => {
@@ -239,7 +238,6 @@ const ForestryCamp = () => {
         </ProtoText>
         <ArrowRightImg src={ArrowRight}/>
         <FollowUpHeader id="follow" src={FollowUp}/>
-        <FollowStar src={FollowUpStar}/>
         <FollowUpText>
         <p> It was a great eperience working with such a wonderful and established team.</p>
         </FollowUpText>    
@@ -255,14 +253,7 @@ const ForestryCamp = () => {
             <li> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good. </li>
         </ul>
         </FinalText>
-         <Link 
-    activeClass="active"
-    to="intro"
-    spy={true}
-    smooth={true}
-    offset={-50}
-    duration={1000}
-    ><ArrowImgUp src={ArrowUp}/></Link> 
+        <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
         </>
     )
 };
@@ -1099,15 +1090,6 @@ top: 10100px;
 
 `
 
-const FollowStar = Styled.img
-`
-position: absolute;
-width: 60px;
-height: 60px;
-left: 353px;
-top: 10090px;
-
-`
 const FollowUpText = Styled.div
 `
 position: absolute;
@@ -1179,10 +1161,11 @@ p{
 
 `
 
-const ArrowImgUp = Styled.img 
+const ReturnImg = Styled.img 
     `
     position: absolute;
-    width: 40px;
-    height; 40px;
+    width: 239px;
+    height: 27px;
+    left: 63px;
     top: 10700px;
     `
