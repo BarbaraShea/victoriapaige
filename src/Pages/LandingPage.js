@@ -2,33 +2,33 @@ import React from 'react';
 import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
-// import { IoIosArrowDown } from "react-icons/io";
 import Arrow from '../images/Shape.png'
 import Hello from '../images/HelloImVictoria.png';
 import JFBanner from '../images/JFbanner.png';
 import HCBanner from '../images/HCBanner.png';
 import ADBanner from '../images/ADbanner.png';
 import WorkImg from '../images/Work.png';
-import ForestryCamp from '../images/ForestryCampOpener.png';
-import TimeWells from '../images/TimewellsOpener.png';
-import AllTrails from '../images/AllTrailsOpener.png';
+import ForestryCamp from '../images/FCLanding.png';
+import TimeWells from '../images/TWLanding.png';
+import Alltrails from '../images/ATLanding.png';
 import FCO from '../images/FCoverlay.png';
-// import TWO from '../images/TWoverlay.png';
 import ATO from '../images/AToverlay.png';
 import AboutImg from '../images/About.png';
 import ProfilePic from '../images/ProfilePic.png';
-import { IoIosArrowUp, IoMdMail, IoLogoLinkedin } from "react-icons/io";
+// import { IoIosArrowUp, IoMdMail, IoLogoLinkedin } from "react-icons/io";
 import LetsTalk from '../images/LetsTalk.png';
 import ArrowUp from '../images/ArrowUp.png';
 import Navbar from "../Components/Navbar";
+import CSA from "../images/CaseStudyArrow.png";
+import mail from "../images/email.png";
+import linkedin from "../images/linkedin.png";
 
 const LandingPage = () => {
     return (
         <>
         <Navbar/>
-        <Landing id="intro" class="landing">
         <IntroHeaderContainer>
-            <Intro src={Hello} alt='Hello'/>
+            <Intro src={Hello} alt='Hello' id="intro"/>
         </IntroHeaderContainer>
         <p class='landing-list-intro'> Utilizing ten years of experience working as a behavior specialist and educator, I create </p>
         <List>
@@ -60,72 +60,50 @@ const LandingPage = () => {
     offset={-70}
     duration={500}
     ><ArrowImg src={Arrow}/></Link>
-        </Landing>  
-
-             <StyledWork id="work">
-         <WorkHeaderContainer>
-            <Work src={WorkImg} alt='Work Samples'/>
-        </WorkHeaderContainer> 
-        <Row>     
-            <Col size={2}> 
-                <NavLink to="/Timewells">
-                <TW src={TimeWells} alt="Project1" to="/Timewells" />
-                {/* <TWoverlay className="overlay-tw" src={TWO}/> */}
-                </NavLink>
-             </Col>
-            <Col size={2}> 
-                <NavLink to="ForestryCamp">
-                <FCcont>  
-                    <FC src={ForestryCamp} alt="Project2"/>
-                    <FCoverlay className="overlay-fc" src={FCO}/>
-                </FCcont>
-                </NavLink>
-            </Col>
-        </Row>
-        <Row>
-            <Col size={1}> 
-            <NavLink to="AllTrails">
-                 <ATcont>
-                    <AT src={AllTrails} alt="Project3"/>
-                    <AToverlay className="overlay-at" src={ATO}/>
-                </ATcont>
-            </NavLink>
-            </Col>
-            <Col size={1}> 
-            </Col>
-        </Row>
-        </StyledWork>
-         <StyledAbout id="about">
-        <AboutHeaderContainer>
-            <About src={AboutImg} alt='About'/>
-        </AboutHeaderContainer>     
-        <PicContainer>
-            <Picture src={ProfilePic} alt='Profile' />
-       </PicContainer>      
-        <p> I'm Victoria Bryant, <strong> a produce and brand designer </strong> located in the mountains of Asheville, North Carolina.</p>
-        <p> I was a career public school educator who <strong> specialized in behavior analysis of high-risk students. </strong> Through working with them, their teachers, and their families, I gained three major skillsets:</p>
-       
-        <AboutList>
+    <Work src={WorkImg} alt='Work Samples' id="work"/>
+    <FC src={ForestryCamp}/>
+    <FCText>
+    <p><strong> Forestry Camp </strong> </p>
+    <p id="text"> Rebranding and refunctioning Forestry Camp’s restaurant website and reservation system.</p>
+    </FCText>
+    <NavLink to='/Forestrycamp'>
+    <CSArrow1 src={CSA}/>
+    </NavLink>
+     <AT src={Alltrails}/>
+    <ATText>
+    <p><strong> Alltrails </strong> </p>
+    <p id="text"> Expanding equity to the outdoors by adding inclusivity, accessibility, and safety features to the Alltrails app. </p>
+    </ATText>
+    <NavLink to='/Alltrails'>
+    <CSArrow2 src={CSA}/>
+    </NavLink>
+    <TW src={TimeWells}/>
+    <TWText>
+    <p><strong> Timewells </strong> </p>
+    <p id="text"> Providing a sense of modernity, safety, and comfort for an innovative new travel company. </p>
+    </TWText>
+    <NavLink to='/Timewells'>
+    <CSArrow3 src={CSA}/>
+    </NavLink>
+    <About src={AboutImg} alt='About' id="about"/> 
+    <Picture src={ProfilePic} alt='Profile' />
+    <AboutText>
+        <p class="margin"> I'm Victoria Bryant, <strong> a produce and brand designer </strong> located in the mountains of Asheville, North Carolina.</p>
+        <p class="margin"> I was a career public school educator who <strong> specialized in behavior analysis of high-risk students. </strong> Through working with them, their teachers, and their families, I gained three major skillsets:</p>
         <ul>
-        <li> I understand, empathize with, and communicate openly and kindly with people from all walks of life.</li>
-        <li> I'm regularly able to present my thought processes in an easily understandable way.</li>
-        <li> An innant balancer by nature, I stay inherently unflappable in high-stess situations.</li>
-         </ul>
-        </AboutList>
+            <li> I understand, empathize with, and communicate openly and kindly with people from all walks of life.</li>
+            <li> I'm regularly able to present my thought processes in an easily understandable way.</li>
+            <li> An innant balancer by nature, I stay inherently unflappable in high-stess situations.</li>
+        </ul>
         <p> I utlize these skills and my art + design background to create digital experiences that combine the power of methodology, research, empathy, and an "it's worth a try" mentality. </p> 
         <p> A maker and storyteller in my spare time, you can often find me reading, writing, flying kites at the top of hikes, or eating my way through my excessive cookbook collection. </p>
-        </StyledAbout>
-
-          <StyledContact id="contact">
-        <ContactHeaderContainer>
-            <Contact src={LetsTalk} alt='Contact'/>
-        </ContactHeaderContainer>        <p> Interested in working together or just want to see adorable pictures of my dogs? You can find my contact information below.<strong> Let's get into it. </strong> </p>
-        <ContactRow>
-        <ContactCol size={2}>
-        <a href="mailto:v.paige.bryant@gmail.com"><IoMdMail/></a>
-        <a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/"><IoLogoLinkedin/></a>
-        </ContactCol>
-        </ContactRow>
+    </AboutText>
+    <Contact src={LetsTalk} alt='Contact' id="contact"/>
+    <ContactText>
+    <p> Interested in working together or just want to see adorable pictures of my dogs? You can find my contact information below.<strong> Let's get into it. </strong> </p>
+    <p id="mail"><a href="mailto:v.paige.bryant@gmail.com" >v.paige.bryant@gmail.com<MailIcon src={mail}/></a></p>
+    <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/">Victoria Bryant<LinkedinIcon src={linkedin}/></a></p>
+    </ContactText>
            <Link 
     activeClass="active"
     to="intro"
@@ -134,7 +112,6 @@ const LandingPage = () => {
     offset={-50}
     duration={1000}
     ><ArrowImgUp src={ArrowUp}/></Link> 
-        </StyledContact> 
     </>   
     )
 };
@@ -229,200 +206,186 @@ const Accessible = Styled.div
     left: 180px;
     transform: translate(-50%, -50%);
     `
-const StyledWork = Styled.div
-    `
-    min-height: 145vh;
-    right-margin: 90rem;
-    display: block;
-    align-items: left;
-    justify-content: center;
-    line-height: 1.2;
- 
-`
-
-const WorkHeaderContainer = Styled.div
-    `
-    display: flex;
-    align-items: left;
-    justify-content: left;
-`
-
 const Work = Styled.img `
     position: absolute;
     width: 312px;
     height: 75px;
     left: 0px;
-    top: 750px;
+    top: 550px;
 `
 
-const Row = Styled.div `
-    display: block; 
-`
-
-const Col = Styled.div `
-display: block;
-`
-
-const FC = Styled.img
-    `
-    position: absolute;
-    width: 503px;
-    height: 371px;
-    left: 413px;
-    top: 925px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    `
-
-const TW = Styled.img
-    `
-    position: absolute;
-    width: 307px;
-    height: 519px;
-    left: 57px;
-    top: 865px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    `
-const AT = Styled.img 
-    `
-    position: absolute;
-    width: 416px;
-    height: 272px;
-    left: 257px;
-    top: 1475px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   
-    `
-const FCoverlay = Styled.img `
-    position: absolute;
-    width: 475px;
-    height: 339px;
-    opacity: 0;
-    left: 428px;
-    top: 940px;
-    transition: .5s ease; 
- `
-const AToverlay = Styled.img `
-    position: absolute;
-    width: 404px;
-    height: 256px;
-    opacity: 0;
-    left: 263px;
-    top: 1483px;
-    transition: .5s ease; 
- `
-// const TWoverlay = Styled.div
-// `
-//   transition: .5s ease; 
-// `
-const FCcont = Styled.div 
-`
-     :hover .overlay-fc {
-        opacity: 9;
-    }
-`
-const ATcont = Styled.div 
-`
-     :hover .overlay-at {
-        opacity: 9;
-    }
-`
-
-// const media = {
-//     xs: (styles) => `
-//     @media only screen and (max-width:480px) {
-//         ${styles}
-//     }`
-
-
-const StyledAbout = Styled.div
-    `
-    min-height: 95vh;
-    display: block;
-    align-items: left;
-    justify-content: center;
-    line-height: 1.4;
-    font-size: 20px;
+const FC = Styled.img `
+position: absolute;
+width: 600px;
+height: 336px;
+left: 70px;
+top: 650px;
 
 `
-const AboutList = Styled.div
+
+const FCText = Styled.div
 `
-    margin-left: 20px;
-    margin-bottom: 20px;
+position: absolute;
+top: 715px;
+left: 700px;
+font-size: 19px;
+#text{
+    font-size: 16px;
+    margin-right: 200px;
+}
 `
 
-const AboutHeaderContainer = Styled.div
-    `
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    margin-bottom: 10px;
+const CSArrow1 = Styled.img
+`
+position: absolute;
+width: 160px;
+height: 27px;
+left: 700px;
+top: 880px;
+
 `
 
-const PicContainer = Styled.div
-    `
-    display: block;
-    align-items: right;
-    margin-right: 128px;
-    margin-left: 32px;
-    float: top;
-    position: relative;
+const AT = Styled.img `
+position: absolute;
+width: 570px;
+height: 385px;
+left: 100px;
+top: 1000px;
+
 `
 
+const ATText = Styled.div
+`
+position: absolute;
+top: 1105px;
+left: 700px;
+font-size: 19px;
+#text{
+    font-size: 16px;
+    margin-right: 200px;
+}
+`
+
+const CSArrow2 = Styled.img
+`
+position: absolute;
+width: 160px;
+height: 27px;
+left: 700px;
+top: 1280px;
+
+`
+
+const TW = Styled.img `
+position: absolute;
+width: 570px;
+height: 385px;
+left: 100px;
+top: 1350px;
+
+`
+
+const TWText = Styled.div
+`
+position: absolute;
+top: 1455px;
+left: 700px;
+font-size: 19px;
+#text{
+    font-size: 16px;
+    margin-right: 200px;
+}
+`
+
+const CSArrow3 = Styled.img
+`
+position: absolute;
+width: 160px;
+height: 27px;
+left: 700px;
+top: 1630px;
+`
 const About = Styled.img
     `
-    width: 172px;
-    height: 67px;
-    left: 53px;
-    margin-bottom: 20px;
+position: absolute;
+width: 172px;
+height: 67px;
+left: 53px;
+top: 1760px;
     `
 const Picture = Styled.img
     `
-    height: 48%;
-    width: 38%;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    float: right;
-    float: top;
+    position: absolute;
+    width: 313px;
+    height: 338px;
+    left: 600px;
+    top: 1850px;
     `
 
-    const StyledContact = Styled.div
-    `
-    min-height: 100vh;
-    display: in-line;
-    right-margin: 70rem;
-    align-items: left;
-    justify-content: center;
-    line-height: 1.2;
-    line-height: 1.4;
-    font-size: 20px;
- 
+const AboutText = Styled.div
 `
-const ContactRow = Styled.div `
-    display: flex; 
-`
+    position: absolute;
+    font-size: 19px;
+    top: 1860px;
+    ul{
+        margin-left: 20px;
+        margin-right: 500px;
+        margin-bottom: 20px;
+    }
+    .margin{
+        margin-right: 500px;
+    }
 
-const ContactCol = Styled.div `
-    flex: ${(props) => props.size};
 `
-
-const ContactHeaderContainer = Styled.div
-    `
-    display: flex;
-    align-items: left;
-    justify-content: left;
-`
-
 const Contact = Styled.img
     `
+    position: absolute;
     width: 278px;
     height: 92px;
-    margin-bottom: 35px;
+    left: 49px;
+    top: 2350px;
     `
 
 const ArrowImgUp = Styled.img 
     `
-    width: 40px;
-    height; 40px;
-    margin-top: 10px;
+    position: absolute;
+    left: 72px;
+    top: 2800px;
     `
 
+const ContactText = Styled.div
+`
+ position: absolute;
+    font-size: 19px;
+    top: 2500px;
+    margin-right: 240px;
+    #mail{
+        margin-left: 150px;
+        margin-top: 45px;
+    }
+    #linkedin{
+        margin-left: 150px;
+        margin-top: 40px;
+
+    }
+
+`
+
+const MailIcon = Styled.img
+`
+position: absolute;
+width: 40px;
+height: 40px;
+left: 85px;
+top: 85px;
+
+`
+
+const LinkedinIcon = Styled.img
+`
+position: absolute;
+width: 31px;
+height: 31px;
+left: 90px;
+top: 150px;
+`

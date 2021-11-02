@@ -3,9 +3,9 @@ import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
 import ATNav from '../Components/ATNav.js';
+import LogoNav from "../Components/LogoNav.js";
 import ATOpener from '../images/Alltrails.png';
 import ProblemHeader from '../images/Problem.png';
-import ProblemBanner from '../images/ProblemBanner.png';
 import FCHeader from '../images/ForestryHeader.png';
 import ResearchHeader from '../images/ResearchHeader.png';
 import ResearchReading from '../images/ResearchReading.png';
@@ -46,6 +46,7 @@ import Return from '../images/Return.png'
 const AllTrails = () => {
     return (
         <>
+        <LogoNav/>
         <ATNav/>
         <ATHeaderContainer id="intro">
             <AT src={ATHeader} alt='Forestry CAmp Case Study'/>
@@ -72,8 +73,7 @@ const AllTrails = () => {
             </tr>
             </table>
         </Table>
-        <PBanner src={ProblemBanner} id="problem"/>
-        <PHeader src={ProblemHeader}/>   
+        <PHeader src={ProblemHeader} id="problem"/>   
         <ProblemText>
         <p id="quote"><strong>“There are certain places I won’t hike alone, and if I do, I make sure I don’t dress as flamboyantly.”</strong></p>    
         <p id="byline"> -- Christian, an LGBTQ+ backpacker</p>
@@ -275,22 +275,14 @@ height: 536px;
 left: 35px;
 top: 141px;
 `
-const PBanner = Styled.img
-`
-position: absolute;
-width: 274px;
-height: 74px;
-left: 66px;
-top: 950px;
-`
 
 const PHeader = Styled.img
 `
 position: absolute;
 left: 56px;
 top: 965px;
-width: 288px;
-height: 40px;
+width: 274px;
+height: 75px;
 `
 
 const ProblemText = Styled.div

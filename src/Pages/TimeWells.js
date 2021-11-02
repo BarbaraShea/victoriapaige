@@ -4,9 +4,9 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
 import TWHeader from '../images/TimewellsHeader.png';
 import TWNav from "../Components/TWNav";
+import LogoNav from "../Components/LogoNav.js";
 import TimewellsImg from '../images/Timewells.png';
 import ProblemHeader from '../images/Problem.png';
-import ProblemBanner from '../images/ProblemBanner.png';
 import NumCir from '../images/numcircle.png';
 import One from '../images/1.png';
 import Two from '../images/2.png';
@@ -47,6 +47,7 @@ import BrandBanner from '../images/BrandBanner.png';
 const Timewells = () => {
     return (
         <>
+        <LogoNav/>
         <TWNav/>
         <TW src={TWHeader} alt='Timewells Case Study'/>
         <TWImage src={TimewellsImg}/>
@@ -72,8 +73,7 @@ const Timewells = () => {
             </tr>
             </table>
         </Table>
-        <PBanner src={ProblemBanner} id="problem"/>
-        <PHeader src={ProblemHeader}/>
+        <PHeader src={ProblemHeader} id="problem"/>
         <Num1 src={NumCir}/>
         <NumOne src={One}/>
         <Num2 src={NumCir}/>
@@ -259,22 +259,14 @@ const Table = Styled.div
     font-size: 18px;
     }
     `
-const PBanner = Styled.img
-`
-position: absolute;
-width: 274px;
-height: 74px;
-left: 66px;
-top: 950px;
-`
 
 const PHeader = Styled.img
 `
 position: absolute;
 left: 56px;
 top: 965px;
-width: 288px;
-height: 40px;
+width: 274px;
+height: 75px;
 `
 
 const Problem = Styled.div

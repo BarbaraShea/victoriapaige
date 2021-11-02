@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Styled, { keyframes } from 'styled-components';
-import Logo from '../images/Logo.png';
-import Snap from '../images/Snap.png';
-import LogoText from '../images/logotype.png';
 import { NavLink } from 'react-router-dom';
 
 
@@ -11,13 +8,6 @@ const TWNav = () => {
     return (
     <>
     <StyledNav>
-    <NavLink to='/'>
-    <LogoContainer class="logo">
-    <LogoImg  src={Logo}/>
-    <LogoType src={LogoText}/>
-    <SnapImg className="hover-image" src={Snap}/>
-    </LogoContainer>
-    </NavLink>
     <ul class="navbar">
     <li><Link 
     activeClass="active"
@@ -99,45 +89,3 @@ const StyledNav = Styled.nav`
         }
     }
     `
-const SnapImg = Styled.img
-    `
-    position: relative;
-    top: 2px;
-    right: 145px;
-    width: 35px;
-    height: 45px;
-    display: none;
-   `
-
-
-const LogoImg = Styled.img 
-    `
-    margin: 0px;
-    padding: 0px;
-    display: block;
-    width: 50px;
-    height: 75px;
-    
-    `
-const LogoType = Styled.img 
-    `
-    display: block;
-    width: 90px;
-    height: 49px; 
-    padding: 2px;
-    margin-top: 20px;
-    margin-left: 3px;
-    `
-
-const LogoContainer = Styled.div
-    `
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    display: flex;
-    top: 5px;
-    right: 50px;
-     :hover .hover-image {
-        display: block;
-    }
-    `   
