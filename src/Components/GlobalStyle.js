@@ -17,7 +17,11 @@ a {
   color: var(--text-color);
 }
 
-a:hover {
+a:link {
+  text-decoration: none;
+}
+
+.navbar a:hover {
   color: var(--text-color);
   font-weight: bold;
   cursor: pointer;
@@ -31,6 +35,7 @@ body {
     line-height: 1.2;
     margin-right: 18px;
     margin-left: 8px;
+    z-index: 1;
 }
 
 h4 {
@@ -47,6 +52,7 @@ h1 {
 p {
   margin-bottom: 20px;
   margin-right: 160px;
+  z-index: 1;
 };
 
 .landing-list {
@@ -62,17 +68,35 @@ p {
   margin-bottom: 20px;
   margin-right: 250px;
   font-size: 28px;
-  line-height: 1.5;
+  line-height: 1.2;
 };
 
-// li > .active {
-//   border-bottom: 1px solid var(--accent-color);
-// }
+li > .active {
+  font-weight: bold;
+}
 
 .navbar {
   position: fixed;
+  z-index: 3;
 }
 
+#logo{
+  position: fixed;
+  box-sizing: border-box;
+}
+
+.landing-image {
+transition: transform 500ms;
+ :hover {
+transform: scale(1.05,1.05);
+}
+
+// .AR {
+//   transition: transform 250ms;
+//  :hover {
+//      transform: translateX(50px);
+//  }
+// }
 
 .navbar ul {
   display: block;
@@ -80,8 +104,19 @@ p {
   text-align: right;
 }
 
+html{
+    @media (max-width: 1300px){
+        font-size: 60%;
+    }
+}
 
+li {
+  z-index: 0;
+}
 
+img {
+  z-index: 0;
+}
 `
 
 export default GlobalStyle;

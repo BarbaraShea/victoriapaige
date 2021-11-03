@@ -15,18 +15,18 @@ import FCO from '../images/FCoverlay.png';
 import ATO from '../images/AToverlay.png';
 import AboutImg from '../images/About.png';
 import ProfilePic from '../images/ProfilePic.png';
-// import { IoIosArrowUp, IoMdMail, IoLogoLinkedin } from "react-icons/io";
 import LetsTalk from '../images/LetsTalk.png';
 import ArrowUp from '../images/ArrowUp.png';
 import Navbar from "../Components/Navbar";
-import CSA from "../images/CaseStudyArrow.png";
 import mail from "../images/email.png";
 import linkedin from "../images/linkedin.png";
+import ArrowR from "../images/ArrowRight.png";
 
 const LandingPage = () => {
     return (
         <>
         <Navbar/>
+        <Landing>
         <IntroHeaderContainer>
             <Intro src={Hello} alt='Hello' id="intro"/>
         </IntroHeaderContainer>
@@ -61,41 +61,50 @@ const LandingPage = () => {
     duration={500}
     ><ArrowImg src={Arrow}/></Link>
     <Work src={WorkImg} alt='Work Samples' id="work"/>
-    <FC src={ForestryCamp}/>
-    <FCText>
-    <p><strong> Forestry Camp </strong> </p>
-    <p id="text"> Rebranding and refunctioning Forestry Camp’s restaurant website and reservation system.</p>
-    </FCText>
     <NavLink to='/Forestrycamp'>
-    <CSArrow1 src={CSA}/>
+        <FC className="landing-image" src={ForestryCamp}/>
+        <FCText>
+            <p><strong> Forestry Camp </strong> </p>
+            <p id="text"> Rebranding and refunctioning Forestry Camp’s restaurant website and reservation system.</p>
+        </FCText>
+        <FCHover>
+            <p className="cs"><strong>See Case Study</strong></p>
+            <CSArrow1 className="AR" src={ArrowR}/>
+        </FCHover>
     </NavLink>
-     <AT src={Alltrails}/>
-    <ATText>
-    <p><strong> Alltrails </strong> </p>
-    <p id="text"> Expanding equity to the outdoors by adding inclusivity, accessibility, and safety features to the Alltrails app. </p>
-    </ATText>
     <NavLink to='/Alltrails'>
-    <CSArrow2 src={CSA}/>
+        <AT className="landing-image" src={Alltrails}/>
+        <ATText>
+            <p><strong> Alltrails </strong> </p>
+            <p id="text"> Expanding equity to the outdoors by adding inclusivity, accessibility, and safety features to the Alltrails app. </p>
+        </ATText>
+        <ATHover>
+            <p className="cs"><strong>See Case Study</strong></p>
+            <CSArrow2 className="AR" src={ArrowR}/>
+        </ATHover>
     </NavLink>
-    <TW src={TimeWells}/>
-    <TWText>
-    <p><strong> Timewells </strong> </p>
-    <p id="text"> Providing a sense of modernity, safety, and comfort for an innovative new travel company. </p>
-    </TWText>
     <NavLink to='/Timewells'>
-    <CSArrow3 src={CSA}/>
+        <TW className="landing-image" src={TimeWells}/>
+        <TWText>
+            <p><strong> Timewells </strong> </p>
+            <p id="text"> Providing a sense of modernity, safety, and comfort for an innovative new travel company. </p>
+        </TWText>
+        <TWHover>
+            <p className="cs"><strong>See Case Study</strong></p>
+            <CSArrow3 className="AR" src={ArrowR}/>
+        </TWHover>
     </NavLink>
     <About src={AboutImg} alt='About' id="about"/> 
     <Picture src={ProfilePic} alt='Profile' />
     <AboutText>
-        <p class="margin"> I'm Victoria Bryant, <strong> a produce and brand designer </strong> located in the mountains of Asheville, North Carolina.</p>
+        <p class="margin"> I'm Victoria Bryant, <strong> a product and brand designer </strong> located in the mountains of Asheville, North Carolina.</p>
         <p class="margin"> I was a career public school educator who <strong> specialized in behavior analysis of high-risk students. </strong> Through working with them, their teachers, and their families, I gained three major skillsets:</p>
         <ul>
             <li> I understand, empathize with, and communicate openly and kindly with people from all walks of life.</li>
             <li> I'm regularly able to present my thought processes in an easily understandable way.</li>
             <li> An innant balancer by nature, I stay inherently unflappable in high-stess situations.</li>
         </ul>
-        <p> I utlize these skills and my art + design background to create digital experiences that combine the power of methodology, research, empathy, and an "it's worth a try" mentality. </p> 
+        <p> I utilize these skills and my art + design background to create digital experiences that combine the power of methodology, research, empathy, and an "it's worth a try" mentality. </p> 
         <p> A maker and storyteller in my spare time, you can often find me reading, writing, flying kites at the top of hikes, or eating my way through my excessive cookbook collection. </p>
     </AboutText>
     <Contact src={LetsTalk} alt='Contact' id="contact"/>
@@ -112,6 +121,7 @@ const LandingPage = () => {
     offset={-50}
     duration={1000}
     ><ArrowImgUp src={ArrowUp}/></Link> 
+    </Landing>
     </>   
     )
 };
@@ -124,6 +134,11 @@ const Landing = Styled.div
     display: in-line;
     right-margin: 70rem;
     line-height: 1;
+    z-index: 1;
+    @media (max-width: 1300px){
+       margin: 0;
+       font-size: 0%;
+    }
     
 `
 const List = Styled.div
@@ -235,14 +250,27 @@ font-size: 19px;
 }
 `
 
+const FCHover = Styled.div
+`
+position: absolute;
+top: 850px;
+left: 700px;
+.cs{
+    font-size: 16px;
+}
+:hover .AR {
+   transform: translateX(30px);
+ }
+`
+
 const CSArrow1 = Styled.img
 `
 position: absolute;
-width: 160px;
-height: 27px;
-left: 700px;
-top: 880px;
-
+top: -5px;
+left: 130px;
+width: 15.2px;
+height: 27.2px;
+transition: transform 600ms;
 `
 
 const AT = Styled.img `
@@ -251,7 +279,6 @@ width: 570px;
 height: 385px;
 left: 100px;
 top: 1000px;
-
 `
 
 const ATText = Styled.div
@@ -265,15 +292,26 @@ font-size: 19px;
     margin-right: 200px;
 }
 `
-
+const ATHover = Styled.div
+`
+position: absolute;
+top: 1245px;
+left: 700px;
+.cs{
+    font-size: 16px;
+}
+:hover .AR {
+   transform: translateX(30px);
+ }
+`
 const CSArrow2 = Styled.img
 `
 position: absolute;
-width: 160px;
-height: 27px;
-left: 700px;
-top: 1280px;
-
+width: 15.2px;
+height: 27.2px;
+top: -5px;
+left: 130px;
+transition: transform 600ms;
 `
 
 const TW = Styled.img `
@@ -296,14 +334,27 @@ font-size: 19px;
     margin-right: 200px;
 }
 `
-
-const CSArrow3 = Styled.img
+const TWHover = Styled.div
 `
 position: absolute;
-width: 160px;
-height: 27px;
+top: 1580px;
 left: 700px;
-top: 1630px;
+.cs{
+    
+    font-size: 16px;
+}
+:hover .AR {
+   transform: translateX(30px);
+ }
+`
+const CSArrow3 = Styled.img
+`
+position: relative;
+width: 15.2px;
+height: 27.2px;
+top: -40px;
+left: 130px;
+transition: transform 600ms;
 `
 const About = Styled.img
     `
@@ -318,8 +369,9 @@ const Picture = Styled.img
     position: absolute;
     width: 313px;
     height: 338px;
-    left: 600px;
-    top: 1850px;
+    left: 650px;
+    top: 1800px;
+    z-index: 0;
     `
 
 const AboutText = Styled.div
@@ -329,8 +381,9 @@ const AboutText = Styled.div
     top: 1860px;
     ul{
         margin-left: 20px;
-        margin-right: 500px;
+        margin-right: 570px;
         margin-bottom: 20px;
+        line-height: 1.5;
     }
     .margin{
         margin-right: 500px;
@@ -361,11 +414,11 @@ const ContactText = Styled.div
     margin-right: 240px;
     #mail{
         margin-left: 150px;
-        margin-top: 45px;
+        margin-top: 55px;
     }
     #linkedin{
         margin-left: 150px;
-        margin-top: 40px;
+        margin-top: 45px;
 
     }
 

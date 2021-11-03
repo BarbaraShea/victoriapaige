@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
@@ -13,6 +13,7 @@ import ForestryCamp from "./Pages/ForestryCamp";
 import AllTrails from "./Pages/AllTrails";
 import ProjectFour from "./Pages/ProjectFour";
 import GlobalStyle from "./Components/GlobalStyle";
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
    <>
    <Router>
    <GlobalStyle />
+  <ScrollToTop />
    <Switch>
    <LandingPage exact path="/" component={LandingPage}/>
    <Route exact path="/TimeWells" component={TimeWells}/>
@@ -28,6 +30,7 @@ function App() {
    <Route exact path="/ProjectFour" component={ProjectFour}/>
    </Switch>
    </Router>
+
    </>
   );
 }

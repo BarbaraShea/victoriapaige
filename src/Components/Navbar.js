@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
     <>
     <StyledNav>
-    <LogoContainer class="logo">
+    <LogoContainer id="logo">
     <LogoImg  src={Logo}/>
     <SnapImg className="hover-image" src={Snap}/>
     </LogoContainer>
@@ -57,6 +57,7 @@ const StyledNav = Styled.nav`
     float: right;
     padding: 270px 80px 10px 10px;
     font-size: 18px;
+    z-index: 4;
      ul {
         display: block;
         list-style: none;

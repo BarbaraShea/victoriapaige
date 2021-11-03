@@ -94,7 +94,7 @@ const AllTrails = () => {
         <CompAnaImg src={CompAna}/>
          <ResearchText3>
         <p id="header"><strong>User Interviews</strong></p>
-        <p class="para">I interviewed four people that are avid hikers/backpackers/mountain bikers to hear about their experiences in the woods.</p>
+        <p class="para">I interviewed four people that are avid hikers/backpackers/ mountain bikers to hear about their experiences in the woods.</p>
         <p class="para">All of these people fell into one or more categories of my target audience (LGBTQ+, BIPOC, temporarily or permanently disabled, or solo female).</p>
         </ResearchText3>
         <UserIntImg src={UserInt}/>
@@ -242,7 +242,7 @@ const AT = Styled.img
     `
     position: absolute;
     width: 415px;
-    height: 40px;
+    height: 50px;
     `
 
 const Table = Styled.div
@@ -618,7 +618,7 @@ margin-right: 300px;
 #accessibility{
    position: absolute;
    top: 6040px;
-   left: 640px;
+   left: 610px;
    font-size: 16px;
    margin-right: 280px;
 }
@@ -906,8 +906,8 @@ const WC1 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
-top: 10215px;
+left: 74px;
+top: 10195px;
 
 `
 
@@ -916,8 +916,8 @@ const WC2 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
-top: 10315px;
+left: 74px;
+top: 10290px;
 
 `
 const WC3 = Styled.img
@@ -925,8 +925,8 @@ const WC3 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
-top: 10420px;
+left: 74px;
+top: 10380px;
 
 `
 
@@ -938,7 +938,7 @@ top: 10120px;
 color: #FFF1EC;
 p{
     font-size: 23px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
  ul {
         display: block;
@@ -948,7 +948,7 @@ p{
  li {
         margin-left: 80px;
         margin-right: 350px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
 
  }
 
@@ -961,5 +961,5 @@ const ReturnImg = Styled.img
     width: 239px;
     height: 27px;
     left: 63px;
-    top: 10550px;
+    top: 10530px;
     `

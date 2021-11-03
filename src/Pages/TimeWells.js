@@ -89,7 +89,8 @@ const Timewells = () => {
         <ResearchText>
         <p><strong>Assume nothing.</strong></p>
         <p id="para">Talking to users about their motivations and frustrations helped me contextualize and use data-drive decisions for my eventual final product solution. Because as we know, <strong> the designer is not the user.</strong></p>
-        <p id="after"><strong>My interviewees were all well-traveled and adventurous.</strong> I do wish I had more range of age for my initial research.</p>
+        <p id="after"><strong>My interviewees were all well-traveled and adventurous.</strong> </p>
+        <p> I do wish I had more range of age for my initial research.</p>
         </ResearchText>
         <PersonaImg src={PersPics}/>
         <InsightsRect src={Rect}/>
@@ -201,7 +202,7 @@ const Timewells = () => {
         <FinalText>
         <p><strong> Final Thoughts </strong></p>
         <ul>
-            <li> I has way too many assumptions in my initial interview research.</li>
+            <li> I had way too many assumptions in my initial interview research.</li>
             <li> Most of my users wanted to click on pictures rather than text, which allowed fun revisions.</li>
             <li> My debriefings from usability testing showed some key insights that would have helped with my original design - such as a chat feature! </li>
         </ul>
@@ -407,7 +408,7 @@ const W1 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
+left: 74px;
 top: 2180px;
 
 `
@@ -417,7 +418,7 @@ const W2 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
+left: 74px;
 top: 2250px;
 
 `
@@ -426,7 +427,7 @@ const W3 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
+left: 74px;
 top: 2320px;
 
 `
@@ -436,7 +437,7 @@ const W4 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
+left: 74px;
 top: 2390px;
 
 `
@@ -851,7 +852,6 @@ position: absolute;
 left: 110px;
 top: 9865px;
 font-size: 19px;
-text-decoration: underline
 `
 
 const ArrowRightImg = Styled.img
@@ -897,8 +897,8 @@ const WC1 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
-top: 10300px;
+left: 74px;
+top: 10295px;
 
 `
 
@@ -907,8 +907,8 @@ const WC2 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
-top: 10400px;
+left: 74px;
+top: 10380px;
 
 `
 const WC3 = Styled.img
@@ -916,8 +916,8 @@ const WC3 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
-top: 10500px;
+left: 74px;
+top: 10470px;
 
 `
 
@@ -939,7 +939,7 @@ p{
  li {
         margin-left: 80px;
         margin-right: 350px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
 
  }
 

@@ -85,7 +85,7 @@ const ForestryCamp = () => {
         <NumTwo src={Two}/>
         <Prob>
         <p>With two indoor and three outdoor dining spaces, customers don't know which spaces require a reservation and where to eat. </p>
-        <p>Many customers are also not aware that Forestry Camp is associated with Burial Beer, one of the most famous breweries on the east coast. </p>
+        <p>Many customers are also not aware that Forestry Camp is associated with Burial Beer, one of the most famous breweries on the East Coast. </p>
         </Prob>
         <RHeader src={ResearchHeader} id="research"/>
         <ComAna>
@@ -107,7 +107,7 @@ const ForestryCamp = () => {
         </SurveyHeader>
         <SurveyImg src={SurveyGraphs}/>
         <SurveyText>
-        <p> I surveyed 15 people from Forestry Camp's target market to hear more about their expectations for a fine dining restaurant. To get <strong> quantative data </strong> I used a likert scale, and for <strong> qualitative data </strong>, multiple-choice and open answer questions.</p> 
+        <p> I surveyed 15 people from Forestry Camp's target market to hear more about their expectations for a fine dining restaurant. To get <strong> quantative data </strong> I used a likert scale, and for <strong>qualitative data</strong>, multiple-choice and open answer questions.</p> 
         </SurveyText>
         <SurvBan src={SurveyBanner}/>
         <BannerText> 
@@ -124,14 +124,14 @@ const ForestryCamp = () => {
         <p> <strong> Stakeholder Interviews </strong> </p>
          </InterviewHeader>
          <InterviewText>
-        <p> Forestry Camp has an established brand base. I spoke at length with the three stakeholder below, who have a very clear pulse on their needs for Forestry Camp's upcoming website.</p> 
+        <p> Forestry Camp has an established brand base. I spoke at length with the three stakeholders below, who have a very clear pulse on their needs for Forestry Camp's upcoming website.</p> 
         </InterviewText>
         <BrandImg src={Brand}/>
         <ManagerImg src={Manager}/>
         <RetailImg src={Retail}/>
         <Quote1>
         <p class="title"> <strong> Director of Brand </strong> </p>
-        <p> "We tried to get our current website to meet our needs, but it' not really working. I would love for the new website to not have a parchment background."</p>
+        <p> "We tried to get our current website to meet our needs, but it's not really working. I would love for the new website to not have a parchment background."</p>
         </Quote1>
         <Quote2>
         <p class="title"> <strong> Director of Brand </strong> </p>
@@ -153,7 +153,7 @@ const ForestryCamp = () => {
         <p><strong> Original About Page </strong></p>
         </AboutText>
         <OriginalText>
-        <p> Forestry Camp is a super luxurious and cool restaurant. Here were some identified issues:</p>
+        <p> We identified the following issues with the current website:</p>
         <ul>
             <li>Doesn't show enough photos of the incredible space and food</li>
             <li>Multiple fonts and colors</li>
@@ -198,7 +198,7 @@ const ForestryCamp = () => {
         <p>See if people can define the difference between The Outpost and Forestry Camp.</p>
         <p>Book a reservation for four people of October 19th at 6:30 in the upstairs dining room.</p>
         <p>Identify the brand message being Forestry Camp based on the design. What kind of place is it?</p>
-        <p id="final"> Yahoo! 3/3 participants complete goals one and two. </p>
+        <p id="final"> Yahoo! 3/3 participants completed goals one and two. </p>
         </TestBullets>
         <BrandBannerImg src={BrandBanner}/>
         <BrandText> 
@@ -994,7 +994,6 @@ position: absolute;
 left: 110px;
 top: 9995px;
 font-size: 19px;
-text-decoration: underline
 `
 
 const ArrowRightImg = Styled.img
@@ -1010,7 +1009,7 @@ height: 27px;
 const FollowUpHeader = Styled.img
 `
 position: absolute;
-width: 284px;
+width: 400px;
 height: 50px;
 left: 70px;
 top: 10130px;
@@ -1039,8 +1038,8 @@ const W1 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
-top: 10430px;
+left: 74px;
+top: 10405px;
 
 `
 
@@ -1049,8 +1048,8 @@ const W2 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
-top: 10530px;
+left: 74px;
+top: 10510px;
 
 `
 const W3 = Styled.img
@@ -1058,8 +1057,8 @@ const W3 = Styled.img
 position: absolute;
 width: 26px;
 height: 26px;
-left: 94px;
-top: 10630px;
+left: 74px;
+top: 10612px;
 
 `
 
@@ -1071,7 +1070,7 @@ top: 10330px;
 color: #FFF1EC;
 p{
     font-size: 23px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
  ul {
         display: block;
@@ -1094,5 +1093,6 @@ const ReturnImg = Styled.img
     width: 239px;
     height: 27px;
     left: 63px;
-    top: 10730px;
+    top: 10720px;
+    margin-bottom: 70px;
     `

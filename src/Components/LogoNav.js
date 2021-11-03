@@ -11,7 +11,7 @@ const LogoNav = () => {
     <>
     <StyledNav>
     <NavLink to='/'>
-    <LogoContainer class="logo">
+    <LogoContainer id="logo">
     <LogoImg src={Logo}/>
     <SnapImg className="hover-image" src={Snap}/>
     </LogoContainer>
@@ -29,9 +29,9 @@ const StyledNav = Styled.nav`
 
 const SnapImg = Styled.img
     `
-    position: relative;
+    position: absolute;
     top: 0px;
-    right: 100px;
+    right: 250px;
     width: 35px;
     height: 45px;
     display: none;
@@ -39,12 +39,11 @@ const SnapImg = Styled.img
 
 const LogoImg = Styled.img
 `
-position: absolute;
+position: relative;
 width: 137px;
 height: 78px;
-right: 0px;
+right: 150px;
 top: 0px;
-
 `
 
 const LogoContainer = Styled.div
