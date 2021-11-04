@@ -232,10 +232,10 @@ const TW = Styled.img
 const TWImage = Styled.img
 `
 position: absolute;
-width: 815px;
-height: 532px;
+width: 1019px;
+height: 563px;
 left: 54px;
-top: 120px;
+top: 170px;
 
 `
 
