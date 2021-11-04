@@ -206,10 +206,9 @@ const FCText = Styled.div
 position: absolute;
 top: 795px;
 left: 700px;
-font-size: 19px;
 #text{
-    font-size: 16px;
-    margin-right: 200px;
+    font-size: 20px;
+    margin-right: 300px;
 }
 `
 
@@ -219,7 +218,7 @@ position: absolute;
 top: 970px;
 left: 700px;
 .cs{
-    font-size: 16px;
+    font-size: 20px;
 }
 :hover .AR {
    transform: translateX(30px);
@@ -249,10 +248,9 @@ const ATText = Styled.div
 position: absolute;
 top: 1255px;
 left: 700px;
-font-size: 19px;
 #text{
-    font-size: 16px;
-    margin-right: 200px;
+    font-size: 20px;
+    margin-right: 300px;
 }
 `
 const ATHover = Styled.div
@@ -261,7 +259,7 @@ position: absolute;
 top: 1450px;
 left: 700px;
 .cs{
-    font-size: 16px;
+    font-size: 20px;
 }
 :hover .AR {
    transform: translateX(30px);
@@ -291,10 +289,9 @@ const TWText = Styled.div
 position: absolute;
 top: 1750px;
 left: 700px;
-font-size: 19px;
 #text{
-    font-size: 16px;
-    margin-right: 200px;
+    font-size: 20px;
+    margin-right: 300px;
 }
 `
 const TWHover = Styled.div
@@ -304,7 +301,7 @@ top: 1920px;
 left: 700px;
 .cs{
     
-    font-size: 16px;
+    font-size: 20px;
 }
 :hover .AR {
    transform: translateX(30px);
@@ -332,9 +329,10 @@ const Picture = Styled.img
     position: absolute;
     width: 392px;
     height: 423px;
-    left: 650px;
+    left: 750px;
     top: 2200px;
     z-index: 0;
+    margin: 0;
     `
 
 const AboutText = Styled.div
@@ -342,7 +340,7 @@ const AboutText = Styled.div
     position: absolute;
     top: 2200px;
     margin-left: -60px;
-    margin-right: 400px;
+    margin-right: 480px;
     ul{
         margin-left: 85px;
         margin-bottom: 20px;
@@ -356,7 +354,7 @@ const AboutText = Styled.div
 `
 const AboutText2 =Styled.div
 `
-  position: absolute;
+position: absolute;
 top: 2720px;
 margin-left: -60px;
 margin-right: 160px;
@@ -383,7 +381,7 @@ const ContactText = Styled.div
     position: absolute;
     margin-left: -60px;
     font-size: 19px;
-    top: 3100px;
+    top: 3140px;
     margin-right: 240px;
     #mail{
         margin-left: 150px;
