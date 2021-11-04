@@ -111,7 +111,7 @@ const LandingPage = () => {
     <ContactText>
     <p> Interested in working together or just want to see adorable pictures of my dogs? You can find my contact information below.<strong> Let's get into it. </strong> </p>
     <p id="mail"><a href="mailto:v.paige.bryant@gmail.com" >v.paige.bryant@gmail.com<MailIcon src={mail}/></a></p>
-    <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/">Victoria Bryant<LinkedinIcon src={linkedin}/></a></p>
+    <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/" target="_blank">Victoria Bryant<LinkedinIcon src={linkedin}/></a></p>
     </ContactText>
            <Link 
     activeClass="active"

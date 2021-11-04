@@ -90,7 +90,7 @@ const Timewells = () => {
         <p><strong>Assume nothing.</strong></p>
         <p id="para">Talking to users about their motivations and frustrations helped me contextualize and use data-drive decisions for my eventual final product solution. Because as we know, <strong> the designer is not the user.</strong></p>
         <p id="after"><strong>My interviewees were all well-traveled and adventurous.</strong> </p>
-        <p> I do wish I had more range of age for my initial research.</p>
+        <p id="last"> I do wish I had more range of age for my initial research.</p>
         </ResearchText>
         <PersonaImg src={PersPics}/>
         <InsightsRect src={Rect}/>
@@ -188,7 +188,7 @@ const Timewells = () => {
         </TestText3>
         <PrototypeBan src={BrandBanner}/>
         <ProtoText>
-        <p> <strong> See Prototype </strong></p>
+        <p> <strong> <a href="https://www.figma.com/proto/lARHntk9QL09upIkgVY0VY/Timewells-Priority-Revision?page-id=0%3A1&node-id=272%3A256&viewport=241%2C48%2C0.62&scaling=min-zoom&starting-point-node-id=1%3A2118" target="_blank"> See Prototype </a></strong></p>
         </ProtoText>
         <ArrowRightImg src={ArrowRight}/>
         <FollowUpHeader id="follow" src={FollowUp}/>
@@ -373,12 +373,10 @@ left: 77px;
 top: 1500px;
 font-size: 25px;
 #para{
-    font-size: 19px;
-    margin-right: 320px;
+    margin-right: 300px;
 }
 #after{
-   font-size: 19px;
-   margin-right: 560px; 
+   margin-right: auto; 
    margin-top: 300px;
 }
 `
@@ -867,17 +865,17 @@ height: 27px;
 const FollowUpHeader = Styled.img
 `
 position: absolute;
-width: 284px;
+width: 400px;
 height: 50px;
 left: 70px;
-top: 10000px;
+top: 9980px;
 
 `
 
 const FollowUpText = Styled.div
 `
 position: absolute;
-top: 10100px;
+top: 10080px;
 left: 70px;
 font-size: 19px;
 margin-right: 160px;
@@ -888,7 +886,7 @@ position: absolute;
 width: 838px;
 height: 388px;
 left: 0px;
-top: 10180px;
+top: 10200px;
 
 `
 
@@ -898,7 +896,7 @@ position: absolute;
 width: 26px;
 height: 26px;
 left: 74px;
-top: 10295px;
+top: 10325px;
 
 `
 
@@ -908,7 +906,7 @@ position: absolute;
 width: 26px;
 height: 26px;
 left: 74px;
-top: 10380px;
+top: 10410px;
 
 `
 const WC3 = Styled.img
@@ -917,7 +915,7 @@ position: absolute;
 width: 26px;
 height: 26px;
 left: 74px;
-top: 10470px;
+top: 10500px;
 
 `
 
@@ -925,7 +923,7 @@ const FinalText = Styled.div
 
 `
 position: absolute;
-top: 10210px;
+top: 10240px;
 color: #FFF1EC;
 p{
     font-size: 23px;
@@ -952,5 +950,5 @@ const ReturnImg = Styled.img
     width: 239px;
     height: 27px;
     left: 63px;
-    top: 10700px;
+    top: 10650px;
     `

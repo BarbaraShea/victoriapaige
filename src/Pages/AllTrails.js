@@ -207,7 +207,7 @@ const AllTrails = () => {
         </Test3Text2>
         <PrototypeBan src={BrandBanner}/>
         <ProtoText>
-        <p> <strong> See Prototype </strong></p>
+        <p id="ATproto"> <strong><a href="https://www.figma.com/proto/lARHntk9QL09upIkgVY0VY/Timewells-Priority-Revision?page-id=0%3A1&node-id=272%3A256&viewport=241%2C48%2C0.62&scaling=min-zoom&starting-point-node-id=1%3A2118" target="_blank"> See Prototype </a></strong></p>
         </ProtoText>
         <ArrowRightImg src={ArrowRight}/>
         <FollowUpHeader id="follow" src={FollowUp}/> 
@@ -789,7 +789,6 @@ position: absolute;
 left: 110px;
 top: 9815px;
 font-size: 19px;
-text-decoration: underline
 `
 
 const ArrowRightImg = Styled.img

@@ -222,7 +222,7 @@ const ForestryCamp = () => {
         </TimeText>
         <PrototypeBan src={BrandBanner}/>
         <ProtoText>
-        <p> <strong> See Prototype </strong></p>
+        <p><strong><a href="https://www.figma.com/proto/Mn4Z4cKysGglGqr0QDkWVl/Forestry-Camp?page-id=299%3A4448&node-id=299%3A4479&viewport=288%2C48%2C0.11&scaling=min-zoom&starting-point-node-id=299%3A4479" target="_blank"> See Prototype </a></strong></p>
         </ProtoText>
         <ArrowRightImg src={ArrowRight}/>
         <FollowUpHeader id="follow" src={FollowUp}/>

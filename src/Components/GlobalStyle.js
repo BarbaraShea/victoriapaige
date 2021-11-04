@@ -21,6 +21,7 @@ a:link {
   text-decoration: none;
 }
 
+
 .navbar a:hover {
   color: var(--text-color);
   font-weight: bold;
@@ -53,6 +54,7 @@ p {
   margin-bottom: 20px;
   margin-right: 160px;
   z-index: 1;
+  font-size: 19px;
 };
 
 .landing-list {
