@@ -21,45 +21,33 @@ import Navbar from "../Components/Navbar";
 import mail from "../images/email.png";
 import linkedin from "../images/linkedin.png";
 import ArrowR from "../images/ArrowRight.png";
+import Resume from "../images/resume.png";
 
 const LandingPage = () => {
     return (
         <>
         <Navbar/>
-        <Landing>
         <IntroHeaderContainer>
             <Intro src={Hello} alt='Hello' id="intro"/>
         </IntroHeaderContainer>
-        <p class='landing-list-intro'> Utilizing ten years of experience working as a behavior specialist and educator, I create </p>
-        <List>
-        <Banner1Container>
-        <Banner1 src={JFBanner}/>
-        <Joy>
-        <p class='landing-list'> joy-filled</p>
-        </Joy>
-        </Banner1Container>
-        <Banner2Container>
+       <Banner1 src={JFBanner}/>
         <Banner2 src={HCBanner}/>
-        <Human>
-        <p class='landing-list'> human-centered </p>
-        </Human>
-        </Banner2Container>
-         <Banner3Container>
         <Banner3 src={ADBanner}/>
-        <Accessible>
-        <p class='landing-list'> accessible-by-design </p>
-        </Accessible>
-        </Banner3Container>
-        <p class='landing-list'> digital products. </p>
-        </List>
+        <IntroText>
+            <p class='landing-list-intro'> Utilizing ten years of experience working as a behavior specialist and educator, I create </p>
+            <p class='landing-list'> joy-filled</p>
+            <p class='landing-list'> human-centered </p>
+            <p class='landing-list'> accessible-by-design </p>
+            <p class='landing-list'> digital products. </p>
+        </IntroText>
         <Link class="arrow"
-    activeClass="active"
-    to="work"
-    spy={true}
-    smooth={true}
-    offset={-70}
-    duration={500}
-    ><ArrowImg src={Arrow}/></Link>
+            activeClass="active"
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+        ><ArrowImg src={Arrow}/></Link>
     <Work src={WorkImg} alt='Work Samples' id="work"/>
     <NavLink to='/Forestrycamp'>
         <FC className="landing-image" src={ForestryCamp}/>
@@ -97,21 +85,24 @@ const LandingPage = () => {
     <About src={AboutImg} alt='About' id="about"/> 
     <Picture src={ProfilePic} alt='Profile' />
     <AboutText>
-        <p class="margin"> I'm Victoria Bryant, <strong> a product and brand designer </strong> located in the mountains of Asheville, North Carolina.</p>
-        <p class="margin"> I was a career public school educator who <strong> specialized in behavior analysis of high-risk students. </strong> Through working with them, their teachers, and their families, I gained three major skillsets:</p>
+        <p> I'm Victoria Bryant, <strong> a product and brand designer </strong> located in the mountains of Asheville, North Carolina.</p>
+        <p> I was a career public school educator who <strong> specialized in behavior analysis of high-risk students. </strong> Through working with them, their teachers, and their families, I gained three major skillsets:</p>
         <ul>
             <li> I understand, empathize with, and communicate openly and kindly with people from all walks of life.</li>
             <li> I'm regularly able to present my thought processes in an easily understandable way.</li>
             <li> An innant balancer by nature, I stay inherently unflappable in high-stess situations.</li>
         </ul>
-        <p> I utilize these skills and my art + design background to create digital experiences that combine the power of methodology, research, empathy, and an "it's worth a try" mentality. </p> 
-        <p> A maker and storyteller in my spare time, you can often find me reading, writing, flying kites at the top of hikes, or eating my way through my excessive cookbook collection. </p>
     </AboutText>
+    <AboutText2>
+    <p> I utilize these skills and my art + design background to create digital experiences that combine the power of methodology, research, empathy, and an "it's worth a try" mentality. </p> 
+        <p> A maker and storyteller in my spare time, you can often find me reading, writing, flying kites at the top of hikes, or eating my way through my excessive cookbook collection. </p>
+    </AboutText2>
     <Contact src={LetsTalk} alt='Contact' id="contact"/>
     <ContactText>
     <p> Interested in working together or just want to see adorable pictures of my dogs? You can find my contact information below.<strong> Let's get into it. </strong> </p>
     <p id="mail"><a href="mailto:v.paige.bryant@gmail.com" >v.paige.bryant@gmail.com<MailIcon src={mail}/></a></p>
     <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/" target="_blank">Victoria Bryant<LinkedinIcon src={linkedin}/></a></p>
+    <p id="resume"><a href="src/images/Victoria Bryant Resume.pdf" download>Resumé<ResumeIcon src={Resume}/></a></p>
     </ContactText>
            <Link 
     activeClass="active"
@@ -121,30 +112,12 @@ const LandingPage = () => {
     offset={-50}
     duration={1000}
     ><ArrowImgUp src={ArrowUp}/></Link> 
-    </Landing>
     </>   
     )
 };
 
 export default LandingPage;
-
-const Landing = Styled.div
-    `
-    min-height: 100vh;
-    display: in-line;
-    right-margin: 70rem;
-    line-height: 1;
-    z-index: 1;
-    @media (max-width: 1300px){
-       margin: 0;
-       font-size: 0%;
-    }
-    
-`
-const List = Styled.div
-    `
-    line-height: 1;   
-`
+ 
 
 const IntroHeaderContainer = Styled.div
     `
@@ -155,93 +128,83 @@ const IntroHeaderContainer = Styled.div
 
 const Intro = Styled.img
     `
-    width: 350px;
-    height: auto;
-    margin-bottom: 0px;
+   position: absolute;
+left: 5.07%;
+right: 66.7%;
+top: 2.34%;
+bottom: 96.77%;
     `
 
 const ArrowImg = Styled.img 
     `
-    width: 40px;
-    height; 40px;
-    margin-top: 10px;
+    position: absolute;
+width: 50px;
+height: 27px;
+left: 55px;
+top: 530px;
+
     `
 
 const Banner1 = Styled.img 
     `
-    width: 150px;
-    height; 50px;
-    margin-left: -1.3%;
-    `
-const Banner1Container = Styled.div
-    `
-    position: relative;
-    margin-bottom: 10px;
-    `
-const Joy = Styled.div
-    `
     position: absolute;
-    top: 40%;
-    left: 100px;
-    transform: translate(-50%, -50%);
+width: 11.25rem;
+height: 4em;
+left: 2.5em;
+top: 14.7em;
     `
+
 const Banner2 = Styled.img 
     `
-    width: 255px;
-    height; 50px;
-    margin-left: -1.7%;
+  position: absolute;
+width: 302px;
+height: 69px;
+left: 40px;
+top: 310px;
+
     `
-const Banner2Container = Styled.div
-    `
-    position: relative;
-    margin-bottom: 10px;
-    `
-const Human = Styled.div
-    `
-    position: absolute;
-    top: 44%;
-    left: 150px;
-    transform: translate(-50%, -50%);
-    `
+
 const Banner3 = Styled.img 
     `
-    width: 310px;
-    height; 50px;
-    margin-left: -1.7%;
-    `
-const Banner3Container = Styled.div
-    `
-    position: relative;
-    margin-bottom: 10px;
-    `
-const Accessible = Styled.div
-    `
     position: absolute;
-    top: 44%;
-    left: 180px;
-    transform: translate(-50%, -50%);
+width: 386.89px;
+height: 71px;
+left: 40px;
+top: 375px;
     `
+
+const IntroText = Styled.div 
+`
+    position: absolute;
+    top: 7rem;
+    left: -1rem;
+    line-height: 1.5;
+    p{
+    font-size: 220%;
+    }
+
+`
 const Work = Styled.img `
     position: absolute;
-    width: 312px;
-    height: 75px;
+   width: 391px;
+height: 94.9px;
     left: 0px;
-    top: 550px;
+    top: 600px;
 `
 
 const FC = Styled.img `
 position: absolute;
-width: 600px;
-height: 336px;
-left: 70px;
-top: 650px;
+width: 750px;
+height: 420px;
+left: 10px;
+top: 700px;
 
 `
 
 const FCText = Styled.div
 `
 position: absolute;
-top: 715px;
+top: 795px;
 left: 700px;
 font-size: 19px;
 #text{
@@ -253,7 +216,7 @@ font-size: 19px;
 const FCHover = Styled.div
 `
 position: absolute;
-top: 850px;
+top: 970px;
 left: 700px;
 .cs{
     font-size: 16px;
@@ -266,8 +229,8 @@ left: 700px;
 const CSArrow1 = Styled.img
 `
 position: absolute;
-top: -5px;
-left: 130px;
+top: 0px;
+left: 200px;
 width: 15.2px;
 height: 27.2px;
 transition: transform 600ms;
@@ -275,16 +238,16 @@ transition: transform 600ms;
 
 const AT = Styled.img `
 position: absolute;
-width: 570px;
-height: 385px;
-left: 100px;
-top: 1000px;
+width: 710px;
+height: 482.26px;
+left: 50px;
+top: 1150px;
 `
 
 const ATText = Styled.div
 `
 position: absolute;
-top: 1105px;
+top: 1255px;
 left: 700px;
 font-size: 19px;
 #text{
@@ -295,7 +258,7 @@ font-size: 19px;
 const ATHover = Styled.div
 `
 position: absolute;
-top: 1245px;
+top: 1450px;
 left: 700px;
 .cs{
     font-size: 16px;
@@ -309,24 +272,24 @@ const CSArrow2 = Styled.img
 position: absolute;
 width: 15.2px;
 height: 27.2px;
-top: -5px;
-left: 130px;
+top: 0px;
+left: 200px;
 transition: transform 600ms;
 `
 
 const TW = Styled.img `
 position: absolute;
-width: 570px;
-height: 385px;
-left: 100px;
-top: 1350px;
+width: 710px;
+height: 480px;
+left: 50px;
+top: 1620px;
 
 `
 
 const TWText = Styled.div
 `
 position: absolute;
-top: 1455px;
+top: 1750px;
 left: 700px;
 font-size: 19px;
 #text{
@@ -337,7 +300,7 @@ font-size: 19px;
 const TWHover = Styled.div
 `
 position: absolute;
-top: 1580px;
+top: 1920px;
 left: 700px;
 .cs{
     
@@ -353,70 +316,85 @@ position: relative;
 width: 15.2px;
 height: 27.2px;
 top: -40px;
-left: 130px;
+left: 200px;
 transition: transform 600ms;
 `
 const About = Styled.img
     `
 position: absolute;
-width: 172px;
-height: 67px;
+width: 216.26px;
+height: 84.66px;
 left: 53px;
-top: 1760px;
+top: 2100px;
     `
 const Picture = Styled.img
     `
     position: absolute;
-    width: 313px;
-    height: 338px;
+    width: 392px;
+    height: 423px;
     left: 650px;
-    top: 1800px;
+    top: 2200px;
     z-index: 0;
     `
 
 const AboutText = Styled.div
 `
     position: absolute;
-    font-size: 19px;
-    top: 1860px;
+    top: 2200px;
+    margin-left: -60px;
+    margin-right: 400px;
     ul{
-        margin-left: 20px;
-        margin-right: 570px;
+        margin-left: 85px;
         margin-bottom: 20px;
         line-height: 1.5;
+        li{
+        font-size: 1.5em;
+        margin-right: 100px;
+        }
     }
-    .margin{
-        margin-right: 500px;
-    }
+
+`
+const AboutText2 =Styled.div
+`
+  position: absolute;
+top: 2720px;
+margin-left: -60px;
+margin-right: 160px;
 
 `
 const Contact = Styled.img
     `
     position: absolute;
-    width: 278px;
-    height: 92px;
+    width: 348px;
+    height: 115px;
     left: 49px;
-    top: 2350px;
+    top: 2950px;
     `
 
 const ArrowImgUp = Styled.img 
     `
     position: absolute;
     left: 72px;
-    top: 2800px;
+    top: 3500px;
     `
 
 const ContactText = Styled.div
 `
- position: absolute;
+    position: absolute;
+    margin-left: -60px;
     font-size: 19px;
-    top: 2500px;
+    top: 3100px;
     margin-right: 240px;
     #mail{
         margin-left: 150px;
         margin-top: 55px;
     }
     #linkedin{
+        margin-left: 150px;
+        margin-top: 45px;
+
+    }
+    #resume{
         margin-left: 150px;
         margin-top: 45px;
 
@@ -430,7 +408,7 @@ position: absolute;
 width: 40px;
 height: 40px;
 left: 85px;
-top: 85px;
+top: 140px;
 
 `
 
@@ -440,5 +418,14 @@ position: absolute;
 width: 31px;
 height: 31px;
 left: 90px;
-top: 150px;
+top: 215px;
+`
+
+const ResumeIcon = Styled.img
+`
+position: absolute;
+width: 38px;
+height: 38px;
+left: 85px;
+top: 285px;
 `
