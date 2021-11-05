@@ -24,7 +24,7 @@ import Lady from '../images/LadyPic.png';
 import Man from '../images/ManPic.png';
 import GapBanner from '../images/BrandBanner.png';
 import Solution from '../images/SolutionHeader.png';
-import TWMockup from '../images/TWMockup.png';
+import TWMockup from '../images/GIFTimewells.png';
 import Method from '../images/MethodHeader.png';
 import UserPersona from '../images/SamPersona.png';
 import TaskFlow from '../images/TaskFlowTW.png';
@@ -225,8 +225,8 @@ const TWHeaderContainer = Styled.div
 const TW = Styled.img
     `
     position: absolute;
-    width: 415px;
-    height: 40px;
+    width: 473.11px;
+    height: 52.01px;
     `
 
 const TWImage = Styled.img
@@ -244,9 +244,9 @@ const Table = Styled.div
     position: absolute;
     height: 46px;
     left: 50px;
-    right: 290px;
-    top: 600px;
-    
+    right: 400px;
+    top: 650px;
+    font-size: 24px;
      ul {
         display: block;
         list-style: none;
@@ -257,7 +257,6 @@ const Table = Styled.div
     td {
     vertical-align: top;
     padding: 15px;
-    font-size: 18px;
     }
     `
 
@@ -265,178 +264,173 @@ const PHeader = Styled.img
 `
 position: absolute;
 left: 56px;
-top: 965px;
-width: 274px;
-height: 75px;
+top: 980px;
+width: 365px;
+height: 94px;
 `
 
 const Problem = Styled.div
 `
 position: absolute;
 line-height: 1.2;
-left: 64px;
-top: 1280px;
+left: 0px;
+top: 1380px;
 right: 140px;
 color: #360713;
- p {
-    font-size: 19px;
-    }
 `
 
 const Num1 = Styled.img
 `
 position: absolute;
-width: 28px;
-height: 28px;
+width: 33px;
+height: 33px;
 left: 92px;
-top: 1060px;
+top: 1140px;
 `
 
 const Num2 = Styled.img
 
 `
 position: absolute;
-width: 28px;
-height: 28px;
+width: 33px;
+height: 33px;
 left: 92px;
-top: 1160px;
+top: 1265px;
 `
 
 const NumOne = Styled.img
 
 `
 position: absolute;
-width: 7px;
-height: 17px;
-left: 101px;
-top: 1065px;
+width: 8px;
+height: 20px;
+left: 102px;
+top: 1148px;
 `
 
 const NumTwo = Styled.img
 `
 position: absolute;
-width: 11px;
-height: 18px;
-left: 100px;
-top: 1165px;
+width: 13px;
+height: 20px;
+left: 102px;
+top: 1270px;
 
 `
 
 const Prob = Styled.div
 `
 position: absolute;
-left: 150px;
-top: 1015px;
+left: 110px;
+top: 1085px;
     p{
-        margin-right: 120px;
-        font-size: 19px;
+        margin-right: 400px;
+        font-size: 24px;
         margin-top: 45px;
-        margin-bottom: 65px;
+        margin-bottom: 60px;
+        line-height: 1.5;
     }
     .white{
         color: #FFF1EC;
         background-color: #360713;
-        font-size: 19px;
     }
     #p1 {
-        margin-right: 480px;
+        margin-right: 650px;
     }
     #p2 {
-        margin-right: 220px;
+        margin-right: 350px;
     }
 `
 
-const RLoop = Styled.img
-
-`
-position: absolute;
-width: 398px;
-height: 89px;
-left: 32px;
-top: 1378px;
-
-`
 
 const RHeader = Styled.img
 `
 position: absolute;
-width: 303px;
-height: 70px;
+width: 489px;
+height: 112px;
 left: 74px;
-top: 1398px;
+top: 1480px;
 `
 
 const ResearchText = Styled.div
 `
 position: absolute;
-left: 77px;
-top: 1500px;
-font-size: 25px;
+top: 1650px;
+left: 0px;
+p {
+font-size: 32px;
+}
 #para{
-    margin-right: 300px;
+    margin-right: 380px;
+    font-size: 24px;
 }
 #after{
    margin-right: auto; 
-   margin-top: 300px;
+   margin-top: 400px;
+   font-size: 24px;
+}
+#last{
+   font-size: 24px;
+
 }
 `
 
 const PersonaImg = Styled.img
 `
 position: absolute;
-width: 774px;
-height: 164px;
+width: 968px;
+height: 205px;
 left: 70px;
-top: 1700px;
+top: 1850px;
 
 `
 
 const InsightsRect = Styled.img
 `
 position: absolute;
-width: 882px;
-height: 420px;
+width: 1103px;
+height: 486px;
 left: 0px;
-top: 2050px;
+top: 2300px;
 
 `
 
 const W1 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 2180px;
+top: 2460px;
 
 `
 
 const W2 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 2250px;
+top: 2530px;
 
 `
 const W3 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 2320px;
+top: 2600px;
 
 `
 
 const W4 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 2390px;
+top: 2670px;
 
 `
 
@@ -444,16 +438,17 @@ const InsightsText = Styled.div
 
 `
 position: absolute;
-top: 2100px;
+top: 2360px;
 color: #FFF1EC;
 p{
-    font-size: 23px;
+    font-size: 32px;
     margin-bottom: 55px;
+    margin-left: 0px;
 }
  ul {
         display: block;
         list-style: none;
-        font-size: 19px;
+        font-size: 24px;
     }
  li {
         margin-left: 80px;
@@ -468,90 +463,90 @@ p{
 const GapHeader = Styled.img
 `
 position: absolute;
-width: 220px;
-height: 64px;
+width: 276px;
+height: 81px;
 left: 70px;
-top: 2560px;
+top: 2900px;
 `
 
 const LogoImg = Styled.img
 `
 position: absolute;
-width: 190px;
-height: 177px;
+width: 238.23px;
+height: 222.74px;
 left: 174px;
-top: 2650px;
+top: 3050px;
 `
 
 const LadyImg =Styled.img
 `
 position: absolute;
-width: 150px;
-height: 150px;
-left: 450px;
-top: 2620px;
+width: 187.65px;
+height: 187.65px;
+left: 520px;
+top: 3030px;
 `
 
 const ManImg =Styled.img
 `
 position: absolute;
-width: 150px;
-height: 150px;
-left: 615px;
-top: 2620px;
+width: 187.65px;
+height: 187.65px;
+left: 720px;
+top: 3030px;
 `
 
 const TWGapText = Styled.div 
 `
 position: absolute;
 font-size: 19px;
-top: 2820px;
-left: 150px;
+top: 3300px;
+left: 70px;
 `
 const PplGapText = Styled.div 
 `
 position: absolute;
 font-size: 19px;
-top: 2820px;
+top: 3300px;
 left: 450px;
-margin-right: 200px;
+margin-right: 300px;
 `
 
 const BannerText = Styled.div 
 `
 position: absolute;
 font-size: 19px;
-top: 2950px;
-left: 70px;
-margin-right: 170px;
+top: 3450px;
+left:0px;
+margin-right: 250px;
 `
 
 const GapBannerImg = Styled.img
 `
 position: absolute;
-width: 790px;
-height: 123px;
+width: 977px;
+height: 169px;
 left: 57px;
-top: 2920px;
+top: 3400px;
 `
 
 const SolutionHeader = Styled.img
 `
 position: absolute;
-width: 374px;
-height: 44px;
+width: 480px;
+height: 60px;
 left: 74px;
-top: 3100px;
+top: 3650px;
 
 `
 
 const SolutionImg = Styled.img
 `
 position: absolute;
-width: 775px;
-height: 471px;
+width: 959px;
+height: 553px;
 left: 73px;
-top: 3200px;
+top: 3790px;
 
 `
 
@@ -559,9 +554,9 @@ const SolutionText1 = Styled.div
 
 `
 position: absolute;
-top: 3700px;
-right: 630px;
-left: 70px;
+top: 4400px;
+right: 800px;
+left: 0px;
 font-size: 19px;
 `
 
@@ -569,8 +564,8 @@ const SolutionText2 = Styled.div
 
 `
 position: absolute;
-top: 3700px;
-right: 250px;
+top: 4400px;
+right: 290px;
 left: 460px;
 font-size: 19px;
 `
@@ -578,174 +573,173 @@ const MethodHeader = Styled.img
 
 `
 position: absolute;
-width: 349px;
-height: 96px;
+width: 437px;
+height: 119.18px;
 left: 70px;
-top: 3900px;
+top: 4650px;
 `
 
 const UserPersonaImg = Styled.img
 `
 position: absolute;
-width: 517px;
-height: 412px;
+width: 647px;
+height: 515px;
 left: 75px;
-top: 4100px;
+top: 4900px;
 `
 
 const TaskFlowImg = Styled.img
 `
 position: absolute;
-width: 502px;
-height: 172px;
+width: 628px;
+height: 216px;
 left: 75px;
-top: 4670px;
+top: 5550px;
 
 `
 
 const UserFlowImg = Styled.img
 `
 position: absolute;
-width: 512px;
-height: 451px;
+width: 641px;
+height: 564px;
 left: 67px;
-top: 4980px;
+top: 5880px;
 `
 
 const SketchImg = Styled.img
 `
 position: absolute;
-width: 503px;
-height: 296px;
+width: 629px;
+height: 370px;
 left: 67px;
-top: 5580px;
+top: 6590px;
 
 `
 
 const WireframeImg = Styled.img
 `
 position: absolute;
-width: 512px;
-height: 635px;
+width: 640px;
+height: 794px;
 left: 67px;
-top: 6015px;
+top: 7100px;
 
 `
 const BrandUIImg = Styled.img
 `
 position: absolute;
-width: 504px;
-height: 654px;
+width: 655px;
+height: 1116px;
 left: 67px;
-top: 6820px;
+top: 8050px;
 
 `
 const MethodText = Styled.div
 `
-font-size: 19px;
 #user-header {
    position: absolute;
-   top: 4025px;
-   font-size: 25px;
+   top: 4825px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #user-text {
    position: absolute;
-   top: 4200px;
-   font-size: 19px;
-   margin-left: 550px;
-    margin-right: 300px;
+   top: 5030px;
+   font-size: 24px;
+   margin-left: 675px;
+    margin-right: 380px;
 
 }
 #task-header {
    position: absolute;
-   top: 4600px;
-   font-size: 25px;
+   top: 5480px;
+   font-size: 32px;
     margin-left: 15px;
 }
 #task-text {
    position: absolute;
-   top: 4700px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 5580px;
+   font-size: 24px;
+   margin-left: 675px;
+    margin-right: 380px;
 }
 #user-flow-header {
    position: absolute;
-   top: 4900px;
-   font-size: 25px;
+   top: 5810px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #user-flow-text {
    position: absolute;
-   top: 5150px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 5950px;
+   font-size: 24px;
+   margin-left: 675px;
+    margin-right: 380px;
 
 }
 #sketch-header {
    position: absolute;
-   top: 5500px;
-   font-size: 25px;
+   top: 6540px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #sketch-text {
    position: absolute;
-   top: 5640px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 6640px;
+   font-size: 24px;
+   margin-left: 675px;
+    margin-right: 380px;
 }
 #wireframe-header {
    position: absolute;
-   top: 5930px;
-   font-size: 25px;
+   top: 7050px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #wireframe-text {
    position: absolute;
-   top: 6190px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 7200px;
+   font-size: 24px;
+   margin-left: 675px;
+    margin-right: 380px;
 }
 #wireframe-text2 {
    position: absolute;
-   top: 6355px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 7360px;
+   font-size: 24px;
+   margin-left: 675px;
+    margin-right: 380px;
 }
 #branding-header {
    position: absolute;
-   top: 6720px;
-   font-size: 25px;
+   top: 8000px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #branding-text {
    position: absolute;
-   top: 7030px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 8390px;
+   font-size: 24px;
+    margin-left: 675px;
+    margin-right: 380px;
 }
 #branding-text2 {
    position: absolute;
-   top: 7230px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 8610px;
+   font-size: 24px;
+    margin-left: 675px;
+    margin-right: 380px;
 }
 `
 
 const TestHeader = Styled.img
 `
 position: absolute;
-width: 401px;
-height: 92px;
+width: 502.1px;
+height: 115px;
 left: 63px;
-top: 7550px;
+top: 9300px;
 
 `
 
@@ -755,7 +749,7 @@ const TestTable = Styled.div
     height: 46px;
     left: 50px;
     right: 290px;
-    top: 7750px;
+    top: 9520px;
     
      ul {
         display: block;
@@ -766,97 +760,98 @@ const TestTable = Styled.div
     }
     td {
     vertical-align: center;
-    padding: 15px;
-    font-size: 18px;
+    padding: 20px;
+    font-size: 24px;
     }
     .table-header {
-        font-size: 22px;
+        font-size: 32px;
     }
     `
 const TestText = Styled.div
 `
     position: absolute;
-    font-size: 19px;
-    top: 7690px;
+    font-size: 24px;
+    top: 9450px;
+    left: 0px;
 
 `
 
 const Test1Img =Styled.img
 `
 position: absolute;
-width: 769px;
-height: 565px;
+width: 955px;
+height: 644px;
 left: 66px;
-top: 7950px;
+top: 9800px;
 
 `
 
 const Test2Img =Styled.img
 `
 position: absolute;
-width: 769px;
-height: 565px;
+width: 956px;
+height: 658px;
 left: 66px;
-top: 8580px;
+top: 10550px;
 
 `
 const Test3Img =Styled.img
 `
 position: absolute;
-width: 769px;
-height: 565px;
+width: 970px;
+height: 676px;
 left: 66px;
-top: 9200px;
+top: 11300px;
 
 `
 
 const TestText1 = Styled.div
 `
 position: absolute;
-top: 8200px;
+top: 10060px;
 font-size: 16px;
-left: 550px;
+left: 600px;
 `
 
 const TestText2 = Styled.div
 `
 position: absolute;
-top: 8830px;
+top: 10820px;
 font-size: 16px;
-left: 550px;
+left: 600px;
 `
 
 const TestText3 = Styled.div
 `
 position: absolute;
-top: 9440px;
+top: 11580px;
 font-size: 16px;
-left: 550px;
+left: 600px;
 `
 
 const PrototypeBan = Styled.img
 `
 position: absolute;
-width: 219px;
-height: 61px;
+width: 274px;
+height: 77px;
 left: 70px;
-top: 9850px;
+top: 12050px;
 
 `
 
 const ProtoText = Styled.div
 `
 position: absolute;
-left: 110px;
-top: 9865px;
-font-size: 19px;
+left: 40px;
+top: 12070px;
+font-size: 24px;
 `
 
 const ArrowRightImg = Styled.img
 `
 position: absolute;
-left: 240px;
-top: 9865px;
+left: 300px;
+top: 12070px;
 width: 15px;
 height: 27px;
 
@@ -865,57 +860,57 @@ height: 27px;
 const FollowUpHeader = Styled.img
 `
 position: absolute;
-width: 400px;
-height: 50px;
+width: 489px;
+height: 60px;
 left: 70px;
-top: 9980px;
+top: 12200px;
 
 `
 
 const FollowUpText = Styled.div
 `
 position: absolute;
-top: 10080px;
-left: 70px;
-font-size: 19px;
-margin-right: 160px;
+top: 12350px;
+left: 0px;
+font-size: 24px;
+margin-right: 340px;
 `
 const FinalRect = Styled.img
 `
 position: absolute;
-width: 838px;
-height: 388px;
+width: 1103px;
+height: 400px;
 left: 0px;
-top: 10200px;
+top: 12500px;
 
 `
 
 const WC1 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 10325px;
+top: 12620px;
 
 `
 
 const WC2 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 10410px;
+top: 12710px;
 
 `
 const WC3 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 10500px;
+top: 12800px;
 
 `
 
@@ -923,20 +918,22 @@ const FinalText = Styled.div
 
 `
 position: absolute;
-top: 10240px;
+top: 12520px;
 color: #FFF1EC;
 p{
-    font-size: 23px;
-    margin-bottom: 60px;
+    font-size: 32px;
+    margin-bottom: 55px;
+    margin-left: 0;
 }
  ul {
         display: block;
         list-style: none;
-        font-size: 19px;
+        font-size: 24px;
+        margin-left: 20px;
     }
  li {
         margin-left: 80px;
-        margin-right: 350px;
+        margin-right: 400px;
         margin-bottom: 50px;
 
  }
@@ -947,8 +944,9 @@ p{
 const ReturnImg = Styled.img 
     `
     position: absolute;
-    width: 239px;
-    height: 27px;
+    width: 250px;
+    height: 35px;
     left: 63px;
-    top: 10650px;
+    top: 13000px;
+    bottom: 100px;
     `

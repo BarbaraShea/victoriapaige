@@ -31,17 +31,17 @@ const SnapImg = Styled.img
     `
     position: absolute;
     top: 0px;
-    right: 250px;
-    width: 35px;
-    height: 45px;
+    right: 285px;
+    width: 41px;
+    height: 52px;
     display: none;
    `
 
 const LogoImg = Styled.img
 `
 position: relative;
-width: 137px;
-height: 78px;
+width: 172px;
+height: 98.69px;
 right: 150px;
 top: 0px;
 `

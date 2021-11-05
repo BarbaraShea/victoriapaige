@@ -55,8 +55,8 @@ export default NavBar;
 
 const StyledNav = Styled.nav`
     float: right;
-    padding: 270px 80px 10px 10px;
-    font-size: 18px;
+    padding: 270px 100px 10px 10px;
+    font-size: 24px;
     z-index: 4;
      ul {
         display: block;
@@ -74,9 +74,9 @@ const SnapImg = Styled.img
     `
     position: relative;
     top: 2px;
-    right: 19px;
-    width: 35px;
-    height: 45px;
+    right: 25px;
+     width: 41px;
+    height: 52px;
     display: none;
    `
 
@@ -88,8 +88,8 @@ const LogoImg = Styled.img
     position: absolute;
     top: 5px;
     right: 7px;
-    width: 50px;
-    height: 75px;
+    width: 64px;
+    height: 98px;
     
     `
 

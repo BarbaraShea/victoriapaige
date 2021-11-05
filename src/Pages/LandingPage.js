@@ -229,7 +229,7 @@ const CSArrow1 = Styled.img
 `
 position: absolute;
 top: 0px;
-left: 200px;
+left: 250px;
 width: 15.2px;
 height: 27.2px;
 transition: transform 600ms;
@@ -271,7 +271,7 @@ position: absolute;
 width: 15.2px;
 height: 27.2px;
 top: 0px;
-left: 200px;
+left: 250px;
 transition: transform 600ms;
 `
 
@@ -313,7 +313,7 @@ position: relative;
 width: 15.2px;
 height: 27.2px;
 top: -40px;
-left: 200px;
+left: 250px;
 transition: transform 600ms;
 `
 const About = Styled.img
@@ -329,7 +329,7 @@ const Picture = Styled.img
     position: absolute;
     width: 392px;
     height: 423px;
-    left: 750px;
+    left: 800px;
     top: 2200px;
     z-index: 0;
     margin: 0;
@@ -347,7 +347,7 @@ const AboutText = Styled.div
         line-height: 1.5;
         li{
         font-size: 1.5em;
-        margin-right: 100px;
+        margin-right: 150px;
         }
     }
 
@@ -355,7 +355,7 @@ const AboutText = Styled.div
 const AboutText2 =Styled.div
 `
 position: absolute;
-top: 2720px;
+top: 2620px;
 margin-left: -60px;
 margin-right: 160px;
 
@@ -366,14 +366,14 @@ const Contact = Styled.img
     width: 348px;
     height: 115px;
     left: 49px;
-    top: 2950px;
+    top: 2850px;
     `
 
 const ArrowImgUp = Styled.img 
     `
     position: absolute;
     left: 72px;
-    top: 3500px;
+    top: 3400px;
     `
 
 const ContactText = Styled.div
@@ -381,11 +381,11 @@ const ContactText = Styled.div
     position: absolute;
     margin-left: -60px;
     font-size: 19px;
-    top: 3140px;
+    top: 3000px;
     margin-right: 240px;
     #mail{
         margin-left: 150px;
-        margin-top: 55px;
+        margin-top: 70px;
     }
     #linkedin{
         margin-left: 150px;
@@ -406,7 +406,7 @@ position: absolute;
 width: 40px;
 height: 40px;
 left: 85px;
-top: 140px;
+top: 125px;
 
 `
 
@@ -416,7 +416,7 @@ position: absolute;
 width: 31px;
 height: 31px;
 left: 90px;
-top: 215px;
+top: 200px;
 `
 
 const ResumeIcon = Styled.img
@@ -425,5 +425,5 @@ position: absolute;
 width: 38px;
 height: 38px;
 left: 85px;
-top: 285px;
+top: 270px;
 `

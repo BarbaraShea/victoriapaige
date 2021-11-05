@@ -45,7 +45,7 @@ p {
   margin-right: 160px;
   margin-left: 70px;
   z-index: 1;
-  font-size: 1.5rem;
+  font-size: 24px;
 };
 
 li > .active {
