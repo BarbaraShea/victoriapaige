@@ -41,7 +41,7 @@ import FollowUp from '../images/FollowUp.png';
 import ArrowRight from '../images/ArrowRight.png';
 import Return from '../images/Return.png'
 import BrandBanner from '../images/BrandBanner.png';
-
+import TWGIF from '../images/TWGif.gif';
 
 
 const Timewells = () => {
@@ -92,6 +92,22 @@ const Timewells = () => {
         <p id="after"><strong>My interviewees were all well-traveled and adventurous.</strong> </p>
         <p id="last"> I do wish I had more range of age for my initial research.</p>
         </ResearchText>
+        <Chris>
+         <p id="chris"><strong>Chris</strong></p>
+        <p id="chris-age"> 32 years old </p>
+        </Chris>
+        <Holly>
+        <p id="holly"><strong>Holly</strong></p>
+        <p id="holly-age"> 31 years old </p>
+        </Holly>
+        <Taylor>
+        <p id="taylor"><strong>Taylor</strong></p>
+        <p id="taylor-age"> 34 years old </p>
+        </Taylor>
+        <Sue>
+        <p id="sue"><strong>Sue</strong></p>
+        <p id="sue-age"> 34 years old </p>
+        </Sue>
         <PersonaImg src={PersPics}/>
         <InsightsRect src={Rect}/>
         <W1 src={White1}/>
@@ -123,6 +139,7 @@ const Timewells = () => {
         </BannerText>
         <SolutionHeader src={Solution}/>
         <SolutionImg src={TWMockup}/>
+        <GIF src={TWGIF}/>
         <SolutionText1>
         <p><strong> A multi-level filter feature </strong> so users can search for trips in myriad ways, depending on their personal inclination.</p>
         </SolutionText1>
@@ -372,9 +389,39 @@ font-size: 32px;
 #last{
    font-size: 24px;
 
-}
 `
-
+const Chris = Styled.div
+`
+position: absolute;
+font-size: 24px;
+text-align: center;
+top: 2060px;
+margin-left: -30px;
+`
+const Holly = Styled.div
+`
+position: absolute;
+font-size: 24px;
+text-align: center;
+top: 2060px;
+margin-left: 230px;
+`
+const Taylor = Styled.div
+`
+position: absolute;
+font-size: 24px;
+text-align: center;
+top: 2060px;
+margin-left: 490px;
+`
+const Sue = Styled.div
+`
+position: absolute;
+font-size: 24px;
+text-align: center;
+top: 2060px;
+margin-left: 750px;
+`
 const PersonaImg = Styled.img
 `
 position: absolute;
@@ -549,7 +596,15 @@ left: 73px;
 top: 3790px;
 
 `
+const GIF = Styled.img
+`
+position: absolute;
+width: 735px;
+height: 460px;
+left: 185px;
+top: 3825px;
 
+`
 const SolutionText1 = Styled.div
 
 `
