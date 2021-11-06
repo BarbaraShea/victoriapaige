@@ -241,8 +241,8 @@ const ATHeaderContainer = Styled.div
 const AT = Styled.img
     `
     position: absolute;
-    width: 415px;
-    height: 50px;
+    width: 500px;
+    height: 70px;
     `
 
 const Table = Styled.div
@@ -250,8 +250,8 @@ const Table = Styled.div
     position: absolute;
     height: 46px;
     left: 50px;
-    right: 290px;
-    top: 670px;
+    right: 275px;
+    top: 770px;
     
      ul {
         display: block;
@@ -263,15 +263,15 @@ const Table = Styled.div
     td {
     vertical-align: top;
     padding: 15px;
-    font-size: 18px;
+    font-size: 24px;
     }
    `
 
 const ATImg = Styled.img
 `
 position: absolute;
-width: 722px;
-height: 536px;
+width: 903px;
+height: 671px;
 left: 35px;
 top: 141px;
 `
@@ -280,27 +280,28 @@ const PHeader = Styled.img
 `
 position: absolute;
 left: 56px;
-top: 965px;
-width: 274px;
-height: 75px;
+top: 1065px;
+width: 386px;
+height: 94px;
 `
 
 const ProblemText = Styled.div
 `
 position: absolute;
-left: 56px;
-top: 1070px;
-margin-right:160px;
+left: 0px;
+top: 1270px;
+margin-right:200px;
 #quote{
-    font-size: 28px;
+    font-size: 35px;
+    line-height: 1.2;
 }
 #byline{
-    font-size: 16px;
-    margin-left:480px;
+    font-size: 22px;
+    margin-left: 680px;
     margin-bottom: 50px;
 }
 p {
-    font-size: 19px;
+    font-size: 24px;
 }
 
 `
@@ -308,153 +309,154 @@ p {
 const RHeader = Styled.img
 `
 position: absolute;
-width: 303px;
-height: 70px;
+width: 379px;
+height: 88px;
 left: 70px;
-top: 1370px;
+top: 1630px;
 `
 
 const ResearchText1 = Styled.div
 `
 position: absolute;
-left: 77px;
-top: 1520px;
-font-size: 25px;
+left: 0px;
+top: 1820px;
 #header{
-    font-size: 25px;
-    margin-bottom: 230px;
+    font-size: 32px;
+    margin-bottom: 280px;
 }
 p{
-   font-size: 19px;
-   margin-right: 300px; 
+   font-size: 24px;
+   margin-right: 480px; 
 }
 `
 
 const RReadingImg = Styled.img
 `
 position: absolute;
-width: 776px;
-height: 130px;
-left: 77px;
-top: 1600px;
+width: 970px;
+height: 163px;
+left: 50px;
+top: 1920px;
 `
 
 const ResearchText2 = Styled.div
 `
 position: absolute;
-left: 77px;
-top: 1960px;
-font-size: 25px;
+left: 0px;
+top: 2400px;
 #header{
-    font-size: 25px;
-    margin-bottom: 230px;
+    font-size: 32px;
+    margin-bottom: 280px;
 }
 p{
-   font-size: 19px;
-   margin-right: 300px; 
+   font-size: 24px;
+   margin-right: 480px; 
 }
 `
 
 const CompAnaImg = Styled.img
 `
 position: absolute;
-width: 776px;
-height: 130px;
-left: 77px;
-top: 2040px;
+width: 970px;
+height: 163px;
+left: 50px;
+top: 2500px;
 `
 
 const ResearchText3 = Styled.div
 `
 position: absolute;
-left: 77px;
-top: 2410px;
-font-size: 25px;
+left: 0px;
+top: 3000px;
 #header{
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 100px;
 }
 .para{
-   font-size: 19px;
-   margin-left: 460px;
-   margin-right: 330px; 
+   font-size: 24px;
+   margin-left: 640px;
+   margin-right: 430px; 
 }
 `
 
 const UserIntImg = Styled.img
 `
 position: absolute;
-width: 424px;
-height: 271px;
+width: 530px;
+height: 339px;
 left: 74px;
-top: 2500px;
+top: 3100px;
 `
 
 const InsightsRect = Styled.img
 `
 position: absolute;
-width: 825px;
-height: 685px;
+width: 1032px;
+height: 857px;
 left: 0px;
-top: 2850px;
+top: 3500px;
 
 `
 
 const InsightsText = Styled.div
 `
 position: absolute;
-top: 2900px;
-font-size: 25px;
+top: 3550px;
 color: #FFF1EC;
+left: -10px;
+p{
+    font-size: 32px;
+}
 `
 
 const NeedsImg = Styled.img
 `
 position: absolute;
-top: 2960px;
-width: 676px;
-height: 131px;
+top: 3620px;
+width: 846px;
+height: 164px;
 `
 
 const FearsImg = Styled.img
 `
 position: absolute;
-top: 3130px;
-width: 676px;
-height: 164px;
+top: 3820px;
+width: 846px;
+height: 206px;
 `
 
 const MotivationsImg = Styled.img
 `
 position: absolute;
-top: 3340px;
-width: 676px;
-height: 166px;
+top: 4060px;
+width: 846px;
+height: 208px;
 `
 
 const GapHeader = Styled.img
 `
 position: absolute;
-width: 220px;
-height: 64px;
+width: 276px;
+height: 81px;
 left: 70px;
-top: 3600px;
+top: 4450px;
 
 `
 
 const GapText = Styled.div
 `
 position: absolute;
-left: 56px;
-top: 3730px;
+left: 0px;
+top: 4600px;
 margin-right:160px;
 #quote{
-    font-size: 28px;
+    font-size: 35px;
     margin-bottom: 40px;
     font-weight: 500;
 }
 p {
-    font-size: 19px;
+    font-size: 24px;
+    line-height: 1.2;
 }
 
 `
@@ -462,29 +464,29 @@ p {
 const SolutionHeader = Styled.img
 `
 position: absolute;
-width: 374px;
-height: 44px;
+width: 468px;
+height: 56px;
 left: 74px;
-top: 4000px;
+top: 4900px;
 
 `
 
 const SolutionText = Styled.div
 `
 position: absolute;
-left: 74px;
-top: 4100px;
-font-size: 19px;
+left: 0px;
+top: 5050px;
+font-size: 24px;
 margin-right: 160px;
 `
 
 const AppsImg = Styled.img
 `
 position: absolute;
-width: 728px;
-height: 847px;
+width: 911px;
+height: 1059px;
 left: 69px;
-top: 4200px;
+top: 5200px;
 
 `
 
@@ -493,50 +495,50 @@ const SolutionText1 = Styled.div
 text-align: center;
 #p1 {
    position: absolute;
-   top: 4600px;
-   font-size: 19px;
-   margin-left: 55px;
-   margin-right: 890px;
+   top: 5690px;
+   font-size: 24px;
+   margin-left: 40px;
+   margin-right: 1060px;
    text-align: center;
 
 }
 #p2 {
    position: absolute;
-   top: 4600px;
-   font-size: 19px;
-   margin-left: 310px;
-   margin-right: 620px;
+   top: 5690px;
+   font-size: 24px;
+   margin-left: 380px;
+   margin-right: 750px;
    text-align: center;
    }
 #p3 {
    position: absolute;
-   top: 4600px;
-   font-size: 19px;
-   margin-left: 615px;
-   margin-right: 400px;
+   top: 5690px;
+   font-size: 24px;
+   margin-left: 715px;
+   margin-right: 300px;
    text-align: center;
    }
 #p4 {
    position: absolute;
-   top: 5065px;
-   font-size: 19px;
-   margin-left: 55px;
-   margin-right: 890px;
+   top: 6270px;
+   font-size: 24px;
+   margin-left: 40px;
+   margin-right: 1060px;
    text-align: center;
 }
 #p5 {
    position: absolute;
-   top: 5065px;
-   font-size: 19px;
-   margin-left: 310px;
-   margin-right: 620px;
+   top: 6270px;
+   font-size: 24px;
+    margin-left: 380px;
+   margin-right: 750px;
    text-align: center;}
 #p6 {
    position: absolute;
-   top: 5065px;
-   font-size: 19px;
-   margin-left: 590px;
-   margin-right: 380px;
+   top: 6270px;
+   font-size: 24px;
+   margin-left: 700px;
+   margin-right: 420px;
    text-align: center;}
 `
 
@@ -544,19 +546,19 @@ const MethodHeader = Styled.img
 
 `
 position: absolute;
-width: 349px;
-height: 96px;
+width: 437px;
+height: 120px;
 left: 70px;
-top: 5200px;
+top: 6450px;
 `
 
 const LoraImg = Styled.img
 `
 position: absolute;
-width: 511px;
-height: 336px;
+width: 639px;
+height: 420px;
 left: 70px;
-top: 5400px;
+top: 6750px;
 
 `
 
@@ -564,10 +566,10 @@ const StoryImg = Styled.img
 
 `
 position: absolute;
-width: 511px;
-height: 323px;
+width: 639px;
+height: 404px;
 left: 65px;
-top: 6360px;
+top: 8050px;
 
 
 `
@@ -577,125 +579,125 @@ const MethodText = Styled.div
 font-size: 19px;
 #user-header {
    position: absolute;
-   top: 5330px;
-   font-size: 25px;
+   top: 6650px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #user-text {
    position: absolute;
-   top: 5500px;
-   font-size: 19px;
-   margin-left: 550px;
-    margin-right: 300px;
+   top: 6900px;
+   font-size: 24px;
+   margin-left: 670px;
+    margin-right: 290px;
 }
 #feature-header {
    position: absolute;
-   top: 5785px;
-   font-size: 25px;
+   top: 7300px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #feature-text {
    position: absolute;
-   top: 5860px;
-   font-size: 19px;
-   margin-left: 15px;
-margin-right: 300px;
+   top: 7400px;
+   font-size: 24px;
+  margin-left: 10px;
+    margin-right: 400px;
 
 }
 #safety{
    position: absolute;
-   top: 6040px;
+   top: 7600px;
    left: 90px;
-   font-size: 16px;
+   font-size: 22px;
 }
 #inclusivity{
    position: absolute;
-   top: 6040px;
-   left: 340px;
-   font-size: 16px;
-   margin-right: 600px;
+   top: 7600px;
+   left: 430px;
+   font-size: 22px;
+   margin-right: 670px;
 }
 #accessibility{
    position: absolute;
-   top: 6040px;
-   left: 610px;
-   font-size: 16px;
+   top: 7600px;
+   left: 770px;
+   font-size: 22px;
    margin-right: 280px;
 }
 }
 #story-header {
    position: absolute;
-   top: 6300px;
-   font-size: 25px;
+   top: 7950px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #story-text {
    position: absolute;
-   top: 6450px;
-   font-size: 19px;
-   margin-left: 550px;
-    margin-right: 300px;
+   top: 8170px;
+   font-size: 24px;
+      margin-left: 670px;
+    margin-right: 290px;
 
 }
 #wireframe-header {
    position: absolute;
-   top: 6730px;
-   font-size: 25px;
+   top: 8530px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #wireframe-text {
    position: absolute;
-   top: 6900px;
-   font-size: 19px;
-   margin-left: 550px;
-    margin-right: 300px;
+   top: 8720px;
+   font-size: 24px;
+   margin-left: 670px;
+    margin-right: 290px;
 
 }
 `
 const SafetyList = Styled.img
 `
 position: absolute;
-width: 99px;
-height: 31px;
+width: 124px;
+height: 39.33px;
 left: 70px;
-top: 5985px;
+top: 7540px;
 `
 
 const InclusivityList = Styled.img
 `
 position: absolute;
-width: 138px;
-height: 28px;
-left: 320px;
-top: 5985px;
+width: 173px;
+height: 36.87px;
+left: 400px;
+top: 7540px;
 `
 
 const AccessibilityList = Styled.img
 `
 position: absolute;
-width: 159px;
-height: 28px;
-left: 590px;
-top: 5985px;
+width: 199px;
+height: 36.61px;
+left: 740px;
+top: 7540px;
 `
 
 const WireframeImg = Styled.img
 `
 position: absolute;
-width: 512px;
-height: 292px;
+width: 641px;
+height: 366px;
 left: 65px;
-top: 6800px;
+top: 8650px;
 
 `
 
 const TestHeader = Styled.img
 `
 position: absolute;
-width: 401px;
-height: 92px;
+width: 502.1px;
+height: 115px;
 left: 63px;
-top: 7150px;
+top: 9130px;
 
 `
 
@@ -703,20 +705,20 @@ top: 7150px;
 const Number1 = Styled.img
 `
 position: absolute;
-width: 28px;
-height: 28px;
+width: 33px;
+height: 33px;
 left: 92px;
-top: 7395px;
+top: 9450px;
 `
 
 const Number2 = Styled.img
 
 `
 position: absolute;
-width: 28px;
-height: 28px;
+width: 33px;
+height: 33px;
 left: 92px;
-top: 7450px;
+top: 9510px;
 `
 
 
@@ -726,8 +728,8 @@ const NumberOne = Styled.img
 position: absolute;
 width: 7px;
 height: 17px;
-left: 101px;
-top: 7400px;
+left: 103px;
+top: 9455px;
 `
 
 const NumberTwo = Styled.img
@@ -735,8 +737,8 @@ const NumberTwo = Styled.img
 position: absolute;
 width: 11px;
 height: 18px;
-left: 100px;
-top: 7455px;
+left: 103px;
+top: 9518px;
 
 `
 
@@ -744,19 +746,19 @@ top: 7455px;
 const TestBullets = Styled.div
 `
 position: absolute;
-width: 860px;
-height: 60px;
-left: 160px;
-top: 7400px;
+// width: 860px;
+// height: 60px;
+left: 80px;
+top: 9450px;
     p{
         margin-bottom: 32px;
         margin-right: 170px;
-        font-size: 19px;
+        font-size: 24px;
         line-height: 1.2;
     }
     #final{
         margin-top: 40px;
-        margin-left: -100px;
+        margin-left: 0px;
     }
 `
 
@@ -764,11 +766,11 @@ const Test = Styled.div
 `
 position: absolute;
 line-height: 1.2;
-left: 64px;
-top: 7300px;
+left: 0px;
+top: 9320px;
 right: 140px;
  p {
-    font-size: 19px;
+    font-size: 24px;
     font-weight: 500;
     }
 `
@@ -776,26 +778,26 @@ right: 140px;
 const PrototypeBan = Styled.img
 `
 position: absolute;
-width: 219px;
-height: 61px;
+width: 274px;
+height: 77px;
 left: 70px;
-top: 9800px;
+top: 12500px;
 
 `
 
 const ProtoText = Styled.div
 `
 position: absolute;
-left: 110px;
-top: 9815px;
-font-size: 19px;
+left: 50px;
+top: 12520px;
+font-size: 24px;
 `
 
 const ArrowRightImg = Styled.img
 `
 position: absolute;
-left: 240px;
-top: 9815px;
+left: 300px;
+top: 12520px;
 width: 15px;
 height: 27px;
 
@@ -804,128 +806,128 @@ height: 27px;
 const TestImg1 = Styled.img
 `
 position: absolute;
-width: 755px;
-height: 689px;
+width: 944.66px;
+height: 862px;
 left: 70px;
-top: 7580px;
+top: 9650px;
 `
 
 const Test1Text = Styled.div
 `
 position: absolute;
-margin-right: 190px;
-left: 590px;
-top: 7680px;
-font-size: 19px;
+margin-right: 250px;
+left: 660px;
+top: 9750px;
+font-size: 24px;
 `
 const Test1Text2 = Styled.div
 `
 position: absolute;
-margin-right: 120px;
-left: 590px;
-top: 7950px;
-font-size: 19px;
+margin-right: 200px;
+left: 660px;
+top: 10100px;
+font-size: 24px;
 `
 
 const TestImg2 = Styled.img
 `
 position: absolute;
-width: 537px;
-height: 574px;
-left: 99px;
-top: 8330px;
+width: 672px;
+height: 718.69px;
+left: 50px;
+top: 10600px;
 
 `
 const Test2Text = Styled.div
 `
 position: absolute;
-margin-right: 140px;
-left: 640px;
-top: 8590px;
-font-size: 19px;
+margin-right: 200px;
+left: 660px;
+top: 10900px;
+font-size: 24px;
 `
 const Test2Text2 = Styled.div
 `
 position: absolute;
-margin-right: 640px;
-left: 150px;
-top: 8700px;
-font-size: 19px;
+margin-right: 850px;
+left: 60px;
+top: 11050px;
+font-size: 24px;
 `
 
 const TestImg3 = Styled.img
 `
 position: absolute;
-width: 744px;
-height: 789px;
+width: 930.22px;
+height: 987px;
 left: 94px;
-top: 8950px;
+top: 11450px;
 
 `
 const Test3Text = Styled.div
 `
 position: absolute;
-margin-right: 210px;
-left: 540px;
-top: 9100px;
-font-size: 19px;
+margin-right: 300px;
+left: 600px;
+top: 11620px;
+font-size: 24px;
 `
 
 const Test3Text2 = Styled.div
 `
 position: absolute;
-margin-right: 90px;
-left: 630px;
-top: 9400px;
-font-size: 19px;
+margin-right: 200px;
+left: 680px;
+top: 12050px;
+font-size: 24px;
 `
 
 const FollowUpHeader = Styled.img
 `
 position: absolute;
-width: 392px;
-height: 42px;
+width: 490px;
+height: 53px;
 left: 70px;
-top: 9950px;
+top: 12650px;
 
 `
 
 const FinalRect = Styled.img
 `
 position: absolute;
-width: 838px;
-height: 388px;
+width: 1048px;
+height: 486px;
 left: 0px;
-top: 10090px;
+top: 12790px;
 
 `
 
 const WC1 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 10195px;
+top: 12910px;
 
 `
 
 const WC2 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 10290px;
+top: 13020px;
 
 `
 const WC3 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 10380px;
+top: 13140px;
 
 `
 
@@ -933,21 +935,22 @@ const FinalText = Styled.div
 
 `
 position: absolute;
-top: 10120px;
+top: 12820px;
 color: #FFF1EC;
 p{
-    font-size: 23px;
+    font-size: 35px;
     margin-bottom: 40px;
+    margin-left: 0px;
 }
  ul {
         display: block;
         list-style: none;
-        font-size: 19px;
+        font-size: 24px;
     }
  li {
         margin-left: 80px;
-        margin-right: 350px;
-        margin-bottom: 50px;
+        margin-right: 400px;
+        margin-bottom: 60px;
 
  }
 
@@ -957,8 +960,8 @@ p{
 const ReturnImg = Styled.img 
     `
     position: absolute;
-    width: 239px;
-    height: 27px;
+    width: 299px;
+    height: 34px;
     left: 63px;
-    top: 10530px;
+    top: 13330px;
     `
