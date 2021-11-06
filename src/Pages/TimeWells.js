@@ -49,7 +49,7 @@ const Timewells = () => {
         <>
         <LogoNav/>
         <TWNav/>
-        <TW src={TWHeader} alt='Timewells Case Study'/>
+        <TW src={TWHeader} i="intro" alt='Timewells Case Study'/>
         <TWImage src={TimewellsImg}/>
          <Table>
             <table>

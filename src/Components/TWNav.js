@@ -76,7 +76,7 @@ export default TWNav;
 const StyledNav = Styled.nav`
     float: right;
     padding: 270px 160px 10px 10px;
-    font-size: 18px;
+    font-size: 22px;
      ul {
         display: block;
         list-style: none;

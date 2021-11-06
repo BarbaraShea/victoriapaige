@@ -18,10 +18,8 @@ import SurveyBanner from '../images/SurveyBanner.png'
 import Brand from '../images/Director.png'
 import Manager from '../images/Manager.png'
 import Retail from '../images/Retail.png'
-import Landing from '../images/OriginalLanding.png'
-import About from '../images/OriginalAbout.png'
+import Landing from '../images/Landing.png'
 import Gap from '../images/GapHeader.png';
-import Rect from '../images/Rectangle.png';
 import Solution from '../images/SolutionHeader.png';
 import Devices from '../images/SolutionImg.png';
 import Method from '../images/MethodHeader.png';
@@ -143,9 +141,6 @@ const ForestryCamp = () => {
         </Quote3>
         <GapHeader src={Gap} id="gap"/>
         <LandingImg src={Landing}/>
-        <AboutImg src={About}/>
-        <Outline1 src={Rect}/>
-        <Outline2 src={Rect}/>
         <LandingText>
         <p><strong> Original Landing Page </strong></p>
         </LandingText>
@@ -262,15 +257,15 @@ const FC = Styled.img
     left: 3.58%;
     right: 61.08%;
     top: 6.5%;
-    width: 415px;
-    height: 50px;
+    width: 450px;
+    height: 65px;
     `
 
 const FCImg = Styled.img
     `
     position: absolute;
-    width: 832px;
-    height: 680px;
+    width: 1040px;
+    height: 851px;
     left: 70px;
     top: 30px;
     `
@@ -281,8 +276,8 @@ const Table = Styled.div
     position: absolute;
     height: 46px;
     left: 50px;
-    right: 290px;
-    top: 670px;
+    right: 360px;
+    top: 800px;
     
      ul {
         display: block;
@@ -293,8 +288,8 @@ const Table = Styled.div
     }
     td {
     vertical-align: top;
-    padding: 15px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 24px;
     }
     `
 
@@ -303,21 +298,21 @@ const PHeader = Styled.img
 `
 position: absolute;
 left: 56px;
-top: 965px;
-width: 274px;
-height: 75px;
+top: 1150px;
+width: 343px;
+height: 93.55px;
 `
 
 const Problem = Styled.div
 `
 position: absolute;
 line-height: 1.2;
-left: 64px;
-top: 1080px;
-right: 140px;
+left: 0px;
+top: 1300px;
+right: 220px;
 color: #360713;
  p {
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 500;
     }
 `
@@ -325,20 +320,20 @@ color: #360713;
 const Num1 = Styled.img
 `
 position: absolute;
-width: 28px;
-height: 28px;
+width: 33px;
+height: 33px;
 left: 92px;
-top: 1190px;
+top: 1440px;
 `
 
 const Num2 = Styled.img
 
 `
 position: absolute;
-width: 28px;
-height: 28px;
+width: 33px;
+height: 33px;
 left: 92px;
-top: 1270px;
+top: 1550px;
 `
 
 const NumOne = Styled.img
@@ -347,8 +342,8 @@ const NumOne = Styled.img
 position: absolute;
 width: 7px;
 height: 17px;
-left: 101px;
-top: 1196px;
+left: 102px;
+top: 1448px;
 `
 
 const NumTwo = Styled.img
@@ -356,8 +351,8 @@ const NumTwo = Styled.img
 position: absolute;
 width: 11px;
 height: 18px;
-left: 100px;
-top: 1274px;
+left: 102px;
+top: 1555px;
 
 `
 
@@ -366,12 +361,12 @@ const Prob = Styled.div
 position: absolute;
 width: 860px;
 height: 60px;
-left: 180px;
-top: 1180px;
+left: 100px;
+top: 1430px;
     p{
         margin-bottom: 37px;
-        margin-right: 190px;
-        font-size: 19px;
+        margin-right: -20px;
+        font-size: 24px;
         line-height: 1.5;
     }
 `
@@ -380,255 +375,244 @@ top: 1180px;
 const RHeader = Styled.img
 `
 position: absolute;
-width: 303px;
-height: 70px;
-left: 74px;
-top: 1398px;
+width: 360px;
+height: 87.38px;
+left: 40px;
+top: 1700px;
 `
 
 const ComAna = Styled.div
 `
 position: absolute;
-left: 77px;
-top: 1500px;
-font-size: 25px;
-
+left: 0px;
+top: 1830px;
+p{
+font-size: 32px;
+}
 `
 
 const ComImg = Styled.img
 `
 position: absolute;
-width: 776px;
-height: 130px;
-left: 75px;
-top: 1550px;
+width: 970px;
+height: 163px;
+left: 70px;
+top: 1900px;
 `
 
 const ResearchText = Styled.div
 `
 position: absolute;
-top: 1690px;
-left: 75px;
-font-size: 19px;
-line-height: 1.5;
+top: 2100px;
+left: 0px;
+font-size: 24px;
+line-height: 1.2;
 li {
-    margin-left: 30px;
+    margin-left: 100px;
 }
 `
 
 const SurveyHeader = Styled.div
 `
 position: absolute;
-left: 77px;
-top: 1940px;
-font-size: 25px;
-
+left: 0px;
+top: 2380px;
+p{
+font-size: 32px;
+}
 `
 
 const SurveyImg = Styled.img
 `
 position: absolute;
-width: 761px;
-height: 350px;
+width: 952.56px;
+height: 438.57px;
 left: 74px;
-top: 2000px;
+top: 2460px;
 `
 
 const SurveyText = Styled.div
 `
 position: absolute;
-font-size: 19px;
+font-size: 24px;
 line-height: 1.5;
-right: 160px;
-top: 2390px;
-left: 74px;
+right: 200px;
+top: 2950px;
+left: 0px;
 
 `
 
 const SurvBan = Styled.img
 `
 position: absolute;
-width: 305px;
-height: 71px;
+width: 382px;
+height: 89px;
 left: 55px;
-top: 2500px;
+top: 3100px;
 
 `
 
 const BannerText = Styled.div
 `
 position: absolute;
-left: 65px;
-top: 2523px;
-font-size: 22px;
+left: 0px;
+top: 3120px;
 right: 160px;
+p{
+    font-size: 26px;
+}
 `
 const SurveyList = Styled.div
 `
 position: absolute;
-font-size: 19px;
+font-size: 24px;
 line-height: 1.3;
 right: 280px;
-top: 2600px;
-left: 74px;
+top: 3240px;
+left: 100px;
 
 `
 
 const InterviewHeader = Styled.div
 `
 position: absolute;
-left: 77px;
-top: 2750px;
-font-size: 25px;
-
+left: 0px;
+top: 3430px;
+p{
+  font-size: 32px;  
+}
 `
 
 const InterviewText = Styled.div
 `
 position: absolute;
-font-size: 19px;
+font-size: 24px;
 line-height: 1.5;
 right: 120px;
-top: 2805px;
-left: 74px;
+top: 3505px;
+left: 0px;
 
 `
 
 const BrandImg = Styled.img
 `
 position: absolute;
-width: 160px;
-height: 160px;
-left: 99px;
-top: 2900px;
+width: 200px;
+height: 200px;
+left: 100px;
+top: 3650px;
 `
 
 const ManagerImg = Styled.img
 
 `
 position: absolute;
-width: 160px;
-height: 160px;
-left: 365px;
-top: 2900px;
+width: 200px;
+height: 200px;
+left: 450px;
+top: 3650px;
 `
 
 const RetailImg = Styled.img
 
 `position: absolute;
-width: 160px;
-height: 160px;
-left: 632px;
-top: 2900px;
+width: 200px;
+height: 200px;
+left: 800px;
+top: 3650px;
 `
 
 const Quote1 = Styled.div
 
 `
 position: absolute;
-top: 3090px;
-left: 65px;
-right: 160px;
-font-size: 19px;
+top: 3880px;
+left: -30px;
+right: 100px;
+font-size: 24px;
 text-align: center;
-width: 395px;
+width: 550px;
+.title{
+    font-size: 30px;
+}
 `
 
 const Quote2 = Styled.div
 
 `
 position: absolute;
-top: 3090px;
-left: 331px;
+top: 3880px;
+left: 320px;
 right: 160px;
-font-size: 19px;
+font-size: 24px;
 text-align: center;
-width: 395px;
+width: 550px;
+.title{
+    font-size: 30px;
+}
 `
 
 const Quote3 = Styled.div
 
 `
 position: absolute;
-top: 3090px;
-left: 597px;
+top: 3880px;
+left: 685px;
 right: 160px;
-font-size: 19px;
+font-size: 24px;
 text-align: center;
-width: 395px;
+width: 530px;
+.title{
+    font-size: 30px;
+}
 `
 
 const GapHeader = Styled.img
 `
 position: absolute;
-width: 220px;
-height: 64px;
+width: 276px;
+height: 81px;
 left: 70px;
-top: 3410px;
+top: 4300px;
 `
 
 
 const LandingImg = Styled.img
 `
 position: absolute;
-width: 353px;
-height: 199px;
+width: 965px;
+height: 283px;
 left: 83px;
-top: 3500px;
+top: 4400px;
 `
 
-const AboutImg = Styled.img
-`
-position: absolute;
-width: 353px;
-height: 199px;
-left: 475px;
-top: 3500px;
-`
-
-const Outline1 = Styled.img
-`
-position: absolute;
-width: 378px;
-height: 226px;
-left: 70px;
-top: 3485px;
-`
-
-const Outline2 = Styled.img
-`
-position: absolute;
-width: 378px;
-height: 226px;
-left: 462px;
-top: 3485px;
-
-`
 const LandingText = Styled.div
 `
 position: absolute;
-top: 3740px;
-left: 165px;
-font-size: 19px;
+top: 4700px;
+left: 120px;
+font-size: 24px;
 
 `
 const AboutText = Styled.div
 `
 position: absolute;
-top: 3740px;
-left: 565px;
-font-size: 19px;
+top: 4700px;
+left: 620px;
+font-size: 24px;
 
 `
 
 const OriginalText = Styled.div
 `
 position: absolute;
-top: 3780px;
-font-size: 19px;
+top: 4780px;
+font-size: 24px;
+left:0px;
 ul{
     margin-left: 30px;
     line-height: 1.2;
+    margin-left: 100px;
 }
 
 `
@@ -636,10 +620,10 @@ ul{
 const SolutionHeader = Styled.img
 `
 position: absolute;
-height: 44px;
-left: 74px;
+width: 480px;
+height: 60px;
 left: 68px;
-top: 4000px;
+top: 5000px;
 
 `
 
@@ -647,10 +631,10 @@ top: 4000px;
 const SolutionImg = Styled.img
 `
 position: absolute;
-width: 1010px;
-height: 709px;
+width: 1263px;
+height: 887px;
 left: 36px;
-top: 3960px;
+top: 4960px;
 
 `
 
@@ -658,48 +642,48 @@ const SolutionText = Styled.div
 
 `
 position: absolute;
-top: 4560px;
-right: 440px;
-left: 60px;
-font-size: 19px;
+top: 5700px;
+right: 500px;
+left: 0px;
+font-size: 24px;
 `
 
 const MethodHeader = Styled.img
 
 `
 position: absolute;
-width: 349px;
-height: 95px;
+width: 437px;
+height: 119.18px;
 left: 70px;
-top: 4700px;
+top: 5900px;
 `
 
 const UserFlowImg = Styled.img
 `
 position: absolute;
-width: 508px;
-height: 340px;
+width: 634.03px;
+height: 425px;
 left: 75px;
-top: 4900px;
+top: 6200px;
 `
 
 const SketchesImg = Styled.img
 `
 position: absolute;
-width: 507px;
-height: 394px;
+width: 634px;
+height: 493px;
 left: 75px;
-top: 5400px;
+top: 6800px;
 
 `
 
 const WireframeImg = Styled.img
 `
 position: absolute;
-width: 504px;
-height: 654px;
+width: 630px;
+height: 818px;
 left: 67px;
-top: 5940px;
+top: 7490px;
 
 `
 
@@ -708,64 +692,64 @@ const MethodText = Styled.div
 font-size: 19px;
 #user-flow-header {
    position: absolute;
-   top: 4830px;
-   font-size: 25px;
+   top: 6110px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #user-flow-text {
    position: absolute;
-   top: 4980px;
-   font-size: 19px;
-   margin-left: 550px;
-    margin-right: 300px;
+   top: 6280px;
+   font-size: 24px;
+   margin-left: 680px;
+    margin-right: 380px;
 
 }
 #sketches-header {
    position: absolute;
-   top: 5330px;
-   font-size: 25px;
+   top: 6720px;
+   font-size: 32px;
     margin-left: 15px;
 }
 #sketches-text {
    position: absolute;
-   top: 5510px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 6850px;
+   font-size: 24px;
+  margin-left: 680px;
+    margin-right: 380px;
 }
 #wireframe-header {
    position: absolute;
-   top: 5870px;
-   font-size: 25px;
+   top: 7380px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #wireframe-text {
    position: absolute;
-   top: 6070px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 7720px;
+   font-size: 24px;
+   margin-left: 680px;
+    margin-right: 380px;
 
 }
 #style-header {
    position: absolute;
-   top: 6650px;
-   font-size: 25px;
+   top: 8380px;
+   font-size: 32px;
    margin-left: 15px;
 }
 #style-text {
    position: absolute;
-   top: 6820px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 8520px;
+   font-size: 24px;
+   margin-left: 680px;
+    margin-right: 380px;
 }
 #style-text-2{
    position: absolute;
-   top: 6960px;
-   font-size: 19px;
-   margin-left: 550px;
-   margin-right: 300px;
+   top: 8700px;
+   font-size: 24px;
+   margin-left: 680px;
+    margin-right: 380px;
 
 }
 `
@@ -773,60 +757,60 @@ font-size: 19px;
 const StyleGuide1 = Styled.img
 `
 position: absolute;
-width: 258px;
-height: 451px;
+width: 323px;
+height: 564px;
 left: 70px;
-top: 6715px;
+top: 8450px;
 
 `
 
 const StyleGuide2 = Styled.img
 `
 position: absolute;
-width: 245px;
-height: 451px;
-left: 325px;
-top: 6715px;
+width: 307px;
+height: 563px;
+left: 390px;
+top: 8450px;
 
 `
 
 const TestBanner = Styled.img
 `
 position: absolute;
-width: 401px;
-height: 92px;
+width: 502.1px;
+height: 115px;
 left: 63px;
-top: 7230px;
+top: 9100px;
 
 `
 
 const Number1 = Styled.img
 `
 position: absolute;
-width: 28px;
-height: 28px;
+width: 33px;
+height: 33px;
 left: 92px;
-top: 7460px;
+top: 9400px;
 `
 
 const Number2 = Styled.img
 
 `
 position: absolute;
-width: 28px;
-height: 28px;
+width: 33px;
+height: 33px;
 left: 92px;
-top: 7530px;
+top: 9495px;
 `
 
 const Number3 = Styled.img
 
 `
 position: absolute;
-width: 28px;
-height: 28px;
+width: 33px;
+height: 33px;
 left: 92px;
-top: 7600px;
+top: 9580px;
 `
 
 const NumberOne = Styled.img
@@ -835,8 +819,8 @@ const NumberOne = Styled.img
 position: absolute;
 width: 7px;
 height: 17px;
-left: 101px;
-top: 7465px;
+left: 103px;
+top: 9407px;
 `
 
 const NumberTwo = Styled.img
@@ -844,8 +828,8 @@ const NumberTwo = Styled.img
 position: absolute;
 width: 11px;
 height: 18px;
-left: 100px;
-top: 7535px;
+left: 103px;
+top: 9500px;
 
 `
 
@@ -854,8 +838,8 @@ const NumberThree = Styled.img
 position: absolute;
 width: 11px;
 height: 18px;
-left: 100px;
-top: 7605px;
+left: 103px;
+top: 9586px;
 
 `
 
@@ -864,17 +848,17 @@ const TestBullets = Styled.div
 position: absolute;
 width: 860px;
 height: 60px;
-left: 160px;
-top: 7460px;
+left: 100px;
+top: 9400px;
     p{
         margin-bottom: 32px;
-        margin-right: 170px;
-        font-size: 19px;
+        margin-right: -20px;
+        font-size: 24px;
         line-height: 1.2;
     }
     #final{
         top: 7600px;
-        margin-left: -100px;
+        margin-left: -30px;
     }
 `
 
@@ -882,11 +866,11 @@ const Test = Styled.div
 `
 position: absolute;
 line-height: 1.2;
-left: 64px;
-top: 7360px;
+left: 0px;
+top: 9260px;
 right: 140px;
  p {
-    font-size: 19px;
+    font-size: 24px;
     font-weight: 500;
     }
 `
@@ -894,113 +878,113 @@ right: 140px;
 const BrandBannerImg = Styled.img
 `
 position: absolute;
-width: 671px;
-height: 103px;
+width: 839px;
+height: 129px;
 left: 57px;
-top: 7710px;
+top: 9750px;
 `
 
 
 const BrandText = Styled.div
 `
 position: absolute;
-left: 100px;
-top: 7720px;
+left: 10px;
+top: 9770px;
 text-align: center;
-font-size: 19px;
+font-size: 24px;
 p{
     margin-bottom: 10px;
 }
 #bottom{
-    font-size: 23px;
+    font-size: 30px;
 }
 `
 
 const ReservationImg = Styled.img
 `
 position: absolute;
-width: 778px;
-height: 995px;
+width: 973px;
+height: 1244px;
 left: 95px;
-top: 7865px;
+top: 9930px;
 `
 
 const ReservationText = Styled.div
 `
 position: absolute;
-margin-right: 90px;
-left: 650px;
-top: 7940px;
+margin-right: 200px;
+left: 700px;
+top: 10000px;
 font-size: 19px;
 `
 const ReservationText2 = Styled.div
 `
     position: absolute;
     font-size: 19px;
-    left: 196px;
-    top: 8630px;
+    left: 100px;
+    top: 10700px;
     text-align: right;
-    margin-right: 600px;
+    margin-right: 800px;
 `
 
 const OutpostImg = Styled.img
 `
 position: absolute;
-width: 603px;
-height: 353px;
+width: 754px;
+height: 442px;
 left: 99px;
-top: 8910px;
+top: 11250px;
 
 `
 const OutpostText = Styled.div
 `
 position: absolute;
-margin-right: 90px;
-left: 630px;
-top: 8960px;
+margin-right: 200px;
+left: 700px;
+top: 11300px;
 font-size: 19px;
 `
 const TimeImg = Styled.img
 `
 position: absolute;
-width: 504px;
-height: 588px;
+width: 631px;
+height: 735px;
 left: 94px;
-top: 9300px;
+top: 11750px;
 
 `
 const TimeText = Styled.div
 `
 position: absolute;
-margin-right: 90px;
-left: 630px;
-top: 9510px;
+margin-right: 200px;
+left: 700px;
+top: 12000px;
 font-size: 19px;
 `
 
 const PrototypeBan = Styled.img
 `
 position: absolute;
-width: 219px;
-height: 61px;
+width: 274px;
+height: 77px;
 left: 70px;
-top: 9980px;
+top: 12500px;
 
 `
 
 const ProtoText = Styled.div
 `
 position: absolute;
-left: 110px;
-top: 9995px;
-font-size: 19px;
+left: 30px;
+top: 12520px;
+font-size: 24px;
 `
 
 const ArrowRightImg = Styled.img
 `
 position: absolute;
-left: 240px;
-top: 9995px;
+left: 280px;
+top: 12520px;
 width: 15px;
 height: 27px;
 
@@ -1009,56 +993,57 @@ height: 27px;
 const FollowUpHeader = Styled.img
 `
 position: absolute;
-width: 400px;
-height: 50px;
+width: 489px;
+height: 60px;
 left: 70px;
-top: 10130px;
+top: 12630px;
 
 `
 
 const FollowUpText = Styled.div
 `
 position: absolute;
-top: 10230px;
-left: 70px;
-font-size: 19px;
+top: 12730px;
+left: 0px;
+font-size: 24px;
+margin-right: 150px;
 `
 const FinalRect = Styled.img
 `
 position: absolute;
-width: 838px;
-height: 388px;
+width: 1048px;
+height: 430px;
 left: 0px;
-top: 10310px;
+top: 12810px;
 
 `
 
 const W1 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 10405px;
+top: 12905px;
 
 `
 
 const W2 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 10510px;
+top: 13010px;
 
 `
 const W3 = Styled.img
 `
 position: absolute;
-width: 26px;
-height: 26px;
+width: 33px;
+height: 33px;
 left: 74px;
-top: 10612px;
+top: 13112px;
 
 `
 
@@ -1066,21 +1051,22 @@ const FinalText = Styled.div
 
 `
 position: absolute;
-top: 10330px;
+top: 12830px;
 color: #FFF1EC;
 p{
-    font-size: 23px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    margin-bottom: 35px;
+    margin-left: 0px;
 }
  ul {
         display: block;
         list-style: none;
-        font-size: 19px;
+        font-size: 24px;
     }
  li {
         margin-left: 80px;
-        margin-right: 350px;
-        margin-bottom: 60px;
+        margin-right: 450px;
+        margin-bottom: 40px;
 
  }
 
@@ -1090,9 +1076,9 @@ p{
 const ReturnImg = Styled.img 
     `
     position: absolute;
-    width: 239px;
-    height: 27px;
+    width: 300px;
+    height: 35px;
     left: 63px;
-    top: 10720px;
+    top: 13320px;
     margin-bottom: 70px;
     `
