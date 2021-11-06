@@ -922,9 +922,9 @@ const ReservationText2 = Styled.div
     position: absolute;
     font-size: 19px;
     left: 100px;
-    top: 10700px;
+    top: 10750px;
     text-align: right;
-    margin-right: 800px;
+    margin-right: 850px;
 `
 
 const OutpostImg = Styled.img
