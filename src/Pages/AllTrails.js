@@ -498,7 +498,7 @@ text-align: center;
    top: 5690px;
    font-size: 24px;
    margin-left: 40px;
-   margin-right: 1060px;
+   margin-right: 1110px;
    text-align: center;
 
 }
@@ -507,7 +507,7 @@ text-align: center;
    top: 5690px;
    font-size: 24px;
    margin-left: 380px;
-   margin-right: 750px;
+   margin-right: 800px;
    text-align: center;
    }
 #p3 {
@@ -523,7 +523,7 @@ text-align: center;
    top: 6270px;
    font-size: 24px;
    margin-left: 40px;
-   margin-right: 1060px;
+   margin-right: 1110px;
    text-align: center;
 }
 #p5 {
@@ -531,7 +531,7 @@ text-align: center;
    top: 6270px;
    font-size: 24px;
     margin-left: 380px;
-   margin-right: 750px;
+   margin-right: 800px;
    text-align: center;}
 #p6 {
    position: absolute;
@@ -615,7 +615,7 @@ font-size: 19px;
    top: 7600px;
    left: 430px;
    font-size: 22px;
-   margin-right: 670px;
+   margin-right: 700px;
 }
 #accessibility{
    position: absolute;
