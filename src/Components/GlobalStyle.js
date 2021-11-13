@@ -34,18 +34,18 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;;
     padding: 3em;
     line-height: 1.2;
-    margin-right: 18px;
-    margin-left: 8px;
+    margin-right: 1.125rem;
+    margin-left: 0.5rem;
     z-index: 1;
 }
 
 
 p {
   margin-bottom: 1.25rem;
-  margin-right: 160px;
-  margin-left: 70px;
+  margin-right: 10rem;
+  margin-left: 4.375rem;
   z-index: 1;
-  font-size: 24px;
+  font-size: 1.5rem;
 };
 
 li > .active {
@@ -96,6 +96,13 @@ li {
 
 img {
   z-index: 0;
+}
+
+.headers {
+
+  @media only screen and (max-width: 600px){
+        width: 100%;
+    }
 }
 `
 

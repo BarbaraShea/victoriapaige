@@ -47,10 +47,12 @@ const ForestryCamp = () => {
         <>
         <LogoNav/>
         <FCNav/>
-        <FCHeaderContainer id="intro">
-            <FC src={FCHeader} alt='Forestry CAmp Case Study'/>
-        </FCHeaderContainer>  
-        <FCImg src={FCImage}/>
+        <FCWrapper>
+            <FCHeaderContainer id="intro">
+                <FC className="headers" src={FCHeader} alt='Forestry CAmp Case Study'/>
+            </FCHeaderContainer>  
+            <FCImg src={FCImage}/>
+        <TableContainer>
         <Table>
             <table>
             <tr>
@@ -73,6 +75,8 @@ const ForestryCamp = () => {
             </tr>
             </table>
         </Table>
+        </TableContainer>
+        <ProblemContainer>
         <PHeader src={ProblemHeader} id="problem"/>
         <Problem>
         <p>"People are still really confused about the difference between our upstairs dining room and downstairs taproom."</p>
@@ -85,6 +89,7 @@ const ForestryCamp = () => {
         <p>With two indoor and three outdoor dining spaces, customers don't know which spaces require a reservation and where to eat. </p>
         <p>Many customers are also not aware that Forestry Camp is associated with Burial Beer, one of the most famous breweries on the East Coast. </p>
         </Prob>
+        </ProblemContainer>
         <RHeader src={ResearchHeader} id="research"/>
         <ComAna>
         <p><strong>Competitive Analysis</strong></p>
@@ -237,12 +242,19 @@ const ForestryCamp = () => {
         </ul>
         </FinalText>
         <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
+        </FCWrapper>
         </>
     )
 };
 
 export default ForestryCamp;
 
+const FCWrapper = Styled.div
+`
+max-width: 1280px;
+margin 0 auto;
+display: static;
+`
 
 const FCHeaderContainer = Styled.div
     `
@@ -257,27 +269,38 @@ const FC = Styled.img
     left: 3.58%;
     right: 61.08%;
     top: 6.5%;
-    width: 450px;
-    height: 65px;
+    width: 28.125rem;
+    height: 4.063rem;
+    @media only screen and (max-width: 600px){
+        width: 90%;
+    }
     `
 
 const FCImg = Styled.img
     `
-    position: absolute;
-    width: 1040px;
-    height: 851px;
-    left: 70px;
-    top: 30px;
+    max-width: 65rem;
+    width: 100%;
+    height: auto;
+    left: 4.375rem;
+    padding: 1rem;
+    top: 1.875rem;
+    margin: 1rem;
+    @media only screen and (max-width: 600px){
+        width: 90%;
+        align-items: center;
+    }
     `
 
-
+const TableContainer = Styled.div
+`
+`
 const Table = Styled.div
     `
-    position: absolute;
-    height: 46px;
-    left: 50px;
-    right: 360px;
-    top: 800px;
+    width: 70rem;
+    height: 2.875rem;
+    left: 0.5rem;
+    // right: 22.5rem;
+    top: 45rem;
     
      ul {
         display: block;
@@ -288,19 +311,31 @@ const Table = Styled.div
     }
     td {
     vertical-align: top;
-    padding: 10px;
-    font-size: 24px;
+    padding: 0.625rem;
+    font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 1200px){
+        width: 100%;
     }
     `
-
+const ProblemContainer = Styled.div
+`
+display: flex;
+flex-direction: column;
+`
 
 const PHeader = Styled.img
 `
-position: absolute;
-left: 56px;
-top: 1150px;
-width: 343px;
-height: 93.55px;
+// position: static;
+// left: 3.5rem;
+// top: 75.875rem;
+max-width: 343px;
+width: 100%;
+height: auto;
+  @media only screen and (max-width: 600px){
+        width: 90%;
+        align-items: center;
+    }
 `
 
 const Problem = Styled.div

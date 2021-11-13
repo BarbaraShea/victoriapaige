@@ -67,8 +67,8 @@ export default FCNav;
 
 const StyledNav = Styled.nav`
     float: right;
-    padding: 270px 160px 10px 10px;
-    font-size: 22px;
+    padding: 16.875rem 10rem 0.625rem 0.625rem;
+    font-size: 1.375rem;
      ul {
         display: block;
         list-style: none;
@@ -79,5 +79,8 @@ const StyledNav = Styled.nav`
         :hover {
           color: #FF7864;
         }
+    }
+    @media only screen and (max-width: 1350px){
+display: none
     }
     `
