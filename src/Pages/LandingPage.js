@@ -30,7 +30,7 @@ const LandingPage = () => {
         <IntroHeaderContainer>
             <Intro src={Hello} alt='Hello' id="intro"/>
         </IntroHeaderContainer>
-       <Banner1 src={JFBanner}/>
+        <Banner1 src={JFBanner}/>
         <Banner2 src={HCBanner}/>
         <Banner3 src={ADBanner}/>
         <IntroText>
@@ -50,15 +50,17 @@ const LandingPage = () => {
         ><ArrowImg src={Arrow}/></Link>
     <Work src={WorkImg} alt='Work Samples' id="work"/>
     <NavLink to='/Forestrycamp'>
+        <ImageContainer>
         <FC className="landing-image" src={ForestryCamp}/>
+        </ImageContainer>
         <FCText>
             <p><strong> Forestry Camp </strong> </p>
             <p id="text"> Rebranding and refunctioning Forestry Camp’s restaurant website and reservation system.</p>
-        </FCText>
         <FCHover>
             <p className="cs"><strong>See Case Study</strong></p>
             <CSArrow1 className="AR" src={ArrowR}/>
         </FCHover>
+        </FCText>
     </NavLink>
     <NavLink to='/Alltrails'>
         <AT className="landing-image" src={Alltrails}/>
@@ -147,7 +149,7 @@ top: 530px;
 
 const Banner1 = Styled.img 
     `
-    position: absolute;
+position: absolute;
 width: 11.25rem;
 height: 4em;
 left: 2.5em;
@@ -185,31 +187,53 @@ const IntroText = Styled.div
 
 `
 const Work = Styled.img `
-    position: absolute;
-   width: 391px;
+position: absolute;
+width: 391px;
 height: 94.9px;
-    left: 0px;
-    top: 600px;
+left: 0px;
+top: 600px;
 `
+const ImageContainer = Styled.div
+`
+// min-height: 100vh;
+// max-width: 100vw;
+// display: flex;
+// flex-wrap: wrap;
+// justify-content: center;  
 
+`
 const FC = Styled.img `
 position: absolute;
-width: 750px;
-height: 420px;
-left: 10px;
-top: 700px;
+width: 42rem;
+height: 23rem;
+left: 3rem;
+top: 45rem;
 
+`
+const Project1 = Styled.div
+`
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-end;
+// color: red;
+// background-color: black;
+min-height: 100vh;
+max-width: 100vw;
 `
 
 const FCText = Styled.div
 `
-position: absolute;
-top: 795px;
-left: 700px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
 #text{
-    font-size: 20px;
-    margin-right: 300px;
+    font-size: 1.1rem;
+    // margin-right: 16.66rem;
 }
+@media (max-width: 1700px) {
+    font-size: 75%;
 `
 
 const FCHover = Styled.div
@@ -237,10 +261,10 @@ transition: transform 600ms;
 
 const AT = Styled.img `
 position: absolute;
-width: 710px;
-height: 482.26px;
-left: 50px;
-top: 1150px;
+width: 42rem;
+height: 23rem;
+left: 3rem;
+top: 75rem;
 `
 
 const ATText = Styled.div
@@ -277,10 +301,10 @@ transition: transform 600ms;
 
 const TW = Styled.img `
 position: absolute;
-width: 710px;
-height: 480px;
-left: 50px;
-top: 1620px;
+width: 42rem;
+height: 23rem;
+left: 3rem;
+top: 105rem;
 
 `
 
