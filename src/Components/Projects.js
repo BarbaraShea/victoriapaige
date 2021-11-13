@@ -23,7 +23,7 @@ import linkedin from "../images/linkedin.png";
 import ArrowR from "../images/ArrowRight.png";
 import Resume from "../images/resume.png";
 
-const LandingPage = () => {
+const Projects = () => {
     return (
         <>
         <Navbar/>
@@ -118,7 +118,7 @@ const LandingPage = () => {
     )
 };
 
-export default LandingPage;
+export default Projects;
  
 
 const IntroHeaderContainer = Styled.div
