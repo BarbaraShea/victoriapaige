@@ -52,7 +52,6 @@ const ForestryCamp = () => {
                 <FC className="headers" src={FCHeader} alt='Forestry CAmp Case Study'/>
             </FCHeaderContainer>  
             <FCImg src={FCImage}/>
-        <TableContainer>
         <Table>
             <table>
             <tr>
@@ -75,8 +74,6 @@ const ForestryCamp = () => {
             </tr>
             </table>
         </Table>
-        </TableContainer>
-        <ProblemContainer>
         <PHeader src={ProblemHeader} id="problem"/>
         <Problem>
         <p>"People are still really confused about the difference between our upstairs dining room and downstairs taproom."</p>
@@ -89,7 +86,6 @@ const ForestryCamp = () => {
         <p>With two indoor and three outdoor dining spaces, customers don't know which spaces require a reservation and where to eat. </p>
         <p>Many customers are also not aware that Forestry Camp is associated with Burial Beer, one of the most famous breweries on the East Coast. </p>
         </Prob>
-        </ProblemContainer>
         <RHeader src={ResearchHeader} id="research"/>
         <ComAna>
         <p><strong>Competitive Analysis</strong></p>
@@ -300,7 +296,8 @@ const Table = Styled.div
     height: 2.875rem;
     left: 0.5rem;
     // right: 22.5rem;
-    top: 45rem;
+    // top: 35rem;
+    margin-bottom: 2rem;
     
      ul {
         display: block;
@@ -316,31 +313,36 @@ const Table = Styled.div
     }
     @media only screen and (max-width: 1200px){
         width: 100%;
+        td {
+            font-size: 1.2rem;
+        }
+        li {
+            font-size: 1.2rem;
+        }
     }
     `
 const ProblemContainer = Styled.div
 `
-display: flex;
-flex-direction: column;
 `
 
 const PHeader = Styled.img
 `
-// position: static;
 // left: 3.5rem;
-// top: 75.875rem;
+// top: 90.875rem;
+position: static;
 max-width: 343px;
 width: 100%;
 height: auto;
   @media only screen and (max-width: 600px){
-        width: 90%;
+        width: 100%;
+        max-width: 390px;
         align-items: center;
     }
 `
 
 const Problem = Styled.div
 `
-position: absolute;
+position: static;
 line-height: 1.2;
 left: 0px;
 top: 1300px;
