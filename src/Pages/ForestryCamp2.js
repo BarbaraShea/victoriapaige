@@ -38,6 +38,7 @@ import White1 from '../images/White1.png';
 import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
 import Return from '../images/Return.png';
+import ProtoBan from '../images/PrototypeBanner.png';
 
 const ForestryCamp2 = () => {
     return(
@@ -247,6 +248,36 @@ const ForestryCamp2 = () => {
             <TimeImg src={Time}/>
             <p> Test showed that users were confused why their original time chose (6:30) wasn't available. A quick sentence above the available times will solve that problem!</p>
         </TimeCont>
+        <PrototypeContainer>
+            <PrototypeBan src={ProtoBan}/>
+            <ProtoText>
+            <p><strong><a href="https://www.figma.com/proto/Mn4Z4cKysGglGqr0QDkWVl/Forestry-Camp?page-id=299%3A4448&node-id=299%3A4479&viewport=288%2C48%2C0.11&scaling=min-zoom&starting-point-node-id=299%3A4479" target="_blank"> See Prototype </a></strong></p>
+            </ProtoText>
+            <ArrowRightImg src={ArrowRight}/>
+        </PrototypeContainer>
+        <HeaderContainer>
+            <Header id="follow" src={FollowUp}/>
+         </HeaderContainer>
+        <FollowUpText>
+        <p> It was a great eperience working with such a wonderful and established team.</p>
+        </FollowUpText>   
+        <FinalCont>
+        <FinalRect src={FollowUpRect}/>
+            <NumbersContainer2>
+                <Thoughts><p><strong> Final Thoughts </strong></p> </Thoughts>
+                <W1 src={White1}/>
+                <W2 src={White2}/>
+                <W3 src={White3}/>
+            <FinalText>
+                <ul>
+                    <li> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp.</li>
+                    <li> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature.</li>
+                    <li> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good. </li>
+                </ul>
+            </FinalText>
+            </NumbersContainer2>
+        </FinalCont>
+        <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
     </>
     )
 };
@@ -280,7 +311,7 @@ const FCImg = Styled.img
     height: auto;
     left: 4.375rem;
     margin-top: -3rem;
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 1200px){
         width: 90%;
         align-items: center;
     }
@@ -362,7 +393,7 @@ margin-left: 1rem;
 
 const Prob = Styled.div
 `
-flex-dreiction: column;
+flex-direcction: column;
 max-width: 53.75rem;
 width: 100%;
 height: auto;
@@ -1055,4 +1086,154 @@ p{
 const ResCont = Styled.div
 `
 position: static;
+`
+
+const PrototypeContainer = Styled.div
+`
+display: flex;
+position: static;
+margin-top: 3rem;
+margin-bottom: 2rem;
+`
+const PrototypeBan = Styled.img
+`
+max-width: 17.5rem;
+width: 100%;
+height: auto;
+margin-left: 1.5rem;
+`
+
+const ProtoText = Styled.div
+`
+margin-left: -15rem;
+margin-top: 1.2rem;
+@media only screen and (max-width: 1200px){
+       p {
+           font-size: 1.5rem;
+       } 
+    }
+`
+
+const ArrowRightImg = Styled.img
+`
+max-width: 1.1rem;
+width: 100%;
+height: 2.1rem; 
+margin-left: 1rem;
+margin-top: 1.2rem;
+
+`
+
+const FollowUpText = Styled.div
+`
+position: static; 
+max-width: 60rem;
+width: 100%;
+height: auto;
+margin-top: 2rem;
+margin-left: 2rem;
+margin-bottom: 2rem;
+`
+
+const FinalRect = Styled.img
+`
+display: block;
+max-width: 65.5rem;
+height: auto;
+width: 100%;
+@media only screen and (max-width: 1200px){
+        width: 100%;
+        height: 30.5rem;
+
+    }
+`
+const W1 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: auto;
+margin-top: 2rem;
+`
+
+const W2 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: auto;
+margin-top: 5rem;
+`
+const W3 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: auto;
+margin-top: 5rem;
+`
+
+const FinalText = Styled.div
+`
+color: #FFF1EC;
+flex-direcction: column;
+max-width: 53.75rem;
+width: 100%;
+height: auto;
+margin-left: 5rem;
+margin-top: -16rem;
+    ul{
+        list-style: none;
+    }
+    li{
+        margin-bottom: 2.2rem;;
+        // margin-right: -20px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+     @media only screen and (max-width: 1200px){
+        width: 80%;
+       li{
+           font-size: 1rem;
+           margin-bottom: 2.5rem;
+       }
+    }
+`
+const FinalCont = Styled.div
+`
+position: relative;
+display: block;
+max-width: 65.5rem;
+max-height: 35.5rem;
+width: 100%;
+`
+
+const NumbersContainer2 = Styled.div
+`
+position: absolute;
+display: flex;
+flex-direction: column;
+margin-left: 1.5rem;
+margin-top: -27rem;
+ @media only screen and (max-width: 1200px){
+margin-top: -27rem;
+}
+`
+
+const ReturnImg = Styled.img 
+    `
+    position: static;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-width: 18.75rem;
+    width: 100%;
+    height: auto;
+    `
+const Thoughts = Styled.div
+`
+p{
+font-size: 2rem;
+margin-bottom: 1rem;
+@media only screen and (max-width: 1200px){
+font-size: 1.5rem;
+}
+}
+color: #FFF1EC;
 `

@@ -15,7 +15,6 @@ import ProjectFour from "./Pages/ProjectFour";
 import GlobalStyle from "./Components/GlobalStyle";
 import ScrollToTop from "./Components/ScrollToTop";
 import LandingPage2 from './Pages/LandingPage2';
-import ForestryCamp2 from "./Pages/ForestryCamp2";
 
 function App() {
   return (
@@ -30,7 +29,6 @@ function App() {
    <Route exact path="/AllTrails" component={AllTrails}/>
    <Route exact path="/ProjectFour" component={ProjectFour}/>
    <Route exact path="/test" component={LandingPage2}/>
-   <Route exact path="/FCtest" component={ForestryCamp2}/> 
    </Switch>
    </Router>
 
