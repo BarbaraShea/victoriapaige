@@ -16,7 +16,6 @@ import GlobalStyle from "./Components/GlobalStyle";
 import ScrollToTop from "./Components/ScrollToTop";
 import LandingPage2 from './Pages/LandingPage2';
 
-
 function App() {
   return (
    <>

@@ -29,10 +29,14 @@ a:link {
 }
 
 body {
-    /* background: var(--primary-color); */
+    background: var(--primary-color); 
     color: var(--text-color);
     font-family: 'IBM Plex Sans', sans-serif;;
+<<<<<<< HEAD
     /* padding: 3rem; */
+=======
+    // padding: 3rem;
+>>>>>>> 3cd737fc05f198d9727ec86f929865af08304668
     /* line-height: 1.2;
     margin-right: 1.125rem;
     margin-left:.5rem;
@@ -46,6 +50,8 @@ p {
   margin-left: 70px; */
   /* z-index: 1; */
   font-size: 1.5rem;
+  @media only screen and (max-width: 1200px){
+            font-size: 1rem;
 };
 
 li > .active {
@@ -96,8 +102,16 @@ li {
   list-style: none;
 }
 
+
 img {
   /* z-index: 0; */
+}
+
+.headers {
+
+  @media only screen and (max-width: 600px){
+        width: 100%;
+    }
 }
 `
 

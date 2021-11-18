@@ -25,6 +25,9 @@ export default LogoNav;
 
 const StyledNav = Styled.nav`
     float: right;
+    @media only screen and (max-width: 1350px){
+display: none;
+    }
 `
 
 const SnapImg = Styled.img
