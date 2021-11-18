@@ -26,28 +26,6 @@ import Resume from "../images/resume.png";
 const Projects = () => {
     return (
         <>
-        <Navbar/>
-        <IntroHeaderContainer>
-            <Intro src={Hello} alt='Hello' id="intro"/>
-        </IntroHeaderContainer>
-        <Banner1 src={JFBanner}/>
-        <Banner2 src={HCBanner}/>
-        <Banner3 src={ADBanner}/>
-        <IntroText>
-            <p class='landing-list-intro'> Utilizing ten years of experience working as a behavior specialist and educator, I create </p>
-            <p class='landing-list'> joy-filled</p>
-            <p class='landing-list'> human-centered </p>
-            <p class='landing-list'> accessible-by-design </p>
-            <p class='landing-list'> digital products. </p>
-        </IntroText>
-        <Link class="arrow"
-            activeClass="active"
-            to="work"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-        ><ArrowImg src={Arrow}/></Link>
     <Work src={WorkImg} alt='Work Samples' id="work"/>
     <NavLink to='/Forestrycamp'>
         <ImageContainer>

@@ -122,57 +122,29 @@ export default LandingPage;
  
 
 const IntroHeaderContainer = Styled.div
-    `
-    display: block;
-    align-items: left;
-    justify-content: left;
+`
 `
 
 const Intro = Styled.img
     `
-   position: absolute;
-left: 5.07%;
-right: 66.7%;
-top: 2.34%;
-bottom: 96.77%;
     `
 
 const ArrowImg = Styled.img 
     `
-    position: absolute;
-width: 50px;
-height: 27px;
-left: 55px;
-top: 530px;
 
     `
 
 const Banner1 = Styled.img 
     `
-position: absolute;
-width: 11.25rem;
-height: 4em;
-left: 2.5em;
-top: 14.7em;
     `
 
 const Banner2 = Styled.img 
     `
-  position: absolute;
-width: 302px;
-height: 69px;
-left: 40px;
-top: 310px;
 
     `
 
 const Banner3 = Styled.img 
     `
-    position: absolute;
-width: 386.89px;
-height: 71px;
-left: 40px;
-top: 375px;
     `
 
 const IntroText = Styled.div 

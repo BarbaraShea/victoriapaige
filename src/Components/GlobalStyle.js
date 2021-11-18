@@ -32,7 +32,7 @@ body {
     /* background: var(--primary-color); */
     color: var(--text-color);
     font-family: 'IBM Plex Sans', sans-serif;;
-    padding: 3rem;
+    /* padding: 3rem; */
     /* line-height: 1.2;
     margin-right: 1.125rem;
     margin-left:.5rem;
@@ -50,6 +50,7 @@ p {
 
 li > .active {
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .navbar {
@@ -96,7 +97,7 @@ li {
 }
 
 img {
-  z-index: 0;
+  /* z-index: 0; */
 }
 `
 
