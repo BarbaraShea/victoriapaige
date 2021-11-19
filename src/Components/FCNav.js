@@ -80,7 +80,7 @@ const StyledNav = Styled.nav`
           color: #FF7864;
         }
     }
-    @media only screen and (max-width: 1350px){
+    @media only screen and (max-width: 1400px){
 display: none
     }
     `

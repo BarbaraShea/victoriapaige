@@ -148,7 +148,7 @@ const ForestryCamp2 = () => {
         </Quote>
         </QuoteContainer>
         <HeaderContainer>
-         <Header src={Gap} id="gap"/>
+         <Header src={Gap} id="gap" className="gapIMG"/>
         </HeaderContainer>
         <LandingImg src={Landing}/>
         <LandingText>
@@ -311,7 +311,7 @@ const FCImg = Styled.img
     height: auto;
     left: 4.375rem;
     margin-top: -3rem;
-    @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 1350px){
         width: 90%;
         align-items: center;
     }
@@ -366,6 +366,7 @@ width: 100%;
 height: auto;
 #gap {
     max-width: 13.5rem;
+    background-color: blue;
 }
 #solution {
     max-width: 25rem;

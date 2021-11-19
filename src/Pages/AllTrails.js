@@ -224,6 +224,7 @@ const AllTrails = () => {
         </ul>
         </FinalText>
          <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
+         
          </>
     )
 };

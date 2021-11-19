@@ -51,7 +51,8 @@ top: 0px;
 
 const LogoContainer = Styled.div
     `
-    top: 15px;
+    top: 1rem;
+    margin-right: 5rem;
     position: absolute;
      :hover .hover-image {
         display: block;
