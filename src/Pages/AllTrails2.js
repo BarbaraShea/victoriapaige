@@ -26,6 +26,19 @@ import Safety from '../images/Safety.png';
 import Accessibility from '../images/Accessibility.png';
 import Inclusivity from '../images/Inclusivity.png';
 import TestCircle from '../images/TestsCircle.png';
+import DarkOne from  '../images/DarkOne.png';
+import DarkTwo from  '../images/DarkTwo.png';
+import Test1 from '../images/TestImg1.png';
+import Test2 from '../images/TestImg2.png';
+import Test3 from '../images/TestImg3.png';
+import FollowUpRect from '../images/FollowUpRect.png';
+import FollowUp from '../images/FollowUp.png';
+import ArrowRight from '../images/ArrowRight.png';
+import White1 from '../images/White1.png';
+import White2 from '../images/White2.png';
+import White3 from '../images/White3.png';
+import Return from '../images/Return.png';
+import ProtoBan from '../images/PrototypeBanner.png';
 
 const AllTrails = () => {
     return (
@@ -132,11 +145,147 @@ const AllTrails = () => {
             <p id="user-header"><strong>User Persona</strong></p>
         </MethodText>
         <MethodContainer>
-             <LoraImg src={Lora}/>
+             <MethodImg src={Lora}/>
             <p id="user-text">My girl Lora was an amalgamation of all my user interviews and research. Lora knows what she wants and needs, and I designed for her. </p>
         </MethodContainer>
-       
-       
+       <MethodText>
+            <p id="user-header"><strong>Feature List</strong></p>
+        </MethodText>            
+        <FeatureText><p id="feature-text">This was an all-encompassing list of what each subcategory (safety, accessibility, and inclusivity) would require to help people feel comfortable on a trail.<strong> This helped me put the rubber (boot sole) to the road.</strong></p></FeatureText>
+        <FeatureContainer>
+            <ListCont>
+            <SafetyImg src={Safety}/>
+            <ul id="safety">
+                <li> Signage </li>
+                <li> Clarity of trail markers </li>    
+                <li> Cell service </li>
+                <li>Distance to closest hospital</li>
+                <li>Presence of rangers</li>
+                <li>Downed trees</li>
+                <li>Presence of wildlife predation</li>
+                <li>Open carry allowed (firearms)</li>
+                <li>Emergency contact info</li>
+            </ul>
+            </ListCont>
+            <ListCont>
+        <InclImg src={Inclusivity}/>
+            <ul id="inclusivity">
+                <li>Allow self-identification for aggregated rating scores of inclusivity </li>
+                <li>Non-English speakers</li>
+                <li>BIPOC</li>
+                <li>Non-neurotypical</li>
+                <li>Native land acknowledgement</li>
+                <li>Age (safe for little ones or for seniors)</li>
+                <li>Easy to social distance for immunocompromised folks</li>
+            </ul>
+            </ListCont>
+            <ListCont>
+        <AccImg src={Accessibility}/>
+            <ul id="accessibility">
+                <li>Easy for 2WD cars</li> 
+                <li>Accessible parking</li>
+                <li>Technicality rating (roots/rocks/etc)</li>
+                <li>Upper body strength/dexterity</li>
+                <li>Stable footing required</li>
+                <li>Ability to climb over something</li>
+                <li>Accessible by public transit</li> 
+                <li>Step-free trail (low grade, no rocks)</li>
+            </ul>
+            </ListCont>
+        </FeatureContainer>
+        <MethodText>
+            <p id="user-header"><strong>Storyboard</strong></p>
+        </MethodText>
+        <MethodContainer>
+             <MethodImg src={Storyboard}/>
+            <p id="story-text"> This narative piece felt helpful for me as I know adding these type of features <strong>require a lot of buy-in from stakeholders.</strong> Here I’m able to show how an actual hiker would be looking for particular information.</p>
+        </MethodContainer>
+          <MethodText>
+            <p id="user-header"><strong>Wireframe</strong></p>
+        </MethodText>
+        <MethodContainer>
+            <MethodImg src={Wireframe}/>    
+            <p id="wireframe-text">To add a feature, I needed to incorporate a wireframe into Alltrails’ existing UI and layout. <strong>The constraints made it easier than other projects,</strong> which I found refreshing. </p>
+        </MethodContainer>
+        <HeaderContainer>
+        <Header id="test" src={TestCircle}/>
+        </HeaderContainer>
+         <Test>
+        <p>A usability test was conducted with four participants in the target audience. </p>
+        <p id="goals"><strong>Research Goals</strong></p>
+        </Test>
+        <TestCont>
+        <One src={DarkOne}/>
+        <p>Notice safety/accessibility/inclusivity features</p>
+        </TestCont>
+        <TestCont>
+        <Two src={DarkTwo}/>
+        <p>Use filters to find an accessible hike and leave a review.</p>
+        </TestCont>
+        <Test>
+        <p id="final"> All four particpants successfully completed each goal. </p>
+        </Test>
+        <Test1Cont>
+            <TestImg1 src={Test1}/>
+            <Test1Text>
+            <p>“I really like that it says the hike is rated by the community - it’s not just some nebulous statement.”</p>
+            <p>I increased the contrast and added a background to the female hiker rating, since one user didn’t see it during testing.</p>
+            </Test1Text>
+        </Test1Cont>
+        <Test2Cont2>
+        <Test2Cont>
+            <TestImg2 src={Test2}/>
+            <Test2Text>
+            <p> All of my users thought the blue pill buttons were colored differently because that was what they selected when filtering a hike. I added titles to ease clarity.</p>
+            </Test2Text>
+        </Test2Cont>
+             <Test2Text2>
+            <p> “The 2WD indicator is amazing! I always wish I knew things like that ahead of time.”</p>
+            </Test2Text2>
+        </Test2Cont2>
+        <Test3Cont>
+            <TestImg3 src={Test3}/>
+            <Test3TextCont>
+                <Test3Text>
+                <p> “I wish there was a place on the trail conditions to note that I had to turn around.”</p>
+                </Test3Text>
+                <Test3Text2>
+                <p>I added a “did you have to end your hike early?” question so people could indicate this on their trail report to help future hikers.</p>
+                </Test3Text2>
+            </Test3TextCont>
+        </Test3Cont>
+        <PrototypeContainer>
+            <PrototypeBan src={ProtoBan}/>
+            <ProtoText>
+            <p id="ATproto"> <strong><a href="https://www.figma.com/proto/lARHntk9QL09upIkgVY0VY/Timewells-Priority-Revision?page-id=0%3A1&node-id=272%3A256&viewport=241%2C48%2C0.62&scaling=min-zoom&starting-point-node-id=1%3A2118" target="_blank"> See Prototype </a></strong></p>
+            </ProtoText>
+            <ArrowRightImg src={ArrowRight}/>
+        </PrototypeContainer>
+        <HeaderContainer>
+            <Header id="follow" src={FollowUp}/>
+         </HeaderContainer>
+        <FollowUpText>
+        <p> It was a great experience working with such a wonderful and established team.</p>
+        </FollowUpText>   
+        <FinalCont>
+        <FinalRect src={FollowUpRect}/>
+            <FinalCont2>
+                <Thoughts><p><strong> Final Thoughts </strong></p> </Thoughts>
+                <BulletCont>
+                    <W1 src={White1}/>
+                    <p> The swath of people I’m desigining for in this case study was huge. It could have been more focused if I’d stuck with one subgroup.</p>
+                </BulletCont>
+                <BulletCont>
+                    <W2 src={White2}/>
+                    <p> I don’t feel like I did a great job finding a solution for women being scared of running into men with firearms on trails.  More research, please!</p>
+                </BulletCont>
+                <BulletCont>
+                    <W3 src={White3}/>
+                    <p id="three"> The features seemed to be integrated smoothly. Most of my test subjects thought it was a real feature at first!</p>
+                </BulletCont>
+            </FinalCont2>
+        </FinalCont>
+        <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
          </>
     )
 };
@@ -425,9 +574,11 @@ margin-top: 2rem;
     font-size: 2.2rem;
     margin-bottom: 40px;
     font-weight: 500;
+     @media only screen and (max-width: 1200px){
+        font-size: 1.5rem;
+}
 }
 p {
-    font-size: 24px;
     line-height: 1.2;
 }
 `
@@ -534,11 +685,10 @@ width: 100%;
 height: auto;
 margin-left: 2rem;
 margin-top: 2rem;
-justify-content: space-evenly;
+align-items: center;
  p{
-     margin-left: 1rem;
      max-width: 18.75rem;
-     margin-top: 8rem;
+     margin-left: 1rem;
  }
  #style-text{
      margin-top: 1.5rem;
@@ -552,6 +702,7 @@ justify-content: space-evenly;
     margin-top: 1.5rem;
     width: 100%;
     height: auto;
+    margin-left: 0rem;
     }
     #wireframe-text{
          margin-top: 1.5rem;
@@ -559,7 +710,7 @@ justify-content: space-evenly;
 }
 `
 
-const LoraImg = Styled.img
+const MethodImg = Styled.img
 `
 position: static;
 max-width: 39rem;
@@ -573,4 +724,428 @@ margin-top: 1.5rem;
         margin-left: -1rem;
 
     }
+`
+
+const FeatureContainer = Styled.div
+`
+position: static;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+max-width: 60.6rem;
+margin-left: 3rem;
+@media only screen and (max-width: 1200px){
+    flex-wrap: wrap;
+    }
+`
+
+const ListCont = Styled.div
+`
+display: flex;
+flex-direction: column;
+margin-top: 1rem;
+margin-left: 2rem;
+width: 19.5rem;
+`
+
+const SafetyImg = Styled.img
+`
+flex-direction: column;
+max-width: 7rem;
+width: 100%;
+height: auto;
+margin-bottom: 1.5rem;
+margin-top: 1.5rem;
+
+`
+
+const InclImg = Styled.img
+`
+margin-bottom: 1.5rem;
+margin-top: 1.5rem;
+flex-direction: column;
+max-width: 10rem;
+width: 100%;
+height: auto;
+`
+
+const AccImg = Styled.img
+`
+margin-bottom: 1.5rem;
+margin-top: 1.5rem;
+flex-direction: column;
+max-width: 12rem;
+width: 100%;
+height: auto;
+`
+
+const FeatureText = Styled.div
+`
+position: static;
+margin-top: 3rem;
+max-width: 66.6rem;
+margin-left: 3rem;
+
+`
+const One = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: auto;
+`
+
+const Two = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: auto;
+`
+const TestCont = Styled.div
+`
+postion: static;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+max-width: 50rem;
+margin-left: 3.5rem;
+align-items: center;
+margin-bottom: 1rem;
+p {
+    margin-left: 2rem;
+}
+`
+
+const Test = Styled.div
+`
+position: static;
+margin-top: 3rem;
+max-width: 66.6rem;
+margin-left: 3rem;
+margin-bottom: 2rem;
+#goals {
+    margin-top: 2rem;
+}
+`
+
+const TestImg1 = Styled.img
+`
+position: static;
+flex-direction: row;
+max-width: 59rem;
+width: 100%;
+height: auto;
+flex-direction: row;
+@media only screen and (max-width: 1200px){
+    width: 80%;
+    }
+`
+
+const Test1Cont = Styled.div
+`
+display:flex;
+max-width: 59rem;
+width: 100%;
+margin-left: 3rem;
+// align-items: flex-start;
+// justify-content: flex-start;
+
+`
+
+const Test1Text = Styled.div
+`
+display:flex;
+flex-direction: column;
+max-width: 16.5rem;
+margin-left: -18rem;
+p{
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+}
+@media only screen and (max-width: 1200px){
+    width: 20%;
+    margin-left: -15rem;
+    }
+@media only screen and (max-width: 1000px){
+    display: none;
+    }
+`
+
+const TestImg2 = Styled.img
+`
+position: static;
+flex-direction: row;
+max-width: 59rem;
+width: 100%;
+height: auto;
+flex-direction: row;
+@media only screen and (max-width: 1200px){
+    width: 80%;
+    }
+`
+
+const Test2Cont = Styled.div
+`
+display:flex;
+max-width: 59rem;
+width: 100%;
+margin-left: 3rem;
+margin-top: 3rem;
+align-items: center;
+// justify-content: flex-start;
+`
+
+const Test2Text = Styled.div
+`
+display:flex;
+flex-direction: column;
+max-width: 16.5rem;
+margin-left: 2rem;
+@media only screen and (max-width: 1000px){
+    display: none;
+    }
+`
+
+const Test2Text2 = Styled.div
+`
+display:flex;
+flex-direction: column;
+max-width: 16.5rem;
+margin-top: -15rem;
+margin-left: 7rem;
+@media only screen and (max-width: 1000px){
+    display: none;
+    }
+`
+
+const Test2Cont2 = Styled.div
+`
+display:flex;
+flex-direction: column;
+max-width: 59rem;
+width: 100%;
+margin-top: 3rem;
+align-items: flex-start;
+`
+
+const TestImg3 = Styled.img
+`
+position: static;
+flex-direction: row;
+max-width: 59rem;
+width: 100%;
+height: auto;
+flex-direction: row;
+@media only screen and (max-width: 1200px){
+    width: 80%;
+    }
+`
+
+const Test3Cont = Styled.div
+`
+display:flex;
+max-width: 59rem;
+width: 100%;
+margin-left: 3rem;
+margin-top: 12rem;
+@media only screen and (max-width: 1000px){
+        margin-top: 5rem;
+    }
+`
+
+const Test3Text = Styled.div
+`
+flex-direction: column;
+max-width: 19.5rem;
+margin-top: 11.5rem;
+margin-left: -6rem;
+@media only screen and (max-width: 1200px){
+    margin-left: -2rem;
+    }
+@media only screen and (max-width: 1000px){
+    display: none;
+    }
+`
+const Test3Text2 = Styled.div
+`
+flex-direction: column;
+max-width: 19rem;
+margin-top: 20rem;
+@media only screen and (max-width: 1200px){
+    margin-left: 3rem;
+    }
+@media only screen and (max-width: 1000px){
+    display: none;
+    }
+`
+
+const Test3TextCont = Styled.div
+`
+display:flex;
+flex-direction: column;
+margin-left: -17rem;
+@media only screen and (max-width: 1000px){
+    display: none;
+    }
+`
+const PrototypeContainer = Styled.div
+`
+display: flex;
+position: static;
+margin-top: 3rem;
+margin-bottom: 2rem;
+`
+const PrototypeBan = Styled.img
+`
+max-width: 17.5rem;
+width: 100%;
+height: auto;
+margin-left: 1.5rem;
+`
+
+const ProtoText = Styled.div
+`
+margin-left: -15rem;
+margin-top: 1.2rem;
+@media only screen and (max-width: 1200px){
+       p {
+           font-size: 1.5rem;
+       } 
+    }
+`
+
+const ArrowRightImg = Styled.img
+`
+max-width: 1.1rem;
+width: 100%;
+height: 2.1rem; 
+margin-left: 1rem;
+margin-top: 1.2rem;
+
+`
+
+const FollowUpText = Styled.div
+`
+position: static; 
+max-width: 60rem;
+width: 100%;
+height: auto;
+margin-top: 2rem;
+margin-left: 2rem;
+margin-bottom: 2rem;
+`
+
+const FinalRect = Styled.img
+`
+display: block;
+max-width: 65.5rem;
+height: auto;
+width: 100%;
+@media only screen and (max-width: 1200px){
+        width: 100%;
+        height: 30.5rem;
+
+    }
+`
+const W1 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: 2rem;
+`
+
+const W2 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: 2rem;
+`
+const W3 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: 2rem;
+`
+
+// const FinalText = Styled.div
+// `
+// color: #FFF1EC;
+// flex-direcction: column;
+// max-width: 53.75rem;
+// width: 100%;
+// height: auto;
+// margin-left: 5rem;
+// margin-top: -16rem;
+//     ul{
+//         list-style: none;
+//     }
+//     li{
+//         margin-bottom: 2.2rem;;
+//         // margin-right: -20px;
+//         font-size: 1.5rem;
+//         line-height: 1.5;
+//     }
+//      @media only screen and (max-width: 1200px){
+//         width: 80%;
+//        li{
+//            font-size: 1rem;
+//            margin-bottom: 2.5rem;
+//        }
+//     }
+// `
+const FinalCont = Styled.div
+`
+position: relative;
+display: block;
+max-width: 65.5rem;
+max-height: 35.5rem;
+width: 100%;
+`
+
+const FinalCont2 = Styled.div
+`
+position: absolute;
+display: flex;
+flex-direction: column;
+margin-top: -28rem;
+margin-left: 2rem;
+
+`
+
+const BulletCont = Styled.div
+`
+display: flex;
+flex-direction:row;
+margin-left: 2rem;
+// justify-content: space-between;
+margin-bottom: 2.5rem;
+p{
+    color: #FFF1EC;
+    margin-left: 2rem;
+    max-width: 50rem;
+}
+#three {
+    align-self: flex-start;
+}
+`
+
+const ReturnImg = Styled.img 
+    `
+    position: static;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-width: 18.75rem;
+    width: 100%;
+    height: auto;
+    `
+const Thoughts = Styled.div
+`
+p{
+font-size: 2rem;
+margin-bottom: 3rem;
+margin-left: 1rem;
+@media only screen and (max-width: 1200px){
+font-size: 1.5rem;
+}
+}
+color: #FFF1EC;
 `

@@ -34,7 +34,7 @@ const SnapImg = Styled.img
     `
     position: absolute;
     top: 0px;
-    right: 285px;
+    right: 9rem;
     width: 41px;
     height: 52px;
     display: none;
@@ -45,14 +45,14 @@ const LogoImg = Styled.img
 position: relative;
 width: 172px;
 height: 98.69px;
-right: 150px;
+margin-right: 1rem;
 top: 0px;
 `
 
 const LogoContainer = Styled.div
     `
     top: 1rem;
-    margin-right: 5rem;
+    right: 1rem;
     position: absolute;
      :hover .hover-image {
         display: block;
