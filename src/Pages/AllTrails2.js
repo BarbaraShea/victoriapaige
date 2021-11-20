@@ -690,12 +690,6 @@ align-items: center;
      max-width: 18.75rem;
      margin-left: 1rem;
  }
- #style-text{
-     margin-top: 1.5rem;
- }
- #wireframe-text{
-         margin-top: 18rem;
-}
  @media only screen and (max-width: 1200px){
     flex-wrap: wrap;
     p{
