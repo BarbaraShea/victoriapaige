@@ -602,40 +602,6 @@ width: 100%;
 height: auto;
 `
 
-// const STextCont = Styled.div
-// `
-// position: absolute;
-// max-width: 57rem;
-// width: 100%;
-// height: 66rem;
-// display: flex;
-// flex-direction: column;
-// margin-left: 2rem;
-// align-items: stretch;
-// `
-
-// const SolutionText1 = Styled.div
-// `
-// display: flex;
-// flex-direction: row;
-// justify-content: space-evenly;
-// p{
-//     max-width: 12.8rem;
-//     text-align: center;
-// }
-// `
-
-// const SolutionText2 = Styled.div
-// `
-// display: flex;
-// flex-direction: row;
-// justify-content: space-around;
-// p{
-//     max-width: 12.8rem;
-//     text-align: center;
-// }
-// `
-
 const SolutionHeader = Styled.img
 `
 max-width: 29rem;
@@ -1060,32 +1026,7 @@ width: 2rem;
 height: 2rem;
 `
 
-// const FinalText = Styled.div
-// `
-// color: #FFF1EC;
-// flex-direcction: column;
-// max-width: 53.75rem;
-// width: 100%;
-// height: auto;
-// margin-left: 5rem;
-// margin-top: -16rem;
-//     ul{
-//         list-style: none;
-//     }
-//     li{
-//         margin-bottom: 2.2rem;;
-//         // margin-right: -20px;
-//         font-size: 1.5rem;
-//         line-height: 1.5;
-//     }
-//      @media only screen and (max-width: 1200px){
-//         width: 80%;
-//        li{
-//            font-size: 1rem;
-//            margin-bottom: 2.5rem;
-//        }
-//     }
-// `
+
 const FinalCont = Styled.div
 `
 position: relative;

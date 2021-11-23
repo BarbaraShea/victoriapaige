@@ -885,7 +885,7 @@ width: 100%;
 margin-left: 3rem;
 margin-top: 3rem;
 align-items: center;
-// justify-content: flex-start;
+
 `
 
 const Test2Text = Styled.div
