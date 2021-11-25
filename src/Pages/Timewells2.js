@@ -22,6 +22,18 @@ import White4 from '../images/White4.png';
 import Gap from '../images/GapHeader.png';
 import TWLogo from '../images/TWLogo.png';
 import Rect from '../images/FollowUpRect.png';
+import Lady from '../images/LadyPic.png';
+import Man from '../images/ManPic.png';
+import GapBanner from '../images/BrandBanner.png';
+import TWMockup from '../images/GIFTimewells.png';
+import TWGIF from '../images/TWGif.gif';
+import Method from '../images/MethodHeader.png';
+import UserPersona from '../images/SamPersona.png';
+import TaskFlow from '../images/TaskFlowTW.png';
+import UserFlow from '../images/UserflowTW.png';
+import Sketch from '../images/SketchTW.png';
+import Wireframe from '../images/WireframeTW.png';
+import BrandUI from '../images/BrandUITW.png';
 
 const Timewells2 = () => {
     return (
@@ -120,6 +132,96 @@ const Timewells2 = () => {
                 </InsightsBulletCont>
             </InsightsCont2>
         </InsightsRectCont>
+        <HeaderContainer>
+         <GapHeader src={Gap} id="gap" className="gapIMG"/>
+        </HeaderContainer>
+        <GapCont>
+        <LogoCont>
+            <LogoImg src={TWLogo}/>
+            <p id="max"> Timewells wants to sell trips. </p>
+            <p id="min"> Timewells wants to sell trips, <strong>but users want to feel comfortable and confident</strong> before dropping a ton of cash.</p>
+        </LogoCont>
+        <PersonCont>
+        <PersonCont2>
+            <PersonImg2 src={Lady}/>
+            <PersonImg2 src={Man}/>
+        </PersonCont2>
+            <p> Users want to feel comfortable and confident before dropping a ton of cash.</p>
+        </PersonCont>
+        </GapCont>
+        <BannerCont>
+            <GapBannerImg src={GapBanner}/>
+            <BannerText>
+            <p id="max"> My users were very excited about time travel and had a lot of ideas for a good product experience. It would have been intersting to try and find solutions for everything, but results would be muddled.</p>
+            <p id="min"> I had to really drill through the data to find the best solutions for this. My users had so many insights!</p>
+            </BannerText>
+        </BannerCont>
+        <HeaderContainer>
+            <SolutionHeader src={Solution}/>
+        </HeaderContainer>
+        <GifCont>
+            <SolutionImg src={TWMockup}/>
+            <GIF src={TWGIF}/>
+        </GifCont>
+        <SolutionTextCont>
+            <SolutionText>
+            <p><strong> A multi-level filter feature </strong> so users can search for trips in myriad ways, depending on their personal inclination.</p>
+            </SolutionText>
+            <SolutionText>
+            <p><strong> An "ask a real traveler" feature </strong> to help simultaneously meet user needs of wanting in-deth information and Timewells' need to build trust in their product.</p>
+            </SolutionText>
+        </SolutionTextCont>
+        <HeaderContainer>
+        <Header id="method" src={Method}/>
+        </HeaderContainer>
+        <MethodText>
+            <p id="user-flow-header"><strong>User Persona</strong></p>
+        </MethodText>
+        <MethodContainer>
+            <MethodImg src={UserPersona}/>
+            <p id="user-flow-text">I created this to have a cohesive feel of my users when designing. "Would Same find this intuitive?" "Would Same trust this website?" were questions I asked myself regularly.</p>
+        </MethodContainer>
+        <MethodText>
+            <p id="sketches-header"><strong>Task Flow</strong></p>
+        </MethodText>
+        <MethodContainer>
+                <MethodImg src={TaskFlow}/>
+                <p id="sketches-text">A graphic representation of the journey a user could make from point A to point B on Timewells' site.</p>
+        </MethodContainer>
+        <MethodText>
+                 <p id="sketches-header"><strong>User Flow</strong></p>
+        </MethodText>
+        <MethodContainer>
+            <MethodImg src={UserFlow}/>
+            <p id="wireframe-text"> I needed to figure out all the potential paths Sam might take on the Timewells site. This was an intriguing exercise in <strong> predicting user behavior.</strong></p>
+        </MethodContainer>
+        <MethodText>
+                <p id="style-header"><strong>Sketch</strong></p>
+        </MethodText>
+         <MethodContainer>
+            <MethodImg src={Sketch}/>
+            <p id="wireframe-text"> As a pencil-and-paper person, I started sketching wireframes on paper first. <strong>This hekped me figure our visual hierarchy and layout</strong> without being distracted by technology.</p>
+        </MethodContainer>
+         <MethodText>
+                <p id="style-header"><strong>Wireframe Prototype</strong></p>
+        </MethodText>
+         <MethodContainer>
+            <MethodImg src={Wireframe}/>
+            <MethodTextCont>
+            <p id="wireframe-text"> I designed my first solution and began to test it as a prototype. At this point, the solution made sense to me, but it need to be tested.</p>
+            <p id="wireframe-text2"> This wireframe solved the problem of wanting multiple ways to read reviews.</p>       
+            </MethodTextCont>
+          </MethodContainer>
+           <MethodText>
+                <p id="style-header"><strong>Branding and UI</strong></p>
+        </MethodText>
+         <MethodContainer>
+            <MethodImg src={BrandUI}/>
+            <MethodTextCont>
+            <p id="branding-text"> You can't judge a book by its cover, but my users definately judge trustability of websites by how they look. Here are some of the ways I developed Timewells' logo and brand styling. </p>
+            <p id="branding-text2"> I wanted a split-analagous color scheme with a bright accent color to underscore <strong>adventure, nature, and excitement.</strong></p>
+            </MethodTextCont>
+          </MethodContainer>
         <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
         </>
     )
@@ -360,5 +462,317 @@ p{
 .white{
     color: #FFF1EC;
      background-color: #360713;
+    }
+`
+
+const SolutionHeader = Styled.img
+`
+max-width: 29rem;
+width: 100%;
+height: auto;
+`
+
+const TestHeader = Styled.img
+`
+max-width: 29rem;
+width: 100%;
+height: auto;
+`
+
+const GapHeader = Styled.img
+`
+max-width: 16.7rem;
+width: 100%;
+height: auto;
+`
+
+const GapCont =Styled.div
+`
+position: static;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+max-width: 67rem;
+width: 100%;
+height: auto;
+`
+
+const LogoCont =Styled.div
+`
+position: static;
+display: flex;
+margin-left: 3rem;
+margin-right: 3rem;
+flex-direction: column;
+justify-content: space-between;
+max-width: 20rem;
+width: 100%;
+height: auto;
+p{
+    text-align: center;
+}
+#min {
+    display:none;
+}
+ @media only screen and (max-width: 600px){
+        #max{
+            display: none;
+        }
+        #min{
+            display: block;
+        }
+    }
+`
+const PersonCont =Styled.div
+`
+position: static;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: 3rem;
+margin-right: 3rem;
+max-width: 200rem;
+    width: 100%;
+    height: auto;
+p{
+    max-width: 28rem;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+ @media only screen and (max-width: 600px){
+        display: none;
+    }
+`
+
+const PersonCont2 =Styled.div
+`
+position: static;
+display: flex;
+flex-directions: row;
+align-items: center;
+ @media only screen and (max-width: 1350px){
+        width: 80%;
+        align-items: center;
+    }
+`
+
+const LogoImg = Styled.img
+ `
+    max-width: 14.8rem;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    @media only screen and (max-width: 1350px){
+        width: 90%;
+        align-items: center;
+    }
+    `
+
+const PersonImg2 = Styled.img
+ `
+    max-width: 11.6rem;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    @media only screen and (max-width: 1350px){
+        width: 80%;
+        align-items: center;
+    }
+    `
+const BannerCont = Styled.div
+`
+position: relative;
+max-width: 61rem;
+width: 100%;
+height: auto;
+p{
+    font-size: 1.6rem;
+    margin-left: 2.8rem;
+    margin-top: -4.2rem;
+}
+#min {
+    display:none;
+}
+ @media only screen and (max-width: 600px){
+        #max{
+            display: none;
+        }
+        #min{
+            display: block;
+        }
+    }
+`
+
+const GapBannerImg = Styled.img
+`
+max-width: 61rem;
+width: 100%;
+height: auto;
+margin-left: 1.5rem;
+margin-top: 1.5rem;
+  @media only screen and (max-width: 1350px){
+        width: 90%;
+        height: 10rem;
+    }
+`
+
+const BannerText = Styled.div
+`
+position: absolute;
+width: 80%;
+top: 70%;
+p{
+    font-size: 1.4rem;
+}
+  @media only screen and (max-width: 1350px){
+        width: 90%;
+        height: 10rem;
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: -4.5rem;
+        }
+    }
+`
+
+const GifCont = Styled.div
+`
+position: static;
+position: relative;
+max-width: 60rem;
+width: 100%;
+height: auto;
+margin-top: 3rem;
+margin-left: 3rem;
+  @media only screen and (max-width: 1350px){
+        width: 90%;
+        }
+`
+const SolutionImg = Styled.img
+`
+width: 100%;
+height: auto;
+@media only screen and (max-width: 1350px){
+        width: 90%;
+        }
+`
+const GIF = Styled.img
+`
+position: absolute;
+width: 76.5%;
+height: 83%;
+top: 6.5%;
+left: 11.7%;
+@media only screen and (max-width: 1350px){
+    width: 69%;
+    height: 82%;
+    top: 6.5%;
+    left: 10.5%;
+}
+`
+
+const SolutionTextCont = Styled.div
+`
+position: static;
+display: flex;
+justify-content: flex-start;
+margin-top: 3rem;
+margin-left: 3rem;
+@media only screen and (max-width: 1350px){
+        flex-wrap: wrap;
+        }
+`
+
+const SolutionText = Styled.div
+`
+flex-direction: row;
+max-width: 25rem;
+width: 100%;
+height: auto;
+margin-right: 1.5rem;
+@media only screen and (max-width: 1350px){
+        margin-top: 2rem;
+        }
+`
+
+const MethodText = Styled.div
+`
+postion: static;
+margin-left: 3.2rem;
+margin-top: 3rem;
+p{
+    font-size: 2rem;
+}
+ @media only screen and (max-width: 1200px){
+     p{
+        font-size: 1.5rem;
+     }
+}
+`
+const MethodContainer = Styled.div
+`
+display: flex;
+position: static;
+flex-direction: row;
+max-width: 60rem;
+width: 100%;
+height: auto;
+margin-left: 2rem;
+margin-top: 2rem;
+align-items: center;
+ p{
+     margin-left: 1rem;
+     max-width: 18.75rem;
+ }
+ #style-text {
+     margin-top: 1rem;
+ }
+ @media only screen and (max-width: 1200px){
+    flex-wrap: wrap;
+    p{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    width: 100%;
+    height: auto;
+    }
+    #wireframe-text{
+         margin-top: 1.5rem;
+ }
+}
+`
+const MethodImg = Styled.img
+`
+position: static;
+max-width: 39rem;
+width: 100%
+height: auto;
+margin-left: 1.5rem;
+margin-top: 1.5rem;
+ @media only screen and (max-width: 1200px){
+        width: 80%;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+`
+
+const MethodTextCont = Styled.div
+`
+display: flex;
+flex-direction: column;
+position: static;
+justify-content: center;
+margin-left: 1.5rem;
+p{
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 1200px){
+        margin-left: 7rem;
+    }
+@media only screen and (max-width: 1200px){
+        margin-left: 0rem;
     }
 `
