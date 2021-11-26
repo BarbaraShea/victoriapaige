@@ -2,12 +2,12 @@ import React from 'react';
 
 
 
-const ProjectFour = () => {
+const Aloft = () => {
     return (
         <>
         </>
     )
 };
 
-export default ProjectFour;
+export default Aloft;
 

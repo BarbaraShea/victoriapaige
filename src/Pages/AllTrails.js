@@ -17,7 +17,7 @@ import Motivations from '../images/motivations.png';
 import Needs from '../images/needs.png';
 import Gap from '../images/GapHeader.png';
 import Solution from '../images/SolutionHeader.png';
-import Apps from '../images/AppScreens.png';
+import Apps from '../images/AlltrailsPNG 1.png';
 import Method from '../images/MethodHeader.png';
 import Lora from '../images/LoraPersona.png';
 import Storyboard from '../images/Storyboard.png';
@@ -102,13 +102,13 @@ const AllTrails = () => {
             </ResearchText2>
         </UserIntCont>
         <InsightsRectCont>
-            <InsightsTextCont>
-            <MI><p><strong> Major Insights </strong></p></MI>
-            <InsightsImg src={Needs}/>
-            <InsightsImg src={Fears}/>
-            <InsightsImg src={Motivations}/>
-            </InsightsTextCont>
-            <InsightsRect src={Rect}/>
+        <InsightsRect src={Rect}/>
+            <InsightsCont2>
+                <MI><p><strong> Major Insights </strong></p></MI>
+                <InsightsImg src={Needs}/>
+                <InsightsImg src={Fears}/>
+                <InsightsImg src={Motivations}/>
+            </InsightsCont2>
         </InsightsRectCont>
          <HeaderContainer>
             <GapHeader src={Gap} id="gap"/>
@@ -126,18 +126,6 @@ const AllTrails = () => {
          <AppImgCont>
          <AppsImg src={Apps}/>
          </AppImgCont>
-         {/* <STextCont>
-         <SolutionText1>
-             <p id="p1">Self-disclosure aggregate ratings</p>
-             <p id="p2">Safety and Accessibility Filters</p>
-             <p id="p3">Inclusivity Indicators</p>
-        </SolutionText1>
-        <SolutionText2>
-             <p id="p4">Trail Technicality + Condition Report</p>
-             <p id="p5">Optional disclosure to encourage comfort</p>
-             <p id="p6">A “what’s this?” feature</p>
-        </SolutionText2>
-        </STextCont> */}
         <HeaderContainer>
         <Header id="method" src={Method}/>
         </HeaderContainer>
@@ -484,47 +472,35 @@ const UserIntImg = Styled.img
 const InsightsRectCont = Styled.div
 `
 position: relative;
-margin-top: 3rem;
-max-width: 64.5rem;
+max-width: 65.5rem;
+max-height: 35.5rem;
 width: 100%;
-height: 52rem;
-background-color: #360713;
-margin-top: 3rem;
-overflow: hidden;
-  @media only screen and (max-width: 1000px){
-      width: 100%;
-    height: 48rem;
-}
-  @media only screen and (max-width: 800px){
-      width: 100%;
-    height: 40rem;
-}
- @media only screen and (max-width: 800px){
-      width: 100%;
-    height: 30rem;
-}
 `
 
 const InsightsRect = Styled.img
 `
-position: absolute;
-max-width: 64.5rem;
-width: 100%;
-min-height: 32rem;
+max-width: 65.5rem;
+margin-top: 3rem;
+margin-bottom: 5rem;
 height: auto;
-display: none;
+width: 100%;
+@media only screen and (max-width: 1200px){
+        width: 120%;
+        height: 30.5rem;
+
+    }
 `
 
 const InsightsImg = Styled.img
 `
-max-width: 52.8rem;
-width: 100%;
-height: auto;
+display: flex;
 flex-direction: column;
-margin-bottom: 3rem;
-z-index: 2;
+margin-left: 4rem;
+margin-bottom: 1.5rem;
+margin-right: 1.5rem;
+margin-top: 1.5rem;
   @media only screen and (max-width: 1300px){
-        width: 100%;
+        width: 70%;
         align-items: center;
         margin-bottom: 2rem;
     }
@@ -532,37 +508,35 @@ z-index: 2;
 
 const MI = Styled.div
 `
-z-index: 2;
-flex-direction: column;
+p{
 font-size: 2rem;
-color: #FFF1EC;
+margin-bottom: 1rem;
+margin-left: 0rem;
 margin-top: 3rem;
-margin-bottom: 3rem;
- @media only screen and (max-width: 1300px){
-        p{
-            font-size: 2rem;
-        }
-    }
-    @media only screen and (max-width: 1000px){
-        p{
-            font-size: 1rem;
-        }
-    } 
-   @media only screen and (max-width: 600px){
-       margin-bottom: 2rem;
-        p{
-            font-size: 1rem;
-
-        }
-    } 
+@media only screen and (max-width: 1200px){
+font-size: 1.5rem;
+}
+}
+color: #FFF1EC;
 `
 
-const InsightsTextCont = Styled.div
+const InsightsCont2 = Styled.div
 `
 position: absolute;
 display: flex;
 flex-direction: column;
-margin-left: 2.5rem;
+width: 76.5%;
+height: 83%;
+top: 1.5%;
+left: 5.7%;
+justify-content: space-evenly;
+@media only screen and (max-width: 1350px){
+    width: 100%;
+    height: 82%;
+    top: 5%;
+    left: 2%;
+    justify-content: space-evenly;
+}
 `
 
 const GapText = Styled.div
@@ -601,40 +575,6 @@ max-width: 57rem;
 width: 100%;
 height: auto;
 `
-
-// const STextCont = Styled.div
-// `
-// position: absolute;
-// max-width: 57rem;
-// width: 100%;
-// height: 66rem;
-// display: flex;
-// flex-direction: column;
-// margin-left: 2rem;
-// align-items: stretch;
-// `
-
-// const SolutionText1 = Styled.div
-// `
-// display: flex;
-// flex-direction: row;
-// justify-content: space-evenly;
-// p{
-//     max-width: 12.8rem;
-//     text-align: center;
-// }
-// `
-
-// const SolutionText2 = Styled.div
-// `
-// display: flex;
-// flex-direction: row;
-// justify-content: space-around;
-// p{
-//     max-width: 12.8rem;
-//     text-align: center;
-// }
-// `
 
 const SolutionHeader = Styled.img
 `
@@ -1035,7 +975,7 @@ max-width: 65.5rem;
 height: auto;
 width: 100%;
 @media only screen and (max-width: 1200px){
-        width: 100%;
+        width: 120%;
         height: 30.5rem;
 
     }
@@ -1060,32 +1000,6 @@ width: 2rem;
 height: 2rem;
 `
 
-// const FinalText = Styled.div
-// `
-// color: #FFF1EC;
-// flex-direcction: column;
-// max-width: 53.75rem;
-// width: 100%;
-// height: auto;
-// margin-left: 5rem;
-// margin-top: -16rem;
-//     ul{
-//         list-style: none;
-//     }
-//     li{
-//         margin-bottom: 2.2rem;;
-//         // margin-right: -20px;
-//         font-size: 1.5rem;
-//         line-height: 1.5;
-//     }
-//      @media only screen and (max-width: 1200px){
-//         width: 80%;
-//        li{
-//            font-size: 1rem;
-//            margin-bottom: 2.5rem;
-//        }
-//     }
-// `
 const FinalCont = Styled.div
 `
 position: relative;
@@ -1100,9 +1014,18 @@ const FinalCont2 = Styled.div
 position: absolute;
 display: flex;
 flex-direction: column;
-margin-top: -28rem;
-margin-left: 2rem;
-
+width: 70.5%;
+height: 83%;
+top: 5%;
+left: 5.7%;
+justify-content: space-evenly;
+@media only screen and (max-width: 1350px){
+    width: 100%;
+    height: 82%;
+    top: 5%;
+    left: 2%;
+    justify-content: space-evenly;
+}
 `
 
 const BulletCont = Styled.div
@@ -1135,10 +1058,12 @@ const Thoughts = Styled.div
 `
 p{
 font-size: 2rem;
-margin-bottom: 3rem;
+margin-bottom: 2rem;
 margin-left: 1rem;
+margin-top: 3rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
+margin-top: 2rem;
 }
 }
 color: #FFF1EC;

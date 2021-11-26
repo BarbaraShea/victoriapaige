@@ -1178,9 +1178,18 @@ const FinalCont2 = Styled.div
 position: absolute;
 display: flex;
 flex-direction: column;
-margin-top: -28rem;
-margin-left: 2rem;
-
+width: 76.5%;
+height: 83%;
+top: 1.5%;
+left: 5.7%;
+justify-content: space-evenly;
+@media only screen and (max-width: 1350px){
+    width: 100%;
+    height: 82%;
+    top: 5%;
+    left: 2%;
+    justify-content: space-evenly;
+}
 `
 const SolutionHeader = Styled.img
 `
@@ -1208,7 +1217,6 @@ const BulletCont = Styled.div
 display: flex;
 flex-direction:row;
 margin-left: 2rem;
-// justify-content: space-between;
 margin-bottom: 2.5rem;
 margin-right: 1.5rem;
 p{
@@ -1238,8 +1246,9 @@ const Thoughts = Styled.div
 `
 p{
 font-size: 2rem;
-margin-bottom: 3rem;
+margin-bottom: 1rem;
 margin-left: 1rem;
+margin-top: 3rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
 }

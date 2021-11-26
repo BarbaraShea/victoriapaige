@@ -267,7 +267,9 @@ const Timewells2 = () => {
             <Header id="follow" src={FollowUp}/>
          </HeaderContainer>
         <FollowUpText>
-        <p> It was a great eperience working with such a wonderful and established team.</p>
+        <p> This was my first experience designing a product from end to end. I learned so
+much about my own work flow and what makes sense to my brain as I moved
+through the process.</p>
         </FollowUpText>   
         <FinalCont>
         <FinalRect src={FollowUpRect}/>
@@ -275,15 +277,15 @@ const Timewells2 = () => {
                 <Thoughts><p><strong> Final Thoughts </strong></p> </Thoughts>
                 <FinalBulletCont>
                     <W1 src={White1}/>
-                    <p className="white"> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp.</p>
+                    <p className="white"> I had way too many assumptions in my initial interview research. </p>
                 </FinalBulletCont>
                 <FinalBulletCont>
                     <W2 src={White2}/>
-                    <p className="white"> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature.</p>
+                    <p className="white"> Most of my users wanted to click on pictures rather than text, which allowed fun revisions.</p>
                 </FinalBulletCont>
                 <FinalBulletCont>
                     <W3 src={White3}/>
-                    <p className="white"> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good.</p>
+                    <p className="white"> My debriefing from usability testing showed some key insights that would have helped with my original design — such as a chat feature!</p>
                 </FinalBulletCont>
             </FinalCont2>
         </FinalCont>
@@ -490,16 +492,27 @@ display: block;
 max-width: 65.5rem;
 max-height: 35.5rem;
 width: 100%;
+
 `
+
 
 const InsightsCont2 = Styled.div
 `
 position: absolute;
 display: flex;
 flex-direction: column;
-margin-top: -28rem;
-margin-left: 2rem;
-
+width: 76.5%;
+height: 83%;
+top: 1.5%;
+left: 5.7%;
+justify-content: space-evenly;
+@media only screen and (max-width: 1350px){
+    width: 100%;
+    height: 82%;
+    top: 5%;
+    left: 2%;
+    justify-content: space-evenly;
+}
 `
 
 const Thoughts = Styled.div
@@ -508,6 +521,7 @@ p{
 font-size: 2rem;
 margin-bottom: 1rem;
 margin-left: 1rem;
+margin-top: 3rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
 }
@@ -941,9 +955,18 @@ const FinalCont2 = Styled.div
 position: absolute;
 display: flex;
 flex-direction: column;
-margin-top: -28rem;
-margin-left: 2rem;
-
+width: 76.5%;
+height: 83%;
+top: 16.5%;
+left: 5.7%;
+justify-content: space-evenly;
+@media only screen and (max-width: 1350px){
+    width: 100%;
+    height: 82%;
+    top: 5%;
+    left: 2%;
+    justify-content: space-evenly;
+}
 `
 
 
@@ -994,7 +1017,7 @@ const FinalBulletCont = Styled.div
 display: flex;
 flex-direction:row;
 margin-left: 4rem;
-margin-bottom: 2.5rem;
+margin-bottom: 1rem;
 margin-right: 1.5rem;
 margin-top: 1rem;
 
