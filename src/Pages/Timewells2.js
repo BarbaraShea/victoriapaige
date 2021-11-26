@@ -34,6 +34,13 @@ import UserFlow from '../images/UserflowTW.png';
 import Sketch from '../images/SketchTW.png';
 import Wireframe from '../images/WireframeTW.png';
 import BrandUI from '../images/BrandUITW.png';
+import TestPic1 from '../images/TWTestImg1.png';
+import TestPic2 from '../images/TWTestImg2.png';
+import TestPic3 from '../images/TWTestImg3.png';
+import ProtoBan from '../images/PrototypeBanner.png';
+import ArrowRight from '../images/ArrowRight.png';
+import FollowUpRect from '../images/FollowUpRect.png';
+
 
 const Timewells2 = () => {
     return (
@@ -222,6 +229,64 @@ const Timewells2 = () => {
             <p id="branding-text2"> I wanted a split-analagous color scheme with a bright accent color to underscore <strong>adventure, nature, and excitement.</strong></p>
             </MethodTextCont>
           </MethodContainer>
+           <HeaderContainer>
+        <TestHeader id="test" src={TestCircle}/>
+        </HeaderContainer>
+        <Text>
+        <p> I had five new users in the target demographic test out the website via a Figma prototype.</p>
+        </Text>
+         <TestTable>
+            <table>
+            <tr>
+                <td class="table-header"><strong>Wins:</strong></td>
+                <td>
+                    <ul>
+                    <li>5/5 were able to filter a trip based on need.</li>
+                    <li>4/5 were able to contact a real traveler for more info.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-header"><strong>Edits:</strong></td>
+                <td>Overall feedback was that links weren't clear, pictures should be clickable, and more descriptors were needed. Valid.</td>
+            </tr>
+          
+            </table>
+        </TestTable>
+        <TestImg src={TestPic1}/>
+        <TestImg src={TestPic2}/>
+        <TestImg src={TestPic3}/>
+        <PrototypeContainer>    
+            <PrototypeBan src={ProtoBan}/>
+            <ProtoText>
+            <p><strong><a href="https://www.figma.com/proto/lARHntk9QL09upIkgVY0VY/Timewells-Priority-Revision?page-id=0%3A1&node-id=272%3A256&viewport=241%2C48%2C0.62&scaling=min-zoom&starting-point-node-id=1%3A2118" target="_blank"> See Prototype </a></strong></p>
+            </ProtoText>
+            <ArrowRightImg src={ArrowRight}/>
+        </PrototypeContainer>
+            <HeaderContainer>
+            <Header id="follow" src={FollowUp}/>
+         </HeaderContainer>
+        <FollowUpText>
+        <p> It was a great eperience working with such a wonderful and established team.</p>
+        </FollowUpText>   
+        <FinalCont>
+        <FinalRect src={FollowUpRect}/>
+            <FinalCont2>
+                <Thoughts><p><strong> Final Thoughts </strong></p> </Thoughts>
+                <FinalBulletCont>
+                    <W1 src={White1}/>
+                    <p className="white"> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp.</p>
+                </FinalBulletCont>
+                <FinalBulletCont>
+                    <W2 src={White2}/>
+                    <p className="white"> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature.</p>
+                </FinalBulletCont>
+                <FinalBulletCont>
+                    <W3 src={White3}/>
+                    <p className="white"> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good.</p>
+                </FinalBulletCont>
+            </FinalCont2>
+        </FinalCont>
         <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
         </>
     )
@@ -266,7 +331,7 @@ const TWImage = Styled.img
     `
     width: 70rem;
     height: 2.875rem;
-    left: 1rem;
+    margin-left: 2rem;
     margin-bottom: 20rem;
     
      ul {
@@ -314,11 +379,15 @@ margin-top: 1rem;
 const ReturnImg = Styled.img 
     `
     position: static;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
     max-width: 18.75rem;
     width: 100%;
     height: auto;
+    @media only screen and (max-width: 1200px){
+        width: 50%;
+    }
     `
 
 const BulletCont = Styled.div
@@ -774,5 +843,167 @@ p{
     }
 @media only screen and (max-width: 1200px){
         margin-left: 0rem;
+    }
+`
+
+const TestImg = Styled.img
+`
+position: static;
+max-width: 60.3rem;
+width: 100%
+height: auto;
+margin-left: 1.5rem;
+margin-top: 1.5rem;
+ @media only screen and (max-width: 1200px){
+        width: 80%;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+`
+
+const TestTable = Styled.div
+    `
+    width: 70rem;
+    height: 2.875rem;
+    margin-left: 2rem;
+    margin-bottom: 12rem;
+    
+     ul {
+        display: block;
+        list-style: none;
+    };
+    li {
+        text-align: left;
+    }
+    td {
+    vertical-align: top;
+    padding: 0.625rem;
+    font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 1200px){
+        width: 100%;
+        td {
+            font-size: 1.2rem;
+        }
+        li {
+            font-size: 1.2rem;
+        }
+    }
+    `
+    
+const PrototypeContainer = Styled.div
+`
+display: flex;
+position: static;
+margin-top: 3rem;
+margin-bottom: 2rem;
+`
+const PrototypeBan = Styled.img
+`
+max-width: 17.5rem;
+width: 100%;
+height: auto;
+margin-left: 1.5rem;
+`
+
+const ProtoText = Styled.div
+`
+margin-left: -15rem;
+margin-top: 1.2rem;
+@media only screen and (max-width: 1200px){
+       p {
+           font-size: 1.5rem;
+       } 
+    }
+`
+
+const ArrowRightImg = Styled.img
+`
+max-width: 1.1rem;
+width: 100%;
+height: 2.1rem; 
+margin-left: 1rem;
+margin-top: 1.2rem;
+
+`
+
+const FinalCont = Styled.div
+`
+position: relative;
+display: block;
+max-width: 65.5rem;
+max-height: 35.5rem;
+width: 100%;
+`
+
+const FinalCont2 = Styled.div
+`
+position: absolute;
+display: flex;
+flex-direction: column;
+margin-top: -28rem;
+margin-left: 2rem;
+
+`
+
+
+const FollowUpText = Styled.div
+`
+position: static; 
+max-width: 60rem;
+width: 100%;
+height: auto;
+margin-top: 2rem;
+margin-left: 2rem;
+margin-bottom: 2rem;
+`
+const FinalRect = Styled.img
+`
+display: block;
+max-width: 65.5rem;
+height: auto;
+width: 100%;
+@media only screen and (max-width: 1200px){
+        width: 100%;
+        height: 30.5rem;
+
+    }
+`
+
+const W1 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: 2rem;
+`
+
+const W2 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: 2rem;
+`
+const W3 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: 2rem;
+`
+const FinalBulletCont = Styled.div
+`
+display: flex;
+flex-direction:row;
+margin-left: 4rem;
+margin-bottom: 2.5rem;
+margin-right: 1.5rem;
+margin-top: 1rem;
+
+p{
+    margin-left: 2rem;
+    max-width: 50rem;
+}
+.white{
+    color: #FFF1EC;
+     background-color: #360713;
     }
 `

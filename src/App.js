@@ -30,7 +30,6 @@ function App() {
    <Route exact path="/AllTrails" component={AllTrails}/>
    <Route exact path="/ProjectFour" component={ProjectFour}/>
    <Route exact path="/test" component={LandingPage2}/>
-   <Route exact path="/TW" component={Timewells2}/>
    </Switch>
    </Router>
 

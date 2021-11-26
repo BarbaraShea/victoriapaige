@@ -1230,6 +1230,9 @@ const ReturnImg = Styled.img
     max-width: 18.75rem;
     width: 100%;
     height: auto;
+     @media only screen and (max-width: 1200px){
+        width: 50%;
+    }
     `
 const Thoughts = Styled.div
 `
