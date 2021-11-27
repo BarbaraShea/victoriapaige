@@ -22,6 +22,7 @@ import ALHeader from '../images/ALHeader.png';
 import AlResearchImg1 from '../images/AlResearchImg1.png';
 import AlResearchImg2 from '../images/AlResearchImg2.png';
 import AlResearchImg3 from '../images/AlResearchImg3.png';
+import Rect from '../images/InsightsRect.png';
 
 const Aloft = () => {
     return (
@@ -82,7 +83,34 @@ const Aloft = () => {
         <p id="para"><strong>The similary of responses from these users were incredible</strong>, and helped me easily identify a solution.</p>
         </ResearchText1>
         </ResearchCont>
-
+        <InsightsRectCont>
+        <InsightsRect src={Rect}/>
+            <InsightsCont2>
+                <MI><p><strong> Major Insights </strong></p></MI>
+                <InsightsBullets>
+                <p id="insights-header">Motivations</p>
+                <ul>
+                    <li>To be challenged and feel strong</li>
+                    <li>Train both sides of their bodies with new tricks</li>
+                    <li>Progress in their skillset and increase fluidity</li>
+                </ul>
+                <p id="insights-header">Frustrations</p>
+                <ul>
+                    <li>Not having a good way to organize notes</li>
+                    <li>Attending a class that ends up not meeting their needs</li>
+                    <li>Not able to easily find a class that fits their schedule</li>
+                    <li>Teaching styles that aren't what they are looking for</li>
+                </ul>
+                <p id="insights-header">Needs</p>
+                <ul>
+                    <li>Organize training notes and easily find videos from classes</li>
+                    <li>A better way to note what skills need work</li>
+                    <li>Know someone's teaching style and class content ahead of time</li>
+                    <li>A searchable calendar to find classes</li>
+                </ul>
+                </InsightsBullets>
+            </InsightsCont2>
+        </InsightsRectCont>
         </>
     )
 };
@@ -247,4 +275,78 @@ gap: 1.5rem;
  @media only screen and (max-width: 1350px){
         flex-wrap: wrap;
     }
+`
+
+const InsightsRectCont = Styled.div
+`
+position: relative;
+display: block;
+max-width: 65.5rem;
+max-height: 40rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+width: 100%;
+`
+
+const InsightsRect = Styled.img
+`
+display: block;
+max-width: 65.5rem;
+height: 42rem;
+width: 100%;
+@media only screen and (max-width: 1200px){
+        width: 120%;
+    }
+`
+
+const InsightsBullets = Styled.div
+`
+margin-left: 4rem;
+margin-bottom: 1.5rem;
+margin-right: 5%;
+margin-top: 4%;
+line-height: 1.6;
+color: #FFF1EC;
+#insights-header {
+    margin-left: -2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+//   @media only screen and (max-width: 1300px){
+//         width: 85%;
+//         align-items: center;
+//         margin-bottom: 2rem;
+//     }
+//      @media only screen and (max-width: 600px){
+//         width: 75%;
+//        font-size: 1rem;
+//     }
+`
+
+const MI = Styled.div
+`
+p{
+font-size: 2rem;
+margin-left: 0rem;
+margin-top: 1rem;
+@media only screen and (max-width: 1200px){
+font-size: 1.5rem;
+}
+}
+color: #FFF1EC;
+`
+
+const InsightsCont2 = Styled.div
+`
+position: absolute;
+width: 76.5%;
+height: 83%;
+top: 1.5%;
+left: 5.7%;
+@media only screen and (max-width: 1350px){
+    width: 100%;
+    top: 5%;
+    left: 2%;
+}
 `
