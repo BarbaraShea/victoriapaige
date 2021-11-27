@@ -331,7 +331,7 @@ const TWImage = Styled.img
 
     const Table = Styled.div
     `
-    width: 70rem;
+    max-width: 70rem;
     height: 2.875rem;
     margin-left: 2rem;
     margin-bottom: 20rem;
@@ -349,7 +349,7 @@ const TWImage = Styled.img
     font-size: 1.5rem;
     }
     @media only screen and (max-width: 1200px){
-        width: 100%;
+        width: 90%;
         td {
             font-size: 1.2rem;
         }
@@ -521,7 +521,7 @@ p{
 font-size: 2rem;
 margin-bottom: 1rem;
 margin-left: 1rem;
-margin-top: 3rem;
+margin-top: 1rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
 }
@@ -877,7 +877,7 @@ margin-top: 1.5rem;
 
 const TestTable = Styled.div
     `
-    width: 70rem;
+    max-width: 70rem;
     height: 2.875rem;
     margin-left: 2rem;
     margin-bottom: 12rem;
@@ -895,7 +895,7 @@ const TestTable = Styled.div
     font-size: 1.5rem;
     }
     @media only screen and (max-width: 1200px){
-        width: 100%;
+        width: 90%;
         td {
             font-size: 1.2rem;
         }
@@ -957,7 +957,7 @@ display: flex;
 flex-direction: column;
 width: 76.5%;
 height: 83%;
-top: 16.5%;
+top: 10.5%;
 left: 5.7%;
 justify-content: space-evenly;
 @media only screen and (max-width: 1350px){
@@ -979,6 +979,9 @@ height: auto;
 margin-top: 2rem;
 margin-left: 2rem;
 margin-bottom: 2rem;
+@media only screen and (max-width: 1350px){
+    width: 90%;
+    }
 `
 const FinalRect = Styled.img
 `

@@ -105,9 +105,28 @@ const AllTrails = () => {
         <InsightsRect src={Rect}/>
             <InsightsCont2>
                 <MI><p><strong> Major Insights </strong></p></MI>
-                <InsightsImg src={Needs}/>
-                <InsightsImg src={Fears}/>
-                <InsightsImg src={Motivations}/>
+                <InsightsBullets>
+                <p id="insights-header">Needs</p>
+                <ul>
+                    <li>Understand if a trail is far from cell service</li>
+                    <li>Know how close hospitals are/help is if needed</li>
+                    <li>Have ways to judge difficulty other than incline</li>
+                </ul>
+                <p id="insights-header">Fears</p>
+                <ul>
+                    <li>Trails being very technically difficult (climbing, downed trees, etc)</li>
+                    <li>Other folks’ ratings aren’t always accurate</li>
+                    <li>Running into men in the woods when they have guns</li>
+                    <li>Washed out trails and closures</li>
+                </ul>
+                <p id="insights-header">Motivations</p>
+                <ul>
+                    <li>Hiking is a meditative activity</li>
+                    <li>Experience nature without getting lost</li>
+                    <li>Save time by knowing as much as possible about the hike beforehand</li>
+                    <li>Know if a trail is easy to navigate and explore</li>
+                </ul>
+                </InsightsBullets>
             </InsightsCont2>
         </InsightsRectCont>
          <HeaderContainer>
@@ -472,47 +491,56 @@ const UserIntImg = Styled.img
 const InsightsRectCont = Styled.div
 `
 position: relative;
+display: block;
 max-width: 65.5rem;
-max-height: 35.5rem;
+max-height: 40rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
 width: 100%;
 `
 
 const InsightsRect = Styled.img
 `
+display: block;
 max-width: 65.5rem;
-margin-top: 3rem;
-margin-bottom: 5rem;
-height: auto;
+height: 42rem;
 width: 100%;
 @media only screen and (max-width: 1200px){
         width: 120%;
-        height: 30.5rem;
-
     }
 `
 
-const InsightsImg = Styled.img
+const InsightsBullets = Styled.div
 `
-display: flex;
-flex-direction: column;
 margin-left: 4rem;
 margin-bottom: 1.5rem;
-margin-right: 1.5rem;
-margin-top: 1.5rem;
-  @media only screen and (max-width: 1300px){
-        width: 70%;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
+margin-right: 5%;
+margin-top: 4%;
+line-height: 1.6;
+color: #FFF1EC;
+#insights-header {
+    margin-left: -2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+//   @media only screen and (max-width: 1300px){
+//         width: 85%;
+//         align-items: center;
+//         margin-bottom: 2rem;
+//     }
+//      @media only screen and (max-width: 600px){
+//         width: 75%;
+//        font-size: 1rem;
+//     }
 `
 
 const MI = Styled.div
 `
 p{
 font-size: 2rem;
-margin-bottom: 1rem;
 margin-left: 0rem;
-margin-top: 3rem;
+margin-top: 1rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
 }
@@ -523,19 +551,14 @@ color: #FFF1EC;
 const InsightsCont2 = Styled.div
 `
 position: absolute;
-display: flex;
-flex-direction: column;
 width: 76.5%;
 height: 83%;
 top: 1.5%;
 left: 5.7%;
-justify-content: space-evenly;
 @media only screen and (max-width: 1350px){
     width: 100%;
-    height: 82%;
     top: 5%;
     left: 2%;
-    justify-content: space-evenly;
 }
 `
 
@@ -588,6 +611,7 @@ const GapHeader = Styled.img
 max-width: 16.7rem;
 width: 100%;
 height: auto;
+margin-top: 1rem;
 `
 
 const AppImgCont = Styled.div

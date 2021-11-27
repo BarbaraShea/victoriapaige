@@ -75,14 +75,15 @@ export default TWNav;
 
 const StyledNav = Styled.nav`
     float: right;
-    padding: 270px 160px 10px 10px;
-    font-size: 22px;
+    font-size: 1.5rem;
+    margin-top: 25rem;
+    margin-right: 3rem;
      ul {
         display: block;
         list-style: none;
     };
     li {
-        line-height: 2.2;
+        line-height: 2.5;
         text-align: right;
         :hover {
           color: #FF7864;
