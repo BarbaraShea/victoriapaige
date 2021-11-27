@@ -3,7 +3,7 @@ import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
 import FCHeader from '../images/ForestryHeader.png';
-import FCNav from "../Components/FCNav.js";
+import Nav from "../Components/Nav.js";
 import LogoNav from "../Components/LogoNav.js";
 import FCImage from '../images/ForestryCampImage.png';
 import ProblemHeader from '../images/Problem.png';
@@ -44,7 +44,7 @@ const ForestryCamp2 = () => {
     return(
         <>
         <LogoNav/>
-        <FCNav/>
+        <Nav/>
             <FCHeaderContainer id="intro">
                 <FC className="headers" src={FCHeader} alt='Forestry CAmp Case Study'/>
             </FCHeaderContainer>  

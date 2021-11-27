@@ -2,7 +2,7 @@ import React from 'react';
 import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
-import ATNav from '../Components/ATNav.js';
+import Nav from '../Components/Nav.js';
 import LogoNav from "../Components/LogoNav.js";
 import ProblemHeader from '../images/Problem.png';
 import ResearchHeader from '../images/ResearchHeader.png';
@@ -23,12 +23,16 @@ import AlResearchImg1 from '../images/AlResearchImg1.png';
 import AlResearchImg2 from '../images/AlResearchImg2.png';
 import AlResearchImg3 from '../images/AlResearchImg3.png';
 import Rect from '../images/InsightsRect.png';
+import MethodImg1 from '../images/AlMethodImg1.png';
+import TestCircle from '../images/TestsCircle.png';
+import DarkOne from  '../images/DarkOne.png';
+import DarkTwo from  '../images/DarkTwo.png';
 
 const Aloft = () => {
     return (
         <>
         <LogoNav/>
-        <ATNav/>
+        <Nav/>
         <ALHeaderContainer id="intro">
             <AL src={ALHeader} alt='Forestry CAmp Case Study'/>
         </ALHeaderContainer>  
@@ -111,6 +115,79 @@ const Aloft = () => {
                 </InsightsBullets>
             </InsightsCont2>
         </InsightsRectCont>
+        <HeaderContainer>
+            <GapHeader src={Gap} id="gap"/>
+        </HeaderContainer>
+         <GapText>
+        <p id="quote">“I just end up scrolling through the schedule to find what works, and keep track of what I need to work on mentally.”</p>    
+        <p> Aerialists need a way to easily find classes that fit their schedule, and upload training notes from it. Since they dump all of their content into their phone, <strong>it’s very difficult for them to locate videos from classes to remember what to train.</strong> </p>
+        </GapText>
+        <HeaderContainer>
+        <SolutionHeader src={Solution}/>
+        </HeaderContainer>
+        <SolutionText>
+        <p> <strong>Customized schedule filtering</strong> is the key way to be able to help aerialists progress in their skills and keep track of their training. Creating a one-stop booking system with <strong>a training library with tags and filters to organize their notes</strong> will meet these users needs. </p>
+         </SolutionText>
+         <HeaderContainer>
+        <Header id="method" src={Method}/>
+        </HeaderContainer>
+         <MethodText>
+            <p id="user-header"><strong>User Persona</strong></p>
+        </MethodText>
+        <MethodContainer>
+             <MethodImg src={MethodImg1}/>
+            <p id="user-text">I began with a simple task flow for the two main needs of the app - booking a class and adding training videos and notes. <strong>This helped guide me</strong> as I explored solutons for wireframes.  </p>
+        </MethodContainer>
+        <HeaderContainer>
+            <Header id="test" src={TestCircle}/>
+        </HeaderContainer>
+        <Test>
+        <p>For this app, I utilized the digital testing platform Maze. I loved this as a method for testing as the heatmaps and rating scales were helpful for data collection.  </p>
+        <p id="goals"><strong>Research Goals</strong></p>
+        </Test>
+        <TestCont>
+        <One src={DarkOne}/>
+        <p>Book a class within a specific time and date availability</p>
+        </TestCont>
+        <TestCont>
+        <Two src={DarkTwo}/>
+        <p>Upload training notes from the class itself and save it to their Training Library</p>
+        </TestCont>
+        <Test>
+        <p id="final"> All of my particpants successfully completed each goal.</p>
+        </Test>
+        <PrototypeContainer>
+            <PrototypeBan src={ProtoBan}/>
+            <ProtoText>
+            <p id="ATproto"> <strong><a href="https://www.figma.com/proto/lARHntk9QL09upIkgVY0VY/Timewells-Priority-Revision?page-id=0%3A1&node-id=272%3A256&viewport=241%2C48%2C0.62&scaling=min-zoom&starting-point-node-id=1%3A2118" target="_blank"> See Prototype </a></strong></p>
+            </ProtoText>
+            <ArrowRightImg src={ArrowRight}/>
+        </PrototypeContainer>
+        <HeaderContainer>
+            <Header id="follow" src={FollowUp}/>
+         </HeaderContainer>
+        <FollowUpText>
+        <p> As a training aerialist myself, I really wish this app existed. </p>
+        </FollowUpText>   
+        <FinalCont>
+        <FinalRect src={FollowUpRect}/>
+            <FinalCont2>
+                <Thoughts><p><strong> Final Thoughts </strong></p> </Thoughts>
+                <BulletCont>
+                    <W1 src={White1}/>
+                    <p> There is so much more to explore with the training library. I could interview users on their organizational methods and further refine this section.</p>
+                </BulletCont>
+                <BulletCont>
+                    <W2 src={White2}/>
+                    <p> User testing went really well, and very few changes were needed. This gives me confidence that my research was solid. </p>
+                </BulletCont>
+                <BulletCont>
+                    <W3 src={White3}/>
+                    <p id="three"> I want to add even more filtering features in the future - perhaps a “my availability” where people can autoselect days and times they’re available.</p>
+                </BulletCont>
+            </FinalCont2>
+        </FinalCont>
+        <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
         </>
     )
 };
@@ -153,9 +230,7 @@ const ALImg = Styled.img
     `
     width: 70rem;
     height: 2.875rem;
-    left: 1rem;
-    // right: 22.5rem;
-    // top: 35rem;
+    margin-left: 2rem;
     margin-bottom: 15rem;
     
      ul {
@@ -349,4 +424,302 @@ left: 5.7%;
     top: 5%;
     left: 2%;
 }
+`
+
+const SolutionHeader = Styled.img
+`
+max-width: 29rem;
+width: 100%;
+height: auto;
+`
+
+const GapHeader = Styled.img
+`
+max-width: 16.7rem;
+width: 100%;
+height: auto;
+margin-top: 1rem;
+`
+
+const GapText = Styled.div
+`
+max-width: 62rem;
+margin-left: 3rem;
+margin-top: 2rem;
+margin-right: 1rem;
+#quote{
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+     @media only screen and (max-width: 1200px){
+        font-size: 1.5rem;
+}
+}
+p {
+    line-height: 1.2;
+}
+`
+
+const SolutionText = Styled.div
+`
+margin-top: 3rem;
+margin-left: 3rem;
+margin-right: 1rem;
+max-width: 62rem;
+`
+
+const MethodText = Styled.div
+`
+postion: static;
+margin-left: 3.2rem;
+margin-top: 3rem;
+p{
+    font-size: 2rem;
+}
+ @media only screen and (max-width: 1200px){
+     p{
+        font-size: 1.5rem;
+     }
+}
+`
+
+const MethodContainer = Styled.div
+`
+display: flex;
+position: static;
+flex-direction: row;
+justify-content: space-evenly;
+max-width: 60rem;
+width: 100%;
+height: auto;
+margin-left: 2rem;
+margin-top: 2rem;
+align-items: center;
+ p{
+     max-width: 18.75rem;
+     margin-left: 1rem;
+ }
+ @media only screen and (max-width: 1200px){
+    flex-wrap: wrap;
+    p{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: auto;
+    margin-left: 0rem;
+    }
+    #wireframe-text{
+         margin-top: 1.5rem;
+ }
+}
+`
+
+const MethodImg = Styled.img
+`
+position: static;
+max-width: 39.75rem;
+width: 100%
+height: auto;
+margin-left: 1.5rem;
+margin-top: 1.5rem;
+ @media only screen and (max-width: 1200px){
+        width: 80%;
+        margin-top: 1rem;
+        margin-left: -1rem;
+
+    }
+`
+
+const One = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: auto;
+`
+
+const Two = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: auto;
+`
+const TestCont = Styled.div
+`
+postion: static;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+max-width: 50rem;
+margin-left: 3.5rem;
+margin-right: 2rem;
+align-items: center;
+margin-bottom: 1rem;
+p {
+    margin-left: 2rem;
+}
+`
+
+const Test = Styled.div
+`
+position: static;
+margin-top: 3rem;
+max-width: 66.6rem;
+margin-left: 3rem;
+margin-right: 2rem;
+margin-bottom: 2rem;
+#goals {
+    margin-top: 2rem;
+}
+`
+
+const PrototypeContainer = Styled.div
+`
+display: flex;
+position: static;
+margin-top: 3rem;
+margin-bottom: 2rem;
+`
+const PrototypeBan = Styled.img
+`
+max-width: 17.5rem;
+width: 100%;
+height: auto;
+margin-left: 1.5rem;
+`
+
+const ProtoText = Styled.div
+`
+margin-left: -15rem;
+margin-top: 1.2rem;
+@media only screen and (max-width: 1200px){
+       p {
+           font-size: 1.5rem;
+       } 
+    }
+`
+
+const ArrowRightImg = Styled.img
+`
+max-width: 1.1rem;
+width: 100%;
+height: 2.1rem; 
+margin-left: 1rem;
+margin-top: 1.2rem;
+
+`
+
+const FollowUpText = Styled.div
+`
+position: static; 
+max-width: 60rem;
+width: 100%;
+height: auto;
+margin-top: 2rem;
+margin-left: 2rem;
+margin-bottom: 2rem;
+`
+
+const FinalRect = Styled.img
+`
+display: block;
+max-width: 65.5rem;
+height: auto;
+width: 100%;
+@media only screen and (max-width: 1200px){
+        width: 120%;
+        height: 30.5rem;
+
+    }
+`
+const W1 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: 2rem;
+`
+
+const W2 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: 2rem;
+`
+const W3 = Styled.img
+`
+flex-direction: row;
+width: 2rem;
+height: 2rem;
+`
+
+const FinalCont = Styled.div
+`
+position: relative;
+display: block;
+max-width: 65.5rem;
+max-height: 35.5rem;
+width: 100%;
+`
+
+const FinalCont2 = Styled.div
+`
+position: absolute;
+display: flex;
+flex-direction: column;
+width: 70.5%;
+height: 83%;
+top: 5%;
+left: 5.7%;
+justify-content: space-evenly;
+@media only screen and (max-width: 1350px){
+    width: 100%;
+    height: 82%;
+    top: 5%;
+    left: 2%;
+    justify-content: space-evenly;
+}
+`
+
+const BulletCont = Styled.div
+`
+display: flex;
+flex-direction:row;
+margin-left: 2rem;
+margin-right: 2rem;
+// justify-content: space-between;
+margin-bottom: 2.5rem;
+p{
+    color: #FFF1EC;
+    margin-left: 2rem;
+    max-width: 50rem;
+}
+#three {
+    align-self: flex-start;
+}
+`
+
+const ReturnImg = Styled.img 
+    `
+    position: static;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    max-width: 18.75rem;
+    width: 100%;
+    height: auto;
+    @media only screen and (max-width: 1200px){
+        width: 50%;
+    }
+    `
+const Thoughts = Styled.div
+`
+p{
+font-size: 2rem;
+margin-bottom: 2rem;
+margin-left: 1rem;
+margin-top: 3rem;
+@media only screen and (max-width: 1200px){
+font-size: 1.5rem;
+margin-top: 2rem;
+}
+}
+color: #FFF1EC;
 `

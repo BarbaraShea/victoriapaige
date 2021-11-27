@@ -2,7 +2,7 @@ import React from 'react';
 import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
-import ATNav from '../Components/ATNav.js';
+import Nav from '../Components/Nav.js';
 import LogoNav from "../Components/LogoNav.js";
 import ATOpener from '../images/Alltrails.png';
 import ATHeader from '../images/AlltrailsHeader.png';
@@ -44,7 +44,7 @@ const AllTrails = () => {
     return (
         <>
         <LogoNav/>
-        <ATNav/>
+        <Nav/>
         <ATHeaderContainer id="intro">
             <AT src={ATHeader} alt='Forestry CAmp Case Study'/>
         </ATHeaderContainer>  
@@ -524,15 +524,7 @@ color: #FFF1EC;
     margin-top: 2rem;
     font-weight: 500;
 }
-//   @media only screen and (max-width: 1300px){
-//         width: 85%;
-//         align-items: center;
-//         margin-bottom: 2rem;
-//     }
-//      @media only screen and (max-width: 600px){
-//         width: 75%;
-//        font-size: 1rem;
-//     }
+
 `
 
 const MI = Styled.div
@@ -1057,6 +1049,7 @@ const BulletCont = Styled.div
 display: flex;
 flex-direction:row;
 margin-left: 2rem;
+margin-right: 2rem;
 // justify-content: space-between;
 margin-bottom: 2.5rem;
 p{
@@ -1072,11 +1065,15 @@ p{
 const ReturnImg = Styled.img 
     `
     position: static;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
     max-width: 18.75rem;
     width: 100%;
     height: auto;
+    @media only screen and (max-width: 1200px){
+        width: 50%;
+    }
     `
 const Thoughts = Styled.div
 `

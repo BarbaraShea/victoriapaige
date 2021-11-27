@@ -4,57 +4,56 @@ import Styled, { keyframes } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 
-const FCNav = () => {
+const Nav = () => {
     return (
     <>
     <StyledNav>
     <ul class="navbar">
     <li><Link 
     activeClass="active"
-    to="intro"
     spy={true}
+    to="intro"
     smooth={true}
     duration={1000}
     >Case Study Intro</Link></li>
     <li><Link 
     activeClass="active"
-    to="problem"
     spy={true}
+    to="problem"
     smooth={true}
     duration={1000}
     >The Problem</Link></li>
     <li><Link 
     activeClass="active"
-    to="research"
     spy={true}
+    to="research"
     smooth={true}
     duration={1000}
     >The Research</Link></li>
     <li><Link 
     activeClass="active"
-    to="gap"
     spy={true}
+    to="gap"
     smooth={true}
     duration={1000}
     >The Gap + Solution</Link></li>
     <li><Link 
     activeClass="active"
-    to="method"
     spy={true}
+    to="method"
     smooth={true}
     duration={1000}
     >The Method</Link></li>
     <li><Link 
     activeClass="active"
-    to="test"
     spy={true}
+    to="test"
     smooth={true}
     duration={1000}
     >Test + Changes</Link></li>
      <li><Link 
     activeClass="active"
     to="follow"
-    spy={true}
     smooth={true}
     duration={1000}
     >The Follow Up</Link></li>
@@ -64,13 +63,15 @@ const FCNav = () => {
     )
 };
 
-export default FCNav;
+export default Nav;
 
 const StyledNav = Styled.nav`
     float: right;
     font-size: 1.5rem;
-    margin-top: 25rem;
-    margin-right: 3rem;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20rem;
+    right: 2rem;
      ul {
         display: block;
         list-style: none;
@@ -82,7 +83,7 @@ const StyledNav = Styled.nav`
           color: #FF7864;
         }
     }
-      @media only screen and (max-width: 1400px){
+    @media only screen and (max-width: 1400px){
 display: none
     }
     `

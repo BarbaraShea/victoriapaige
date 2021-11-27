@@ -25,6 +25,9 @@ export default LogoNav;
 
 const StyledNav = Styled.nav`
     float: right;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0rem;
     @media only screen and (max-width: 1350px){
 display: none;
     }
