@@ -32,11 +32,7 @@ body {
     background: var(--primary-color); 
     color: var(--text-color);
     font-family: 'IBM Plex Sans', sans-serif;;
-<<<<<<< HEAD
-    /* padding: 3rem; */
-=======
     // padding: 3rem;
->>>>>>> 3cd737fc05f198d9727ec86f929865af08304668
     /* line-height: 1.2;
     margin-right: 1.125rem;
     margin-left:.5rem;

@@ -117,6 +117,33 @@ const LandingPage2 = () => {
     <p> I utilize these skills and my art + design background to create digital experiences that combine the power of methodology, research, empathy, and an "it's worth a try" mentality. </p> 
     <p> A maker and storyteller in my spare time, you can often find me reading, writing, flying kites at the top of hikes, or eating my way through my excessive cookbook collection. </p>
     </AboutText2>
+    {/* Contact Section */}
+    <Contact src={LetsTalk} alt='Contact' id="contact"/>
+    <ContactText>
+    <p> Interested in working together or just want to see adorable pictures of my dogs? You can find my contact information below.<strong> Let's get into it. </strong> </p>
+    <ContactIconContainer>
+    <IconContainer>
+    <p id="mail"><a href="mailto:v.paige.bryant@gmail.com"><MailIcon src={mail}/></a></p>
+    <p id="mail"><a href="mailto:v.paige.bryant@gmail.com">v.paige.bryant@gmail.com</a></p>
+    </IconContainer>
+    <IconContainer>
+    <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/" target="_blank"><LinkedinIcon src={linkedin}/></a></p>
+    <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/" target="_blank">Victoria Bryant</a></p>
+    </IconContainer>
+    <IconContainer>
+    <p id="resume"><a href="src/images/Victoria Bryant Resume.pdf" download><ResumeIcon src={Resume}/></a></p>
+    <p id="resume"><a href="src/images/Victoria Bryant Resume.pdf" download>Resumé</a></p>
+    </IconContainer>
+    </ContactIconContainer>
+    </ContactText>
+           <Link 
+    activeClass="active"
+    to="intro"
+    spy={true}
+    smooth={true}
+    offset={-50}
+    duration={1000}
+    ><ArrowImgUp src={ArrowUp}/></Link> 
     </OverallLandingContainer>
     )
 }
@@ -507,68 +534,48 @@ p {
 `
 const Contact = Styled.img
 `
-position: absolute;
-width: 348px;
-height: 115px;
-left: 49px;
-top: 2850px;
+padding-top: 2rem;
+@media only screen and (max-width: 1300px) {
+    max-width: 70vw;
+    
+    }
 `
 
 const ArrowImgUp = Styled.img 
 `
-position: absolute;
-left: 72px;
-top: 3400px;
+
 `
 
 const ContactText = Styled.div
 `
-position: absolute;
-margin-left: -60px;
-font-size: 19px;
-top: 3000px;
-margin-right: 240px;
-#mail{
-margin-left: 150px;
-margin-top: 70px;
+padding-top: 2rem;
+max-width: 40vw;
+@media only screen and (max-width: 1300px) {
+max-width: 90vw;
 }
-#linkedin{
-margin-left: 150px;
-margin-top: 45px;
-
-}
-#resume{
-margin-left: 150px;
-margin-top: 45px;
-
-}
+`
+const ContactIconContainer = Styled.div
+`
+padding: 3rem 0;
+display: flex;
+flex-direction: column;
 
 `
-
+const IconContainer = Styled.div
+`
+display: flex;
+padding: 1rem 0;
+`
 const MailIcon = Styled.img
 `
-position: absolute;
-width: 40px;
-height: 40px;
-left: 85px;
-top: 125px;
-
+padding-right: 30px;
 `
-
 const LinkedinIcon = Styled.img
 `
-position: absolute;
-width: 31px;
-height: 31px;
-left: 90px;
-top: 200px;
+padding-right: 36px;
 `
 
 const ResumeIcon = Styled.img
 `
-position: absolute;
-width: 38px;
-height: 38px;
-left: 85px;
-top: 270px;
+padding-right: 24px;
 `
