@@ -67,7 +67,8 @@ export default FCNav;
 
 const StyledNav = Styled.nav`
     float: right;
-    padding: 16.875rem 10rem 0.625rem 0.625rem;
+    margin-top: 25rem;
+    margin-right: 3rem;    
     font-size: 1.375rem;
      ul {
         display: block;
@@ -80,7 +81,7 @@ const StyledNav = Styled.nav`
           color: #FF7864;
         }
     }
-    @media only screen and (max-width: 1350px){
+    @media only screen and (max-width: 1400px){
 display: none
     }
     `

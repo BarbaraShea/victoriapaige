@@ -17,7 +17,7 @@ import Motivations from '../images/motivations.png';
 import Needs from '../images/needs.png';
 import Gap from '../images/GapHeader.png';
 import Solution from '../images/SolutionHeader.png';
-import Apps from '../images/AlltrailsPNG 1.png';
+import Apps from '../images/AppScreens.png';
 import Method from '../images/MethodHeader.png';
 import Lora from '../images/LoraPersona.png';
 import Storyboard from '../images/Storyboard.png';
@@ -102,32 +102,13 @@ const AllTrails = () => {
             </ResearchText2>
         </UserIntCont>
         <InsightsRectCont>
-        <InsightsRect src={Rect}/>
-            <InsightsCont2>
-                <MI><p><strong> Major Insights </strong></p></MI>
-                <InsightsBullets>
-                <p id="insights-header">Needs</p>
-                <ul>
-                    <li>Understand if a trail is far from cell service</li>
-                    <li>Know how close hospitals are/help is if needed</li>
-                    <li>Have ways to judge difficulty other than incline</li>
-                </ul>
-                <p id="insights-header">Fears</p>
-                <ul>
-                    <li>Trails being very technically difficult (climbing, downed trees, etc)</li>
-                    <li>Other folks’ ratings aren’t always accurate</li>
-                    <li>Running into men in the woods when they have guns</li>
-                    <li>Washed out trails and closures</li>
-                </ul>
-                <p id="insights-header">Motivations</p>
-                <ul>
-                    <li>Hiking is a meditative activity</li>
-                    <li>Experience nature without getting lost</li>
-                    <li>Save time by knowing as much as possible about the hike beforehand</li>
-                    <li>Know if a trail is easy to navigate and explore</li>
-                </ul>
-                </InsightsBullets>
-            </InsightsCont2>
+            <InsightsTextCont>
+            <MI><p><strong> Major Insights </strong></p></MI>
+            <InsightsImg src={Needs}/>
+            <InsightsImg src={Fears}/>
+            <InsightsImg src={Motivations}/>
+            </InsightsTextCont>
+            <InsightsRect src={Rect}/>
         </InsightsRectCont>
          <HeaderContainer>
             <GapHeader src={Gap} id="gap"/>
@@ -145,6 +126,18 @@ const AllTrails = () => {
          <AppImgCont>
          <AppsImg src={Apps}/>
          </AppImgCont>
+         {/* <STextCont>
+         <SolutionText1>
+             <p id="p1">Self-disclosure aggregate ratings</p>
+             <p id="p2">Safety and Accessibility Filters</p>
+             <p id="p3">Inclusivity Indicators</p>
+        </SolutionText1>
+        <SolutionText2>
+             <p id="p4">Trail Technicality + Condition Report</p>
+             <p id="p5">Optional disclosure to encourage comfort</p>
+             <p id="p6">A “what’s this?” feature</p>
+        </SolutionText2>
+        </STextCont> */}
         <HeaderContainer>
         <Header id="method" src={Method}/>
         </HeaderContainer>
@@ -491,75 +484,85 @@ const UserIntImg = Styled.img
 const InsightsRectCont = Styled.div
 `
 position: relative;
-display: block;
-max-width: 65.5rem;
-max-height: 40rem;
-margin-top: 2rem;
-margin-bottom: 2rem;
+margin-top: 3rem;
+max-width: 64.5rem;
 width: 100%;
+height: 52rem;
+background-color: #360713;
+margin-top: 3rem;
+overflow: hidden;
+  @media only screen and (max-width: 1000px){
+      width: 100%;
+    height: 48rem;
+}
+  @media only screen and (max-width: 800px){
+      width: 100%;
+    height: 40rem;
+}
+ @media only screen and (max-width: 800px){
+      width: 100%;
+    height: 30rem;
+}
 `
 
 const InsightsRect = Styled.img
 `
-display: block;
-max-width: 65.5rem;
-height: 42rem;
+position: absolute;
+max-width: 64.5rem;
 width: 100%;
-@media only screen and (max-width: 1200px){
-        width: 120%;
-    }
+min-height: 32rem;
+height: auto;
+display: none;
 `
 
-const InsightsBullets = Styled.div
+const InsightsImg = Styled.img
 `
-margin-left: 4rem;
-margin-bottom: 1.5rem;
-margin-right: 5%;
-margin-top: 4%;
-line-height: 1.6;
-color: #FFF1EC;
-#insights-header {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    font-weight: 500;
-}
-//   @media only screen and (max-width: 1300px){
-//         width: 85%;
-//         align-items: center;
-//         margin-bottom: 2rem;
-//     }
-//      @media only screen and (max-width: 600px){
-//         width: 75%;
-//        font-size: 1rem;
-//     }
+max-width: 52.8rem;
+width: 100%;
+height: auto;
+flex-direction: column;
+margin-bottom: 3rem;
+z-index: 2;
+  @media only screen and (max-width: 1300px){
+        width: 100%;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
 `
 
 const MI = Styled.div
 `
-p{
+z-index: 2;
+flex-direction: column;
 font-size: 2rem;
-margin-left: 0rem;
-margin-top: 1rem;
-@media only screen and (max-width: 1200px){
-font-size: 1.5rem;
-}
-}
 color: #FFF1EC;
+margin-top: 3rem;
+margin-bottom: 3rem;
+ @media only screen and (max-width: 1300px){
+        p{
+            font-size: 2rem;
+        }
+    }
+    @media only screen and (max-width: 1000px){
+        p{
+            font-size: 1rem;
+        }
+    } 
+   @media only screen and (max-width: 600px){
+       margin-bottom: 2rem;
+        p{
+            font-size: 1rem;
+
+        }
+    } 
 `
 
-const InsightsCont2 = Styled.div
+const InsightsTextCont = Styled.div
 `
 position: absolute;
-width: 76.5%;
-height: 83%;
-top: 1.5%;
-left: 5.7%;
-@media only screen and (max-width: 1350px){
-    width: 100%;
-    top: 5%;
-    left: 2%;
-}
+display: flex;
+flex-direction: column;
+margin-left: 2.5rem;
 `
 
 const GapText = Styled.div
@@ -611,7 +614,6 @@ const GapHeader = Styled.img
 max-width: 16.7rem;
 width: 100%;
 height: auto;
-margin-top: 1rem;
 `
 
 const AppImgCont = Styled.div
@@ -849,7 +851,7 @@ width: 100%;
 margin-left: 3rem;
 margin-top: 3rem;
 align-items: center;
-
+// justify-content: flex-start;
 `
 
 const Test2Text = Styled.div
@@ -999,7 +1001,7 @@ max-width: 65.5rem;
 height: auto;
 width: 100%;
 @media only screen and (max-width: 1200px){
-        width: 120%;
+        width: 100%;
         height: 30.5rem;
 
     }
@@ -1024,6 +1026,7 @@ width: 2rem;
 height: 2rem;
 `
 
+
 const FinalCont = Styled.div
 `
 position: relative;
@@ -1038,18 +1041,9 @@ const FinalCont2 = Styled.div
 position: absolute;
 display: flex;
 flex-direction: column;
-width: 70.5%;
-height: 83%;
-top: 5%;
-left: 5.7%;
-justify-content: space-evenly;
-@media only screen and (max-width: 1350px){
-    width: 100%;
-    height: 82%;
-    top: 5%;
-    left: 2%;
-    justify-content: space-evenly;
-}
+margin-top: -28rem;
+margin-left: 2rem;
+
 `
 
 const BulletCont = Styled.div
@@ -1082,12 +1076,10 @@ const Thoughts = Styled.div
 `
 p{
 font-size: 2rem;
-margin-bottom: 2rem;
+margin-bottom: 3rem;
 margin-left: 1rem;
-margin-top: 3rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
-margin-top: 2rem;
 }
 }
 color: #FFF1EC;

@@ -148,7 +148,7 @@ const ForestryCamp2 = () => {
         </Quote>
         </QuoteContainer>
         <HeaderContainer>
-         <Header src={Gap} id="gap"/>
+         <GapHeader src={Gap} id="gap" className="gapIMG"/>
         </HeaderContainer>
         <LandingImg src={Landing}/>
         <LandingText>
@@ -165,7 +165,7 @@ const ForestryCamp2 = () => {
         </ul>
         </OriginalText>
         <HeaderContainer>
-        <Header src={Solution} id="solution"/>
+        <SolutionHeader src={Solution} id="solution"/>
         </HeaderContainer>
         <SolutionImg src={Devices}/>
         <SolutionText>
@@ -204,12 +204,12 @@ const ForestryCamp2 = () => {
         <StyleGuide2 src={FC2}/> 
         </StyleCont>
         <StyleTextCont>
-        <p id="style-text"> This was fun. Research showed that fancy restaurants use <strong>minimal color schemes, serif fonts,</strong> and super nice photos. </p>
-        <p id="style-text"> I wanted to chose fonts that speak to FC's <strong> focus on restoration and nature, </strong> and use colors that are regularly in the brand's photography.</p> 
+        <p> This was fun. Research showed that fancy restaurants use <strong>minimal color schemes, serif fonts,</strong> and super nice photos. </p>
+        <p id="style-text"> I wanted to choose fonts that speak to FC's <strong> focus on restoration and nature, </strong> and use colors that are regularly in the brand's photography.</p> 
         </StyleTextCont>
         </MethodContainer>
         <HeaderContainer>
-        <Header id="test" src={TestCircle}/>
+        <TestHeader id="test" src={TestCircle}/>
         </HeaderContainer>
          <Test>
         <p>A usability test was conducted with three participants in Forestry Camp's target market.</p>
@@ -263,19 +263,21 @@ const ForestryCamp2 = () => {
         </FollowUpText>   
         <FinalCont>
         <FinalRect src={FollowUpRect}/>
-            <NumbersContainer2>
+            <FinalCont2>
                 <Thoughts><p><strong> Final Thoughts </strong></p> </Thoughts>
-                <W1 src={White1}/>
-                <W2 src={White2}/>
-                <W3 src={White3}/>
-            <FinalText>
-                <ul>
-                    <li> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp.</li>
-                    <li> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature.</li>
-                    <li> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good. </li>
-                </ul>
-            </FinalText>
-            </NumbersContainer2>
+                <BulletCont>
+                    <W1 src={White1}/>
+                    <p> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp.</p>
+                </BulletCont>
+                <BulletCont>
+                    <W2 src={White2}/>
+                    <p> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature.</p>
+                </BulletCont>
+                <BulletCont>
+                    <W3 src={White3}/>
+                    <p id="three"> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good.</p>
+                </BulletCont>
+            </FinalCont2>
         </FinalCont>
         <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
     </>
@@ -311,7 +313,7 @@ const FCImg = Styled.img
     height: auto;
     left: 4.375rem;
     margin-top: -3rem;
-    @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 1350px){
         width: 90%;
         align-items: center;
     }
@@ -366,6 +368,7 @@ width: 100%;
 height: auto;
 #gap {
     max-width: 13.5rem;
+    background-color: blue;
 }
 #solution {
     max-width: 25rem;
@@ -740,28 +743,24 @@ const MethodContainer = Styled.div
 display: flex;
 position: static;
 flex-direction: row;
-justify-content: space-evenly;
 max-width: 60rem;
 width: 100%;
 height: auto;
 margin-left: 2rem;
 margin-top: 2rem;
-justify-content: space-evenly;
+align-items: center;
  p{
      margin-left: 1rem;
      max-width: 18.75rem;
-     margin-top: 8rem;
  }
- #style-text{
-     margin-top: 1.5rem;
+ #style-text {
+     margin-top: 1rem;
  }
- #wireframe-text{
-         margin-top: 18rem;
-}
  @media only screen and (max-width: 1200px){
     flex-wrap: wrap;
     p{
     margin-top: 1.5rem;
+    margin-left: 1.5rem;
     width: 100%;
     height: auto;
     }
@@ -781,8 +780,7 @@ margin-top: 1.5rem;
  @media only screen and (max-width: 1200px){
         width: 80%;
         margin-top: 1rem;
-        margin-left: -1rem;
-
+        justify-content: center;
     }
 `
 
@@ -797,7 +795,6 @@ margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 80%;
         margin-top: 1rem;
-        margin-left: -1rem;
     }
 `
 
@@ -812,7 +809,6 @@ margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 80%;
         margin-top: 1rem;
-        margin-left: -1rem;
     }
 `
 
@@ -822,6 +818,8 @@ const MethodText = Styled.div
 postion: static;
 margin-left: 3.2rem;
 margin-top: 3rem;
+// justify-content: center;
+// align-items: center;
 p{
     font-size: 2rem;
 }
@@ -840,10 +838,10 @@ width: 100%;
 height: auto;
 row-gap: 0px;
 margin-top: 1.5rem;
+margin-left: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 80%;
         margin-top: 1rem;
-        margin-left: -1rem;
     }
 
 `
@@ -856,10 +854,10 @@ width: 100%
 height: auto;
 row-gap: 0px;
 margin-top: 1.5rem;
+margin-left: 1.5rem;
 @media only screen and (max-width: 1200px){
-        width: 80%;
+        width: 70%;
         margin-top: 1rem;
-        margin-left: -1rem;
     }
 
 `
@@ -869,15 +867,11 @@ const StyleCont = Styled.div
 display: flex;
 flex-direction: row;
 position: static;
-max-width: 39rem;
-margin-right: 1rem;
-width: 100%
 height: auto;
+margin-right: 2rem;
 @media only screen and (max-width: 1200px){
-        width: 50%;
-        margin-top: 1rem;
-        margin-left: -6rem;
-    }
+    flex-wrap:wrap;
+}
 `
 
 const StyleTextCont = Styled.div
@@ -886,9 +880,12 @@ display: flex;
 flex-direction: column;
 position: static;
 justify-content: center;
-margin-left: 3rem;
+margin-left: 1.5rem;
 @media only screen and (max-width: 1200px){
-        margin-left: 2rem;
+        margin-left: 7rem;
+    }
+@media only screen and (max-width: 1200px){
+        margin-left: 0rem;
     }
 `
 const Test = Styled.div
@@ -984,7 +981,7 @@ height: auto;
 margin-left: 1.5rem;
 margin-top: 5rem;
 @media only screen and (max-width: 1200px){
-        width: 90%;
+        width: 80%;
     }
 `
 
@@ -1134,7 +1131,6 @@ margin-top: 2rem;
 margin-left: 2rem;
 margin-bottom: 2rem;
 `
-
 const FinalRect = Styled.img
 `
 display: block;
@@ -1151,51 +1147,23 @@ const W1 = Styled.img
 `
 flex-direction: row;
 width: 2rem;
-height: auto;
-margin-top: 2rem;
+height: 2rem;
 `
 
 const W2 = Styled.img
 `
 flex-direction: row;
 width: 2rem;
-height: auto;
-margin-top: 5rem;
+height: 2rem;
 `
 const W3 = Styled.img
 `
 flex-direction: row;
 width: 2rem;
-height: auto;
-margin-top: 5rem;
+height: 2rem;
 `
 
-const FinalText = Styled.div
-`
-color: #FFF1EC;
-flex-direcction: column;
-max-width: 53.75rem;
-width: 100%;
-height: auto;
-margin-left: 5rem;
-margin-top: -16rem;
-    ul{
-        list-style: none;
-    }
-    li{
-        margin-bottom: 2.2rem;;
-        // margin-right: -20px;
-        font-size: 1.5rem;
-        line-height: 1.5;
-    }
-     @media only screen and (max-width: 1200px){
-        width: 80%;
-       li{
-           font-size: 1rem;
-           margin-bottom: 2.5rem;
-       }
-    }
-`
+
 const FinalCont = Styled.div
 `
 position: relative;
@@ -1205,17 +1173,62 @@ max-height: 35.5rem;
 width: 100%;
 `
 
-const NumbersContainer2 = Styled.div
+const FinalCont2 = Styled.div
 `
 position: absolute;
 display: flex;
 flex-direction: column;
-margin-left: 1.5rem;
-margin-top: -27rem;
- @media only screen and (max-width: 1200px){
-margin-top: -27rem;
+width: 76.5%;
+height: 83%;
+top: 1.5%;
+left: 5.7%;
+justify-content: space-evenly;
+@media only screen and (max-width: 1350px){
+    width: 100%;
+    height: 82%;
+    top: 5%;
+    left: 2%;
+    justify-content: space-evenly;
 }
 `
+const SolutionHeader = Styled.img
+`
+max-width: 29rem;
+width: 100%;
+height: auto;
+`
+
+const TestHeader = Styled.img
+`
+max-width: 29rem;
+width: 100%;
+height: auto;
+`
+
+const GapHeader = Styled.img
+`
+max-width: 16.7rem;
+width: 100%;
+height: auto;
+`
+
+const BulletCont = Styled.div
+`
+display: flex;
+flex-direction:row;
+margin-left: 2rem;
+margin-bottom: 2.5rem;
+margin-right: 1.5rem;
+p{
+    color: #FFF1EC;
+    margin-left: 2rem;
+    max-width: 50rem;
+}
+#three {
+    align-self: flex-start;
+}
+`
+
 
 const ReturnImg = Styled.img 
     `
@@ -1225,12 +1238,17 @@ const ReturnImg = Styled.img
     max-width: 18.75rem;
     width: 100%;
     height: auto;
+     @media only screen and (max-width: 1200px){
+        width: 50%;
+    }
     `
 const Thoughts = Styled.div
 `
 p{
 font-size: 2rem;
 margin-bottom: 1rem;
+margin-left: 1rem;
+margin-top: 3rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
 }
