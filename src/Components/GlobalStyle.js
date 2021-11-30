@@ -12,6 +12,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+#page-wrap {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 a {
   color: var(--text-color);
 }
@@ -31,11 +36,7 @@ body {
     background: var(--primary-color); 
     color: var(--text-color);
     font-family: 'IBM Plex Sans', sans-serif;;
-    // padding: 3rem;
-    /* line-height: 1.2;
-    margin-right: 1.125rem;
-    margin-left:.5rem;
-    z-index: 1; */ 
+    text-rendering: optimizeLegibility;
 }
 
 
@@ -104,6 +105,10 @@ img {
         width: 100%;
     }
 }
-`
 
+
+
+
+
+`
 export default GlobalStyle;

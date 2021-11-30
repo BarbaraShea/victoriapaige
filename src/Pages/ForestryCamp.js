@@ -38,10 +38,11 @@ import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
 import Return from '../images/Return.png';
 import ProtoBan from '../images/PrototypeBanner.png';
-
+import MobileNav from '../Components/MobileNavCS'
 const ForestryCamp2 = () => {
     return(
         <>
+        <MobileNav/>
         <LogoNav/>
         <Nav/>
             <FCHeaderContainer id="intro">
@@ -287,7 +288,10 @@ const FCHeaderContainer = Styled.div
     `
    display: flex;
 flex-direction: column;
-padding: 3rem;
+margin-top: 4.5%;
+margin-left: 4.5%;
+margin-right: 4.5%;
+margin-bottom: 4.5%;
 `
 
 const FC = Styled.img
@@ -295,9 +299,7 @@ const FC = Styled.img
 height: auto;
 width: 100%;
 max-width: 30rem;
-    @media only screen and (max-width: 1350px){
-        margin-left: 2rem;  
-        }
+
 ;
     `
 
