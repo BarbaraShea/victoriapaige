@@ -242,16 +242,19 @@ font-size: 1.5rem;
 const Banner1 = Styled.img 
 `
 flex-direction: column;
-max-width: 11rem;
-width: 100%;
+max-width: 14%;
 height: auto;
-
+@media only screen and (max-width: 930px) {
+max-width: 8rem;
+height: auto;
 `
 const Banner2 = Styled.img 
 `
 flex-direction: column;
-max-width: 18.8rem;
-width: 100%;
+max-width: 24%;
+height: auto;
+@media only screen and (max-width: 930px) {
+max-width: 13.5rem;
 height: auto;
 
 `
@@ -260,9 +263,12 @@ height: auto;
 const Banner3 = Styled.img 
 `
 flex-direction: column;
-max-width: 24rem;
-width: 100%;
+max-width: 30%;
 height: auto;
+@media only screen and (max-width: 930px) {
+max-width: 17rem;
+height: auto;
+
 `
 
 const IntroText = Styled.div 
@@ -284,6 +290,9 @@ p {
 const ArrowImg = Styled.img 
 `
 margin-left: 3rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+max-width: 1.8rem;
 `
 // work section
 
@@ -389,6 +398,7 @@ p {
 li {
     font-size: 1.5rem;
     margin-left: 3rem;
+    margin-bottom: 1rem;
 }
 ul {
     margin-top: 2rem;
@@ -405,12 +415,12 @@ ul {
 `
 const Picture1 = Styled.img
 `
-max-width: 24.5rem;
-widht: 100%;
+max-width: 35%
 height: auto;
 @media only screen and (max-width: 1200px){
-        width: 70%;
-    }
+ margin-left: -1rem;
+ margin-right: 2rem;
+
 `
 const AboutText2 = Styled.div
 `
@@ -436,7 +446,6 @@ flex-direction: column;
 const IconContainer = Styled.div
 `
 display: flex;
-padding: 1rem 0;
 `
 const MailIcon = Styled.img
 `

@@ -27,7 +27,7 @@ import MethodImg1 from '../images/AlMethodImg1.png';
 import TestCircle from '../images/TestsCircle.png';
 import DarkOne from  '../images/DarkOne.png';
 import DarkTwo from  '../images/DarkTwo.png';
-
+// import AloftGIF from '../images/AloftApp.gif';
 const Aloft = () => {
     return (
         <>
@@ -128,6 +128,7 @@ const Aloft = () => {
         <SolutionText>
         <p> <strong>Customized schedule filtering</strong> is the key way to be able to help aerialists progress in their skills and keep track of their training. Creating a one-stop booking system with <strong>a training library with tags and filters to organize their notes</strong> will meet these users needs. </p>
          </SolutionText>
+         {/* <SolutionGIF src={AloftGIF}/> */}
          <HeaderContainer>
         <Header id="method" src={Method}/>
         </HeaderContainer>
@@ -333,7 +334,7 @@ margin-top: 1rem;
 const ResearchHeaders = Styled.div
 `
 position: static;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
 p{
 font-size: 2rem;
@@ -723,4 +724,9 @@ margin-top: 2rem;
 }
 }
 color: #FFF1EC;
+`
+
+const SolutionGIF = Styled.img
+`
+max-width: 60.6 rem
 `
