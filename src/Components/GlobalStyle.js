@@ -47,6 +47,7 @@ p {
 
 li > .active {
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .navbar {
@@ -94,7 +95,7 @@ li {
 
 
 img {
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .headers {

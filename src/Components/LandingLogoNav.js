@@ -27,7 +27,7 @@ const StyledNav = Styled.nav`
     float: right;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: -3rem;
+    top: 0rem;
     @media only screen and (max-width: 1350px){
 display: none;
     }
@@ -35,32 +35,30 @@ display: none;
 
 const SnapImg = Styled.img
     `
-   position: relative;
-    top: 2px;
-    right: 25px;
-     width: 41px;
+    position: absolute;
+    top: 0px;
+    right: 2.5rem;
+    width: 41px;
     height: 52px;
     display: none;
    `
 
 const LogoImg = Styled.img
 `
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    top: 5px;
-    right: 7px;
-    width: 64px;
-    height: 98px;
+position: relative;
+width: 60.7px;
+height: 94px;
+margin-right: 1rem;
+top: 0px;
 `
 
 const LogoContainer = Styled.div
     `
-    margin: 0px;
-    padding: 0px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 1rem;
+    right: 1rem;
     position: absolute;
-    top: 0rem;
-    right: 50px;
      :hover .hover-image {
         display: block;
     }

@@ -14,7 +14,6 @@ import AllTrails from "./Pages/AllTrails";
 import Aloft from "./Pages/Aloft";
 import GlobalStyle from "./Components/GlobalStyle";
 import ScrollToTop from "./Components/ScrollToTop";
-import LandingPage2 from './Pages/LandingPage2';
 
 function App() {
   return (
@@ -28,7 +27,6 @@ function App() {
    <Route exact path="/ForestryCamp" component={ForestryCamp}/> 
    <Route exact path="/AllTrails" component={AllTrails}/>
    <Route exact path="/Aloft" component={Aloft}/>
-   <Route exact path="/test" component={LandingPage2}/>
    </Switch>
    </Router>
 

@@ -29,7 +29,7 @@ import FCMobile from '../images/FCMobile.png';
 import ATMobile from '../images/ATMobile.png';
 import TWMobile from '../images/TWMobile.png';
 
-const LandingPage2 = () => {
+const LandingPage = () => {
     return (
         <>
         <LogoNav/>
@@ -173,7 +173,7 @@ const LandingPage2 = () => {
     )
 }
 
-export default LandingPage2
+export default LandingPage
 
 const IntroHeaderContainer = Styled.div
 `

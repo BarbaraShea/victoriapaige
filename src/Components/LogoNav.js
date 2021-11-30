@@ -54,6 +54,8 @@ top: 0px;
 
 const LogoContainer = Styled.div
     `
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
     top: 1rem;
     right: 1rem;
     position: absolute;
