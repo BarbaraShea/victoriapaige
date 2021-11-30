@@ -494,7 +494,7 @@ position: relative;
 display: block;
 max-width: 65.5rem;
 max-height: 40rem;
-margin-top: 2rem;
+margin-top: 3rem;
 margin-bottom: 2rem;
 width: 100%;
 `
@@ -684,7 +684,7 @@ flex-direction: row;
 justify-content: space-evenly;
 max-width: 60.6rem;
 margin-left: 3rem;
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1000px){
     flex-wrap: wrap;
     }
 `

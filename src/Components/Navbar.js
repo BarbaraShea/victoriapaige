@@ -2,16 +2,16 @@ import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Styled, { keyframes } from 'styled-components';
 import Logo from '../images/Logo.png';
-import Snap from '../images/Snap.png';
+// import Snap from '../images/Snap.png';
 
 const NavBar = () => {
     return (
     <>
     <StyledNav>
-    <LogoContainer id="logo">
+    {/* <LogoContainer id="logo">
     <LogoImg  src={Logo}/>
     <SnapImg className="hover-image" src={Snap}/>
-    </LogoContainer>
+    </LogoContainer> */}
     <ul class="navbar">
     <li><Link 
     activeClass="active"
@@ -55,53 +55,23 @@ export default NavBar;
 
 const StyledNav = Styled.nav`
     float: right;
-    padding: 270px 100px 10px 10px;
-    font-size: 24px;
-    z-index: 4;
+    font-size: 1.5rem;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20rem;
+    right: 3rem;
      ul {
         display: block;
         list-style: none;
     };
     li {
-        line-height: 2.2;
+        line-height: 2.5;
         text-align: right;
         :hover {
           color: #FF7864;
         }
     }
-    `
-const SnapImg = Styled.img
-    `
-    position: relative;
-    top: 2px;
-    right: 25px;
-     width: 41px;
-    height: 52px;
-    display: none;
-   `
-
-
-const LogoImg = Styled.img 
-    `
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    top: 5px;
-    right: 7px;
-    width: 64px;
-    height: 98px;
-    
-    `
-
-
-const LogoContainer = Styled.div
-    `
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    top: 5px;
-    right: 50px;
-     :hover .hover-image {
-        display: block;
+    @media only screen and (max-width: 1400px){
+display: none
     }
-    `   
+    `

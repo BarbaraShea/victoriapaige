@@ -24,8 +24,7 @@ import Landing from '../images/Landing.png'
 import Sketches from '../images/Sketches.png';
 import Wireframe from '../images/Wireframe.png';
 import UserFlow from '../images/UserFlow.png';
-import FC1 from '../images/FC1.png';
-import FC2 from '../images/FC2.png';
+import FC1 from '../images/FCStyleGuideImg.png';
 import TestCircle from '../images/TestsCircle.png';
 import BrandBanner from '../images/BrandBanner.png';
 import Reservation from '../images/Reservation.png';
@@ -83,7 +82,7 @@ const ForestryCamp2 = () => {
         <Prob>
         <ul>
         <li>With two indoor and three outdoor dining spaces, customers don't know which spaces require a reservation and where to eat. </li>
-        <li>Many customers are also not aware that Forestry Camp is associated with Burial Beer, one of the most famous breweries on the East Coast. </li>
+        <li>Many customers are also not aware that Forestry Camp is associated with Burial Beer, recently voted best small brewery in the world by Craft Beer Brew. </li>
         </ul>
         </Prob>
         </NumbersContainer>
@@ -95,7 +94,7 @@ const ForestryCamp2 = () => {
         </ComAna>
         <ComImg src={CompetitiveImg}/>
         <ResearchText>
-        <p> I conducted competative analysis on fine dining restaurants with unique + multimodal spaces.</p>
+        <p> I conducted competitive analysis on fine dining restaurants with unique + multimodal spaces.</p>
         <p> We liked: </p>
         <ul>
             <li> Pages with press sections build brand trust </li>
@@ -161,7 +160,7 @@ const ForestryCamp2 = () => {
             <li>Doesn't show enough photos of the incredible space and food</li>
             <li>Multiple fonts and colors</li>
             <li>Third-party reservation system</li>
-            <li>Muddle explanation of The Outpost vs. Forestry Camp</li>
+            <li>Muddled explanation of The Outpost vs. Forestry Camp</li>
         </ul>
         </OriginalText>
         <HeaderContainer>
@@ -179,7 +178,7 @@ const ForestryCamp2 = () => {
         </MethodText>
         <MethodContainer>
             <UserFlowImg src={UserFlow}/>
-            <p id="user-flow-text">Since customer confusion was the primary focus of my design, this flow <strong> put me in the shoes of a user.</strong> How would they look for information? A clear page for each restaurant section was the answer.</p>
+            <p id="user-flow-text">Since reducing customer confusion was the primary focus of my design, this flow <strong> put me in the shoes of a user.</strong> How would they look for information? A clear page for each restaurant section was the answer.</p>
         </MethodContainer>
         <MethodText>
             <p id="sketches-header"><strong>Sketches</strong></p>
@@ -193,16 +192,13 @@ const ForestryCamp2 = () => {
         </MethodText>
         <MethodContainer>
             <WireframeImg src={Wireframe}/>
-            <p id="wireframe-text"> Once I knew the direction I wanted to pursue, I made responsive wireframes in Figma. I played around with a chessboard layout, and <strong>heavy utilization of negative space</strong> to fulfill the elevated vibe the team was going for.</p>
+            <p id="wireframe-text"> Once I knew the direction I wanted to pursue, I made responsive wireframes in Figma. I played around with a chessboard layout, and <strong>heavy utilization of negative space</strong> to fulfill the elevated vibe we wanted.</p>
         </MethodContainer>
         <MethodText>
                 <p id="style-header"><strong>Style Guide</strong></p>
         </MethodText>
         <MethodContainer> 
-        <StyleCont>
         <StyleGuide1 src={FC1}/>
-        <StyleGuide2 src={FC2}/> 
-        </StyleCont>
         <StyleTextCont>
         <p> This was fun. Research showed that fancy restaurants use <strong>minimal color schemes, serif fonts,</strong> and super nice photos. </p>
         <p id="style-text"> I wanted to choose fonts that speak to FC's <strong> focus on restoration and nature, </strong> and use colors that are regularly in the brand's photography.</p> 
@@ -292,10 +288,6 @@ const FCHeaderContainer = Styled.div
    display: flex;
 flex-direction: column;
 padding: 3rem;
-@media only screen and (max-width: 1300px) {
-    text-align: center;
-    align-items: center;
-
 `
 
 const FC = Styled.img
@@ -303,6 +295,9 @@ const FC = Styled.img
 height: auto;
 width: 100%;
 max-width: 30rem;
+    @media only screen and (max-width: 1350px){
+        margin-left: 2rem;  
+        }
 ;
     `
 
@@ -315,15 +310,15 @@ const FCImg = Styled.img
     margin-top: -3rem;
     @media only screen and (max-width: 1350px){
         width: 90%;
-        align-items: center;
+        margin-left: 1rem;
     }
     `
 
 const Table = Styled.div
     `
-    width: 70rem;
+    max-width: 65rem;
     height: 2.875rem;
-    left: 1rem;
+    margin-left: 3rem;
     // right: 22.5rem;
     // top: 35rem;
     margin-bottom: 20rem;
@@ -342,6 +337,7 @@ const Table = Styled.div
     }
     @media only screen and (max-width: 1200px){
         width: 100%;
+        margin-left: 1rem;
         td {
             font-size: 1.2rem;
         }
@@ -354,7 +350,7 @@ const HeaderContainer = Styled.div
 `
   position: static;
   display: flex;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-left: 2rem;
 flex-direction: column;
 @media only screen and (max-width: 1200px){
@@ -494,7 +490,7 @@ li {
 @media only screen and (max-width: 1200px){
         li {
          font-size: 1rem;
-        margin-left: 3rem;
+        margin-left: 0rem;
 
         }
         p{
@@ -551,7 +547,7 @@ const SurvBan = Styled.img
 position: static;
 width: 24rem;
 height: auto;
-margin-left: 1.5rem;
+margin-left: 0.5rem;
 margin-top: 1.5rem;
 
 `
@@ -559,6 +555,7 @@ margin-top: 1.5rem;
 const BannerContainer = Styled.div
 `
 position: static;
+margin-top: 2rem;
 p{
     font-size: 1.6rem;
     margin-left: 2.8rem;
@@ -590,7 +587,7 @@ const InterviewHeader = Styled.div
 `
 position: static;
 margin-left: 1.5rem;
-margin-top: 1.5rem;
+margin-top: 3rem;
 p{
 font-size: 2rem;
 }
@@ -654,7 +651,7 @@ const Quote = Styled.div
 `
 font-size: 1.5rem;
 text-align: center;
-width: 33rem;
+max-width: 19rem;
 .title{
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
@@ -728,7 +725,7 @@ const SolutionText = Styled.div
 position: static;
 margin-top: -8rem;
 margin-left: 2.5rem;
-margin-bottom: 2.5rem;
+margin-bottom: 3rem;
 max-width: 38rem;
 width: 100%;
 height: auto;
@@ -743,7 +740,7 @@ const MethodContainer = Styled.div
 display: flex;
 position: static;
 flex-direction: row;
-max-width: 60rem;
+max-width: 65rem;
 width: 100%;
 height: auto;
 margin-left: 2rem;
@@ -751,7 +748,7 @@ margin-top: 2rem;
 align-items: center;
  p{
      margin-left: 1rem;
-     max-width: 18.75rem;
+     max-width: 25rem;
  }
  #style-text {
      margin-top: 1rem;
@@ -833,7 +830,7 @@ p{
 const StyleGuide1 = Styled.img
 `
 position: static;
-max-width: 20rem;
+max-width: 39rem;
 width: 100%;
 height: auto;
 row-gap: 0px;
@@ -846,21 +843,7 @@ margin-left: 1.5rem;
 
 `
 
-const StyleGuide2 = Styled.img
-`
-position: static;
-max-width: 20rem;
-width: 100%
-height: auto;
-row-gap: 0px;
-margin-top: 1.5rem;
-margin-left: 1.5rem;
-@media only screen and (max-width: 1200px){
-        width: 70%;
-        margin-top: 1rem;
-    }
 
-`
 
 const StyleCont = Styled.div
 `
@@ -912,6 +895,7 @@ margin-left: 5rem;
     }
     li{
         margin-bottom: 2.2rem;;
+        margin-bottom: 3rem;;
         font-size: 1.5rem;
         line-height: 1.8;
     }
@@ -959,7 +943,7 @@ p{
     margin-bottom: 0.8rem;
 }
 #bottom{
-    font-size: 2rem;
+    font-size: 1.5rem;
     @media only screen and (max-width: 1200px){
         font-size: 1rem;
 }
@@ -1087,10 +1071,12 @@ position: static;
 
 const PrototypeContainer = Styled.div
 `
-display: flex;
-position: static;
+position: relative;
 margin-top: 3rem;
 margin-bottom: 2rem;
+@media only screen and (max-width: 1200px){
+      width: 70%;
+      }
 `
 const PrototypeBan = Styled.img
 `
@@ -1098,15 +1084,20 @@ max-width: 17.5rem;
 width: 100%;
 height: auto;
 margin-left: 1.5rem;
+@media only screen and (max-width: 1200px){
+      width: 70%;
+      }
 `
 
 const ProtoText = Styled.div
 `
-margin-left: -15rem;
-margin-top: 1.2rem;
+postion: absolute;
+width: 100%;
+margin-left: 5%;
+margin-top: 5%;
 @media only screen and (max-width: 1200px){
        p {
-           font-size: 1.5rem;
+           font-size: 1rem;
        } 
     }
 `
@@ -1196,6 +1187,7 @@ const SolutionHeader = Styled.img
 max-width: 29rem;
 width: 100%;
 height: auto;
+margin-top: 3rem;
 `
 
 const TestHeader = Styled.img
@@ -1203,6 +1195,8 @@ const TestHeader = Styled.img
 max-width: 29rem;
 width: 100%;
 height: auto;
+margin-top: 3rem;
+
 `
 
 const GapHeader = Styled.img
@@ -1210,6 +1204,8 @@ const GapHeader = Styled.img
 max-width: 16.7rem;
 width: 100%;
 height: auto;
+margin-top: 3rem;
+
 `
 
 const BulletCont = Styled.div

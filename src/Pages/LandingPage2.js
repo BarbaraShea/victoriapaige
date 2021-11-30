@@ -3,13 +3,14 @@ import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
 import Arrow from '../images/Shape.png'
-import Hello from '../images/HelloImVictoria.png';
-import JFBanner from '../images/JFbanner.png';
-import HCBanner from '../images/HCBanner.png';
-import ADBanner from '../images/ADbanner.png';
+import Hello from '../images/Helllo.png';
+import JFBanner from '../images/joy-banner.png';
+import HCBanner from '../images/human-banner.png';
+import ADBanner from '../images/surprise-banner.png';
 import WorkImg from '../images/Work.png';
+import Aloft from '../images/AloftOpener.png';
 import ForestryCamp from '../images/FCLanding.png';
-import TimeWells from '../images/TWLanding.png';
+import Timewells from '../images/TWLanding.png';
 import Alltrails from '../images/ATLanding.png';
 import FCO from '../images/FCoverlay.png';
 import ATO from '../images/AToverlay.png';
@@ -21,38 +22,154 @@ import mail from "../images/email.png";
 import linkedin from "../images/linkedin.png";
 import ArrowR from "../images/ArrowRight.png";
 import Resume from "../images/resume.png";
-import NavBar2 from "../Components/NavBar2"
+import Navbar from "../Components/Navbar"
+import Hello2 from '../images/HelloImVictoria.png';
+import LogoNav from '../Components/LandingLogoNav'
+import FCMobile from '../images/FCMobile.png';
+import ATMobile from '../images/ATMobile.png';
+import TWMobile from '../images/TWMobile.png';
 
 const LandingPage2 = () => {
     return (
-        <div>
-            <NavBar2></NavBar2>
+        <>
+        <LogoNav/>
+        <Navbar/>
         <IntroHeaderContainer>
             <Intro src={Hello} alt='Hello' id="intro"/>
+            <MobileIntro src={Hello2} alt='Hello' id="intro"/>
         </IntroHeaderContainer>
-        <LandingContainer>
         <IntroText>
-            <p class='landing-list-intro'> Utilizing ten years of experience working as a behavior specialist and educator, I create </p>
-            <TextOverImage>
-                <LandingList class='landing-list'> joy-filled</LandingList>
-                <Banner1 src={JFBanner}/>
-            </TextOverImage>
-            <TextOverImage>
-                <LandingList class='landing-list'> human-centered </LandingList>
-                <Banner2 src={HCBanner}/>
-            </TextOverImage>
-            <TextOverImage>
-                <LandingList class='landing-list'> accessible-by-design </LandingList>
-                <Banner3 src={ADBanner}/>
-            </TextOverImage>
-            <TextOverImage>
-            <p class='landing-list'> digital products. </p>
-            </TextOverImage>
+            <p> Utilizing ten years of my background working as a behavior analyst and special educator, I create</p>
         </IntroText>
-        </ LandingContainer>
+            <BannerCont>
+                <Banner1 src={JFBanner}/>
+                <Banner2 src={HCBanner}/>
+                <Banner3 src={ADBanner}/>
+            </BannerCont>
+        <IntroText>
+            <p> digital products. </p>
+        </IntroText>
+        {/* Nav Arrow */}
         <Link class="arrow" activeClass="active" to="work" spy={true} smooth={true} offset={-70} duration={500}><ArrowImg src={Arrow}/></Link>
-        
-        </div>
+        {/* Work Header */}
+        <HeaderContainer>
+            <Header src={WorkImg} alt='Work Samples' id="work"/>
+        </HeaderContainer>
+        {/* Work Section */}
+        <NavLink to='/Aloft'>
+        <ProjectContainer>
+            <ProjectImg className="landing-image" src={Aloft}/>
+            <ProjectTextCont>
+                <ProjectTextCont2>
+                    <p><strong> Aloft </strong> </p>
+                    <p id="text"> Easing the process of booking an aerial class and the storage + organization of training notes in this app.</p>
+                    <Hover>
+                        <p className="cs"><strong>View Case Study</strong></p>
+                        <CSArrow className="AR" src={ArrowR}/>
+                    </Hover>
+                </ProjectTextCont2>
+            </ProjectTextCont>
+        </ProjectContainer>
+        <ProjectMobile src={FCMobile}/>
+        </NavLink>
+        <NavLink to='/Forestrycamp'>
+        <ProjectContainer>
+            <ProjectImg className="landing-image" src={ForestryCamp}/>
+            <ProjectTextCont>
+                <ProjectTextCont2>
+                    <p><strong> Forestry Camp </strong> </p>
+                    <p id="text"> Rebranding and refunctioning Forestry Camp’s restaurant website and reservation system.</p>
+                    <Hover>
+                        <p className="cs"><strong>View Case Study</strong></p>
+                        <CSArrow className="AR" src={ArrowR}/>
+                    </Hover>
+                </ProjectTextCont2>
+            </ProjectTextCont>
+        </ProjectContainer>
+        <ProjectMobile src={FCMobile}/>
+        </NavLink>
+         <NavLink to='/Alltrails'>
+        <ProjectContainer>
+            <ProjectImg className="landing-image" src={Alltrails}/>
+            <ProjectTextCont>
+                <ProjectTextCont2>
+                    <p><strong> Alltrails </strong> </p>
+                    <p id="text"> Expanding equity to the outdoors by adding inclusivity, accessibility, and safety features to the Alltrails app. </p>
+                    <Hover>
+                        <p className="cs"><strong>View Case Study</strong></p>
+                        <CSArrow className="AR" src={ArrowR}/>
+                    </Hover>
+                </ProjectTextCont2>
+            </ProjectTextCont>
+        </ProjectContainer>
+        <ProjectMobile src={ATMobile}/>
+        </NavLink>
+         <NavLink to='/Timewells'>
+        <ProjectContainer>
+            <ProjectImg className="landing-image" src={Timewells}/>
+            <ProjectTextCont>
+                <ProjectTextCont2>
+                    <p><strong> Timewells </strong> </p>
+                    <p id="text"> Providing a sense of modernity, safety, and comfort for an innovative new travel company. </p>
+                    <Hover>
+                        <p className="cs"><strong>View Case Study</strong></p>
+                        <CSArrow className="AR" src={ArrowR}/>
+                    </Hover>
+                </ProjectTextCont2>
+            </ProjectTextCont>
+        </ProjectContainer>
+        <ProjectMobile src={TWMobile}/>
+        </NavLink>
+        {/* About */}
+    <HeaderContainer>
+        <Header src={AboutImg} alt='About' id="about"/> 
+    </HeaderContainer>
+    <AboutCont>
+    <AboutText>
+        <p> I'm Victoria Bryant, <strong> a product and brand designer </strong> located in the mountains of Asheville, North Carolina.</p>
+        <p> I was a career public school educator who <strong> specialized in behavior analysis of high-risk students. </strong> Through working with them, their teachers, and their families, I gained three major skillsets:</p>
+        <ul>
+            <li> I understand, empathize with, and communicate openly and kindly with people from all walks of life.</li>
+            <li> I'm regularly able to present my thought processes in an easily understandable way.</li>
+            <li> An innant balancer by nature, I stay inherently unflappable in high-stess situations.</li>
+        </ul>
+    </AboutText>
+    <Picture1 src={ProfilePic} alt='Profile' />
+    </AboutCont>
+    <AboutText2>
+    <p> I utilize these skills and my art + design background to create digital experiences that combine the power of methodology, research, empathy, and an "it's worth a try" mentality. </p> 
+    <p> A maker and storyteller in my spare time, you can often find me reading, writing, flying kites at the top of hikes, or eating my way through my excessive cookbook collection. </p>
+    </AboutText2>
+    {/* Contact Section */}
+    <HeaderContainer>
+    <Header src={LetsTalk} alt='Contact' id="contact"/>
+    </HeaderContainer>
+    <AboutText2>
+    <p> Interested in working together or just want to see adorable pictures of my dogs? You can find my contact information below.<strong> Let's get into it. </strong> </p>
+    </AboutText2>
+    <ContactIconContainer>
+    <IconContainer>
+    <p id="mail"><a href="mailto:v.paige.bryant@gmail.com"><MailIcon src={mail}/></a></p>
+    <p id="mail"><a href="mailto:v.paige.bryant@gmail.com">v.paige.bryant@gmail.com</a></p>
+    </IconContainer>
+    <IconContainer>
+    <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/" target="_blank"><LinkedinIcon src={linkedin}/></a></p>
+    <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/" target="_blank">Victoria Bryant</a></p>
+    </IconContainer>
+    <IconContainer>
+    <p id="resume"><a href="src/images/Victoria Bryant Resume.pdf" download><ResumeIcon src={Resume}/></a></p>
+    <p id="resume"><a href="src/images/Victoria Bryant Resume.pdf" download>Resumé</a></p>
+    </IconContainer>
+    </ContactIconContainer>
+    <Link 
+    activeClass="active"
+    to="intro"
+    spy={true}
+    smooth={true}
+    offset={-50}
+    duration={1000}
+    ><ArrowImgUp src={ArrowUp}/></Link> 
+    </>
     )
 }
 
@@ -60,36 +177,53 @@ export default LandingPage2
 
 const IntroHeaderContainer = Styled.div
 `
-display: flex;
-flex-direction: column;
-@media only screen and (max-width: 1300px) {
-    text-align: center;
-    align-items: center;
-
+margin-top: 5rem;
+margin-left: 3rem;
 `
 const Intro = Styled.img
 `
-max-height: 100vh;
-max-width: 40vh;
+max-width: 57rem;
+width: 100%;
+height: auto;
+@media only screen and (max-width: 1100px){
+        display: none;
+    }
 `
-const LandingList = Styled.p
+const MobileIntro = Styled.img
 `
-position: relative;
-left: 2rem;
-padding-top: 1rem;
-@media only screen and (max-width: 1300px) {
-    left: 0;
-}
+max-width: 20rem;
+width: 100%;
+height: auto;
+display: none;
+@media only screen and (max-width: 1100px){
+        display: block;
+    }
+`
 
+const HeaderContainer = Styled.div
 `
-const TextOverImage = Styled.div
+  position: static;
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 2rem;
+flex-direction: column;
+@media only screen and (max-width: 1200px){
+        width: 70%;
 `
-display: block;
-@media only screen and (max-width: 1300px) {
+
+const Header = Styled.img
+`
+max-width: 21.4rem;
+width: 100%;
+height: auto;
+`
+const BannerCont = Styled.div
+`
 display: flex;
 flex-direction: column;
-align-items: center;
-// line-height: 1.5;
+align-content: space-between;
+margin-left: 3rem;
+row-gap: 1.5rem;
 `
 const LandingContainer = Styled.div
 `
@@ -99,58 +233,226 @@ max-width: 70vw;
 flex-direction: column; 
 padding-top: 1rem;
 @media only screen and (max-width: 1300px) {
-    text-align: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
-`
-const Banner1 = Styled.img 
-`
-display: block;
-position: relative;
-bottom: 2.5rem;
-z-index: -3;
-@media only screen and (max-width: 1300px) {
-    bottom: 2.5rem;
-    z-index: -3;
-}
-`
-const Banner2 = Styled.img 
-`
-display: block;
-position: relative;
-bottom: 3rem;
-z-index: -2;
-@media only screen and (max-width: 1300px) {
-    bottom: 3rem;
-    z-index: -2; 
+text-align: center;
+align-items: center;
+font-size: 1.5rem;
 }
 `
 
+const Banner1 = Styled.img 
+`
+flex-direction: column;
+max-width: 11rem;
+width: 100%;
+height: auto;
+@media only screen and (max-width: 1100px){
+        width: 60%;
+    }
+`
+const Banner2 = Styled.img 
+`
+flex-direction: column;
+max-width: 18.8rem;
+width: 100%;
+height: auto;
+@media only screen and (max-width: 1100px){
+        width: 60%;
+    }
+`
+
+
 const Banner3 = Styled.img 
 `
-display: block;
-position: relative;
-bottom: 4rem;
-z-index: -2;
-@media only screen and (max-width: 1300px) {
-    bottom: 4rem;
-    z-index: -2;
-    width: 95vw;
-}
+flex-direction: column;
+max-width: 24rem;
+width: 100%;
+height: auto;
+@media only screen and (max-width: 1100px){
+        width: 60%;
+    }
 `
 
 const IntroText = Styled.div 
 `
-display: block;
-flex-direction: column;
-z-index: 5;
-line-height: 2.5rem;
-@media only screen and (max-width: 1300px) {
-    // line-height: 3rem;
+position: static;
+max-width: 64rem;
+margin-left: 3rem;
+p {
+    font-size: 2rem;
+    }
+@media only screen and (max-width: 1350px){
+        width: 90%;
+        p {
+            font-size: 1.5rem;
+        }
+    }
 `
 const ArrowImg = Styled.img 
-    `
-position: absolute;
-bottom: 5rem;
-    `
+`
+margin-left: 3rem;
+`
+// work section
+
+const ProjectContainer = Styled.div
+`
+display: flex;
+flex-direction: row;
+max-width: 1350px;
+margin-top: 3rem;
+column-gap: 3rem;
+align-items: center;
+@media only screen and (max-width: 1350px){
+        width: 90%;
+        }
+@media only screen and (max-width: 1000px){
+        display: none;
+        }
+`
+
+const ProjectTextCont = Styled.div
+`
+max-width: 18rem;
+`
+
+const ProjectTextCont2 = Styled.div
+`
+display: flex;
+flex-direction: column;
+p {
+    font-size: 1.2rem;
+}
+`
+
+const ProjectImg = Styled.img
+`
+max-width: 47.5rem;
+width: 100%;
+height: auto;
+flex-direction: row;
+margin-left: 3rem;
+transition: transform 500ms;
+ :hover {
+transform: scale(1.05,1.05);
+@media only screen and (max-width: 1350px){
+        width: 70%;
+`
+
+const Hover = Styled.div
+`
+display: flex;
+align-items: center;
+justify-content: flex-start;
+column-gap: 1rem;
+padding-top: 1rem;
+:hover .AR {
+transform: translateX(30px);
+}
+@media only screen and (max-width: 1300px) {
+max-width: 90vw;
+
+`
+
+const CSArrow = Styled.img
+`
+max-width: 1.5rem;
+height: 2rem;
+transition: transform 600ms;
+`
+const ProjectMobile = Styled.img
+`
+max-width: 21.3rem;
+width: 100%;
+height: auto;
+margin-left: 3rem;
+margin-top: 3rem;
+display: none;
+@media only screen and (max-width: 1000px){
+        display: block;
+        align-items: center;
+        width: 85%;
+
+`
+//about
+
+const AboutCont = Styled.div
+`
+display: flex;
+margin-left: 3rem;
+flex-direction: row;
+column-gap: 2rem;
+@media only screen and (max-width: 1200px){
+        flex-wrap: wrap-reverse;
+    }
+`
+
+const AboutText = Styled.div
+`
+flex-direction: row;
+max-width: 41rem;
+p {
+    font-size: 1.5rem;
+}
+li {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+}
+ul {
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 1200px){
+        p {
+            font-size: 1rem;
+        }
+        li {
+            font-size: 1rem;
+        }
+    }
+`
+const Picture1 = Styled.img
+`
+max-width: 24.5rem;
+widht: 100%;
+height: auto;
+@media only screen and (max-width: 1200px){
+        width: 70%;
+    }
+`
+const AboutText2 = Styled.div
+`
+max-width: 67rem;
+margin-left: 3rem;
+`
+
+
+const ArrowImgUp = Styled.img 
+`
+margin-left: 3rem;
+margin-bottom: 3rem;
+`
+
+
+const ContactIconContainer = Styled.div
+`
+margin-left: 3rem;
+padding: 3rem 0;
+display: flex;
+flex-direction: column;
+`
+const IconContainer = Styled.div
+`
+display: flex;
+padding: 1rem 0;
+`
+const MailIcon = Styled.img
+`
+padding-right: 30px;
+`
+const LinkedinIcon = Styled.img
+`
+padding-right: 36px;
+`
+
+const ResumeIcon = Styled.img
+`
+padding-right: 24px;
+`

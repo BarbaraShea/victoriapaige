@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -41,10 +40,6 @@ body {
 
 
 p {
-  /* margin-bottom: 1.25rem;
-  margin-right: 160px;
-  margin-left: 70px; */
-  /* z-index: 1; */
   font-size: 1.5rem;
   @media only screen and (max-width: 1200px){
             font-size: 1rem;

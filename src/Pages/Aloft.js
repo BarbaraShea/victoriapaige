@@ -231,6 +231,7 @@ const ALImg = Styled.img
     width: 70rem;
     height: 2.875rem;
     margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 15rem;
     
      ul {
@@ -246,7 +247,7 @@ const ALImg = Styled.img
     font-size: 1.5rem;
     }
     @media only screen and (max-width: 1200px){
-        width: 100%;
+        width: 90%;
         td {
             font-size: 1.2rem;
         }

@@ -143,26 +143,13 @@ const Timewells2 = () => {
          <GapHeader src={Gap} id="gap" className="gapIMG"/>
         </HeaderContainer>
         <GapCont>
-        <LogoCont>
             <LogoImg src={TWLogo}/>
-            <p id="max"> Timewells wants to sell trips. </p>
-            <p id="min"> Timewells wants to sell trips, <strong>but users want to feel comfortable and confident</strong> before dropping a ton of cash.</p>
-        </LogoCont>
-        <PersonCont>
-        <PersonCont2>
             <PersonImg2 src={Lady}/>
             <PersonImg2 src={Man}/>
-        </PersonCont2>
-            <p> Users want to feel comfortable and confident before dropping a ton of cash.</p>
-        </PersonCont>
         </GapCont>
-        <BannerCont>
-            <GapBannerImg src={GapBanner}/>
-            <BannerText>
-            <p id="max"> My users were very excited about time travel and had a lot of ideas for a good product experience. It would have been intersting to try and find solutions for everything, but results would be muddled.</p>
-            <p id="min"> I had to really drill through the data to find the best solutions for this. My users had so many insights!</p>
-            </BannerText>
-        </BannerCont>
+        <GapText>
+        <p> Timewells wants to sell their product, but users want to feel comfortable and confident before dropping a ton of cash on a trip. </p>
+        </GapText>
         <HeaderContainer>
             <SolutionHeader src={Solution}/>
         </HeaderContainer>
@@ -268,8 +255,8 @@ const Timewells2 = () => {
          </HeaderContainer>
         <FollowUpText>
         <p> This was my first experience designing a product from end to end. I learned so
-much about my own work flow and what makes sense to my brain as I moved
-through the process.</p>
+        much about my own work flow and what makes sense to my brain as I moved
+        through the process.</p>
         </FollowUpText>   
         <FinalCont>
         <FinalRect src={FollowUpRect}/>
@@ -321,11 +308,10 @@ const TWImage = Styled.img
     max-width: 65rem;
     width: 100%;
     height: auto;
-    left: 4.375rem;
+    margin-left: 0rem;
     margin-top: -3rem;
     @media only screen and (max-width: 1350px){
         width: 90%;
-        align-items: center;
     }
     `
 
@@ -521,7 +507,7 @@ p{
 font-size: 2rem;
 margin-bottom: 1rem;
 margin-left: 1rem;
-margin-top: 1rem;
+margin-top: 5rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
 }
@@ -573,71 +559,18 @@ const GapCont =Styled.div
 `
 position: static;
 display: flex;
-justify-content: center;
-align-items: flex-start;
+justify-content: flex-start;
+gap: 60px;
 max-width: 67rem;
 width: 100%;
 height: auto;
 `
-
-const LogoCont =Styled.div
+const GapText = Styled.div
 `
-position: static;
-display: flex;
-margin-left: 3rem;
-margin-right: 3rem;
-flex-direction: column;
-justify-content: space-between;
-max-width: 20rem;
+max-width: 67rem;
 width: 100%;
 height: auto;
-p{
-    text-align: center;
-}
-#min {
-    display:none;
-}
- @media only screen and (max-width: 600px){
-        #max{
-            display: none;
-        }
-        #min{
-            display: block;
-        }
-    }
-`
-const PersonCont =Styled.div
-`
-position: static;
-display: flex;
-flex-direction: column;
-align-items: center;
 margin-left: 3rem;
-margin-right: 3rem;
-max-width: 200rem;
-    width: 100%;
-    height: auto;
-p{
-    max-width: 28rem;
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
-}
- @media only screen and (max-width: 600px){
-        display: none;
-    }
-`
-
-const PersonCont2 =Styled.div
-`
-position: static;
-display: flex;
-flex-directions: row;
-align-items: center;
- @media only screen and (max-width: 1350px){
-        width: 80%;
-        align-items: center;
-    }
 `
 
 const LogoImg = Styled.img
@@ -655,72 +588,14 @@ const LogoImg = Styled.img
 
 const PersonImg2 = Styled.img
  `
-    max-width: 11.6rem;
+    max-width: 12rem;
     flex-direction: row;
     width: 100%;
     height: auto;
-    margin-top: 1rem;
-    margin-left: 2rem;
     @media only screen and (max-width: 1350px){
-        width: 80%;
-        align-items: center;
+    display: none;
     }
     `
-const BannerCont = Styled.div
-`
-position: relative;
-max-width: 61rem;
-width: 100%;
-height: auto;
-p{
-    font-size: 1.6rem;
-    margin-left: 2.8rem;
-    margin-top: -4.2rem;
-}
-#min {
-    display:none;
-}
- @media only screen and (max-width: 600px){
-        #max{
-            display: none;
-        }
-        #min{
-            display: block;
-        }
-    }
-`
-
-const GapBannerImg = Styled.img
-`
-max-width: 61rem;
-width: 100%;
-height: auto;
-margin-left: 1.5rem;
-margin-top: 1.5rem;
-  @media only screen and (max-width: 1350px){
-        width: 90%;
-        height: 10rem;
-    }
-`
-
-const BannerText = Styled.div
-`
-position: absolute;
-width: 80%;
-top: 70%;
-p{
-    font-size: 1.4rem;
-}
-  @media only screen and (max-width: 1350px){
-        width: 90%;
-        height: 10rem;
-        p {
-            font-size: 1.2rem;
-            text-align: center;
-            margin-top: -4.5rem;
-        }
-    }
-`
 
 const GifCont = Styled.div
 `
@@ -888,10 +763,12 @@ const TestTable = Styled.div
     };
     li {
         text-align: left;
+        margin-bottom: 0.5rem;
     }
     td {
     vertical-align: top;
-    padding: 0.625rem;
+    text-align: left;
+    padding: 0.2rem;
     font-size: 1.5rem;
     }
     @media only screen and (max-width: 1200px){
@@ -987,11 +864,11 @@ const FinalRect = Styled.img
 `
 display: block;
 max-width: 65.5rem;
-height: auto;
+height: 35rem;
 width: 100%;
 @media only screen and (max-width: 1200px){
         width: 100%;
-        height: 30.5rem;
+        height: 35rem;
 
     }
 `
