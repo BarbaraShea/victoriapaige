@@ -222,7 +222,7 @@ const BannerCont = Styled.div
 display: flex;
 flex-direction: column;
 align-content: space-between;
-margin-left: 3rem;
+margin-left: 2.2rem;
 row-gap: 1.5rem;
 `
 const LandingContainer = Styled.div
@@ -245,9 +245,7 @@ flex-direction: column;
 max-width: 11rem;
 width: 100%;
 height: auto;
-@media only screen and (max-width: 1100px){
-        width: 60%;
-    }
+
 `
 const Banner2 = Styled.img 
 `
@@ -255,9 +253,7 @@ flex-direction: column;
 max-width: 18.8rem;
 width: 100%;
 height: auto;
-@media only screen and (max-width: 1100px){
-        width: 60%;
-    }
+
 `
 
 
@@ -267,9 +263,6 @@ flex-direction: column;
 max-width: 24rem;
 width: 100%;
 height: auto;
-@media only screen and (max-width: 1100px){
-        width: 60%;
-    }
 `
 
 const IntroText = Styled.div 
@@ -277,6 +270,7 @@ const IntroText = Styled.div
 position: static;
 max-width: 64rem;
 margin-left: 3rem;
+margin-right: 2rem;
 p {
     font-size: 2rem;
     }
@@ -400,6 +394,7 @@ ul {
     margin-top: 2rem;
 }
 @media only screen and (max-width: 1200px){
+        margin-right: 2rem;
         p {
             font-size: 1rem;
         }
@@ -421,6 +416,7 @@ const AboutText2 = Styled.div
 `
 max-width: 67rem;
 margin-left: 3rem;
+margin-right: 2rem;
 `
 
 
