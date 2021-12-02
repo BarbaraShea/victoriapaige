@@ -28,9 +28,9 @@ import Inclusivity from '../images/Inclusivity.png';
 import TestCircle from '../images/TestsCircle.png';
 import DarkOne from  '../images/DarkOne.png';
 import DarkTwo from  '../images/DarkTwo.png';
-import Test1 from '../images/TestImg1.png';
-import Test2 from '../images/TestImg2.png';
-import Test3 from '../images/TestImg3.png';
+import ATTest1 from '../images/ATTest1.png';
+import ATTest2 from '../images/ATTest2.png';
+import ATTest3 from '../images/ATTest3.png';
 import FollowUpRect from '../images/FollowUpRect.png';
 import FollowUp from '../images/FollowUp.png';
 import ArrowRight from '../images/ArrowRight.png';
@@ -38,7 +38,7 @@ import White1 from '../images/White1.png';
 import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
 import Return from '../images/Return.png';
-import ProtoBan from '../images/PrototypeBanner.png';
+import ProtoBan from '../images/SeeProto.png';
 
 const AllTrails = () => {
     return (
@@ -232,42 +232,12 @@ const AllTrails = () => {
         <Test>
         <p id="final"> All four particpants successfully completed each goal. </p>
         </Test>
-        <Test1Cont>
-            <TestImg1 src={Test1}/>
-            <Test1Text>
-            <p>“I really like that it says the hike is rated by the community - it’s not just some nebulous statement.”</p>
-            <p>I increased the contrast and added a background to the female hiker rating, since one user didn’t see it during testing.</p>
-            </Test1Text>
-        </Test1Cont>
-        <Test2Cont2>
-        <Test2Cont>
-            <TestImg2 src={Test2}/>
-            <Test2Text>
-            <p> All of my users thought the blue pill buttons were colored differently because that was what they selected when filtering a hike. I added titles to ease clarity.</p>
-            </Test2Text>
-        </Test2Cont>
-             <Test2Text2>
-            <p> “The 2WD indicator is amazing! I always wish I knew things like that ahead of time.”</p>
-            </Test2Text2>
-        </Test2Cont2>
-        <Test3Cont>
-            <TestImg3 src={Test3}/>
-            <Test3TextCont>
-                <Test3Text>
-                <p> “I wish there was a place on the trail conditions to note that I had to turn around.”</p>
-                </Test3Text>
-                <Test3Text2>
-                <p>I added a “did you have to end your hike early?” question so people could indicate this on their trail report to help future hikers.</p>
-                </Test3Text2>
-            </Test3TextCont>
-        </Test3Cont>
-        <PrototypeContainer>
-            <PrototypeBan src={ProtoBan}/>
-            <ProtoText>
-            <p id="ATproto"> <strong><a href="https://www.figma.com/proto/lARHntk9QL09upIkgVY0VY/Timewells-Priority-Revision?page-id=0%3A1&node-id=272%3A256&viewport=241%2C48%2C0.62&scaling=min-zoom&starting-point-node-id=1%3A2118" target="_blank"> See Prototype </a></strong></p>
-            </ProtoText>
-            <ArrowRightImg src={ArrowRight}/>
-        </PrototypeContainer>
+        <TestImg src={ATTest1}/>
+        <TestImg src={ATTest2}/>
+        <TestImg src={ATTest3}/>
+        <ProtoCont id="proto">
+        <div><a href="https://www.figma.com/proto/J6JueelgSzwIOhbHShXdgk/Alltrails?page-id=106%3A17&node-id=162%3A964&viewport=288%2C48%2C0.27&scaling=scale-down&starting-point-node-id=131%3A12&show-proto-sidebar=1" target="_blank"> <PrototypeBan src={ProtoBan}/> </a></div>
+        </ProtoCont>
         <HeaderContainer>
             <Header id="follow" src={FollowUp}/>
          </HeaderContainer>
@@ -298,16 +268,19 @@ const AllTrails = () => {
 };
 
 export default AllTrails;
-
+const ProtoCont =Styled.div
+`
+position: static;
+`
 
 const ATHeaderContainer = Styled.div
     `
-   display: flex;
+display: flex;
 flex-direction: column;
-padding: 3rem;
-@media only screen and (max-width: 1300px) {
-    text-align: center;
-    align-items: center;
+margin-top: 4.5%;
+margin-left: 4.5%;
+margin-right: 4.5%;
+margin-bottom: 4.5%;
 
 `
 
@@ -324,8 +297,7 @@ const ATImg = Styled.img
     max-width: 65rem;
     width: 100%;
     height: auto;
-    left: 4.375rem;
-    margin-top: -3rem;
+    margin-left: 3rem;
     @media only screen and (max-width: 1350px){
         width: 90%;
         align-items: center;
@@ -336,9 +308,8 @@ const ATImg = Styled.img
     `
     width: 70rem;
     height: 2.875rem;
-    left: 1rem;
-    // right: 22.5rem;
-    // top: 35rem;
+    max-width: 65rem;
+    margin-left: 3rem;
     margin-bottom: 15rem;
     
      ul {
@@ -355,6 +326,7 @@ const ATImg = Styled.img
     }
     @media only screen and (max-width: 1200px){
         width: 100%;
+        margin-left: 1rem;
         td {
             font-size: 1.2rem;
         }
@@ -362,13 +334,14 @@ const ATImg = Styled.img
             font-size: 1.2rem;
         }
     }
+    }
     `
 const HeaderContainer = Styled.div
 `
   position: static;
   display: flex;
   margin-top: 4rem;
-  margin-left: 2rem;
+  margin-left: 3rem;
 flex-direction: column;
 @media only screen and (max-width: 1200px){
         width: 70%;
@@ -387,7 +360,7 @@ height: auto;
 const ProblemText = Styled.div
 `
 position: static;
-margin-left: 2rem;
+margin-left: 3rem;
 margin-top: 2rem;
 max-width: 62rem;
 #quote{
@@ -414,7 +387,7 @@ const ResearchText1 = Styled.div
 `
 position: static;
 max-width: 62rem;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1rem;
 font-size: 1.5rem;
 line-height: 1.5;
@@ -436,7 +409,7 @@ position: static;
 max-width: 60.6rem;
 width: 100%;
 height: auto;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 90%;
@@ -445,7 +418,7 @@ margin-top: 1.5rem;
 const ResearchHeaders = Styled.div
 `
 position: static;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
 p{
 font-size: 2rem;
@@ -458,7 +431,7 @@ position: static;
 display: flex;
 flex-direction: row;
 margin-top: 5rem;
-margin-left: 2rem;
+margin-left: 3rem;
 gap: 1.5rem;
  @media only screen and (max-width: 1350px){
         flex-wrap: wrap;
@@ -586,9 +559,12 @@ const AppsImg = Styled.img
 `
 position: absolute;
 position: static;
+margin-left: 2rem;
 max-width: 57rem;
 width: 100%;
 height: auto;
+@media only screen and (max-width: 1350px){
+    width: 90%;
 `
 
 const SolutionHeader = Styled.img
@@ -618,7 +594,7 @@ overflow: hidden;
 const MethodText = Styled.div
 `
 postion: static;
-margin-left: 3.2rem;
+margin-left: 3rem;
 margin-top: 3rem;
 p{
     font-size: 2rem;
@@ -776,201 +752,29 @@ margin-bottom: 2rem;
     margin-top: 2rem;
 }
 `
-
-const TestImg1 = Styled.img
+const TestImg = Styled.img
 `
 position: static;
-flex-direction: row;
-max-width: 59rem;
+max-width: 60.5rem;
 width: 100%;
 height: auto;
-flex-direction: row;
-@media only screen and (max-width: 1200px){
-    width: 80%;
-    }
-`
-
-const Test1Cont = Styled.div
-`
-display:flex;
-max-width: 59rem;
-width: 100%;
 margin-left: 3rem;
-// align-items: flex-start;
-// justify-content: flex-start;
-
-`
-
-const Test1Text = Styled.div
-`
-display:flex;
-flex-direction: column;
-max-width: 16.5rem;
-margin-left: -18rem;
-p{
-    margin-top: 6rem;
-    margin-bottom: 10rem;
-}
+margin-top: 5rem;
 @media only screen and (max-width: 1200px){
-    width: 20%;
-    margin-left: -15rem;
-    }
-@media only screen and (max-width: 1000px){
-    display: none;
+        width: 80%;
     }
 `
 
-const TestImg2 = Styled.img
-`
-position: static;
-flex-direction: row;
-max-width: 59rem;
-width: 100%;
-height: auto;
-flex-direction: row;
-@media only screen and (max-width: 1200px){
-    width: 80%;
-    }
-`
-
-const Test2Cont = Styled.div
-`
-display:flex;
-max-width: 59rem;
-width: 100%;
-margin-left: 3rem;
-margin-top: 3rem;
-align-items: center;
-
-`
-
-const Test2Text = Styled.div
-`
-display:flex;
-flex-direction: column;
-max-width: 16.5rem;
-margin-left: 2rem;
-@media only screen and (max-width: 1000px){
-    display: none;
-    }
-`
-
-const Test2Text2 = Styled.div
-`
-display:flex;
-flex-direction: column;
-max-width: 16.5rem;
-margin-top: -15rem;
-margin-left: 7rem;
-@media only screen and (max-width: 1000px){
-    display: none;
-    }
-`
-
-const Test2Cont2 = Styled.div
-`
-display:flex;
-flex-direction: column;
-max-width: 59rem;
-width: 100%;
-margin-top: 3rem;
-align-items: flex-start;
-`
-
-const TestImg3 = Styled.img
-`
-position: static;
-flex-direction: row;
-max-width: 59rem;
-width: 100%;
-height: auto;
-flex-direction: row;
-@media only screen and (max-width: 1200px){
-    width: 80%;
-    }
-`
-
-const Test3Cont = Styled.div
-`
-display:flex;
-max-width: 59rem;
-width: 100%;
-margin-left: 3rem;
-margin-top: 12rem;
-@media only screen and (max-width: 1000px){
-        margin-top: 5rem;
-    }
-`
-
-const Test3Text = Styled.div
-`
-flex-direction: column;
-max-width: 19.5rem;
-margin-top: 11.5rem;
-margin-left: -6rem;
-@media only screen and (max-width: 1200px){
-    margin-left: -2rem;
-    }
-@media only screen and (max-width: 1000px){
-    display: none;
-    }
-`
-const Test3Text2 = Styled.div
-`
-flex-direction: column;
-max-width: 19rem;
-margin-top: 20rem;
-@media only screen and (max-width: 1200px){
-    margin-left: 3rem;
-    }
-@media only screen and (max-width: 1000px){
-    display: none;
-    }
-`
-
-const Test3TextCont = Styled.div
-`
-display:flex;
-flex-direction: column;
-margin-left: -17rem;
-@media only screen and (max-width: 1000px){
-    display: none;
-    }
-`
-const PrototypeContainer = Styled.div
-`
-display: flex;
-position: static;
-margin-top: 3rem;
-margin-bottom: 2rem;
-`
 const PrototypeBan = Styled.img
 `
 max-width: 17.5rem;
 width: 100%;
 height: auto;
 margin-left: 1.5rem;
-`
-
-const ProtoText = Styled.div
-`
-margin-left: -15rem;
-margin-top: 1.2rem;
+margin-top:2rem;
 @media only screen and (max-width: 1200px){
-       p {
-           font-size: 1.5rem;
-       } 
-    }
-`
-
-const ArrowRightImg = Styled.img
-`
-max-width: 1.1rem;
-width: 100%;
-height: 2.1rem; 
-margin-left: 1rem;
-margin-top: 1.2rem;
-
+      width: 40%;
+      }
 `
 
 const FollowUpText = Styled.div
@@ -988,12 +792,10 @@ const FinalRect = Styled.img
 `
 display: block;
 max-width: 65.5rem;
-height: auto;
+height: 42rem;
 width: 100%;
 @media only screen and (max-width: 1200px){
         width: 120%;
-        height: 30.5rem;
-
     }
 `
 const W1 = Styled.img
@@ -1021,26 +823,23 @@ const FinalCont = Styled.div
 position: relative;
 display: block;
 max-width: 65.5rem;
-max-height: 35.5rem;
+max-height: 40rem;
+margin-top: 3rem;
+margin-bottom: 2rem;
 width: 100%;
 `
 
 const FinalCont2 = Styled.div
 `
 position: absolute;
-display: flex;
-flex-direction: column;
-width: 70.5%;
+width: 76.5%;
 height: 83%;
-top: 5%;
+top: 1.5%;
 left: 5.7%;
-justify-content: space-evenly;
 @media only screen and (max-width: 1350px){
     width: 100%;
-    height: 82%;
     top: 5%;
     left: 2%;
-    justify-content: space-evenly;
 }
 `
 
@@ -1048,8 +847,9 @@ const BulletCont = Styled.div
 `
 display: flex;
 flex-direction:row;
+margin-right: 5%;
+margin-top: 4%;
 margin-left: 2rem;
-margin-right: 2rem;
 // justify-content: space-between;
 margin-bottom: 2.5rem;
 p{

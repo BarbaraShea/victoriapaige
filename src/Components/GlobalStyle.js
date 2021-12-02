@@ -107,8 +107,5 @@ img {
 }
 
 
-
-
-
 `
 export default GlobalStyle;

@@ -37,8 +37,7 @@ import BrandUI from '../images/BrandUITW.png';
 import TestPic1 from '../images/TWTestImg1.png';
 import TestPic2 from '../images/TWTestImg2.png';
 import TestPic3 from '../images/TWTestImg3.png';
-import ProtoBan from '../images/PrototypeBanner.png';
-import ArrowRight from '../images/ArrowRight.png';
+import ProtoBan from '../images/SeeProto.png';
 import FollowUpRect from '../images/FollowUpRect.png';
 
 
@@ -243,13 +242,9 @@ const Timewells2 = () => {
         <TestImg src={TestPic1}/>
         <TestImg src={TestPic2}/>
         <TestImg src={TestPic3}/>
-        <PrototypeContainer>    
-            <PrototypeBan src={ProtoBan}/>
-            <ProtoText>
-            <p><strong><a href="https://www.figma.com/proto/lARHntk9QL09upIkgVY0VY/Timewells-Priority-Revision?page-id=0%3A1&node-id=272%3A256&viewport=241%2C48%2C0.62&scaling=min-zoom&starting-point-node-id=1%3A2118" target="_blank"> See Prototype </a></strong></p>
-            </ProtoText>
-            <ArrowRightImg src={ArrowRight}/>
-        </PrototypeContainer>
+         <ProtoCont id="proto">
+        <div><a href="https://www.figma.com/proto/lARHntk9QL09upIkgVY0VY/Timewells-Priority-Revision?page-id=0%3A1&node-id=272%3A256&viewport=241%2C48%2C0.62&scaling=min-zoom&starting-point-node-id=1%3A2118" target="_blank"> <PrototypeBan src={ProtoBan}/> </a></div>
+        </ProtoCont>
             <HeaderContainer>
             <Header id="follow" src={FollowUp}/>
          </HeaderContainer>
@@ -282,7 +277,21 @@ const Timewells2 = () => {
 };
 
 export default Timewells2;
-
+const ProtoCont =Styled.div
+`
+position: static;
+`
+const PrototypeBan = Styled.img
+`
+max-width: 17.5rem;
+width: 100%;
+height: auto;
+margin-left: 1.5rem;
+margin-top:2rem;
+@media only screen and (max-width: 1200px){
+      width: 40%;
+      }
+`
 
 const TWHeaderContainer = Styled.div
     `
@@ -788,34 +797,6 @@ display: flex;
 position: static;
 margin-top: 3rem;
 margin-bottom: 2rem;
-`
-const PrototypeBan = Styled.img
-`
-max-width: 17.5rem;
-width: 100%;
-height: auto;
-margin-left: 1.5rem;
-`
-
-const ProtoText = Styled.div
-`
-margin-left: -15rem;
-margin-top: 1.2rem;
-@media only screen and (max-width: 1200px){
-       p {
-           font-size: 1.5rem;
-       } 
-    }
-`
-
-const ArrowRightImg = Styled.img
-`
-max-width: 1.1rem;
-width: 100%;
-height: 2.1rem; 
-margin-left: 1rem;
-margin-top: 1.2rem;
-
 `
 
 const FinalCont = Styled.div

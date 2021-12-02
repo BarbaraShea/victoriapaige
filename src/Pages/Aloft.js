@@ -16,7 +16,7 @@ import White1 from '../images/White1.png';
 import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
 import Return from '../images/Return.png';
-import ProtoBan from '../images/PrototypeBanner.png';
+import ProtoBan from '../images/SeeProto.png';
 import ALOpener from '../images/ALOpener.png';
 import ALHeader from '../images/ALHeader.png';
 import AlResearchImg1 from '../images/AlResearchImg1.png';
@@ -24,10 +24,17 @@ import AlResearchImg2 from '../images/AlResearchImg2.png';
 import AlResearchImg3 from '../images/AlResearchImg3.png';
 import Rect from '../images/InsightsRect.png';
 import MethodImg1 from '../images/AlMethodImg1.png';
+import MethodImg2 from '../images/AlMethodImg2.png';
+import MethodImg3 from '../images/AlMethodImg3.png';
+import MethodImg4 from '../images/AlMethodImg4.png';
 import TestCircle from '../images/TestsCircle.png';
 import DarkOne from  '../images/DarkOne.png';
 import DarkTwo from  '../images/DarkTwo.png';
-// import AloftGIF from '../images/AloftApp.gif';
+import AloftGIF from '../images/AloftGIF.gif';
+import AlTest1 from '../images/AlTest1.png';
+import AlTest2 from '../images/AlTest2.png';
+import AlTest3 from '../images/AlTest3.png';
+
 const Aloft = () => {
     return (
         <>
@@ -128,16 +135,37 @@ const Aloft = () => {
         <SolutionText>
         <p> <strong>Customized schedule filtering</strong> is the key way to be able to help aerialists progress in their skills and keep track of their training. Creating a one-stop booking system with <strong>a training library with tags and filters to organize their notes</strong> will meet these users needs. </p>
          </SolutionText>
-         {/* <SolutionGIF src={AloftGIF}/> */}
+         <SolutionGIF src={AloftGIF}/>
          <HeaderContainer>
         <Header id="method" src={Method}/>
         </HeaderContainer>
          <MethodText>
-            <p id="user-header"><strong>User Persona</strong></p>
+            <p id="user-header"><strong>Task Flow</strong></p>
         </MethodText>
         <MethodContainer>
              <MethodImg src={MethodImg1}/>
-            <p id="user-text">I began with a simple task flow for the two main needs of the app - booking a class and adding training videos and notes. <strong>This helped guide me</strong> as I explored solutons for wireframes.  </p>
+            <p id="user-text">I began with a simple task flow for the two main needs of the app - booking a class and adding training videos and notes. <strong>This helped guide me</strong> as I explored solutons for wireframes. </p>
+        </MethodContainer>
+         <MethodText>
+            <p id="user-header"><strong>Branding</strong></p>
+        </MethodText>
+        <MethodContainer>
+             <MethodImg src={MethodImg2}/>
+            <p id="user-text">I wanted the branding to speak to the <strong>creativity and calm that people experience</strong> when doing aerials. A linear gradient added fun pops of color. The logo shows a trapeze, silks, and a lyra together.</p>
+        </MethodContainer>
+         <MethodText>
+            <p id="user-header"><strong>Wireflow</strong></p>
+        </MethodText>
+        <MethodContainer>
+             <MethodImg src={MethodImg3}/>
+            <p id="user-text">I utilized Whimsical to create a wireflow and show how users would move between tasks on the app, and organize filters for <strong>how aerialsists would want to look for classes.</strong> I found this to be incredibly helpful and will continue using this method in the future. </p>
+        </MethodContainer>
+         <MethodText>
+            <p id="user-header"><strong>User Persona</strong></p>
+        </MethodText>
+        <MethodContainer>
+             <MethodImg src={MethodImg4}/>
+            <p id="user-text">I then moved my wireframes into user interface design, focusing on the visual aspect of the app. I adapted a UI kit, as I wanted the design to feel fun and light <strong>while speaking to the intensity and artistry of aerial training.</strong> </p>
         </MethodContainer>
         <HeaderContainer>
             <Header id="test" src={TestCircle}/>
@@ -157,13 +185,12 @@ const Aloft = () => {
         <Test>
         <p id="final"> All of my particpants successfully completed each goal.</p>
         </Test>
-        <PrototypeContainer>
-            <PrototypeBan src={ProtoBan}/>
-            <ProtoText>
-            <p id="ATproto"> <strong><a href="https://www.figma.com/proto/lARHntk9QL09upIkgVY0VY/Timewells-Priority-Revision?page-id=0%3A1&node-id=272%3A256&viewport=241%2C48%2C0.62&scaling=min-zoom&starting-point-node-id=1%3A2118" target="_blank"> See Prototype </a></strong></p>
-            </ProtoText>
-            <ArrowRightImg src={ArrowRight}/>
-        </PrototypeContainer>
+        <TestImg src={AlTest1}/>
+        <TestImg src={AlTest2}/>
+        <TestImg src={AlTest3}/>
+        <ProtoCont id="proto">
+        <div><a href="https://www.figma.com/proto/uEODZPCrFEzV0bWzvKJe8h/ALOFT?page-id=102%3A442&node-id=262%3A2096&viewport=288%2C48%2C0.43&scaling=scale-down&starting-point-node-id=262%3A1406" target="_blank"> <PrototypeBan src={ProtoBan}/> </a></div>
+        </ProtoCont>
         <HeaderContainer>
             <Header id="follow" src={FollowUp}/>
          </HeaderContainer>
@@ -194,6 +221,11 @@ const Aloft = () => {
 };
 
 export default Aloft;
+
+const ProtoCont =Styled.div
+`
+position: static;
+`
 
 const ALHeaderContainer = Styled.div
     `
@@ -315,6 +347,9 @@ flex-direction: row;
 max-width: 27rem;
 #para{
     margin-top: 1.5rem;
+}
+@media only screen and (max-width: 1200px){
+        margin-left: 1.5rem;
 }
 `
 
@@ -530,6 +565,18 @@ margin-top: 1.5rem;
 
     }
 `
+const TestImg = Styled.img
+`
+position: static;
+max-width: 66rem;
+width: 100%
+height: auto;
+margin-left: 3rem;
+margin-top: 1.5rem;
+ @media only screen and (max-width: 1200px){
+        width: 80%;
+    }
+`
 
 const One = Styled.img
 `
@@ -573,41 +620,50 @@ margin-bottom: 2rem;
 }
 `
 
-const PrototypeContainer = Styled.div
-`
-display: flex;
-position: static;
-margin-top: 3rem;
-margin-bottom: 2rem;
-`
+// const PrototypeContainer = Styled.div
+// `
+// position: relative;
+// margin-top: 3rem;
+// margin-bottom: 2rem;
+// max-width: 18%;
+// width: 100%;
+// height: auto;
+// `
 const PrototypeBan = Styled.img
 `
 max-width: 17.5rem;
 width: 100%;
 height: auto;
 margin-left: 1.5rem;
-`
-
-const ProtoText = Styled.div
-`
-margin-left: -15rem;
-margin-top: 1.2rem;
 @media only screen and (max-width: 1200px){
-       p {
-           font-size: 1.5rem;
-       } 
-    }
+      width: 40%;
+      }
 `
 
-const ArrowRightImg = Styled.img
-`
-max-width: 1.1rem;
-width: 100%;
-height: 2.1rem; 
-margin-left: 1rem;
-margin-top: 1.2rem;
+// const ProtoText = Styled.div
+// `
+// position: absolute;
+// top: -5%;
+// left: 20%;
+// @media only screen and (max-width: 1200px){
+//        p {
+//            font-size: 1rem;
+//        } 
+//     }
+// `
 
-`
+// const ArrowRightImg = Styled.img
+// `
+// max-width: 1.1rem;
+// width: 100%;
+// height: 2.1rem; 
+// position: absolute;
+// top: 25%;
+// left: 85%;
+// @media only screen and (max-width: 1200px){
+//     width: 70%;
+// }
+// `
 
 const FollowUpText = Styled.div
 `
@@ -655,7 +711,6 @@ height: 2rem;
 const FinalCont = Styled.div
 `
 position: relative;
-display: block;
 max-width: 65.5rem;
 max-height: 35.5rem;
 width: 100%;
@@ -671,7 +726,7 @@ height: 83%;
 top: 5%;
 left: 5.7%;
 justify-content: space-evenly;
-@media only screen and (max-width: 1350px){
+@media only screen and (max-width: 2000px){
     width: 100%;
     height: 82%;
     top: 5%;
@@ -729,4 +784,10 @@ color: #FFF1EC;
 const SolutionGIF = Styled.img
 `
 max-width: 60.6 rem
+widht: 100%;
+heigh: auto;
+margin-left: 3rem;
+  @media only screen and (max-width: 1200px){
+        width: 90%;
+    }
 `

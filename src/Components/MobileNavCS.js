@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Styled, { keyframes } from 'styled-components';
 import { NavLink } from 'react-router-dom';
@@ -11,7 +11,7 @@ const MobileNav = () => {
     <NavCont>
     <LogoImg src={Logo}/>
     <BurgerImg src={Burger}/>
-    <StyledNav>
+    <StyledNav id="sidebar">
     <ul class="navbar">
     <li><Link 
     activeClass="active"
@@ -80,6 +80,23 @@ position: sticky;
 margin-left: 3rem;
 margin-top: 1rem;
 align-items: center;
+display: none;
+:hover {
+ cursor:pointer;
+ }
+// :hover #sidebar{
+//     display: flex;
+//     position: absolute;
+//     right: -20px;
+//     width: 20%;
+//     height: 100%;
+//     top: 10%;
+//     -webkit-animation: slide 0.5s forwards;
+//     animation-timing-function: ease-in-out;
+// }
+    @media only screen and (max-width: 1350px){
+display: flex;
+    }
 `
 const LogoImg = Styled.img
 `
@@ -92,13 +109,14 @@ top: 0px;
 `
 
 const StyledNav = Styled.nav`
+    display: none;
     float: right;
     flex-direction: row;
     font-size: 1.5rem;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 20rem;
-    right: 2rem;
+    max-width: 20%;
+    height: 100%;
      ul {
         display: block;
         list-style: none;
@@ -106,12 +124,6 @@ const StyledNav = Styled.nav`
     li {
         line-height: 2.5;
         text-align: right;
-        :hover {
-          color: #FF7864;
-        }
-    }
-    @media only screen and (max-width: 1400px){
-display: none
     }
     `
 
@@ -121,5 +133,7 @@ max-width: 2.68rem;
 height: 1.75rem;
 margin-right: 3rem;
 margin-top: 1rem;
-
+:active {
+    display: none;
+}
 `

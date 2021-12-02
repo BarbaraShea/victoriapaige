@@ -9,6 +9,7 @@ import FCImage from '../images/ForestryCampImage.png';
 import ProblemHeader from '../images/Problem.png';
 import DarkOne from  '../images/DarkOne.png';
 import DarkTwo from  '../images/DarkTwo.png';
+import DarkThree from  '../images/DarkThree.png';
 import ResearchHeader from '../images/ResearchHeader.png';
 import CompetitiveImg from '../images/analysis.png';
 import SurveyGraphs from '../images/survey.png';
@@ -27,9 +28,9 @@ import UserFlow from '../images/UserFlow.png';
 import FC1 from '../images/FCStyleGuideImg.png';
 import TestCircle from '../images/TestsCircle.png';
 import BrandBanner from '../images/BrandBanner.png';
-import Reservation from '../images/Reservation.png';
-import Outpost from '../images/Outpost.png';
-import Time from '../images/Time.png';
+import FCTest1 from '../images/FCTest1.png';
+import FCTest2 from '../images/FCTest2.png';
+import FCTest3 from '../images/FCTest3.png';
 import FollowUpRect from '../images/FollowUpRect.png';
 import FollowUp from '../images/FollowUp.png';
 import ArrowRight from '../images/ArrowRight.png';
@@ -37,12 +38,15 @@ import White1 from '../images/White1.png';
 import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
 import Return from '../images/Return.png';
-import ProtoBan from '../images/PrototypeBanner.png';
+import ProtoBan from '../images/SeeProto.png';
 import MobileNav from '../Components/MobileNavCS'
+
 const ForestryCamp2 = () => {
+    
     return(
         <>
         <MobileNav/>
+        <div id="page-wrap">
         <LogoNav/>
         <Nav/>
             <FCHeaderContainer id="intro">
@@ -77,16 +81,14 @@ const ForestryCamp2 = () => {
         <Problem>
         <p>"People are still really confused about the difference between our upstairs dining room and downstairs taproom."</p>
         </Problem>
-        <NumbersContainer>
-        <One src={DarkOne}/>
-        <Two src={DarkTwo}/>
-        <Prob>
-        <ul>
-        <li>With two indoor and three outdoor dining spaces, customers don't know which spaces require a reservation and where to eat. </li>
-        <li>Many customers are also not aware that Forestry Camp is associated with Burial Beer, recently voted best small brewery in the world by Craft Beer Brew. </li>
-        </ul>
-        </Prob>
-        </NumbersContainer>
+        <BulletCont>
+        <Number src={DarkOne}/>
+        <p className="prob">With two indoor and three outdoor dining spaces, customers don't know which spaces require a reservation and where to eat. </p>
+        </BulletCont>
+        <BulletCont>
+        <Number src={DarkTwo}/>
+        <p className="prob">Many customers are also not aware that Forestry Camp is associated with Burial Beer, recently voted best small brewery in the world by Craft Beer Brew. </p>
+        </BulletCont>
         <HeaderContainer>
            <Header src={ResearchHeader} id="research"/>
         </HeaderContainer>
@@ -117,9 +119,9 @@ const ForestryCamp2 = () => {
         </BannerContainer>
         <SurveyList>
         <ul>
-            <li><strong> Why visit?</strong> To see the menu and book a reservation.</li>
-            <li><strong> Clues to type of experience?</strong> Photos of the building, menus, and photos of the food.</li>
-            <li><strong> How do we know it's upscale?</strong> Fancy serif fonts, minimalistic design, an "about the chef," and bougie menu descriptors.</li>
+            <li><strong> Why do people visit restaurant websites?</strong> To see the menu and book a reservation.</li>
+            <li><strong> What are people looking for?</strong> Photos of the building, menus, and photos of the food.</li>
+            <li><strong> How do we know it’s upscale?</strong> Fancy serif fonts, minimalistic design, an "about the chef," and bougie menu descriptors.</li>
         </ul>    
        </SurveyList>
         <InterviewHeader> 
@@ -178,28 +180,28 @@ const ForestryCamp2 = () => {
             <p id="user-flow-header"><strong>User Flow</strong></p>
         </MethodText>
         <MethodContainer>
-            <UserFlowImg src={UserFlow}/>
+            <MethodImg src={UserFlow}/>
             <p id="user-flow-text">Since reducing customer confusion was the primary focus of my design, this flow <strong> put me in the shoes of a user.</strong> How would they look for information? A clear page for each restaurant section was the answer.</p>
         </MethodContainer>
         <MethodText>
             <p id="sketches-header"><strong>Sketches</strong></p>
         </MethodText>
         <MethodContainer>
-                <SketchesImg src={Sketches}/>
+                <MethodImg src={Sketches}/>
                 <p id="sketches-text">Physical pencil-and-paper sketching was of utmost importance to me. I tried to sketch <strong> as many crappy ideas as possible,</strong> to help identify the best visual solution to the user's problems.</p>
         </MethodContainer>
         <MethodText>
                  <p id="sketches-header"><strong>Responsive Wireframe</strong></p>
         </MethodText>
         <MethodContainer>
-            <WireframeImg src={Wireframe}/>
+            <MethodImg src={Wireframe}/>
             <p id="wireframe-text"> Once I knew the direction I wanted to pursue, I made responsive wireframes in Figma. I played around with a chessboard layout, and <strong>heavy utilization of negative space</strong> to fulfill the elevated vibe we wanted.</p>
         </MethodContainer>
         <MethodText>
                 <p id="style-header"><strong>Style Guide</strong></p>
         </MethodText>
         <MethodContainer> 
-        <StyleGuide1 src={FC1}/>
+        <MethodImg src={FC1}/>
         <StyleTextCont>
         <p> This was fun. Research showed that fancy restaurants use <strong>minimal color schemes, serif fonts,</strong> and super nice photos. </p>
         <p id="style-text"> I wanted to choose fonts that speak to FC's <strong> focus on restoration and nature, </strong> and use colors that are regularly in the brand's photography.</p> 
@@ -212,18 +214,18 @@ const ForestryCamp2 = () => {
         <p>A usability test was conducted with three participants in Forestry Camp's target market.</p>
         <p><strong>Goals</strong></p>
         </Test>
-         <NumbersContainer>
-        <One src={DarkOne}/>
-        <Two src={DarkTwo}/>
-        <Three src={DarkTwo}/>
-        <TestList>
-        <ul>
-        <li>See if people can define the difference between The Outpost and Forestry Camp.</li>
-        <li>Book a reservation for four people of October 19th at 6:30 in the upstairs dining room.</li>
-        <li>Identify the brand message being Forestry Camp based on the design. What kind of place is it?</li>
-        </ul>
-        </TestList>
-        </NumbersContainer>
+         <BulletCont>
+        <Number src={DarkOne}/>
+        <p className="test">See if people can define the difference between The Outpost and Forestry Camp.</p>
+        </BulletCont>
+        <BulletCont>
+        <Number src={DarkTwo}/>
+        <p className="test">Book a reservation for four people of October 19th at 6:30 in the upstairs dining room.</p>
+        </BulletCont>
+        <BulletCont>
+        <Number src={DarkThree}/>
+        <p className="test">Identify the brand message being Forestry Camp based on the design. What kind of place is it?</p>
+        </BulletCont>
         <Yahoo>
         <p id="final"> Yahoo! 3/3 participants completed goals one and two. </p>
         </Yahoo>
@@ -234,55 +236,47 @@ const ForestryCamp2 = () => {
             <p id="bottom"><strong>elevated, clean, rustic, preservation-oriented, and fancy.</strong></p>
             </BrandText>
         </BrandContainer>
-        <ResCont>
-            <ReservationImg src={Reservation}/>
-        </ResCont>
-        <OutpostCont>
-            <OutpostImg src={Outpost}/>
-            <p> My usability test showed users were confused which page they were on. I pulled some imagery from the original logo to help users know where they were.</p>
-        </OutpostCont>
-        <TimeCont>
-            <TimeImg src={Time}/>
-            <p> Test showed that users were confused why their original time chose (6:30) wasn't available. A quick sentence above the available times will solve that problem!</p>
-        </TimeCont>
-        <PrototypeContainer>
-            <PrototypeBan src={ProtoBan}/>
-            <ProtoText>
-            <p><strong><a href="https://www.figma.com/proto/Mn4Z4cKysGglGqr0QDkWVl/Forestry-Camp?page-id=299%3A4448&node-id=299%3A4479&viewport=288%2C48%2C0.11&scaling=min-zoom&starting-point-node-id=299%3A4479" target="_blank"> See Prototype </a></strong></p>
-            </ProtoText>
-            <ArrowRightImg src={ArrowRight}/>
-        </PrototypeContainer>
+            <TestImg src={FCTest1}/>
+            <TestImg src={FCTest2}/>
+            <TestImg src={FCTest3}/>
+        <ProtoCont id="proto">
+        <div><a href="https://www.figma.com/proto/Mn4Z4cKysGglGqr0QDkWVl/Forestry-Camp?page-id=299%3A4448&node-id=299%3A4479&viewport=288%2C48%2C0.11&scaling=min-zoom&starting-point-node-id=299%3A4479" target="_blank"> <PrototypeBan src={ProtoBan}/> </a></div>
+        </ProtoCont>
         <HeaderContainer>
             <Header id="follow" src={FollowUp}/>
          </HeaderContainer>
         <FollowUpText>
-        <p> It was a great eperience working with such a wonderful and established team.</p>
+        <p> It was a great experience working with such a wonderful and established team.</p>
         </FollowUpText>   
         <FinalCont>
         <FinalRect src={FollowUpRect}/>
             <FinalCont2>
                 <Thoughts><p><strong> Final Thoughts </strong></p> </Thoughts>
                 <BulletCont>
-                    <W1 src={White1}/>
+                    <Number src={White1}/>
                     <p> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp.</p>
                 </BulletCont>
                 <BulletCont>
-                    <W2 src={White2}/>
+                    <Number src={White2}/>
                     <p> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature.</p>
                 </BulletCont>
                 <BulletCont>
-                    <W3 src={White3}/>
+                    <Number src={White3}/>
                     <p id="three"> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good.</p>
                 </BulletCont>
             </FinalCont2>
         </FinalCont>
         <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
+        </div>
     </>
     )
 };
 
 export default ForestryCamp2;
-
+const ProtoCont =Styled.div
+`
+position: static;
+`
 
 const FCHeaderContainer = Styled.div
     `
@@ -291,7 +285,7 @@ flex-direction: column;
 margin-top: 4.5%;
 margin-left: 4.5%;
 margin-right: 4.5%;
-margin-bottom: 4.5%;
+margin-bottom: 2%;
 `
 
 const FC = Styled.img
@@ -308,8 +302,7 @@ const FCImg = Styled.img
     max-width: 65rem;
     width: 100%;
     height: auto;
-    left: 4.375rem;
-    margin-top: -3rem;
+    margin-left: 2rem;
     @media only screen and (max-width: 1350px){
         width: 90%;
         margin-left: 1rem;
@@ -353,7 +346,7 @@ const HeaderContainer = Styled.div
   position: static;
   display: flex;
   margin-top: 3rem;
-  margin-left: 2rem;
+margin-left: 3rem;
 flex-direction: column;
 @media only screen and (max-width: 1200px){
         width: 70%;
@@ -379,7 +372,7 @@ const Problem = Styled.div
 line-height: 1.2;
 width: 62.4rem;
 padding-top: 3rem;
-margin-left: 1rem;
+margin-left: 3rem;
  p {
     font-size: 2.2rem;
     font-weight: 500;
@@ -392,72 +385,12 @@ margin-left: 1rem;
     }
 `
 
-const Prob = Styled.div
-`
-flex-direcction: column;
-max-width: 53.75rem;
-width: 100%;
-height: auto;
-margin-left: 5rem;
-margin-top: -10rem;
-    ul{
-        list-style: none;
-    }
-    li{
-        margin-bottom: 2.2rem;;
-        // margin-right: -20px;
-        font-size: 1.5rem;
-        line-height: 1.5;
-    }
-     @media only screen and (max-width: 1200px){
-        width: 80%;
-        margin-top: -9rem;
-       li{
-           font-size: 1rem;
-       }
-    }
-`
 
-const One = Styled.img
-`
-flex-direction: row;
-width: 2rem;
-height: auto;
-margin-top: 2rem;
-`
-
-const Two = Styled.img
-`
-flex-direction: row;
-width: 2rem;
-height: auto;
-margin-top: 5rem;
-  @media only screen and (max-width: 1200px){
-       margin-top: 4rem;
-    }
-`
-const Three = Styled.img
-`
-flex-direction: row;
-width: 2rem;
-height: auto;
-margin-top: 5rem;
-  @media only screen and (max-width: 1200px){
-       margin-top: 4rem;
-    }
-`
-
-const NumbersContainer = Styled.div
-`
-display: flex;
-flex-direction: column;
-margin-left: 1.5rem;
-`
 
 const ComAna = Styled.div
 `
 position: static;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
 p{
 font-size: 2rem;
@@ -470,7 +403,7 @@ position: static;
 max-width: 60.6rem;
 width: 100%;
 height: auto;
-margin-left: 1.5rem;
+    margin-left: 3rem;
 margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 90%;
@@ -480,7 +413,7 @@ margin-top: 1.5rem;
 const ResearchText = Styled.div
 `
 position: static;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1rem;
 font-size: 1.5rem;
 line-height: 4rem;
@@ -507,7 +440,7 @@ li {
 const SurveyHeader = Styled.div
 `
 position: static;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
 p{
 font-size: 2rem;
@@ -520,7 +453,7 @@ position: static;
 max-width: 59rem;
 width: 100%
 height: auto;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 90%;
@@ -533,7 +466,7 @@ position: static;
 max-width: 59rem;
 width: 100%
 height: auto;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
 font-size: 1.5rem;
 @media only screen and (max-width: 1200px){
@@ -558,6 +491,7 @@ const BannerContainer = Styled.div
 `
 position: static;
 margin-top: 2rem;
+margin-left: 3rem;
 p{
     font-size: 1.6rem;
     margin-left: 2.8rem;
@@ -590,6 +524,7 @@ const InterviewHeader = Styled.div
 position: static;
 margin-left: 1.5rem;
 margin-top: 3rem;
+margin-left: 3rem;
 p{
 font-size: 2rem;
 }
@@ -601,7 +536,7 @@ position: static;
 max-width: 59rem;
 width: 100%
 height: auto;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
 font-size: 1.5rem;
 @media only screen and (max-width: 1200px){
@@ -623,7 +558,7 @@ margin-top: 2rem;
 max-width: 59rem;
 width: 100%;
 height: auto;
-
+margin-left: 3rem;
 `
 const PersonImg = Styled.img
 `
@@ -646,6 +581,7 @@ margin-top: 2rem;
 max-width: 59rem;
 width: 100%;
 height: auto;
+margin-left: 3rem;
 
 `
 const Quote = Styled.div
@@ -674,7 +610,7 @@ position: static;
 max-width: 60rem;
 width: 100%;
 height: auto;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 90%;
@@ -697,7 +633,7 @@ const OriginalText = Styled.div
 `
 position: static;
 margin-top: 1.5rem;
-margin-left: 1.5rem;
+margin-left: 3rem;
 ul{
     margin-left: 1.5rem;
     line-height: 1.2;
@@ -714,7 +650,7 @@ position: static;
 max-width: 79rem;
 width: 100%;
 height: auto;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 1.5rem;
  @media only screen and (max-width: 1200px){
         width: 90%;
@@ -726,7 +662,7 @@ const SolutionText = Styled.div
 `
 position: static;
 margin-top: -8rem;
-margin-left: 2.5rem;
+margin-left: 3.5rem;
 margin-bottom: 3rem;
 max-width: 38rem;
 width: 100%;
@@ -745,7 +681,7 @@ flex-direction: row;
 max-width: 65rem;
 width: 100%;
 height: auto;
-margin-left: 2rem;
+margin-left: 3rem;
 margin-top: 2rem;
 align-items: center;
  p{
@@ -768,13 +704,13 @@ align-items: center;
  }
 }
 `
-const UserFlowImg = Styled.img
+
+const MethodImg = Styled.img
 `
 position: static;
 max-width: 39rem;
 width: 100%
 height: auto;
-margin-left: 1.5rem;
 margin-top: 1.5rem;
  @media only screen and (max-width: 1200px){
         width: 80%;
@@ -782,35 +718,6 @@ margin-top: 1.5rem;
         justify-content: center;
     }
 `
-
-const SketchesImg = Styled.img
-`
-position: static;
-max-width: 39rem;
-width: 100%
-height: auto;
-margin-left: 1.5rem;
-margin-top: 1.5rem;
-@media only screen and (max-width: 1200px){
-        width: 80%;
-        margin-top: 1rem;
-    }
-`
-
-const WireframeImg = Styled.img
-`
-position: static;
-max-width: 39rem;
-width: 100%
-height: auto;
-margin-left: 1.5rem;
-margin-top: 1.5rem;
-@media only screen and (max-width: 1200px){
-        width: 80%;
-        margin-top: 1rem;
-    }
-`
-
 
 const MethodText = Styled.div
 `
@@ -876,7 +783,7 @@ margin-left: 1.5rem;
 const Test = Styled.div
 `
 position: static;
-margin-left: 2rem;
+margin-left: 3rem;
 p{
   margin-bottom: 1.5rem;
 margin-top: 1.5rem;  
@@ -913,12 +820,12 @@ margin-left: 5rem;
 const Yahoo = Styled.div
 `
 position: static;
-margin-left: 2rem;
+margin-left: 3rem;
 `
 
 const BrandContainer = Styled.div
 `
-position: static;
+position: relative;
 margin-top: 3rem;
 max-width: 52.4rem;
 width: 100%;
@@ -927,7 +834,6 @@ height: auto;
 
 const BrandBannerImg = Styled.img
 `
-max-width: 52.4rem;
 width: 100%;
 height: auto;
 `
@@ -935,184 +841,49 @@ height: auto;
 
 const BrandText = Styled.div
 `
+position: absolute;
 max-width: 52.4rem;
 width: 100%;
 height: auto;
 font-size: 1.6rem;
-margin-top: -8rem;
+top: -8%;
+left: 2%;
 text-align: center;
 p{
-    margin-bottom: 0.8rem;
+    margin-bottom: -0.5rem;
 }
 #bottom{
     font-size: 1.5rem;
-    @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 1000px){
         font-size: 1rem;
 }
-}
-    @media only screen and (max-width: 1200px){
-        margin-top: -7rem;
-    }
-    @media only screen and (max-width: 600px){
-        margin-top: -5rem;
-    }
 `
 
-const ReservationImg = Styled.img
+const TestImg = Styled.img
 `
 position: static;
-max-width: 60.8rem;
+max-width: 60rem;
 width: 100%;
 height: auto;
-margin-left: 1.5rem;
+margin-left: 3rem;
 margin-top: 5rem;
 @media only screen and (max-width: 1200px){
         width: 80%;
     }
 `
 
-const ReservationText = Styled.div
-`
-margin-top: -70rem;
-margin-left: 43.75rem;
-max-width: 20rem;
-width: 100%;
-height: auto;
-@media only screen and (max-width: 1200px){
-        display: none;
-    }
-`
-const ReservationText2 = Styled.div
-`
-margin-top: 50rem;
-margin-left: 4.5rem;
-max-width: 20rem;
-width: 100%;
-height: auto;
-p{
-    text-align: right;
-}
-@media only screen and (max-width: 1200px){
-        display: none;
-    }  
-`
-const OutpostImg = Styled.img
-`
-position: static;
-max-width: 47.1rem;
-width: 100%;
-height: auto;
-margin-top: 1rem;
-margin-left: 1.5rem;
- @media only screen and (max-width: 1200px){
-        width: 80%;
-        margin-top: 1rem;
-        margin-left: -1rem;
-
-    }
-
-`
-const TimeImg = Styled.img
-`
-position: static;
-max-width: 39.4rem;
-width: 100%;
-height: auto;
-margin-left: 1.5rem;
-margin-top: 1.5rem;
- @media only screen and (max-width: 1200px){
-        width: 80%;
-        margin-top: 1rem;
-        margin-left: -1rem;
-
-    }
-`
-
-
-const OutpostCont = Styled.div
-`
-position: static;
-display: flex;
-flex-direction: row;
-margin-left: 3rem;
-p{
-    margin-top: 4rem;
-    margin-left: -5rem;
-    max-width: 20rem;
-    width: 100%;
-    height: auto;
-    @media only screen and (max-width: 1200px){
-        display: none;
-    }  
-}
-`
-
-const TimeCont = Styled.div
-`
-display: flex;
-flex-direction: row;
-position: static;
-margin-left: 3rem;
-p{
-    margin-top: 20rem;
-    margin-left: 1rem;
-    max-width: 20rem;
-    width: 100%;
-    height: auto;
-    @media only screen and (max-width: 1200px){
-        display: none;
-    }  
- 
-}
-`
-
-const ResCont = Styled.div
-`
-position: static;
-`
-
-const PrototypeContainer = Styled.div
-`
-position: relative;
-margin-top: 3rem;
-margin-bottom: 2rem;
-@media only screen and (max-width: 1200px){
-      width: 70%;
-      }
-`
 const PrototypeBan = Styled.img
 `
 max-width: 17.5rem;
 width: 100%;
 height: auto;
 margin-left: 1.5rem;
+margin-top:2rem;
 @media only screen and (max-width: 1200px){
-      width: 70%;
+      width: 40%;
       }
 `
 
-const ProtoText = Styled.div
-`
-postion: absolute;
-width: 100%;
-margin-left: 5%;
-margin-top: 5%;
-@media only screen and (max-width: 1200px){
-       p {
-           font-size: 1rem;
-       } 
-    }
-`
-
-const ArrowRightImg = Styled.img
-`
-max-width: 1.1rem;
-width: 100%;
-height: 2.1rem; 
-margin-left: 1rem;
-margin-top: 1.2rem;
-
-`
 
 const FollowUpText = Styled.div
 `
@@ -1121,69 +892,76 @@ max-width: 60rem;
 width: 100%;
 height: auto;
 margin-top: 2rem;
-margin-left: 2rem;
+margin-left: 3rem;
 margin-bottom: 2rem;
 `
 const FinalRect = Styled.img
 `
 display: block;
 max-width: 65.5rem;
-height: auto;
+height: 42rem;
 width: 100%;
 @media only screen and (max-width: 1200px){
-        width: 100%;
-        height: 30.5rem;
-
+        width: 120%;
     }
 `
-const W1 = Styled.img
+const Number = Styled.img
 `
 flex-direction: row;
 width: 2rem;
 height: 2rem;
 `
-
-const W2 = Styled.img
-`
-flex-direction: row;
-width: 2rem;
-height: 2rem;
-`
-const W3 = Styled.img
-`
-flex-direction: row;
-width: 2rem;
-height: 2rem;
-`
-
 
 const FinalCont = Styled.div
 `
 position: relative;
 display: block;
 max-width: 65.5rem;
-max-height: 35.5rem;
+max-height: 40rem;
+margin-top: 3rem;
+margin-bottom: 2rem;
 width: 100%;
 `
 
 const FinalCont2 = Styled.div
 `
 position: absolute;
-display: flex;
-flex-direction: column;
 width: 76.5%;
 height: 83%;
 top: 1.5%;
 left: 5.7%;
-justify-content: space-evenly;
 @media only screen and (max-width: 1350px){
     width: 100%;
-    height: 82%;
     top: 5%;
     left: 2%;
-    justify-content: space-evenly;
 }
 `
+
+const BulletCont = Styled.div
+`
+display: flex;
+flex-direction:row;
+margin-right: 5%;
+margin-bottom: 2.5rem;
+align-items: baseline;
+margin-left: 4rem;
+p{
+    color: #FFF1EC;
+    margin-left: 2rem;
+    max-width: 50rem;
+}
+
+.test {
+   color: #360713;
+   max-width: 52rem;
+}
+
+.prob{
+   color: #360713;
+   max-width: 58rem;
+}
+`
+
 const SolutionHeader = Styled.img
 `
 max-width: 29rem;
@@ -1210,23 +988,6 @@ margin-top: 3rem;
 
 `
 
-const BulletCont = Styled.div
-`
-display: flex;
-flex-direction:row;
-margin-left: 2rem;
-margin-bottom: 2.5rem;
-margin-right: 1.5rem;
-p{
-    color: #FFF1EC;
-    margin-left: 2rem;
-    max-width: 50rem;
-}
-#three {
-    align-self: flex-start;
-}
-`
-
 
 const ReturnImg = Styled.img 
     `
@@ -1234,6 +995,7 @@ const ReturnImg = Styled.img
     margin-top: 3rem;
     margin-bottom: 3rem;
     max-width: 18.75rem;
+    margin-left: 3rem;
     width: 100%;
     height: auto;
      @media only screen and (max-width: 1200px){
