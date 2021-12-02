@@ -53,6 +53,7 @@ const ForestryCamp2 = () => {
                 <FC className="headers" src={FCHeader} alt='Forestry CAmp Case Study'/>
             </FCHeaderContainer>  
             <FCImg src={FCImage}/>
+        <TableCont> 
         <Table>
             <table>
             <tr>
@@ -75,6 +76,7 @@ const ForestryCamp2 = () => {
             </tr>
             </table>
         </Table>
+        </TableCont>
         <HeaderContainer>
             <Header src={ProblemHeader} id="problem"/>
         </HeaderContainer>
@@ -113,10 +115,7 @@ const ForestryCamp2 = () => {
         <SurveyText>
         <p> I surveyed 15 people from Forestry Camp's target market to hear more about their expectations for a fine dining restaurant. To get <strong> quantative data </strong> I used a likert scale, and for <strong>qualitative data</strong>, multiple-choice and open answer questions.</p> 
         </SurveyText>
-        <BannerContainer> 
         <SurvBan src={SurveyBanner}/>
-        <p> <strong> Okay, you did a survey. And? </strong> </p>
-        </BannerContainer>
         <SurveyList>
         <ul>
             <li><strong> Why do people visit restaurant websites?</strong> To see the menu and book a reservation.</li>
@@ -130,6 +129,7 @@ const ForestryCamp2 = () => {
          <InterviewText>
         <p> Forestry Camp has an established brand base. I spoke at length with the three stakeholders below, who have a very clear pulse on their needs for Forestry Camp's upcoming website.</p> 
         </InterviewText>
+        <PicsQuoteCont>
         <PicsContainer>
         <PersonImg src={Brand}/>
         <PersonImg src={Manager}/>
@@ -149,6 +149,7 @@ const ForestryCamp2 = () => {
         <p> "The cool thing is, most of the beers at Forestry Camp wouldn't be available without relationship with Burial. We want poeple to know that."</p>
         </Quote>
         </QuoteContainer>
+        </PicsQuoteCont>
         <HeaderContainer>
          <GapHeader src={Gap} id="gap" className="gapIMG"/>
         </HeaderContainer>
@@ -273,9 +274,28 @@ const ForestryCamp2 = () => {
 };
 
 export default ForestryCamp2;
+const PicsQuoteCont = Styled.div
+`
+display: flex;
+flex-direction: column;
+    @media only screen and (max-width: 600px){
+        display: flex;
+        flex-direction: row;
+    }
+
+`
+
+
 const ProtoCont =Styled.div
 `
 position: static;
+`
+
+const TableCont =Styled.div
+`
+position: static;
+display: block;
+margin-bottom: 2%;
 `
 
 const FCHeaderContainer = Styled.div
@@ -313,7 +333,7 @@ const Table = Styled.div
     `
     max-width: 65rem;
     height: 2.875rem;
-    margin-left: 3rem;
+    margin-left: 4.5%;
     // right: 22.5rem;
     // top: 35rem;
     margin-bottom: 20rem;
@@ -345,8 +365,8 @@ const HeaderContainer = Styled.div
 `
   position: static;
   display: flex;
-  margin-top: 3rem;
-margin-left: 3rem;
+  margin-top: 6%;
+margin-left: 4.5%;
 flex-direction: column;
 @media only screen and (max-width: 1200px){
         width: 70%;
@@ -372,7 +392,7 @@ const Problem = Styled.div
 line-height: 1.2;
 width: 62.4rem;
 padding-top: 3rem;
-margin-left: 3rem;
+margin-left: 4.5%;
  p {
     font-size: 2.2rem;
     font-weight: 500;
@@ -390,7 +410,7 @@ margin-left: 3rem;
 const ComAna = Styled.div
 `
 position: static;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 p{
 font-size: 2rem;
@@ -403,7 +423,7 @@ position: static;
 max-width: 60.6rem;
 width: 100%;
 height: auto;
-    margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 90%;
@@ -413,7 +433,7 @@ margin-top: 1.5rem;
 const ResearchText = Styled.div
 `
 position: static;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1rem;
 font-size: 1.5rem;
 line-height: 4rem;
@@ -440,7 +460,7 @@ li {
 const SurveyHeader = Styled.div
 `
 position: static;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 p{
 font-size: 2rem;
@@ -453,7 +473,7 @@ position: static;
 max-width: 59rem;
 width: 100%
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 90%;
@@ -466,7 +486,7 @@ position: static;
 max-width: 59rem;
 width: 100%
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 font-size: 1.5rem;
 @media only screen and (max-width: 1200px){
@@ -480,31 +500,22 @@ font-size: 1.5rem;
 const SurvBan = Styled.img
 `
 position: static;
-width: 24rem;
+max-width: 24rem;
 height: auto;
-margin-left: 0.5rem;
 margin-top: 1.5rem;
-
-`
-
-const BannerContainer = Styled.div
-`
-position: static;
-margin-top: 2rem;
-margin-left: 3rem;
-p{
-    font-size: 1.6rem;
-    margin-left: 2.8rem;
-    margin-top: -4.2rem;
+margin-left: 4.5%;
+@media only screen and (max-width: 1200px){
+    width: 80%;
 }
 `
+
 const SurveyList = Styled.div
 `
 position: static;
 font-size: 1.5rem;
 line-height: 1.4;
-margin-left: 3rem;
-margin-top: 3rem;
+margin-left: 4.5%;
+margin-top: 4.5%;
 max-width: 59rem;
 width: 100%
 height: auto;
@@ -524,7 +535,7 @@ const InterviewHeader = Styled.div
 position: static;
 margin-left: 1.5rem;
 margin-top: 3rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 p{
 font-size: 2rem;
 }
@@ -536,7 +547,7 @@ position: static;
 max-width: 59rem;
 width: 100%
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 font-size: 1.5rem;
 @media only screen and (max-width: 1200px){
@@ -558,7 +569,14 @@ margin-top: 2rem;
 max-width: 59rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
+@media only screen and (max-width: 600px){
+        display: flex;
+        flex-direction: column;
+        margin-right: 0rem;
+        justify-content: space-around;
+        row-gap: 1rem;
+    }
 `
 const PersonImg = Styled.img
 `
@@ -568,6 +586,10 @@ height: auto;
 @media only screen and (max-width: 1200px){
 width: 30%;
 height: 30%;
+}
+@media only screen and (max-width: 600px){
+width: 100%;
+height: auto;
 }
 `
 
@@ -581,7 +603,13 @@ margin-top: 2rem;
 max-width: 59rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
+margin-right: 4.5%;
+ @media only screen and (max-width: 600px){
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
 
 `
 const Quote = Styled.div
@@ -610,7 +638,7 @@ position: static;
 max-width: 60rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 90%;
@@ -633,7 +661,7 @@ const OriginalText = Styled.div
 `
 position: static;
 margin-top: 1.5rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 ul{
     margin-left: 1.5rem;
     line-height: 1.2;
@@ -650,7 +678,7 @@ position: static;
 max-width: 79rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
  @media only screen and (max-width: 1200px){
         width: 90%;
@@ -662,7 +690,7 @@ const SolutionText = Styled.div
 `
 position: static;
 margin-top: -8rem;
-margin-left: 3.5rem;
+margin-left: 4.5%;
 margin-bottom: 3rem;
 max-width: 38rem;
 width: 100%;
@@ -681,7 +709,7 @@ flex-direction: row;
 max-width: 65rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 2rem;
 align-items: center;
  p{
@@ -693,9 +721,10 @@ align-items: center;
  }
  @media only screen and (max-width: 1200px){
     flex-wrap: wrap;
+    justify-content: flex-start;
     p{
     margin-top: 1.5rem;
-    margin-left: 1.5rem;
+    margin-left: 0rem;
     width: 100%;
     height: auto;
     }
@@ -722,7 +751,7 @@ margin-top: 1.5rem;
 const MethodText = Styled.div
 `
 postion: static;
-margin-left: 3.2rem;
+margin-left: 4.8%;
 margin-top: 3rem;
 // justify-content: center;
 // align-items: center;
@@ -783,7 +812,7 @@ margin-left: 1.5rem;
 const Test = Styled.div
 `
 position: static;
-margin-left: 3rem;
+margin-left: 4.5%;
 p{
   margin-bottom: 1.5rem;
 margin-top: 1.5rem;  
@@ -797,7 +826,7 @@ flex-dreiction: column;
 max-width: 53.75rem;
 width: 100%;
 height: auto;
-margin-left: 5rem;
+margin-left: 8%;
     ul{
         list-style: none;
         margin-top: -18rem;
@@ -820,13 +849,13 @@ margin-left: 5rem;
 const Yahoo = Styled.div
 `
 position: static;
-margin-left: 3rem;
+margin-left: 4.5%;
 `
 
 const BrandContainer = Styled.div
 `
 position: relative;
-margin-top: 3rem;
+margin-top: 4.5%;
 max-width: 52.4rem;
 width: 100%;
 height: auto;
@@ -836,6 +865,9 @@ const BrandBannerImg = Styled.img
 `
 width: 100%;
 height: auto;
+  @media only screen and (max-width: 1000px){
+        height: 7.5rem;
+        }
 `
 
 
@@ -848,14 +880,16 @@ height: auto;
 font-size: 1.6rem;
 top: -8%;
 left: 2%;
+right: 2%;
 text-align: center;
 p{
     margin-bottom: -0.5rem;
 }
 #bottom{
     font-size: 1.5rem;
-    @media only screen and (max-width: 1000px){
+    @media only screen and (max-width: 600px){
         font-size: 1rem;
+        margin-right: 5%;
 }
 `
 
@@ -865,8 +899,8 @@ position: static;
 max-width: 60rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
-margin-top: 5rem;
+margin-left: 4.5%;
+margin-top: 5%;
 @media only screen and (max-width: 1200px){
         width: 80%;
     }
@@ -877,7 +911,7 @@ const PrototypeBan = Styled.img
 max-width: 17.5rem;
 width: 100%;
 height: auto;
-margin-left: 1.5rem;
+margin-left: 4.5%;
 margin-top:2rem;
 @media only screen and (max-width: 1200px){
       width: 40%;
@@ -892,7 +926,7 @@ max-width: 60rem;
 width: 100%;
 height: auto;
 margin-top: 2rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-bottom: 2rem;
 `
 const FinalRect = Styled.img
@@ -944,7 +978,7 @@ flex-direction:row;
 margin-right: 5%;
 margin-bottom: 2.5rem;
 align-items: baseline;
-margin-left: 4rem;
+margin-left: 4%;
 p{
     color: #FFF1EC;
     margin-left: 2rem;
@@ -992,13 +1026,13 @@ margin-top: 3rem;
 const ReturnImg = Styled.img 
     `
     position: static;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 7%;
+    margin-left: 3%;
+    margin-bottom: 7%;
     max-width: 18.75rem;
-    margin-left: 3rem;
     width: 100%;
     height: auto;
-     @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 1200px){
         width: 50%;
     }
     `

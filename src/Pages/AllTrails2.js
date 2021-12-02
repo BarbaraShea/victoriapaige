@@ -39,7 +39,7 @@ import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
 import Return from '../images/Return.png';
 import ProtoBan from '../images/PrototypeBanner.png';
-
+import NavBar2 from ''
 const AllTrails = () => {
     return (
         <>

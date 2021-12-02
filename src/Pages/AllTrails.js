@@ -3,6 +3,7 @@ import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
 import Nav from '../Components/Nav.js';
+import NavBar2 from '../Components/NavBar2.js';
 import LogoNav from "../Components/LogoNav.js";
 import ATOpener from '../images/Alltrails.png';
 import ATHeader from '../images/AlltrailsHeader.png';
@@ -275,12 +276,12 @@ position: static;
 
 const ATHeaderContainer = Styled.div
     `
-display: flex;
+   display: flex;
 flex-direction: column;
 margin-top: 4.5%;
 margin-left: 4.5%;
 margin-right: 4.5%;
-margin-bottom: 4.5%;
+margin-bottom: 2%;
 
 `
 
@@ -297,10 +298,10 @@ const ATImg = Styled.img
     max-width: 65rem;
     width: 100%;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 2rem;
     @media only screen and (max-width: 1350px){
         width: 90%;
-        align-items: center;
+        margin-left: 1rem;
     }
     `
 
@@ -341,7 +342,7 @@ const HeaderContainer = Styled.div
   position: static;
   display: flex;
   margin-top: 4rem;
-  margin-left: 3rem;
+margin-left: 4.5%;
 flex-direction: column;
 @media only screen and (max-width: 1200px){
         width: 70%;
@@ -360,7 +361,7 @@ height: auto;
 const ProblemText = Styled.div
 `
 position: static;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 2rem;
 max-width: 62rem;
 #quote{
@@ -387,7 +388,7 @@ const ResearchText1 = Styled.div
 `
 position: static;
 max-width: 62rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1rem;
 font-size: 1.5rem;
 line-height: 1.5;
@@ -409,7 +410,7 @@ position: static;
 max-width: 60.6rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 @media only screen and (max-width: 1200px){
         width: 90%;
@@ -418,7 +419,7 @@ margin-top: 1.5rem;
 const ResearchHeaders = Styled.div
 `
 position: static;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 p{
 font-size: 2rem;
@@ -431,7 +432,7 @@ position: static;
 display: flex;
 flex-direction: row;
 margin-top: 5rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 gap: 1.5rem;
  @media only screen and (max-width: 1350px){
         flex-wrap: wrap;
@@ -475,17 +476,14 @@ width: 100%;
 const InsightsRect = Styled.img
 `
 display: block;
-max-width: 65.5rem;
+max-width: 100%;
 height: 42rem;
-width: 100%;
-@media only screen and (max-width: 1200px){
-        width: 120%;
-    }
+
 `
 
 const InsightsBullets = Styled.div
 `
-margin-left: 4rem;
+margin-left: 7%;
 margin-bottom: 1.5rem;
 margin-right: 5%;
 margin-top: 4%;
@@ -496,6 +494,12 @@ color: #FFF1EC;
     margin-bottom: 1rem;
     margin-top: 2rem;
     font-weight: 500;
+}
+@media only screen and (max-width: 450px){
+    // margin-left: 2rem;
+    margin-top: 1%;
+    line-height: 1.3;
+
 }
 
 `
@@ -511,6 +515,9 @@ font-size: 1.5rem;
 }
 }
 color: #FFF1EC;
+@media only screen and (max-width: 600px){
+    margin-top: -1rem;
+}
 `
 
 const InsightsCont2 = Styled.div
@@ -530,7 +537,7 @@ left: 5.7%;
 const GapText = Styled.div
 `
 max-width: 62rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 2rem;
 #quote{
     font-size: 2.2rem;
@@ -547,7 +554,7 @@ p {
 const SolutionText = Styled.div
 `
 margin-top: 3rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 max-width: 62rem;
 `
 const AppsCont = Styled.div
@@ -559,7 +566,7 @@ const AppsImg = Styled.img
 `
 position: absolute;
 position: static;
-margin-left: 2rem;
+margin-left: 4%;
 max-width: 57rem;
 width: 100%;
 height: auto;
@@ -594,7 +601,7 @@ overflow: hidden;
 const MethodText = Styled.div
 `
 postion: static;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 3rem;
 p{
     font-size: 2rem;
@@ -615,7 +622,7 @@ justify-content: space-evenly;
 max-width: 60rem;
 width: 100%;
 height: auto;
-margin-left: 2rem;
+margin-left: 4%;
 margin-top: 2rem;
 align-items: center;
  p{
@@ -624,6 +631,7 @@ align-items: center;
  }
  @media only screen and (max-width: 1200px){
     flex-wrap: wrap;
+    justify-content: flex-start;
     p{
     margin-top: 1.5rem;
     width: 100%;
@@ -647,8 +655,7 @@ margin-top: 1.5rem;
  @media only screen and (max-width: 1200px){
         width: 80%;
         margin-top: 1rem;
-        margin-left: -1rem;
-
+        margin-left:0rem;
     }
 `
 
@@ -659,9 +666,10 @@ display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 max-width: 60.6rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 @media only screen and (max-width: 1000px){
     flex-wrap: wrap;
+    justify-content: flex-start;
     }
 `
 
@@ -710,8 +718,7 @@ const FeatureText = Styled.div
 position: static;
 margin-top: 3rem;
 max-width: 66.6rem;
-margin-left: 3rem;
-
+margin-left: 4.5%;
 `
 const One = Styled.img
 `
@@ -733,7 +740,7 @@ display: flex;
 flex-direction: row;
 justify-content: flex-start;
 max-width: 50rem;
-margin-left: 3.5rem;
+margin-left: 5%;
 align-items: center;
 margin-bottom: 1rem;
 p {
@@ -746,7 +753,7 @@ const Test = Styled.div
 position: static;
 margin-top: 3rem;
 max-width: 66.6rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-bottom: 2rem;
 #goals {
     margin-top: 2rem;
@@ -758,8 +765,8 @@ position: static;
 max-width: 60.5rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
-margin-top: 5rem;
+margin-left: 4.5%;
+margin-top: 5%;
 @media only screen and (max-width: 1200px){
         width: 80%;
     }
@@ -770,7 +777,7 @@ const PrototypeBan = Styled.img
 max-width: 17.5rem;
 width: 100%;
 height: auto;
-margin-left: 1.5rem;
+margin-left: 4.5%;
 margin-top:2rem;
 @media only screen and (max-width: 1200px){
       width: 40%;
@@ -783,8 +790,8 @@ position: static;
 max-width: 60rem;
 width: 100%;
 height: auto;
-margin-top: 2rem;
-margin-left: 2rem;
+margin-top: 2.5%;
+margin-left: 4%;
 margin-bottom: 2rem;
 `
 
@@ -794,9 +801,6 @@ display: block;
 max-width: 65.5rem;
 height: 42rem;
 width: 100%;
-@media only screen and (max-width: 1200px){
-        width: 120%;
-    }
 `
 const W1 = Styled.img
 `
@@ -822,7 +826,7 @@ const FinalCont = Styled.div
 `
 position: relative;
 display: block;
-max-width: 65.5rem;
+max-width: 100%;
 max-height: 40rem;
 margin-top: 3rem;
 margin-bottom: 2rem;
@@ -849,7 +853,7 @@ display: flex;
 flex-direction:row;
 margin-right: 5%;
 margin-top: 4%;
-margin-left: 2rem;
+margin-left: 4%;
 // justify-content: space-between;
 margin-bottom: 2.5rem;
 p{
@@ -865,9 +869,9 @@ p{
 const ReturnImg = Styled.img 
     `
     position: static;
-    margin-top: 5rem;
-    margin-left: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 7%;
+    margin-left: 3%;
+    margin-bottom: 7%;
     max-width: 18.75rem;
     width: 100%;
     height: auto;
@@ -880,7 +884,7 @@ const Thoughts = Styled.div
 p{
 font-size: 2rem;
 margin-bottom: 2rem;
-margin-left: 1rem;
+margin-left: 0rem;
 margin-top: 3rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;

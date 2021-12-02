@@ -12,6 +12,13 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
 #page-wrap {
   padding-bottom: 10px;
   padding-top: 10px;
@@ -42,7 +49,7 @@ body {
 
 p {
   font-size: 1.5rem;
-  @media only screen and (max-width: 1200px){
+  @media only screen and (max-width: 600px){
             font-size: 1rem;
 };
 

@@ -14,7 +14,6 @@ import AllTrails from "./Pages/AllTrails";
 import Aloft from "./Pages/Aloft";
 import GlobalStyle from "./Components/GlobalStyle";
 import ScrollToTop from "./Components/ScrollToTop";
-
 function App() {
   return (
    <>
