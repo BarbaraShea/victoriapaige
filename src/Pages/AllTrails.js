@@ -307,14 +307,10 @@ const ATImg = Styled.img
 
     const Table = Styled.div
     `
-    width: 70rem;
-    height: 2.875rem;
-    max-width: 65rem;
-    margin-left: 3rem;
-    margin-bottom: 15rem;
-    
+    max-width: 60rem;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
      ul {
-        display: block;
         list-style: none;
     };
     li {
@@ -326,13 +322,12 @@ const ATImg = Styled.img
     font-size: 1.5rem;
     }
     @media only screen and (max-width: 1200px){
-        width: 100%;
-        margin-left: 1rem;
+        width: 90%;
         td {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         li {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
     }

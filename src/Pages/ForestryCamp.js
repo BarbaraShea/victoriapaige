@@ -52,8 +52,7 @@ const ForestryCamp2 = () => {
             <FCHeaderContainer id="intro">
                 <FC className="headers" src={FCHeader} alt='Forestry CAmp Case Study'/>
             </FCHeaderContainer>  
-            <FCImg src={FCImage}/>
-        <TableCont> 
+        <FCImg src={FCImage}/>
         <Table>
             <table>
             <tr>
@@ -76,7 +75,6 @@ const ForestryCamp2 = () => {
             </tr>
             </table>
         </Table>
-        </TableCont>
         <HeaderContainer>
             <Header src={ProblemHeader} id="problem"/>
         </HeaderContainer>
@@ -291,12 +289,6 @@ const ProtoCont =Styled.div
 position: static;
 `
 
-const TableCont =Styled.div
-`
-position: static;
-display: block;
-margin-bottom: 2%;
-`
 
 const FCHeaderContainer = Styled.div
     `
@@ -331,15 +323,10 @@ const FCImg = Styled.img
 
 const Table = Styled.div
     `
-    max-width: 65rem;
-    height: 2.875rem;
+    max-width: 60rem;
     margin-left: 4.5%;
-    // right: 22.5rem;
-    // top: 35rem;
-    margin-bottom: 20rem;
-    
+    margin-right: 4.5%;
      ul {
-        display: block;
         list-style: none;
     };
     li {
@@ -351,39 +338,34 @@ const Table = Styled.div
     font-size: 1.5rem;
     }
     @media only screen and (max-width: 1200px){
-        width: 100%;
-        margin-left: 1rem;
+        width: 90%;
         td {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         li {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
+    }
     }
     `
 const HeaderContainer = Styled.div
 `
   position: static;
   display: flex;
-  margin-top: 6%;
+  margin-top: 4rem;
 margin-left: 4.5%;
 flex-direction: column;
 @media only screen and (max-width: 1200px){
         width: 70%;
+}
 `
 
 const Header = Styled.img
 `
+position: static;
 max-width: 21.4rem;
 width: 100%;
 height: auto;
-#gap {
-    max-width: 13.5rem;
-    background-color: blue;
-}
-#solution {
-    max-width: 25rem;
-}
 
 `
 
@@ -391,8 +373,8 @@ const Problem = Styled.div
 `
 line-height: 1.2;
 width: 62.4rem;
-padding-top: 3rem;
 margin-left: 4.5%;
+position: static;
  p {
     font-size: 2.2rem;
     font-weight: 500;
@@ -1001,7 +983,6 @@ const SolutionHeader = Styled.img
 max-width: 29rem;
 width: 100%;
 height: auto;
-margin-top: 3rem;
 `
 
 const TestHeader = Styled.img
@@ -1009,7 +990,6 @@ const TestHeader = Styled.img
 max-width: 29rem;
 width: 100%;
 height: auto;
-margin-top: 3rem;
 
 `
 
@@ -1018,7 +998,6 @@ const GapHeader = Styled.img
 max-width: 16.7rem;
 width: 100%;
 height: auto;
-margin-top: 3rem;
 
 `
 

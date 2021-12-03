@@ -297,10 +297,11 @@ const TWHeaderContainer = Styled.div
     `
    display: flex;
 flex-direction: column;
-padding: 3rem;
-@media only screen and (max-width: 1300px) {
-    text-align: center;
-    align-items: center;
+margin-top: 4.5%;
+margin-left: 4.5%;
+margin-right: 4.5%;
+margin-bottom: 2%;
+
 
 `
 
@@ -317,22 +318,19 @@ const TWImage = Styled.img
     max-width: 65rem;
     width: 100%;
     height: auto;
-    margin-left: 0rem;
-    margin-top: -3rem;
+    margin-left: 2rem;
     @media only screen and (max-width: 1350px){
         width: 90%;
+        margin-left: 1rem;
     }
     `
 
     const Table = Styled.div
     `
-    max-width: 70rem;
-    height: 2.875rem;
-    margin-left: 2rem;
-    margin-bottom: 20rem;
-    
+    max-width: 60rem;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
      ul {
-        display: block;
         list-style: none;
     };
     li {
@@ -346,11 +344,12 @@ const TWImage = Styled.img
     @media only screen and (max-width: 1200px){
         width: 90%;
         td {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         li {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
+    }
     }
     `
 const HeaderContainer = Styled.div
@@ -358,7 +357,7 @@ const HeaderContainer = Styled.div
   position: static;
   display: flex;
   margin-top: 4rem;
-  margin-left: 2rem;
+margin-left: 4.5%;
 flex-direction: column;
 @media only screen and (max-width: 1200px){
         width: 70%;
@@ -371,8 +370,8 @@ position: static;
 max-width: 21.4rem;
 width: 100%;
 height: auto;
-margin-top: 1rem;
 `
+
 const ReturnImg = Styled.img 
     `
     position: static;

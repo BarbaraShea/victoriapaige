@@ -231,10 +231,11 @@ const ALHeaderContainer = Styled.div
     `
    display: flex;
 flex-direction: column;
-padding: 3rem;
-@media only screen and (max-width: 1300px) {
-    text-align: center;
-    align-items: center;
+margin-top: 4.5%;
+margin-left: 4.5%;
+margin-right: 4.5%;
+margin-bottom: 2%;
+
 
 `
 
@@ -248,27 +249,22 @@ max-width: 26rem;
 
 const ALImg = Styled.img
     `
-    max-width: 61rem;
+    max-width: 65rem;
     width: 100%;
     height: auto;
-    margin-left: 3rem;
-    margin-top: -3rem;
+    margin-left: 2rem;
     @media only screen and (max-width: 1350px){
         width: 90%;
-        align-items: center;
+        margin-left: 1rem;
     }
     `
 
     const Table = Styled.div
     `
-    width: 70rem;
-    height: 2.875rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 15rem;
-    
+    max-width: 60rem;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
      ul {
-        display: block;
         list-style: none;
     };
     li {
@@ -282,11 +278,12 @@ const ALImg = Styled.img
     @media only screen and (max-width: 1200px){
         width: 90%;
         td {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         li {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
+    }
     }
     `
 const HeaderContainer = Styled.div
@@ -294,7 +291,7 @@ const HeaderContainer = Styled.div
   position: static;
   display: flex;
   margin-top: 4rem;
-  margin-left: 2rem;
+margin-left: 4.5%;
 flex-direction: column;
 @media only screen and (max-width: 1200px){
         width: 70%;
@@ -313,8 +310,8 @@ height: auto;
 const ProblemText = Styled.div
 `
 position: static;
-margin-left: 2rem;
-margin-top: 2rem;
+margin-left: 2%;
+margin-top: 2%;
 margin-right: 1rem;
 max-width: 62rem;
 #para {
