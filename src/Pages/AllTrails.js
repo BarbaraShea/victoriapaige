@@ -3,7 +3,6 @@ import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
 import Nav from '../Components/Nav.js';
-import NavBar2 from '../Components/NavBar2.js';
 import LogoNav from "../Components/LogoNav.js";
 import ATOpener from '../images/Alltrails.png';
 import ATHeader from '../images/AlltrailsHeader.png';
@@ -40,10 +39,12 @@ import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
 import Return from '../images/Return.png';
 import ProtoBan from '../images/SeeProto.png';
+import MobileNav from '../Components/MobileNavCS';
 
 const AllTrails = () => {
     return (
         <>
+        <MobileNav/>
         <LogoNav/>
         <Nav/>
         <ATHeaderContainer id="intro">

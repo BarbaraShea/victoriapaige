@@ -28,6 +28,7 @@ import LogoNav from '../Components/LandingLogoNav'
 import FCMobile from '../images/FCMobile.png';
 import ATMobile from '../images/ATMobile.png';
 import TWMobile from '../images/TWMobile.png';
+import AMobile from '../images/AMobile.png';
 
 const LandingPage = () => {
     return (
@@ -70,7 +71,7 @@ const LandingPage = () => {
                 </ProjectTextCont2>
             </ProjectTextCont>
         </ProjectContainer>
-        <ProjectMobile src={FCMobile}/>
+        <ProjectMobile src={AMobile}/>
         </NavLink>
         <NavLink to='/Forestrycamp'>
         <ProjectContainer>
@@ -126,8 +127,8 @@ const LandingPage = () => {
     </HeaderContainer>
     <AboutCont>
     <AboutText>
-        <p> I'm Victoria Bryant, <strong> a product and brand designer </strong> located in the mountains of Asheville, North Carolina.</p>
-        <p> I was a career public school educator who <strong> specialized in behavior analysis of high-risk students. </strong> Through working with them, their teachers, and their families, I gained three major skillsets:</p>
+        <p> I'm Victoria Bryant, <strong>a digital experience designer </strong> located in the mountains of Asheville, North Carolina.</p>
+        <p> I was a career public school educator who <strong> specialized in behavior research + analysis of high-risk students with disabilities. </strong> Through working with them, their teachers, and their families, I gained three major skillsets:</p>
         <ul>
             <li> I understand, empathize with, and communicate openly and kindly with people from all walks of life.</li>
             <li> I'm regularly able to present my thought processes in an easily understandable way.</li>
@@ -191,7 +192,7 @@ height: auto;
 `
 const MobileIntro = Styled.img
 `
-max-width: 20rem;
+max-width: 23rem;
 width: 100%;
 height: auto;
 display: none;
@@ -205,10 +206,11 @@ const HeaderContainer = Styled.div
   position: static;
   display: flex;
   margin-top: 4.5%;
-    margin-left: 4.5%;
-flex-direction: column;
-@media only screen and (max-width: 1200px){
+  margin-left: 4.5%;
+  flex-direction: column;
+  @media only screen and (max-width: 1200px){
         width: 70%;
+        }
 `
 
 const Header = Styled.img
@@ -372,7 +374,7 @@ display: none;
 @media only screen and (max-width: 1000px){
         display: block;
         align-items: center;
-        width: 85%;
+        width: 95%;
 
 `
 //about
@@ -380,7 +382,7 @@ display: none;
 const AboutCont = Styled.div
 `
 display: flex;
-margin-left: 3rem;
+margin-left: 4.5%;
 flex-direction: row;
 column-gap: 2rem;
 @media only screen and (max-width: 1200px){
@@ -417,10 +419,9 @@ const Picture1 = Styled.img
 `
 max-width: 35%
 height: auto;
-@media only screen and (max-width: 1200px){
- margin-left: -1rem;
- margin-right: 2rem;
-
+@media only screen and (max-width: 375px){
+    width: 90%;
+}
 `
 const AboutText2 = Styled.div
 `

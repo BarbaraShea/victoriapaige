@@ -6,10 +6,14 @@ import Logo from '../images/Logo.png';
 import Burger from '../images/BurgerNav.png';
 
 const MobileNav = () => {
+
+
     return (
     <>
-    <NavCont>
+    <NavCont id="navbar">
+    <NavLink to='/'>
     <LogoImg src={Logo}/>
+    </NavLink>
     <DropDown>
     <BurgerImg src={Burger}/>
     <StyledNav id="sidebar">
@@ -84,13 +88,19 @@ float: right;
 `
 const NavCont = Styled.div
 `
-display: flex;
 flex-direction: row;
 justify-content: space-between;
 margin-left: 4.5%;
 margin-right 4.5%;
 margin-top: 1rem;
 align-items: center;
+position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+display:none;
+    @media only screen and (max-width: 1350px){
+display: flex;
+    }
 `
 const LogoImg = Styled.img
 `
@@ -110,14 +120,12 @@ const StyledNav = Styled.nav
     position: absolute;
     background-color: #FFF1EC;
     opacity: 1;
-    min-width: 10rem;
+    width: 100%;
     right: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 3;
     display: none;
     font-size: 1.5rem;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
      ul {
         display: block;
         list-style: none;

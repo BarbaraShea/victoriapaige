@@ -8,7 +8,7 @@ const Nav = () => {
 
     return (
     <>
-    <StyledNav>
+    <StyledNavOne>
     <ul class="navbar">
     <li><Link 
     activeClass="active"
@@ -59,14 +59,14 @@ const Nav = () => {
     duration={1000}
     >The Follow Up</Link></li>
     </ul>     
-    </StyledNav>
+    </StyledNavOne>
     </>
     )
 };
 
 export default Nav;
 
-const StyledNav = Styled.nav`
+const StyledNavOne = Styled.nav`
     float: right;
     font-size: 1.5rem;
     position: -webkit-sticky; /* Safari */

@@ -4,9 +4,6 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 
 //import 
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Work from "./Pages/WorkGrid";
 import LandingPage from "./Pages/LandingPage";
 import TimeWells from "./Pages/TimeWells";
 import ForestryCamp from "./Pages/ForestryCamp";
@@ -14,6 +11,9 @@ import AllTrails from "./Pages/AllTrails";
 import Aloft from "./Pages/Aloft";
 import GlobalStyle from "./Components/GlobalStyle";
 import ScrollToTop from "./Components/ScrollToTop";
+import * as mdb from 'mdb-ui-kit'; // lib
+import { Input } from 'mdb-ui-kit'; // module
+
 function App() {
   return (
    <>

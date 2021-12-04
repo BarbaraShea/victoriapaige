@@ -34,10 +34,12 @@ import AloftGIF from '../images/AloftGIF.gif';
 import AlTest1 from '../images/AlTest1.png';
 import AlTest2 from '../images/AlTest2.png';
 import AlTest3 from '../images/AlTest3.png';
+import MobileNav from '../Components/MobileNavCS';
 
 const Aloft = () => {
     return (
         <>
+        <MobileNav/>
         <LogoNav/>
         <Nav/>
         <ALHeaderContainer id="intro">
@@ -759,7 +761,7 @@ const SolutionGIF = Styled.img
 max-width: 60.6 rem
 widht: 100%;
 heigh: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
   @media only screen and (max-width: 1200px){
         width: 90%;
     }

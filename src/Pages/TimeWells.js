@@ -3,6 +3,7 @@ import Styled, { keyframes } from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
 import TWHeader from '../images/TimewellsHeader.png';
+import MobileNav from "../Components/MobileNavCS";
 import Nav from "../Components/Nav";
 import LogoNav from "../Components/LogoNav.js";
 import TimewellsImg from '../images/Timewells.png';
@@ -44,6 +45,7 @@ import FollowUpRect from '../images/FollowUpRect.png';
 const Timewells2 = () => {
     return (
         <>
+        <MobileNav/>
         <LogoNav/>
         <Nav/>
         <TWHeaderContainer id="intro">

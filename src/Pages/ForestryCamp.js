@@ -39,14 +39,13 @@ import White2 from '../images/White2.png';
 import White3 from '../images/White3.png';
 import Return from '../images/Return.png';
 import ProtoBan from '../images/SeeProto.png';
-import MobileNav from '../Components/MobileNavCS'
+import MobileNav from '../Components/MobileNavCS';
 
 const ForestryCamp2 = () => {
     
     return(
         <>
         <MobileNav/>
-        <div id="page-wrap">
         <LogoNav/>
         <Nav/>
             <FCHeaderContainer id="intro">
@@ -264,7 +263,6 @@ const ForestryCamp2 = () => {
             </FinalCont2>
         </FinalCont>
         <NavLink to="/"><ReturnImg src={Return}/></NavLink> 
-        </div>
     </>
     )
 };
