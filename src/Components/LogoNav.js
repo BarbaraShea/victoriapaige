@@ -56,7 +56,7 @@ const LogoContainer = Styled.div
     `
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 1rem;
+    top: 0rem;
     right: 1rem;
     position: absolute;
      :hover .hover-image {

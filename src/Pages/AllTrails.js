@@ -281,7 +281,7 @@ const ATHeaderContainer = Styled.div
     `
    display: flex;
 flex-direction: column;
-margin-top: 4.5%;
+margin-top: 2%;
 margin-left: 4.5%;
 margin-right: 4.5%;
 margin-bottom: 2%;
