@@ -158,8 +158,8 @@ const LandingPage = () => {
     <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/" target="_blank">Victoria Bryant</a></p>
     </IconContainer>
     <IconContainer>
-    <p id="resume"><a href="src/images/Victoria Bryant Resume.pdf" download><ResumeIcon src={Resume}/></a></p>
-    <p id="resume"><a href="src/images/Victoria Bryant Resume.pdf" download>Resumé</a></p>
+    <p id="resume"><a href="src/images/Victoria Bryant Resume 2021.pdf" download><ResumeIcon src={Resume}/></a></p>
+    <p id="resume"><a href="src/images/Victoria Bryant Resume 2021.pdf" download>Resumé</a></p>
     </IconContainer>
     </ContactIconContainer>
     <Link 
@@ -178,7 +178,7 @@ export default LandingPage
 
 const IntroHeaderContainer = Styled.div
 `
-margin-top: 5rem;
+margin-top: 4.5%;
 margin-left: 4.5%;
 `
 const Intro = Styled.img

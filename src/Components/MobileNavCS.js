@@ -14,8 +14,7 @@ const MobileNav = () => {
     <NavLink to='/'>
     <LogoImg src={Logo}/>
     </NavLink>
-    <DropDown>
-    <BurgerImg src={Burger}/>
+    <BurgerImg id="burger" src={Burger}/>
     <StyledNav id="sidebar">
     <ul className="dropdown-content">
     <li><Link 
@@ -68,7 +67,7 @@ const MobileNav = () => {
     >The Follow Up</Link></li>
     </ul>     
     </StyledNav>
-    </DropDown>
+    
     </NavCont>
     </>
     )
@@ -76,31 +75,21 @@ const MobileNav = () => {
 
 export default MobileNav;
 
-const DropDown = Styled.div
-`
-position: relative;
-display: inline-block;
-align-content: flex-end;
-float: right;
-:hover #sidebar {
-  display: block;  
-}
-`
 const NavCont = Styled.div
 `
 flex-direction: row;
 justify-content: space-between;
-margin-left: 4.5%;
-margin-right 4.5%;
+margin-left: 4%;
+margin-right 4%;
 margin-top: 1rem;
 align-items: center;
-position: -webkit-sticky;
-	position: sticky;
-	top: 0;
 display:none;
     @media only screen and (max-width: 1350px){
 display: flex;
     }
+ :hover #sidebar {
+    display: initial;  
+}
 `
 const LogoImg = Styled.img
 `
@@ -114,31 +103,30 @@ cursor: pointer;
 float: right;
 `
 
-const StyledNav = Styled.nav
+const StyledNav = Styled.div
 `
     display: none;
-    position: absolute;
+    position: absolute; 
     background-color: #FFF1EC;
     opacity: 1;
-    width: 100%;
-    right: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 97%;
+    margin-top: 3rem;
     z-index: 3;
-    display: none;
     font-size: 1.5rem;
      ul {
         display: block;
         list-style: none;
         position: absolute;
         background-color: #FFF1EC;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 5;
-    opacity: 1;
+        margin-right 6%; 
+        box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+        z-index: 5;
+        opacity: 1;
+        width: 95%;
     };
     li {
         line-height: 2.5;
-        text-align: right;
-         
+        text-align: center;
         display: block;
         hover: {
             font-weight: bold;
