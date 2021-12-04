@@ -10,9 +10,10 @@ const MobileNav = () => {
     <>
     <NavCont>
     <LogoImg src={Logo}/>
+    <DropDown>
     <BurgerImg src={Burger}/>
     <StyledNav id="sidebar">
-    <ul class="navbar">
+    <ul className="dropdown-content">
     <li><Link 
     activeClass="active"
     spy={true}
@@ -63,6 +64,7 @@ const MobileNav = () => {
     >The Follow Up</Link></li>
     </ul>     
     </StyledNav>
+    </DropDown>
     </NavCont>
     </>
     )
@@ -70,33 +72,25 @@ const MobileNav = () => {
 
 export default MobileNav;
 
+const DropDown = Styled.div
+`
+position: relative;
+display: inline-block;
+align-content: flex-end;
+float: right;
+:hover #sidebar {
+  display: block;  
+}
+`
 const NavCont = Styled.div
 `
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-position: -webkit-sticky; /* Safari */
-position: sticky;
-margin-left: 3rem;
+margin-left: 4.5%;
+margin-right 4.5%;
 margin-top: 1rem;
 align-items: center;
-display: none;
-:hover {
- cursor:pointer;
- }
-// :hover #sidebar{
-//     display: flex;
-//     position: absolute;
-//     right: -20px;
-//     width: 20%;
-//     height: 100%;
-//     top: 10%;
-//     -webkit-animation: slide 0.5s forwards;
-//     animation-timing-function: ease-in-out;
-// }
-    @media only screen and (max-width: 1350px){
-display: flex;
-    }
 `
 const LogoImg = Styled.img
 `
@@ -106,32 +100,50 @@ width: 60.7px;
 height: 94px;
 margin-right: 1rem;
 top: 0px;
+cursor: pointer;
+float: right;
 `
 
-const StyledNav = Styled.nav`
+const StyledNav = Styled.nav
+`
     display: none;
-    float: right;
-    flex-direction: row;
+    position: absolute;
+    background-color: #FFF1EC;
+    opacity: 1;
+    min-width: 10rem;
+    right: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    display: none;
     font-size: 1.5rem;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    max-width: 20%;
-    height: 100%;
      ul {
         display: block;
         list-style: none;
+        position: absolute;
+        background-color: #FFF1EC;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    opacity: 1;
     };
     li {
         line-height: 2.5;
         text-align: right;
-    }
+         
+        display: block;
+        hover: {
+            font-weight: bold;
+        }
+    }  
+
     `
 
 const BurgerImg = Styled.img
 `
 max-width: 2.68rem;
 height: 1.75rem;
-margin-right: 3rem;
+margin-right: 4.5%;
 margin-top: 1rem;
 :active {
     display: none;

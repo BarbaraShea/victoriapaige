@@ -272,6 +272,8 @@ export default AllTrails;
 const ProtoCont =Styled.div
 `
 position: static;
+margin-top: 4.5%;
+cursor: pointer;
 `
 
 const ATHeaderContainer = Styled.div
@@ -357,6 +359,7 @@ const ProblemText = Styled.div
 `
 position: static;
 margin-left: 4.5%;
+margin-right: 4.5%;
 margin-top: 2rem;
 max-width: 62rem;
 #quote{
@@ -384,6 +387,7 @@ const ResearchText1 = Styled.div
 position: static;
 max-width: 62rem;
 margin-left: 4.5%;
+margin-right: 4.5%;
 margin-top: 1rem;
 font-size: 1.5rem;
 line-height: 1.5;
@@ -533,6 +537,7 @@ const GapText = Styled.div
 `
 max-width: 62rem;
 margin-left: 4.5%;
+margin-right: 4.5%;
 margin-top: 2rem;
 #quote{
     font-size: 2.2rem;
@@ -550,6 +555,7 @@ const SolutionText = Styled.div
 `
 margin-top: 3rem;
 margin-left: 4.5%;
+margin-right: 4.5%;
 max-width: 62rem;
 `
 const AppsCont = Styled.div
@@ -623,19 +629,17 @@ align-items: center;
  p{
      max-width: 18.75rem;
      margin-left: 1rem;
+    margin-right: 4.5%;
  }
  @media only screen and (max-width: 1200px){
     flex-wrap: wrap;
     justify-content: flex-start;
     p{
     margin-top: 1.5rem;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-left: 0rem;
     }
-    #wireframe-text{
-         margin-top: 1.5rem;
- }
 }
 `
 
@@ -714,7 +718,9 @@ position: static;
 margin-top: 3rem;
 max-width: 66.6rem;
 margin-left: 4.5%;
+margin-right: 4.5%;
 `
+
 const One = Styled.img
 `
 flex-direction: row;
@@ -736,6 +742,7 @@ flex-direction: row;
 justify-content: flex-start;
 max-width: 50rem;
 margin-left: 5%;
+margin-right: 4.5%;
 align-items: center;
 margin-bottom: 1rem;
 p {
@@ -751,7 +758,7 @@ max-width: 66.6rem;
 margin-left: 4.5%;
 margin-bottom: 2rem;
 #goals {
-    margin-top: 2rem;
+    margin-top: 4%;
 }
 `
 const TestImg = Styled.img
@@ -796,6 +803,9 @@ display: block;
 max-width: 65.5rem;
 height: 42rem;
 width: 100%;
+@media only screen and (max-width: 375px){
+      height: 35rem;
+      }
 `
 const W1 = Styled.img
 `

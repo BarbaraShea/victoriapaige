@@ -176,35 +176,33 @@ const ForestryCamp2 = () => {
         <Header id="method" src={Method}/>
         </HeaderContainer>
         <MethodText>
-            <p id="user-flow-header"><strong>User Flow</strong></p>
+            <p><strong>User Flow</strong></p>
         </MethodText>
         <MethodContainer>
             <MethodImg src={UserFlow}/>
-            <p id="user-flow-text">Since reducing customer confusion was the primary focus of my design, this flow <strong> put me in the shoes of a user.</strong> How would they look for information? A clear page for each restaurant section was the answer.</p>
+            <p>Since reducing customer confusion was the primary focus of my design, this flow <strong> put me in the shoes of a user.</strong> How would they look for information? A clear page for each restaurant section was the answer.</p>
         </MethodContainer>
         <MethodText>
-            <p id="sketches-header"><strong>Sketches</strong></p>
+            <p><strong>Sketches</strong></p>
         </MethodText>
         <MethodContainer>
                 <MethodImg src={Sketches}/>
-                <p id="sketches-text">Physical pencil-and-paper sketching was of utmost importance to me. I tried to sketch <strong> as many crappy ideas as possible,</strong> to help identify the best visual solution to the user's problems.</p>
+                <p>Physical pencil-and-paper sketching was of utmost importance to me. I tried to sketch <strong> as many crappy ideas as possible,</strong> to help identify the best visual solution to the user's problems.</p>
         </MethodContainer>
         <MethodText>
-                 <p id="sketches-header"><strong>Responsive Wireframe</strong></p>
+                 <p><strong>Responsive Wireframe</strong></p>
         </MethodText>
         <MethodContainer>
             <MethodImg src={Wireframe}/>
-            <p id="wireframe-text"> Once I knew the direction I wanted to pursue, I made responsive wireframes in Figma. I played around with a chessboard layout, and <strong>heavy utilization of negative space</strong> to fulfill the elevated vibe we wanted.</p>
+            <p> Once I knew the direction I wanted to pursue, I made responsive wireframes in Figma. I played around with a chessboard layout, and <strong>heavy utilization of negative space</strong> to fulfill the elevated vibe we wanted.</p>
         </MethodContainer>
         <MethodText>
-                <p id="style-header"><strong>Style Guide</strong></p>
+                <p><strong>Style Guide</strong></p>
         </MethodText>
         <MethodContainer> 
         <MethodImg src={FC1}/>
-        <StyleTextCont>
         <p> This was fun. Research showed that fancy restaurants use <strong>minimal color schemes, serif fonts,</strong> and super nice photos. </p>
-        <p id="style-text"> I wanted to choose fonts that speak to FC's <strong> focus on restoration and nature, </strong> and use colors that are regularly in the brand's photography.</p> 
-        </StyleTextCont>
+        <p> I wanted to choose fonts that speak to FC's <strong> focus on restoration and nature, </strong> and use colors that are regularly in the brand's photography.</p> 
         </MethodContainer>
         <HeaderContainer>
         <TestHeader id="test" src={TestCircle}/>
@@ -469,6 +467,7 @@ max-width: 59rem;
 width: 100%
 height: auto;
 margin-left: 4.5%;
+margin-right: 4.5%;
 margin-top: 1.5rem;
 font-size: 1.5rem;
 @media only screen and (max-width: 1200px){
@@ -530,6 +529,7 @@ max-width: 59rem;
 width: 100%
 height: auto;
 margin-left: 4.5%;
+margin-right: 4.5%;
 margin-top: 1.5rem;
 font-size: 1.5rem;
 @media only screen and (max-width: 1200px){
@@ -637,6 +637,7 @@ width: 100%;
 height: auto;
 justify-content: space-around;
 margin-top: 1.5rem;
+
 `
 
 const OriginalText = Styled.div
@@ -644,6 +645,7 @@ const OriginalText = Styled.div
 position: static;
 margin-top: 1.5rem;
 margin-left: 4.5%;
+margin-right: 4.5%;
 ul{
     margin-left: 1.5rem;
     line-height: 1.2;
@@ -673,6 +675,7 @@ const SolutionText = Styled.div
 position: static;
 margin-top: -8rem;
 margin-left: 4.5%;
+margin-right: 4.5%;
 margin-bottom: 3rem;
 max-width: 38rem;
 width: 100%;
@@ -697,9 +700,7 @@ align-items: center;
  p{
      margin-left: 1rem;
      max-width: 25rem;
- }
- #style-text {
-     margin-top: 1rem;
+     margin-right: 4.5%;
  }
  @media only screen and (max-width: 1200px){
     flex-wrap: wrap;
@@ -707,11 +708,9 @@ align-items: center;
     p{
     margin-top: 1.5rem;
     margin-left: 0rem;
-    width: 100%;
+    width: 90%;
     height: auto;
     }
-    #wireframe-text{
-         margin-top: 1.5rem;
  }
 }
 `
@@ -733,10 +732,9 @@ margin-top: 1.5rem;
 const MethodText = Styled.div
 `
 postion: static;
-margin-left: 4.8%;
+margin-left: 4.5%;
+margin-right: 4.5%;
 margin-top: 3rem;
-// justify-content: center;
-// align-items: center;
 p{
     font-size: 2rem;
 }
@@ -763,34 +761,6 @@ margin-left: 1.5rem;
 
 `
 
-
-
-const StyleCont = Styled.div
-`
-display: flex;
-flex-direction: row;
-position: static;
-height: auto;
-margin-right: 2rem;
-@media only screen and (max-width: 1200px){
-    flex-wrap:wrap;
-}
-`
-
-const StyleTextCont = Styled.div
-`
-display: flex;
-flex-direction: column;
-position: static;
-justify-content: center;
-margin-left: 1.5rem;
-@media only screen and (max-width: 1200px){
-        margin-left: 7rem;
-    }
-@media only screen and (max-width: 1200px){
-        margin-left: 0rem;
-    }
-`
 const Test = Styled.div
 `
 position: static;
@@ -802,32 +772,6 @@ margin-top: 1.5rem;
 
 `
 
-const TestList = Styled.div
-`
-flex-dreiction: column;
-max-width: 53.75rem;
-width: 100%;
-height: auto;
-margin-left: 8%;
-    ul{
-        list-style: none;
-        margin-top: -18rem;
-    }
-    li{
-        margin-bottom: 2.2rem;;
-        margin-bottom: 3rem;;
-        font-size: 1.5rem;
-        line-height: 1.8;
-    }
-     @media only screen and (max-width: 1200px){
-        width: 80%;
-        margin-top: 2.5rem;
-       li{
-           font-size: 1rem;
-           line-height: 2rem;
-       }
-    }
-`
 const Yahoo = Styled.div
 `
 position: static;
@@ -917,9 +861,9 @@ display: block;
 max-width: 65.5rem;
 height: 42rem;
 width: 100%;
-@media only screen and (max-width: 1200px){
-        width: 120%;
-    }
+@media only screen and (max-width: 375px){
+      height: 35rem;
+      }
 `
 const Number = Styled.img
 `
@@ -958,7 +902,7 @@ const BulletCont = Styled.div
 display: flex;
 flex-direction:row;
 margin-right: 5%;
-margin-bottom: 2.5rem;
+margin-bottom: 4%;
 align-items: baseline;
 margin-left: 4%;
 p{

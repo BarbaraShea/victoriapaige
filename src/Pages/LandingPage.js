@@ -178,7 +178,7 @@ export default LandingPage
 const IntroHeaderContainer = Styled.div
 `
 margin-top: 5rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 `
 const Intro = Styled.img
 `
@@ -204,8 +204,8 @@ const HeaderContainer = Styled.div
 `
   position: static;
   display: flex;
-  margin-top: 3rem;
-  margin-left: 2rem;
+  margin-top: 4.5%;
+    margin-left: 4.5%;
 flex-direction: column;
 @media only screen and (max-width: 1200px){
         width: 70%;
@@ -222,7 +222,7 @@ const BannerCont = Styled.div
 display: flex;
 flex-direction: column;
 align-content: space-between;
-margin-left: 2.2rem;
+margin-left: 4%;
 row-gap: 1.5rem;
 `
 const LandingContainer = Styled.div
@@ -275,8 +275,8 @@ const IntroText = Styled.div
 `
 position: static;
 max-width: 64rem;
-margin-left: 3rem;
-margin-right: 2rem;
+margin-left: 4.5%;
+margin-right: 4%;
 p {
     font-size: 2rem;
     }
@@ -289,7 +289,7 @@ p {
 `
 const ArrowImg = Styled.img 
 `
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1rem;
 margin-bottom: 1rem;
 max-width: 1.8rem;
@@ -332,7 +332,7 @@ max-width: 47.5rem;
 width: 100%;
 height: auto;
 flex-direction: row;
-margin-left: 3rem;
+margin-left: 4.5%;
 transition: transform 500ms;
  :hover {
 transform: scale(1.05,1.05);
@@ -366,7 +366,7 @@ const ProjectMobile = Styled.img
 max-width: 21.3rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 3rem;
 display: none;
 @media only screen and (max-width: 1000px){
@@ -397,7 +397,7 @@ p {
 }
 li {
     font-size: 1.5rem;
-    margin-left: 3rem;
+    margin-left: 4.5%;
     margin-bottom: 1rem;
 }
 ul {
@@ -425,21 +425,21 @@ height: auto;
 const AboutText2 = Styled.div
 `
 max-width: 67rem;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-right: 2rem;
 `
 
 
 const ArrowImgUp = Styled.img 
 `
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-bottom: 3rem;
 `
 
 
 const ContactIconContainer = Styled.div
 `
-margin-left: 3rem;
+margin-left: 4.5%;
 display: flex;
 flex-direction: column;
 `

@@ -277,9 +277,12 @@ const Timewells2 = () => {
 };
 
 export default Timewells2;
+
 const ProtoCont =Styled.div
 `
 position: static;
+margin-top: 4.5%;
+cursor: pointer;
 `
 const PrototypeBan = Styled.img
 `
@@ -375,9 +378,9 @@ height: auto;
 const ReturnImg = Styled.img 
     `
     position: static;
-    margin-top: 5rem;
-    margin-left: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 7%;
+    margin-left: 3%;
+    margin-bottom: 7%;
     max-width: 18.75rem;
     width: 100%;
     height: auto;
@@ -390,7 +393,8 @@ const BulletCont = Styled.div
 `
 display: flex;
 flex-direction:row;
-margin-left: 4rem;
+margin-left: 4.5%;
+margin-right: 4.5%;
 margin-bottom: 2.5rem;
 margin-right: 1.5rem;
 margin-top: 3rem;
@@ -416,7 +420,8 @@ const Text = Styled.div
 max-width: 59rem;
 width: 100%
 height: auto;
-margin-left: 1.5rem;
+margin-left: 4.5%;
+margin-right: 4.5%;
 margin-top: 1.5rem;
 margin-bottom: 1.5rem;
 font-size: 1.5rem;
@@ -434,9 +439,9 @@ const PersonaImg = Styled.img
     max-width: 60.5rem;
     width: 100%;
     height: auto;
-    left: 4.375rem;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
     margin-top: 1rem;
-    margin-left: 2rem;
     @media only screen and (max-width: 1350px){
         width: 90%;
         align-items: center;
@@ -447,15 +452,18 @@ const PersonHeaders = Styled.div
 `
 display: flex;
 position: static;
-margin-left: 3.5rem;
+margin-left: 3%;
+margin-right: 3%;
 max-width: 57rem;
 width: 100%;
 height: auto;
 justify-content: space-between;
  @media only screen and (max-width: 1200px){
-        width: 90%;
+        width: 98%;
         align-items: center;
-        margin-left: 2rem;
+        margin-left: 3%;
+        column-gap: 1rem;
+        justify-content: flex-start;
 
     }
 `

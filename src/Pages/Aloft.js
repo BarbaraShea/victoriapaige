@@ -225,6 +225,8 @@ export default Aloft;
 const ProtoCont =Styled.div
 `
 position: static;
+margin-top: 4.5%;
+cursor: pointer;
 `
 
 const ALHeaderContainer = Styled.div
@@ -310,9 +312,9 @@ height: auto;
 const ProblemText = Styled.div
 `
 position: static;
-margin-left: 2%;
+margin-left: 4.5%;
+margin-right: 4.5%;
 margin-top: 2%;
-margin-right: 1rem;
 max-width: 62rem;
 #para {
         margin-top: 1.5rem;
@@ -342,11 +344,9 @@ const ResearchText1 = Styled.div
 `
 flex-direction: row;
 max-width: 27rem;
+margin-right: 4.5%;
 #para{
     margin-top: 1.5rem;
-}
-@media only screen and (max-width: 1200px){
-        margin-left: 1.5rem;
 }
 `
 
@@ -357,16 +357,17 @@ flex-direction: row;
 max-width: 32.8rem;
 width: 100%;
 height: auto;
-margin-left: 1.5rem;
 margin-top: 1rem;
-@media only screen and (max-width: 1200px){
-        width: 90%;
-}`
+ @media only screen and (max-width: 1200px){
+        width: 80%;
+        margin-top: 1rem;
+        justify-content: center;
+    }`
 
 const ResearchHeaders = Styled.div
 `
 position: static;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
 p{
 font-size: 2rem;
@@ -377,12 +378,26 @@ const ResearchCont = Styled.div
 position: static;
 display: flex;
 flex-direction: row;
-margin-top: 3rem;
+max-width: 65rem;
+width: 100%;
+margin-top: 2rem;
 margin-left: 2rem;
+margin-left: 4.5%;
 align-items: center;
 gap: 1.5rem;
- @media only screen and (max-width: 1350px){
-        flex-wrap: wrap;
+ p{
+     margin-left: 0rem;
+     max-width: 30rem;
+     margin-right: 4.5%;
+ }
+ @media only screen and (max-width: 1200px){
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    p{
+    margin-top: 1.5rem;
+    margin-left: 0rem;
+    width: 90%;
+    height: auto;
     }
 `
 
@@ -392,7 +407,7 @@ position: relative;
 display: block;
 max-width: 65.5rem;
 max-height: 40rem;
-margin-top: 2rem;
+margin-top: 3rem;
 margin-bottom: 2rem;
 width: 100%;
 `
@@ -400,17 +415,13 @@ width: 100%;
 const InsightsRect = Styled.img
 `
 display: block;
-max-width: 65.5rem;
+max-width: 100%;
 height: 42rem;
-width: 100%;
-@media only screen and (max-width: 1200px){
-        width: 120%;
-    }
 `
 
 const InsightsBullets = Styled.div
 `
-margin-left: 4rem;
+margin-left: 7%;
 margin-bottom: 1.5rem;
 margin-right: 5%;
 margin-top: 4%;
@@ -422,15 +433,12 @@ color: #FFF1EC;
     margin-top: 2rem;
     font-weight: 500;
 }
-//   @media only screen and (max-width: 1300px){
-//         width: 85%;
-//         align-items: center;
-//         margin-bottom: 2rem;
-//     }
-//      @media only screen and (max-width: 600px){
-//         width: 75%;
-//        font-size: 1rem;
-//     }
+@media only screen and (max-width: 450px){
+    // margin-left: 2rem;
+    margin-top: 1%;
+    line-height: 1.3;
+
+}
 `
 
 const MI = Styled.div
@@ -444,6 +452,9 @@ font-size: 1.5rem;
 }
 }
 color: #FFF1EC;
+@media only screen and (max-width: 600px){
+    margin-top: -1rem;
+}
 `
 
 const InsightsCont2 = Styled.div
@@ -472,13 +483,13 @@ const GapHeader = Styled.img
 max-width: 16.7rem;
 width: 100%;
 height: auto;
-margin-top: 1rem;
 `
 
 const GapText = Styled.div
 `
 max-width: 62rem;
-margin-left: 3rem;
+margin-left: 4.5%;
+margin-right: 4.5%;
 margin-top: 2rem;
 margin-right: 1rem;
 #quote{
@@ -497,15 +508,15 @@ p {
 const SolutionText = Styled.div
 `
 margin-top: 3rem;
-margin-left: 3rem;
-margin-right: 1rem;
+margin-left: 4.5%;
+margin-right: 4.5%;
 max-width: 62rem;
 `
 
 const MethodText = Styled.div
 `
 postion: static;
-margin-left: 3.2rem;
+margin-left: 4.5%;
 margin-top: 3rem;
 p{
     font-size: 2rem;
@@ -526,24 +537,24 @@ justify-content: space-evenly;
 max-width: 60rem;
 width: 100%;
 height: auto;
-margin-left: 2rem;
+margin-left: 4%;
 margin-top: 2rem;
 align-items: center;
  p{
      max-width: 18.75rem;
      margin-left: 1rem;
+    margin-right: 4.5%;
+
  }
  @media only screen and (max-width: 1200px){
     flex-wrap: wrap;
+    justify-content: flex-start;
     p{
     margin-top: 1.5rem;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-left: 0rem;
     }
-    #wireframe-text{
-         margin-top: 1.5rem;
- }
 }
 `
 
@@ -558,7 +569,7 @@ margin-top: 1.5rem;
  @media only screen and (max-width: 1200px){
         width: 80%;
         margin-top: 1rem;
-        margin-left: -1rem;
+        margin-left: 0rem;
 
     }
 `
@@ -568,7 +579,7 @@ position: static;
 max-width: 66rem;
 width: 100%
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
 margin-top: 1.5rem;
  @media only screen and (max-width: 1200px){
         width: 80%;
@@ -595,7 +606,7 @@ display: flex;
 flex-direction: row;
 justify-content: flex-start;
 max-width: 50rem;
-margin-left: 3.5rem;
+margin-left: 5%;
 margin-right: 2rem;
 align-items: center;
 margin-bottom: 1rem;
@@ -609,7 +620,8 @@ const Test = Styled.div
 position: static;
 margin-top: 3rem;
 max-width: 66.6rem;
-margin-left: 3rem;
+margin-left: 4.5%;
+margin-right:4.5%;
 margin-right: 2rem;
 margin-bottom: 2rem;
 #goals {
@@ -617,15 +629,6 @@ margin-bottom: 2rem;
 }
 `
 
-// const PrototypeContainer = Styled.div
-// `
-// position: relative;
-// margin-top: 3rem;
-// margin-bottom: 2rem;
-// max-width: 18%;
-// width: 100%;
-// height: auto;
-// `
 const PrototypeBan = Styled.img
 `
 max-width: 17.5rem;
@@ -637,30 +640,6 @@ margin-left: 1.5rem;
       }
 `
 
-// const ProtoText = Styled.div
-// `
-// position: absolute;
-// top: -5%;
-// left: 20%;
-// @media only screen and (max-width: 1200px){
-//        p {
-//            font-size: 1rem;
-//        } 
-//     }
-// `
-
-// const ArrowRightImg = Styled.img
-// `
-// max-width: 1.1rem;
-// width: 100%;
-// height: 2.1rem; 
-// position: absolute;
-// top: 25%;
-// left: 85%;
-// @media only screen and (max-width: 1200px){
-//     width: 70%;
-// }
-// `
 
 const FollowUpText = Styled.div
 `
@@ -668,8 +647,8 @@ position: static;
 max-width: 60rem;
 width: 100%;
 height: auto;
-margin-top: 2rem;
-margin-left: 2rem;
+margin-top: 2.5%;
+margin-left: 4%;
 margin-bottom: 2rem;
 `
 
@@ -677,13 +656,11 @@ const FinalRect = Styled.img
 `
 display: block;
 max-width: 65.5rem;
-height: auto;
+height: 42rem;
 width: 100%;
-@media only screen and (max-width: 1200px){
-        width: 120%;
-        height: 30.5rem;
-
-    }
+@media only screen and (max-width: 375px){
+      height: 38rem;
+      }
 `
 const W1 = Styled.img
 `
@@ -708,27 +685,25 @@ height: 2rem;
 const FinalCont = Styled.div
 `
 position: relative;
-max-width: 65.5rem;
-max-height: 35.5rem;
+display: block;
+max-width: 100%;
+max-height: 40rem;
+margin-top: 3rem;
+margin-bottom: 2rem;
 width: 100%;
 `
 
 const FinalCont2 = Styled.div
 `
 position: absolute;
-display: flex;
-flex-direction: column;
-width: 70.5%;
+width: 76.5%;
 height: 83%;
-top: 5%;
+top: 1.5%;
 left: 5.7%;
-justify-content: space-evenly;
-@media only screen and (max-width: 2000px){
+@media only screen and (max-width: 1350px){
     width: 100%;
-    height: 82%;
     top: 5%;
     left: 2%;
-    justify-content: space-evenly;
 }
 `
 
@@ -736,8 +711,9 @@ const BulletCont = Styled.div
 `
 display: flex;
 flex-direction:row;
-margin-left: 2rem;
-margin-right: 2rem;
+margin-right: 5%;
+margin-top: 4%;
+margin-left: 4%;
 // justify-content: space-between;
 margin-bottom: 2.5rem;
 p{
@@ -753,9 +729,9 @@ p{
 const ReturnImg = Styled.img 
     `
     position: static;
-    margin-top: 5rem;
-    margin-left: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 7%;
+    margin-left: 3%;
+    margin-bottom: 7%;
     max-width: 18.75rem;
     width: 100%;
     height: auto;
@@ -768,7 +744,7 @@ const Thoughts = Styled.div
 p{
 font-size: 2rem;
 margin-bottom: 2rem;
-margin-left: 1rem;
+margin-left: 0rem;
 margin-top: 3rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
