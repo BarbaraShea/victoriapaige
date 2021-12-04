@@ -446,6 +446,10 @@ const PersonaImg = Styled.img
         width: 90%;
         align-items: center;
     }
+     @media only screen and (max-width: 375px){
+        width: 95%;
+        align-items: center;
+    }
     `
 
 const PersonHeaders = Styled.div
@@ -462,10 +466,13 @@ justify-content: space-between;
         width: 98%;
         align-items: center;
         margin-left: 3%;
-        column-gap: 1rem;
-        justify-content: flex-start;
-
     }
+ @media only screen and (max-width: 375px){
+        margin-left: 2%;
+        column-gap: 0.8rem;
+        display: flex;
+        justify-content: flex-start;
+ }
 `
 
 const Person = Styled.div
@@ -478,12 +485,10 @@ text-align: center;
 const InsightsRect = Styled.img
 `
 display: block;
-max-width: 65.5rem;
-height: auto;
-width: 100%;
-@media only screen and (max-width: 1200px){
-        width: 100%;
-        height: 30.5rem;
+max-width: 100%;
+height: 42rem;
+ @media only screen and (max-width: 375px){
+        height: 38rem;
 
     }
 `
@@ -492,7 +497,9 @@ const InsightsRectCont = Styled.div
 position: relative;
 display: block;
 max-width: 65.5rem;
-max-height: 35.5rem;
+max-height: 40rem;
+margin-top: 3rem;
+margin-bottom: 2rem;
 width: 100%;
 
 `
@@ -501,19 +508,14 @@ width: 100%;
 const InsightsCont2 = Styled.div
 `
 position: absolute;
-display: flex;
-flex-direction: column;
 width: 76.5%;
 height: 83%;
 top: 1.5%;
 left: 5.7%;
-justify-content: space-evenly;
 @media only screen and (max-width: 1350px){
     width: 100%;
-    height: 82%;
     top: 5%;
     left: 2%;
-    justify-content: space-evenly;
 }
 `
 
@@ -521,11 +523,12 @@ const Thoughts = Styled.div
 `
 p{
 font-size: 2rem;
-margin-bottom: 1rem;
-margin-left: 1rem;
-margin-top: 5rem;
+margin-bottom: 2rem;
+margin-left: 0rem;
+margin-top: 3rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
+margin-top: 3.5%;
 }
 }
 color: #FFF1EC;
@@ -535,7 +538,7 @@ const InsightsBulletCont = Styled.div
 `
 display: flex;
 flex-direction:row;
-margin-left: 4rem;
+margin-left: 4.5%;
 margin-bottom: 1.5rem;
 margin-right: 1.5rem;
 margin-top: 1.5rem;
@@ -580,13 +583,18 @@ gap: 60px;
 max-width: 67rem;
 width: 100%;
 height: auto;
+@media only screen and (max-width: 600px){
+    display: flex;
+    justify-content: center;
+}
 `
 const GapText = Styled.div
 `
 max-width: 67rem;
 width: 100%;
 height: auto;
-margin-left: 3rem;
+margin-left: 4.5%;
+margin-right: 4.5%;
 `
 
 const LogoImg = Styled.img
@@ -598,7 +606,6 @@ const LogoImg = Styled.img
     margin-left: 2rem;
     @media only screen and (max-width: 1350px){
         width: 90%;
-        align-items: center;
     }
     `
 
@@ -621,8 +628,9 @@ max-width: 60rem;
 width: 100%;
 height: auto;
 margin-top: 3rem;
-margin-left: 3rem;
-  @media only screen and (max-width: 1350px){
+margin-left: 4.5%;
+margin-right: 4.5%;
+@media only screen and (max-width: 1350px){
         width: 90%;
         }
 `
@@ -654,8 +662,9 @@ const SolutionTextCont = Styled.div
 position: static;
 display: flex;
 justify-content: flex-start;
-margin-top: 3rem;
-margin-left: 3rem;
+margin-top: 4.5%;
+margin-left: 4.5%;
+margin-right: 4.5%;
 @media only screen and (max-width: 1350px){
         flex-wrap: wrap;
         }
@@ -676,7 +685,7 @@ margin-right: 1.5rem;
 const MethodText = Styled.div
 `
 postion: static;
-margin-left: 3.2rem;
+margin-left: 4.5%;
 margin-top: 3rem;
 p{
     font-size: 2rem;
@@ -692,30 +701,27 @@ const MethodContainer = Styled.div
 display: flex;
 position: static;
 flex-direction: row;
+justify-content: space-evenly;
 max-width: 60rem;
 width: 100%;
 height: auto;
-margin-left: 2rem;
+margin-left: 4%;
 margin-top: 2rem;
 align-items: center;
  p{
-     margin-left: 1rem;
      max-width: 18.75rem;
- }
- #style-text {
-     margin-top: 1rem;
+     margin-left: 1rem;
+    margin-right: 4.5%;
  }
  @media only screen and (max-width: 1200px){
     flex-wrap: wrap;
+    justify-content: flex-start;
     p{
     margin-top: 1.5rem;
-    margin-left: 1.5rem;
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin-left: 0rem;
     }
-    #wireframe-text{
-         margin-top: 1.5rem;
- }
 }
 `
 const MethodImg = Styled.img
@@ -729,7 +735,7 @@ margin-top: 1.5rem;
  @media only screen and (max-width: 1200px){
         width: 80%;
         margin-top: 1rem;
-        justify-content: center;
+        margin-left:0rem;
     }
 `
 
@@ -769,17 +775,14 @@ margin-top: 1.5rem;
 const TestTable = Styled.div
     `
     max-width: 70rem;
-    height: 2.875rem;
-    margin-left: 2rem;
-    margin-bottom: 12rem;
-    
+    margin-left: 4.5%;
+    margin-right: 4.5%;    
      ul {
-        display: block;
         list-style: none;
+        margin-top: 0rem;
     };
     li {
         text-align: left;
-        margin-bottom: 0.5rem;
     }
     td {
     vertical-align: top;

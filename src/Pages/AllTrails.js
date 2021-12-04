@@ -893,7 +893,7 @@ margin-left: 0rem;
 margin-top: 3rem;
 @media only screen and (max-width: 1200px){
 font-size: 1.5rem;
-margin-top: 2rem;
+margin-top: 3.5%;
 }
 }
 color: #FFF1EC;
