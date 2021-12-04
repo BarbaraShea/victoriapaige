@@ -417,17 +417,18 @@ ul {
 `
 const Picture1 = Styled.img
 `
-max-width: 35%
-height: auto;
+max-width: 24.5rem;
+height: 26rem;
 @media only screen and (max-width: 375px){
-    width: 90%;
+    max-width: 95%;
+    height: 50%;
 }
 `
 const AboutText2 = Styled.div
 `
 max-width: 67rem;
 margin-left: 4.5%;
-margin-right: 2rem;
+margin-right: 3%;
 `
 
 
