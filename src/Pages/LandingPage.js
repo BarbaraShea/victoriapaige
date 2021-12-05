@@ -158,8 +158,8 @@ const LandingPage = () => {
     <p id="linkedin"><a href="https://www.linkedin.com/in/victoria-bryant-1a153b20b/" target="_blank">Victoria Bryant</a></p>
     </IconContainer>
     <IconContainer>
-    <p id="resume"><a href="src/images/Victoria Bryant Resume 2021.pdf" download><ResumeIcon src={Resume}/></a></p>
-    <p id="resume"><a href="src/images/Victoria Bryant Resume 2021.pdf" download>Resumé</a></p>
+    <p id="resume"><a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:d0139579-441e-43f2-a15c-8309f4e64f31" target="_blank"><ResumeIcon src={Resume}/></a></p>
+    <p id="resume"><a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:d0139579-441e-43f2-a15c-8309f4e64f31" target="_blank">Resumé</a></p>
     </IconContainer>
     </ContactIconContainer>
     <Link 
