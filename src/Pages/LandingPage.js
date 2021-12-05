@@ -132,7 +132,7 @@ const LandingPage = () => {
         <ul>
             <li> I understand, empathize with, and communicate openly and kindly with people from all walks of life.</li>
             <li> I'm regularly able to present my thought processes in an easily understandable way.</li>
-            <li> An innant balancer by nature, I stay inherently unflappable in high-stess situations.</li>
+            <li> An innate balancer by nature, I stay inherently unflappable in high-stess situations.</li>
         </ul>
     </AboutText>
     <Picture1 src={ProfilePic} alt='Profile' />
