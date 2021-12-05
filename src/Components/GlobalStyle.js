@@ -58,11 +58,6 @@ li > .active {
   font-size: 1.5rem;
 }
 
-.navbar {
-  position: fixed;
-  z-index: 3;
-}
-
 #logo{
   position: fixed;
   box-sizing: border-box;
@@ -74,18 +69,6 @@ transition: transform 500ms;
 transform: scale(1.05,1.05);
 }
 
-// .AR {
-//   transition: transform 250ms;
-//  :hover {
-//      transform: translateX(3.125rem;
-//  }
-// }
-
-/* .navbar ul {
-  display: block;
-  list-style: none;
-  text-align: right;
-} */
 
 html{
     /* font-size: 1.5rem;

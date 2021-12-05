@@ -81,11 +81,11 @@ const ForestryCamp2 = () => {
         <p>"People are still really confused about the difference between our upstairs dining room and downstairs taproom."</p>
         </Problem>
         <BulletCont>
-        <Number src={DarkOne}/>
+        <Numbers src={DarkOne}/>
         <p className="prob">With two indoor and three outdoor dining spaces, customers don't know which spaces require a reservation and where to eat. </p>
         </BulletCont>
         <BulletCont>
-        <Number src={DarkTwo}/>
+        <Numbers src={DarkTwo}/>
         <p className="prob">Many customers are also not aware that Forestry Camp is associated with Burial Beer, recently voted best small brewery in the world by Craft Beer Brew. </p>
         </BulletCont>
         <HeaderContainer>
@@ -211,15 +211,15 @@ const ForestryCamp2 = () => {
         <p><strong>Goals</strong></p>
         </Test>
          <BulletCont>
-        <Number src={DarkOne}/>
+        <Numbers src={DarkOne}/>
         <p className="test">See if people can define the difference between The Outpost and Forestry Camp.</p>
         </BulletCont>
         <BulletCont>
-        <Number src={DarkTwo}/>
+        <Numbers src={DarkTwo}/>
         <p className="test">Book a reservation for four people of October 19th at 6:30 in the upstairs dining room.</p>
         </BulletCont>
         <BulletCont>
-        <Number src={DarkThree}/>
+        <Numbers src={DarkThree}/>
         <p className="test">Identify the brand message being Forestry Camp based on the design. What kind of place is it?</p>
         </BulletCont>
         <Yahoo>
@@ -249,15 +249,15 @@ const ForestryCamp2 = () => {
             <FinalCont2>
                 <Thoughts><p><strong> Final Thoughts </strong></p> </Thoughts>
                 <BulletCont>
-                    <Number src={White1}/>
+                    <Numbers src={White1}/>
                     <p> I wish I had conducted more interviews and tests with the older demographic that frequents Forestry Camp.</p>
                 </BulletCont>
                 <BulletCont>
-                    <Number src={White2}/>
+                    <Numbers src={White2}/>
                     <p> The reservation feature was added later, and I wish I'd had more time to conduct a more thorough competetive analysis of this feature.</p>
                 </BulletCont>
                 <BulletCont>
-                    <Number src={White3}/>
+                    <Numbers src={White3}/>
                     <p id="three"> I felt like it was a real win that my usability testing showed that the brand's vision was actualized. That made me feel super good.</p>
                 </BulletCont>
             </FinalCont2>
@@ -863,11 +863,11 @@ width: 100%;
       height: 35rem;
       }
 `
-const Number = Styled.img
+const Numbers = Styled.img
 `
 flex-direction: row;
-width: 2rem;
-height: 2rem;
+width: 33px;
+height: auto;
 `
 
 const FinalCont = Styled.div

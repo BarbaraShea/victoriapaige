@@ -69,7 +69,7 @@ export default Nav;
 const StyledNavOne = Styled.nav`
     float: right;
     font-size: 1.5rem;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 20rem;
     right: 2rem;
