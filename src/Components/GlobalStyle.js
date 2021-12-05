@@ -13,16 +13,14 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html, body {
+    @media only screen and (max-width: 600px){
   overflow-x: hidden;
+  }
 }
 body {
   position: relative
 }
 
-#page-wrap {
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
 
 a {
   color: var(--text-color);
@@ -70,13 +68,6 @@ transform: scale(1.05,1.05);
 }
 
 
-html{
-    /* font-size: 1.5rem;
-    /* font-size: 24px; */
-    /* @media (max-width: 1300px){
-        font-size: 60%; */ */
-    }
-}
 
 li {
   z-index: 0;
