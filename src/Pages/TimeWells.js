@@ -56,7 +56,7 @@ const Timewells2 = () => {
             <table>
             <tr>
                 <td><strong>Overview</strong></td>
-                <td>Timewells is a fictional company that recently made time travel fully available to the masses. The ompany required a desktop website that made finding a booking a trip easy and understandable.</td>
+                <td>Timewells is a fictional company that recently made time travel fully available to the masses. The company required a desktop website that made finding a booking a trip easy and understandable.</td>
             </tr>
             <tr>
                 <td><strong>Timeline</strong></td>
