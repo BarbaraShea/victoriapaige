@@ -163,7 +163,7 @@ const Aloft = () => {
             <p id="user-text">I utilized Whimsical to create a wireflow and show how users would move between tasks on the app, and organize filters for <strong>how aerialsists would want to look for classes.</strong> I found this to be incredibly helpful and will continue using this method in the future. </p>
         </MethodContainer>
          <MethodText>
-            <p id="user-header"><strong>User Persona</strong></p>
+            <p id="user-header"><strong>UI Design</strong></p>
         </MethodText>
         <MethodContainer>
              <MethodImg src={MethodImg4}/>
